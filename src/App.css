@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer base {
+  html { @apply font-sans; }
+}
+
+/* https://easings.net/ :) */
+@layer utilities {
+  .lift-on-hover {
+    @apply transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1;
+  }
+
+  @keyframes slide-up {
+    to { transform: translateY(0); }
+  }
+
+  .a-slide-up {
+    transform: translateY(100%);
+    animation: slide-up 0.5s cubic-bezier(0.15, 0, 0.05, 1) both;
+  }
+
+  @keyframes slide-down {
+    to { transform: translateY(100%); }
+  }
+
+  .a-slide-down {
+    transform: translateY(0);
+    animation: slide-down 0.5s cubic-bezier(0.15, 0, 0.05, 1) both;
+  }
+
+  @keyframes unblur {
+    from { filter: blur(8px); }
+    to { filter: blur(0); }
+  }
+
+  .a-unblur {
+    filter: blur(10px);
+    animation: unblur 0.4s cubic-bezier(0.3, 0, 0.05, 1) forwards;
+  }
+
+  @keyframes vert {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+  }
+
+  .a-vert {
+    animation: vert 0.3s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  @keyframes horizontal {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+
+  .a-horizontal {
+    animation: horizontal 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .a-fade-in {
+    opacity: 0;
+    animation: fade-in 0.2s ease-out forwards;
+  }
+
+  @keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  .a-fade-out {
+    opacity: 1;
+    animation: fade-out 0.2s ease-out forwards;
+  }
+}
+
+/* Figma for values */
+/* https://fluid.style/ */
+@theme {
+  --font-sans: "Montserrat", system-ui, sans-serif;
+
+  --color-bg: rgb(8, 8, 8);
+  --color-sub: rgba(255, 255, 255, 0.5);
+  --color-text: rgb(248, 248, 248);
+  --color-accent: rgb(21, 131, 84);
+
+  --spacing-page: clamp(1.5rem, 0.972rem + 2.254vw, 3rem); /* 48px - 24px */
+  --spacing-s-one: clamp(1.5rem, 1.324rem + 0.751vw, 2rem); /* 32px - 24px */
+  --spacing-s-two: clamp(1rem, 0.824rem + 0.751vw, 1.5rem); /* 24px - 16px */
+  --spacing-s-three: clamp(0.75rem, 0.662rem + 0.376vw, 1rem); /* 16px - 12px */
+  --spacing-s-four: clamp(0.5rem, 0.412rem + 0.376vw, 0.75rem); /* 12px - 8px */
+
+  --text-title: clamp(2.25rem, 1.546rem + 3.005vw, 4.25rem);
+  --text-pg: clamp(0.813rem, 0.57rem + 1.033vw, 1.5rem);
+  --text-sub: clamp(0.688rem, 0.577rem + 0.469vw, 1rem);
+
+  --tracking-all: -0.05em;
+}

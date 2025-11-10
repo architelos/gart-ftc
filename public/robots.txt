@@ -1,0 +1,7 @@
+# All scrapers are welcome! :)
+# Just don't do any sus shit...
+
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /

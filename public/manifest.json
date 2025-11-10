@@ -1,0 +1,16 @@
+{
+  "short_name": "24751",
+  "name": "GART - FTC #24751",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 48x48 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "lang": "en",
+  "theme_color": "#158354",
+  "background_color": "#080808"
+}
