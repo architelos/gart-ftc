@@ -45,7 +45,7 @@ function Text({
 
     case "sub":
       Component = "span";
-      finalCn += " text-text text-sub font-medium tracking-all leading-tight";
+      finalCn += " text-sub text-footer font-medium tracking-all leading-tight";
 
       break;
 
