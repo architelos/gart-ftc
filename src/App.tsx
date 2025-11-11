@@ -2,7 +2,7 @@ import Text from "@/components/Text";
 
 import "./App.css";
 
-const App = () => {
+function App () {
   return (
     <Text type="pg">hi!</Text>
   );

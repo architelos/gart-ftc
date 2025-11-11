@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import type { FC, AnimationEvent, ReactNode, ElementType } from "react";
+import type { AnimationEvent, ReactNode, ElementType } from "react";
 
 interface TextProps extends Omit<React.HTMLAttributes<HTMLElement>, "className"> {
   children: ReactNode;
@@ -9,14 +9,14 @@ interface TextProps extends Omit<React.HTMLAttributes<HTMLElement>, "className">
   className?: string;
 }
 
-const Text: FC<TextProps> = ({
+function Text({
   children,
   type,
   link = false,
   animate = true,
   className = "",
   ...props
-}) => {
+}: TextProps) {
   const [animated, setAnimated] = useState(false);
   const handleAnimated = useCallback((e: AnimationEvent) => {
     if (e.animationName.includes("slide-up")) setAnimated(true);
