@@ -1,12 +1,20 @@
 import { useState, useCallback } from "react";
-import type { AnimationEvent, ReactNode, ElementType } from "react";
+import type { AnimationEvent, ReactNode, ElementType, AnchorHTMLAttributes, HTMLAttributes } from "react";
 
-interface TextProps extends Omit<React.HTMLAttributes<HTMLElement>, "className"> {
+interface TextProps extends Omit<HTMLAttributes<HTMLElement>, "className"> {
   children: ReactNode;
   type: "title" | "pg" | "sub";
   link?: boolean;
   animate?: boolean;
   className?: string;
+}
+
+interface LinkProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className"> {
+    link: true;
+    type: "title" | "pg" | "sub";
+    animate?: boolean;
+    className?: string;
+    children: ReactNode;
 }
 
 function Text({
@@ -16,9 +24,9 @@ function Text({
   animate = true,
   className = "",
   ...props
-}: TextProps) {
+}: TextProps | LinkProps) {
   const [animated, setAnimated] = useState(false);
-  const handleAnimated = useCallback((e: AnimationEvent) => {
+  const handleAnimated = useCallback((e: AnimationEvent<HTMLElement>) => {
     if (e.animationName.includes("slide-up")) setAnimated(true);
   }, []);
 
@@ -58,7 +66,8 @@ function Text({
 
   return (
     <div className={`overflow-hidden ${finalCn.trim()}`}>
-      <Component onAnimationEnd={handleAnimated} className={animation.trim()} {...props}>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+      <Component onAnimationEnd={handleAnimated} className={animation.trim()} {...props as any}>
         {children}
       </Component>
     </div>
