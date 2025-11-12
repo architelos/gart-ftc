@@ -2,20 +2,20 @@ import { create } from "zustand";
 
 interface MenuState {
     footerVisible: boolean;
-    menuOpen: boolean;
+    open: boolean;
     setFooterVisible: (val: boolean) => void;
-    setMenuOpen: (val: boolean) => void;
+    setOpen: (val: boolean) => void;
     reset: () => void;
 }
 
 const useMenuState = create<MenuState>((set) => ({
     footerVisible: false,
-    menuOpen: false,
+    open: false,
 
     setFooterVisible: (val: boolean) => set({ footerVisible: val }),
-    setMenuOpen: (val: boolean) => set({ menuOpen: val }),
+    setOpen: (val: boolean) => set({ open: val }),
 
-    reset: () => set({ footerVisible: false, menuOpen: false }),
+    reset: () => set({ footerVisible: false, open: false }),
 }));
 
 export default useMenuState;

@@ -10,13 +10,12 @@ function Footer() {
 
   useEffect(() => {
     setFooterVisible(footerInView);
-    console.log(footerInView)
   }, [footerInView, setFooterVisible]);
 
   return (
-    <div ref={footerRef} className="p-page">
+    <footer ref={footerRef} className="p-page">
       <Text type="title">wow really cool footer!</Text>
-    </div>
+    </footer>
   );
 }
 

@@ -9,8 +9,8 @@ function Navbar() {
   const [anim, setAnim] = useState("a-slide-up");
   const [logoAnim, setLogoAnim] = useState("a-fade-in");
 
-  const menuOpen = useMenuState((state) => state.menuOpen);
-  const setMenuOpen = useMenuState((state) => state.setMenuOpen);
+  const open = useMenuState((state) => state.open);
+  const setOpen = useMenuState((state) => state.setOpen);
   const footerVisible = useMenuState((state) => state.footerVisible);
 
   useEffect(() => {
@@ -39,9 +39,9 @@ function Navbar() {
     <header className="z-100 fixed flex justify-between w-full p-page">
       <img className={`max-w-page max-h-page object-contain ${logoAnim}`} src={assetMap["logo.avif"]} />
 
-      <button className="overflow-hidden scale-on-hover cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+      <button className="overflow-hidden scale-on-hover cursor-pointer" onClick={() => setOpen(!open)}>
         {
-          !menuOpen ? <Menu className={anim} style={{ width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
+          !open ? <Menu className={anim} style={{ width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
           : <X style={{ width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />
         }
       </button>

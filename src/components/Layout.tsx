@@ -3,6 +3,7 @@ import { useLocation, Outlet } from "react-router";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/menu/Navbar";
+import Menu from "@/components/menu/Menu";
 import useMenuState from "@/hooks/useMenuState";
 
 function Layout() {
@@ -16,6 +17,8 @@ function Layout() {
   return (
     <div className="app">
       <Navbar />
+      <Menu />
+
       <Outlet />
       <Footer />
     </div>
