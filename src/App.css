@@ -103,9 +103,10 @@
 }
 
 [data-theme="light"] {
-  --color-bg: rgb(248, 248, 248);
-  --color-sub: rgba(0, 0, 0, 0.5);
-  --color-text: rgb(8, 8, 8);
+  /* tried to keep it lighter on the eyes */
+  --color-bg: rgb(242, 242, 239);
+  --color-sub: rgba(0, 0, 0, 0.6);
+  --color-text: rgb(30, 30, 30);
   --color-accent: rgb(21, 131, 84);
 }
 
