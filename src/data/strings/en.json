@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "privacy_policy": "Privacy policy",
+    "home": "Home",
+    "about": "About",
+    "robot": "Our Robot",
+    "sponsor": "Sponsor Us"
+  },
+  "home": {
+    "hero": {
+      "accented": "GreenAms",
+      "unaccented": "Robotics Team",
+      "tagline": "We build robots and help other teams learn",
+      "end": "(scroll to explore)"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "privacy_policy": "Chính sách bảo mật",
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "robot": "Robot",
+    "sponsor": "Tài trợ"
+  },
+  "home": {
+    "hero": {
+      "accented": "GreenAms",
+      "unaccented": "Robotics Team",
+      "tagline": "Chúng tôi chế tạo robot và giúp các đội khác học hỏi",
+      "end": "(cuộn để khám phá)"
+    }
+  }
+}

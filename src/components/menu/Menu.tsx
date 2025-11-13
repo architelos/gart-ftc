@@ -3,10 +3,11 @@ import { GB } from "country-flag-icons/react/3x2";
 import { VN } from "country-flag-icons/react/3x2";
 import { Moon, Sun } from "lucide-react";
 
+import Text from "@/components/Text";
 import useMenuState from "@/hooks/useMenuState";
 import useLocale from "@/hooks/useLocale";
 import useTheme from "@/hooks/useTheme";
-import Text from "@/components/Text";
+import translations from "@/data/translations";
 
 function Menu() {
   const [render, setRender] = useState(false);
@@ -14,6 +15,7 @@ function Menu() {
   const open = useMenuState((state) => state.open);
 
   const locale = useLocale((state) => state.locale);
+  const t = translations(locale);
   const toggleLocale = useLocale((state) => state.toggleLocale);
 
   const theme = useTheme((state) => state.theme);
@@ -39,11 +41,11 @@ function Menu() {
       <div className="mt-auto">
         <div className="flex md:flex-row flex-col-reverse justify-between gap-y-page w-full">
           <div className="flex flex-col gap-y-s-two">
-            <Text type="sub" link={true} href="/privacy_policy">Privacy Policy</Text>
-            <Text type="title" link={true} href="/">Home</Text>
-            <Text type="title" link={true} href="/about">About</Text>
-            <Text type="title" link={true} href="/robot">Our Robot</Text>
-            <Text type="title" link={true} href="/sponsor">Sponsor Us</Text>
+            <Text type="sub" link={true} href="/privacy_policy">{t.menu.privacy_policy}</Text>
+            <Text type="title" link={true} href="/">{t.menu.home}</Text>
+            <Text type="title" link={true} href="/about">{t.menu.about}</Text>
+            <Text type="title" link={true} href="/robot">{t.menu.robot}</Text>
+            <Text type="title" link={true} href="/sponsor">{t.menu.sponsor}</Text>
           </div>
 
           <div className="flex flex-row md:self-end gap-x-s-one max-sm:pb-page">
