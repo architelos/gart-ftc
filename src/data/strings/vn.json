@@ -13,5 +13,11 @@
       "tagline": "Chúng tôi chế tạo robot và giúp các đội khác học hỏi",
       "end": "(cuộn để khám phá)"
     }
+  },
+  "about": {
+    "landing": {
+      "main_heading": "Về chúng tôi",
+      "tagline": "FTC #27451"
+    }
   }
 }

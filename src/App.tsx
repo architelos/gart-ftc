@@ -6,6 +6,7 @@ import "lenis/dist/lenis.css";
 
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
+import About from "@/pages/About";
 
 function App () {
   const router = createBrowserRouter([
@@ -13,7 +14,8 @@ function App () {
       path: "/",
       Component: Layout,
       children: [
-        { index: true, element: <Home /> }
+        { index: true, element: <Home /> },
+        { path: "about", element: <About /> }
       ]
     }
   ]);
