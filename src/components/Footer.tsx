@@ -13,7 +13,7 @@ function Footer() {
   }, [footerInView, setFooterVisible]);
 
   return (
-    <footer ref={footerRef} className="p-page">
+    <footer ref={footerRef} className="p-page bg-bg">
       <Text type="title">wow really cool footer!</Text>
     </footer>
   );
