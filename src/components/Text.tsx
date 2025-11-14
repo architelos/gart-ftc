@@ -36,7 +36,12 @@ function Text({
   let finalCn = className.trim();
   let animation = link ? "lift-on-hover" : "";
 
-  if (animate && !animated) animation += " a-slide-up";
+  const toAnimate = animate && !animated;
+  if (animate) {
+    animation += toAnimate ? " a-slide-up" : "";
+  } else {
+    animation += animated ? "" : " translate-y-full";
+  }
 
   switch (type) {
     case "title":
