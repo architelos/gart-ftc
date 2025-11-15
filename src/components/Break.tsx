@@ -1,6 +1,6 @@
 function Break() {
   return (
-    <div className="w-full h-s-two bg-bg" />
+    <div className="w-full h-page bg-bg" />
   );
 }
 
