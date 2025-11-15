@@ -5,7 +5,7 @@ import useLocale from "@/hooks/useLocale";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 
-function Landing() {
+function Team() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
   const { headings, people } = t.about.team;
@@ -41,4 +41,4 @@ function Landing() {
   )
 }
 
-export default Landing;
+export default Team;
