@@ -38,9 +38,9 @@ function Text({
 
   const toAnimate = animate && !animated;
   if (animate) {
-    animation += toAnimate ? " a-slide-up" : "";
+    animation += toAnimate ? " a-fade-in" : "";
   } else {
-    animation += animated ? "" : " translate-y-full";
+    animation += animated ? "" : " opacity-0";
   }
 
   switch (type) {

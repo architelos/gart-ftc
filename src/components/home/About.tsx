@@ -19,15 +19,15 @@ function About() {
   const { ref: buttonRef, inView: buttonInView } = useInView();
 
   return (
-    <section ref={titleRef} className="flex flex-col gap-y-page w-full p-page bg-bg">
-      <Text animate={titleInView} type="title">{t.home.about.title}</Text>
+    <section className="flex flex-col gap-y-page w-full p-page bg-bg">
+      <div ref={titleRef}><Text animate={titleInView} type="title">{t.home.about.title}</Text></div>
       <div className="flex flex-row items-start gap-x-page w-full">
-        <img className="max-w-[60%] object-contain" src={assetMap["ph.avif"]} />
+        <img className={`max-w-[60%] object-contain opacity-0 ${p1InView ? "a-fade-in" : ""}`} src={assetMap["ph.avif"]} />
         <div className="flex flex-col gap-y-s-one">
           <div ref={p1Ref}><Text animate={p1InView} type="pg">{t.home.about.p1}</Text></div>
           <div ref={p2Ref}><Text animate={p2InView} type="pg">{t.home.about.p2}</Text></div>
           <div ref={buttonRef}>
-            <Button icon={<ArrowRight />} type="accent" className={buttonInView ? "a-fade-in" : ""} onClick={() => navigate("/about")}>{t.home.about.cta}</Button>
+            <Button icon={<ArrowRight />} type="accent" className={`opacity-0 ${buttonInView ? "a-fade-in" : ""}`} onClick={() => navigate("/about")}>{t.home.about.cta}</Button>
           </div>
         </div>
       </div>
