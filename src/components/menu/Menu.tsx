@@ -41,7 +41,6 @@ function Menu() {
       <div className="mt-auto">
         <div className="flex md:flex-row flex-col-reverse justify-between gap-y-page w-full">
           <div className="flex flex-col gap-y-s-two">
-            <Text type="sub" link={true} href="/privacy_policy">{t.menu.privacy_policy}</Text>
             <Text type="title" link={true} href="/">{t.menu.home}</Text>
             <Text type="title" link={true} href="/about">{t.menu.about}</Text>
             <Text type="title" link={true} href="/robot">{t.menu.robot}</Text>

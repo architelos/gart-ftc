@@ -1,10 +1,15 @@
 {
+  "email": "contact@greenams.com",
+  "tel": "+84 123456789",
   "menu": {
     "privacy_policy": "Privacy policy",
     "home": "Home",
     "about": "About",
     "robot": "Our Robot",
     "sponsor": "Sponsor Us"
+  },
+  "footer": {
+    "copyright": "Copyright © GreenAms Robotics Team, all rights reserved"
   },
   "home": {
     "hero": {
