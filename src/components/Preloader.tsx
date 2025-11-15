@@ -4,7 +4,7 @@ interface PreloaderProps {
 
 function Preloader({ fade = false }: PreloaderProps) {
   return (
-    <div role="status" className={`flex items-center justify-center w-full h-dvh bg-bg ${fade ? "a-fade-out" : ""}`}>
+    <div role="status" className={`flex items-center justify-center w-full h-screen bg-bg ${fade ? "a-fade-out" : ""}`}>
       <div
         className="inline-block box-border animate-spin border-text/20 border-b-text rounded-full"
         style={{

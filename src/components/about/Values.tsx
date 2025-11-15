@@ -54,7 +54,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
           </div>
           
           <div className="flex-1 min-h-0 max-h-[75%] md:max-h-[70%]">
-            <img src={assetMap[process.img]} className="h-dvh w-full object-cover self-start" />
+            <img src={assetMap[process.img]} className="h-full w-full object-cover self-start" />
           </div>
 
           <Text type="pg">{process.description}</Text>
