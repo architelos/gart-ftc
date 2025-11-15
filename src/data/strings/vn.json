@@ -26,6 +26,7 @@
       "tagline": "FTC #27451"
     },
     "team": {
+      "title": "Thành viên",
       "headings": {
         "programming": "lập trình điện tử",
         "mechanical": "cơ khí thiết kế",
@@ -99,6 +100,26 @@
           } 
         ]
       }
+    },
+    "values": {
+      "title": "Giá trị",
+      "data": [
+        {
+          "value_name": "value 1",
+          "description": "desc 1",
+          "img": "ph.avif"
+        },
+        {
+          "value_name": "value 2",
+          "description": "desc 2",
+          "img": "ph.avif"
+        },
+        {
+          "value_name": "value 3",
+          "description": "desc 3",
+          "img": "ph.avif"
+        }
+      ]
     }
   }
 }
