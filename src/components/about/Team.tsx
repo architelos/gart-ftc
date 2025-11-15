@@ -45,7 +45,7 @@ function Team() {
 
               <Text
                 type="title"
-                className={`flex transition-colors duration-200 ${hoveredPerson != person ? "text-text/20" : ""}`}
+                className={`flex transition-colors duration-200 ${hoveredPerson != person ? "md:text-text/20" : ""}`}
               >
                 {person.name}
               </Text>
@@ -55,7 +55,7 @@ function Team() {
               <div className="md:hidden flex flex-row w-full">
                 <Text
                   type="sub"
-                  className={`w-full text-right transition-colors duration-200 ${hoveredPerson != person ? "text-text/20" : ""}`}
+                  className={`w-full text-right transition-colors duration-200`}
                 >
                   {person.job_title}
                 </Text>

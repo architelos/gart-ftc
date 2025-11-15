@@ -63,7 +63,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
 
       {!isLast && (
         <motion.div
-          className="absolute inset-0 bg-black pointer-events-none"
+          className="absolute inset-0 bg-bg pointer-events-none"
           style={{ opacity: overlayOpacity }}
         />
       )}
