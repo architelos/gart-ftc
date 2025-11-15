@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import { useRef } from "react";
+import { ArrowDown } from "lucide-react";
 
 import Text from "@/components/Text";
 import useLocale from "@/hooks/useLocale";
@@ -6,7 +7,7 @@ import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 import useInView from "@/hooks/useInView";
 
-import { MotionValue, motion, useScroll, useTransform } from 'framer-motion';
+import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 
 interface Process { value_name: string; img: string; description: string; }
 interface PanelProps { process: Process; idx: number; step: number; scrollY: MotionValue<number>; isLast: boolean; }
@@ -14,7 +15,6 @@ interface PanelProps { process: Process; idx: number; step: number; scrollY: Mot
 function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   const panelStart = idx * step;
   const panelEnd = (idx + 1) * step;
-  const topOffset = `5vh`;
 
   // to ease out the animation
   const buffer = step * 0.15;
@@ -25,9 +25,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   const y = useTransform(
     scrollY,
     [from, panelStart, panelEnd, to],
-    isLast 
-      ? [`calc(100vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`]
-      : [`calc(100vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(-100vh + ${topOffset})`]
+    isLast ? ["100vh", "0vh", "0vh", "0vh"] : ["100vh", "0vh", "0vh", "-100vh"]
     // dont slide away if last + offset for navbar
   );
   const overlayOpacity = useTransform(
@@ -38,23 +36,14 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
 
   return (
     <motion.div className="absolute inset-0 w-full h-dvh bg-bg" style={{ y, zIndex: idx }}>
-      <div className="flex flex-col md:flex-row h-dvh">
-        <div className="hidden md:flex md:w-[20%] p-page">
-          <Text type="title" className="text-left w-full ">{String(idx + 1).padStart(2, '0')}</Text>
-        </div>
-
-        <div className="flex flex-col md:w-[80%] h-dvh gap-y-text p-page min-h-0 gap-y-page">
-          <div className="hidden md:flex">
+      <div className="flex flex-col items-center h-full mt-page">
+        <div className="flex flex-col items-center gap-y-page gap-y-text w-full md:max-w-[80%] h-dvh min-h-0 p-page">
+          <div className="flex">
             <Text type="title">{process.value_name}</Text>
           </div>
 
-          <div className="flex md:hidden gap-x-s-one">
-            <Text type="title" className="text-left w-fit">{String(idx + 1).padStart(2, '0')}</Text>
-            <Text type="title">{process.value_name}</Text>
-          </div>
-          
           <div className="flex-1 min-h-0 max-h-[75%] md:max-h-[70%]">
-            <img src={assetMap[process.img]} className="h-full w-full object-cover self-start" />
+            <img src={assetMap[process.img]} className="self-start w-full h-full object-cover" />
           </div>
 
           <Text type="pg">{process.description}</Text>
@@ -76,7 +65,7 @@ function Values() {
   const t = translations(locale);
 
   const { ref: textRef, inView: textInView } = useInView();
-  
+
   const panelsRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: panelsRef,
@@ -88,19 +77,20 @@ function Values() {
 
   return (
     <section className="bg-bg">
-      <div ref={textRef} className="flex flex-row justify-between p-page items-baseline pb-0">
-        <Text animate={textInView} type="title" className="">{t.about.values.title}</Text>
+      <div ref={textRef} className="flex flex-row justify-between items-baseline p-page pb-0">
+        <Text animate={textInView} type="title">{t.about.values.title}</Text>
+        <ArrowDown />
       </div>
 
       <div ref={panelsRef} className="relative" style={{ height: `${processes.length * 100}vh` }}>
-        <div className="sticky top-0 w-full h-dvh overflow-hidden">
+        <div className="top-0 sticky w-full h-dvh overflow-hidden">
           {processes.map((process, i) => (
-            <Panel 
-            key={i} 
-            idx={i} 
-            process={process} 
-            step={step} 
-            scrollY={scrollYProgress} 
+            <Panel
+            key={i}
+            idx={i}
+            process={process}
+            step={step}
+            scrollY={scrollYProgress}
             isLast={i === processes.length - 1} />
           ))}
         </div>
