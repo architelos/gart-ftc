@@ -37,7 +37,7 @@ function Menu() {
   if (!render) return null;
 
   return (
-    <nav className={`z-99 fixed flex flex-col justify-between w-full h-screen p-page bg-bg ${out ? "a-fade-out" : "a-vert"}`}>
+    <nav className={`z-99 fixed flex flex-col justify-between w-full h-dvh p-page bg-bg ${out ? "a-fade-out" : "a-vert"}`}>
       <div className="mt-auto">
         <div className="flex md:flex-row flex-col-reverse justify-between gap-y-page w-full">
           <div className="flex flex-col gap-y-s-two">

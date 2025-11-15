@@ -37,13 +37,13 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   );
 
   return (
-    <motion.div className="absolute inset-0 w-full h-full" style={{ y, zIndex: idx }}>
-      <div className="flex flex-col md:flex-row h-screen">
+    <motion.div className="absolute inset-0 w-full h-dvh" style={{ y, zIndex: idx }}>
+      <div className="flex flex-col md:flex-row h-dvh">
         <div className="hidden md:flex md:w-[20%] p-page">
           <Text type="title" className="text-left w-full ">{String(idx + 1).padStart(2, '0')}</Text>
         </div>
 
-        <div className="flex flex-col md:w-[80%] h-full gap-y-text p-page min-h-0 gap-y-page">
+        <div className="flex flex-col md:w-[80%] h-dvh gap-y-text p-page min-h-0 gap-y-page">
           <div className="hidden md:flex">
             <Text type="title">{process.value_name}</Text>
           </div>
@@ -54,7 +54,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
           </div>
           
           <div className="flex-1 min-h-0 max-h-[75%] md:max-h-[70%]">
-            <img src={assetMap[process.img]} className="h-full w-full object-cover self-start" />
+            <img src={assetMap[process.img]} className="h-dvh w-full object-cover self-start" />
           </div>
 
           <Text type="pg">{process.description}</Text>
@@ -93,7 +93,7 @@ function Values() {
       </div>
 
       <div ref={panelsRef} className="relative" style={{ height: `${processes.length * 100}vh` }}>
-        <div className="sticky top-0 w-full h-screen overflow-hidden">
+        <div className="sticky top-0 w-full h-dvh overflow-hidden">
           {processes.map((process, i) => (
             <Panel 
             key={i} 

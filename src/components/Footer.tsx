@@ -15,7 +15,7 @@ function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="p-page bg-bg flex flex-col gap-y-s-four md:h-screen"
+      className="p-page bg-bg flex flex-col gap-y-s-four md:h-dvh"
     >
       {/* nav */}
       <div className="flex flex-row flex-0 flex-wrap gap-x-s-one mb-l">
