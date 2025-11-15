@@ -15,7 +15,7 @@ function Layout() {
   }, [location.pathname, reset]);
 
   return (
-    <div className="app">
+    <div className="bg-bg">
       <Navbar />
       <Menu />
 

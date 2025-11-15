@@ -4,6 +4,7 @@ import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useMenuState from "@/hooks/useMenuState";
 import useLocale from "@/hooks/useLocale";
+import useTheme from "@/hooks/useTheme";
 import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
 
@@ -15,6 +16,7 @@ function Footer() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
 
+  const theme = useTheme((state) => state.theme);
   const setFooterVisible = useMenuState((state) => state.setFooterVisible);
 
   useEffect(() => {
@@ -36,7 +38,7 @@ function Footer() {
       </div>
 
       <div ref={imgRef} className="flex flex-col flex-1 justify-center">
-        <img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap["footer.png"]} />
+        <img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap[theme === "dark" ? "footer.png" : "lfooter.png"]} />
       </div>
 
       <div className="flex md:flex-row flex-col justify-between gap-y-s-four">
