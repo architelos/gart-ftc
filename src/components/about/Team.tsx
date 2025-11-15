@@ -23,7 +23,7 @@ function Landing() {
 
         {people[divisionKey]?.map((person, j) => (
             <div key={i * 100 + j} className="flex md:flex-row flex-col items-baseline gap-x-page w-full" onMouseOver={() => { setCurr(i * 100 + j); }} onClick={() => { setCurr(i * 100 + j); }}>
-            <div className="hidden md:flex flex-row w-[30%]">
+            <div className="hidden md:flex flex-row w-[40%]">
               <Text type="sub" className={`w-full text-right transition-colors duration-200 ${i * 100 + j !== curr ? "text-text/20" : ""}`}>{person["job_title"]}</Text>
             </div>
 
