@@ -56,7 +56,7 @@ function Footer() {
             #24751
           </Text>
       </div>
-s
+
       <div className="flex flex-row justify-between flex-wrap">
         <Text type="sub" link={true} href="/privacy_policy">Privacy policy</Text>
         <Text type="sub">Copyright © GreenAms Robotics Team, all rights reserved</Text>
