@@ -23,7 +23,7 @@ function Button({ icon, type, children, className = "", onClick = () => {} }: Bu
   }
 
   return (
-    <button className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover a-fade-in rounded-md ${add} ${className}`} onClick={onClick}>
+    <button className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`} onClick={onClick}>
       <Text type="sub" className="text-text!">{children}</Text>
       {icon}
     </button>
