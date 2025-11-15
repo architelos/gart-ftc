@@ -24,6 +24,81 @@
     "landing": {
       "main_heading": "About us",
       "tagline": "FTC #27451"
+    },
+    "team": {
+      "headings": {
+        "programming": "programming division",
+        "mechanical": "mechanical division",
+        "business": "business division"
+      },
+      "people": {
+        "programming": [
+          {
+            "name": "Khánh Anh",
+            "job_title": "job_title 1"
+          }, 
+          {
+            "name": "Tuấn Khôi",
+            "job_title": "job_title 2"
+          }, 
+          {
+            "name": "Minh Quang",
+            "job_title": "job_title 3"
+          }, 
+          {
+            "name": "Đức Khánh",
+            "job_title": "job_title 1"
+          }, 
+          {
+            "name": "Đăng Minh",
+            "job_title": "job_title 2"
+          }, 
+          {
+            "name": "Minh Dũng",
+            "job_title": "job_title 3"
+          }
+        ],
+        "mechanical": [
+          {
+            "name": "Thế Khải",
+            "job_title": "job_title 1"
+          }, 
+          {
+            "name": "Hải Đăng",
+            "job_title": "job_title 2"
+          }, 
+          {
+            "name": "Minh Khang",
+            "job_title": "job_title 3"
+          },
+          {
+            "name": "Khánh Vinh",
+            "job_title": "job_title 2"
+          }, 
+          {
+            "name": "Trần Khoa",
+            "job_title": "job_title 3"
+          }
+        ],
+        "business": [
+          {
+            "name": "Dương Lâm",
+            "job_title": "job_title 1"
+          }, 
+          {
+            "name": "Phương Thảo",
+            "job_title": "job_title 2"
+          }, 
+          {
+            "name": "Quang Huy",
+            "job_title": "job_title 3"
+          },
+          {
+            "name": "Đức Hùng",
+            "job_title": "job_title 3"
+          } 
+        ]
+      }
     }
   }
 }
