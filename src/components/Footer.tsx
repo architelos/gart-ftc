@@ -22,7 +22,7 @@ function Footer() {
         <Text type="pg" link={true} href="/">Home</Text>
         <Text type="pg" link={true} href="/about">About us</Text>
         <Text type="pg" link={true} href="/robot">Our robot</Text>
-        <Text type="pg" link={true} href="/aponsor">Become a sponsor</Text>
+        <Text type="pg" link={true} href="/sponsor">Become a sponsor</Text>
       </div>
 
       {/* contact */}
