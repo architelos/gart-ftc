@@ -28,7 +28,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
     isLast 
       ? [`calc(100vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`]
       : [`calc(100vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(-100vh + ${topOffset})`]
-    // dont slide away if last
+    // dont slide away if last + offset for navbar
   );
   const overlayOpacity = useTransform(
     scrollY,
