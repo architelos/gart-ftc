@@ -32,12 +32,12 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   );
   const overlayOpacity = useTransform(
     scrollY,
-    [panelStart + step * 0.5, panelEnd],
+    [panelStart, panelEnd],
     [0, 1]
   );
 
   return (
-    <motion.div className="absolute inset-0 w-full h-dvh" style={{ y, zIndex: idx }}>
+    <motion.div className="absolute inset-0 w-full h-dvh bg-bg" style={{ y, zIndex: idx }}>
       <div className="flex flex-col md:flex-row h-dvh">
         <div className="hidden md:flex md:w-[20%] p-page">
           <Text type="title" className="text-left w-full ">{String(idx + 1).padStart(2, '0')}</Text>
