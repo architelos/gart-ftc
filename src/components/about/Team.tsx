@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import Text from "@/components/Text";
 import useLocale from "@/hooks/useLocale";
-// import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 
 type Person = {
@@ -14,7 +13,8 @@ function Team() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
   const { headings, people } = t.about.team;
-  const [curr, setCurr] = useState<number | null>(null);
+
+  const [hoveredPerson, setHoveredPerson] = useState<Person | null>(null);
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
@@ -29,13 +29,15 @@ function Team() {
             <div
               key={i * 100 + j}
               className="flex md:flex-row flex-col items-baseline gap-x-page w-full"
-              onMouseOver={() => { setCurr(i * 100 + j); }}
-              onClick={() => { setCurr(i * 100 + j); }}
+              onMouseOver={() => { setHoveredPerson(person);}}
+              onMouseLeave={() => {setHoveredPerson(null);}}
             >
+
+              {/* desktop job title */}
               <div className="hidden md:flex flex-row w-[40%]">
                 <Text
                   type="sub"
-                  className={`w-full text-right transition-colors duration-200 ${i * 100 + j !== curr ? "text-text/20" : ""}`}
+                  className={`w-full text-right transition-colors duration-200 ${hoveredPerson != person ? "text-text/20" : ""}`}
                 >
                   {person.job_title}
                 </Text>
@@ -43,14 +45,17 @@ function Team() {
 
               <Text
                 type="title"
-                className={`transition-colors duration-200 ${i * 100 + j !== curr ? "text-text/20" : ""}`}
+                className={`flex transition-colors duration-200 ${hoveredPerson != person ? "text-text/20" : ""}`}
               >
                 {person.name}
               </Text>
+
+
+              {/* mobile job title */}
               <div className="md:hidden flex flex-row w-full">
                 <Text
                   type="sub"
-                  className={`w-full text-right transition-colors duration-200 ${i * 100 + j !== curr ? "text-text/20" : ""}`}
+                  className={`w-full text-right transition-colors duration-200 ${hoveredPerson != person ? "text-text/20" : ""}`}
                 >
                   {person.job_title}
                 </Text>

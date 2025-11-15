@@ -14,6 +14,7 @@ interface PanelProps { process: Process; idx: number; step: number; scrollY: Mot
 function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   const panelStart = idx * step;
   const panelEnd = (idx + 1) * step;
+  const topOffset = `5vh`;
 
   // to ease out the animation
   const buffer = step * 0.15;
@@ -24,7 +25,10 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   const y = useTransform(
     scrollY,
     [from, panelStart, panelEnd, to],
-    isLast ? ["100vh", "0vh", "0vh", "0vh"] : ["100vh", "0vh", "0vh", "-100vh"] // dont slide away if last
+    isLast 
+      ? [`calc(100vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`]
+      : [`calc(100vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(0vh + ${topOffset})`, `calc(-100vh + ${topOffset})`]
+    // dont slide away if last
   );
   const overlayOpacity = useTransform(
     scrollY,
@@ -35,16 +39,24 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   return (
     <motion.div className="absolute inset-0 w-full h-full" style={{ y, zIndex: idx }}>
       <div className="flex flex-col md:flex-row h-screen">
-        <div className="md:w-[20%] p-page">
-          <Text type="title" className="text-right">{String(idx + 1).padStart(2, '0')}</Text>
+        <div className="hidden md:flex md:w-[20%] p-page">
+          <Text type="title" className="text-left w-full ">{String(idx + 1).padStart(2, '0')}</Text>
         </div>
 
-        {/* add min-h-0 to allow sizing below intrinsic size */}
         <div className="flex flex-col md:w-[80%] h-full gap-y-text p-page min-h-0 gap-y-page">
-          <Text type="title">{process.value_name}</Text>
-          <div className="flex-1 min-h-0 max-h-[80%]">
+          <div className="hidden md:flex">
+            <Text type="title">{process.value_name}</Text>
+          </div>
+
+          <div className="flex md:hidden gap-x-s-one">
+            <Text type="title" className="text-left w-fit">{String(idx + 1).padStart(2, '0')}</Text>
+            <Text type="title">{process.value_name}</Text>
+          </div>
+          
+          <div className="flex-1 min-h-0 max-h-[75%] md:max-h-[70%]">
             <img src={assetMap[process.img]} className="h-full w-full object-cover self-start" />
           </div>
+
           <Text type="pg">{process.description}</Text>
         </div>
       </div>
@@ -76,14 +88,20 @@ function Values() {
 
   return (
     <section className="bg-bg">
-      <div ref={textRef} className="flex flex-row justify-between p-page items-baseline">
-        <Text animate={textInView} type="title" className="max-w-[90%]">{t.about.values.title}</Text>
+      <div ref={textRef} className="flex flex-row justify-between p-page items-baseline pb-0">
+        <Text animate={textInView} type="title" className="">{t.about.values.title}</Text>
       </div>
 
       <div ref={panelsRef} className="relative" style={{ height: `${processes.length * 100}vh` }}>
         <div className="sticky top-0 w-full h-screen overflow-hidden">
           {processes.map((process, i) => (
-            <Panel key={i} idx={i} process={process} step={step} scrollY={scrollYProgress} isLast={i === processes.length - 1} />
+            <Panel 
+            key={i} 
+            idx={i} 
+            process={process} 
+            step={step} 
+            scrollY={scrollYProgress} 
+            isLast={i === processes.length - 1} />
           ))}
         </div>
       </div>

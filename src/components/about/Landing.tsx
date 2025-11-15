@@ -9,15 +9,21 @@ function Landing() {
 
   return (
     <main
-      className="relative flex flex-col justify-center items-center w-full h-screen p-page bg-cover bg-center a-fade-in"
-      style={{ backgroundImage: `url(${assetMap["pv.avif"]})` }}
+      className="relative flex flex-col justify-center items-center w-full h-screen p-page"
     >
-      <div className="z-1 flex flex-col justify-end items-start gap-y-s-two w-full h-full">
+      <img
+        src={assetMap["pv.avif"]}
+        alt="Landing Background"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 a-fade-in"
+      />
+      <div className="z-1 absolute w-full h-screen bg-linear-to-t from-30% from-bg/80 to-100% to-bg" />
+      
+      <div className="z-2 flex flex-col justify-end items-start gap-y-s-two w-full h-full">
         <Text type="title">{t.about.landing.main_heading}</Text>
-        <Text type="pg" className= "text-accent!">{t.about.landing.tagline}</Text>
+        <Text type="pg" className= "text-accent!" style={{ animationDelay: "0.2s" }}>{t.about.landing.tagline}</Text>
       </div>
 
-      <div className="z-0 absolute w-full h-screen bg-linear-to-t from-30% from-bg/80 to-100% to-bg" />
+      
     </main>
   )
 }
