@@ -36,7 +36,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
     <motion.div className="absolute inset-0 w-full h-full" style={{ y, zIndex: idx }}>
       <div className="flex flex-col md:flex-row h-screen">
         <div className="md:w-[20%] p-page">
-          <Text type="title">{String(idx + 1).padStart(2, '0')}</Text>
+          <Text type="title" className="text-right">{String(idx + 1).padStart(2, '0')}</Text>
         </div>
 
         {/* add min-h-0 to allow sizing below intrinsic size */}
