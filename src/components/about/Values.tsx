@@ -28,7 +28,7 @@ function Panel({ process, idx, step, scrollY, isLast }: PanelProps) {
   );
   const overlayOpacity = useTransform(
     scrollY,
-    [panelStart, panelEnd],
+    [panelStart + step * 0.5, panelEnd],
     [0, 1]
   );
 
