@@ -21,8 +21,8 @@ function About() {
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
       <div ref={titleRef}><Text animate={titleInView} type="title">{t.home.about.title}</Text></div>
-      <div className="flex flex-row items-start gap-x-page w-full">
-        <img className={`max-w-[60%] object-contain opacity-0 ${p1InView ? "a-fade-in" : ""}`} src={assetMap["ph.avif"]} />
+      <div className="flex md:flex-row flex-col items-start gap-x-page gap-y-s-two w-full">
+        <img className={`md:max-w-[60%] object-contain opacity-0 ${p1InView ? "a-fade-in" : ""}`} src={assetMap["ph.avif"]} />
         <div className="flex flex-col gap-y-s-one">
           <div ref={p1Ref}><Text animate={p1InView} type="pg">{t.home.about.p1}</Text></div>
           <div ref={p2Ref}><Text animate={p2InView} type="pg">{t.home.about.p2}</Text></div>
