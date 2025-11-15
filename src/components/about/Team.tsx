@@ -14,6 +14,7 @@ function Team() {
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
+      <Text type="title">Our team</Text>
       {Object.entries(headings).map(([divisionKey, divisionName], i) => (
         <section>
 
