@@ -30,7 +30,7 @@ function Text({
     if (e.animationName.includes("slide-up")) setAnimated(true);
   }, []);
 
-  if (!children) throw new Error("No children");
+  // if (!children) throw new Error("No children");
 
   let Component: ElementType = "p"; // default to satisfy ts
   let finalCn = className.trim();

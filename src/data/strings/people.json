@@ -1,0 +1,68 @@
+{
+  "programming": [
+    {
+      "name": "Khánh Anh",
+      "job": "job_1"
+    },
+    {
+      "name": "Tuấn Khôi",
+      "job": "job_2"
+    },
+    {
+      "name": "Minh Quang",
+      "job": "job_2"
+    },
+    {
+      "name": "Đức Khánh",
+      "job": "job_3"
+    },
+    {
+      "name": "Đăng Minh",
+      "job": "job_3"
+    },
+    {
+      "name": "Minh Dũng",
+      "job": "job_3"
+    }
+  ],
+  "mechanical": [
+    {
+      "name": "Thế Khải",
+      "job": "job_4"
+    },
+    {
+      "name": "Hải Đăng",
+      "job": "job_4"
+    },
+    {
+      "name": "Minh Khang",
+      "job": "job_5"
+    },
+    {
+      "name": "Khánh Vinh",
+      "job": "job_5"
+    },
+    {
+      "name": "Trần Khoa",
+      "job": "job_6"
+    }
+  ],
+  "business": [
+    {
+      "name": "Dương Lâm",
+      "job": "job_7"
+    },
+    {
+      "name": "Phương Thảo",
+      "job": "job_8"
+    },
+    {
+      "name": "Quang Huy",
+      "job": "job_8"
+    },
+    {
+      "name": "Đức Hùng",
+      "job": "job_9"
+    }
+  ]
+}
