@@ -1,17 +1,36 @@
-[
-  {
-    "value": "Value 1",
-    "desc": "Desc 1",
-    "img": "ph.avif"
-  },
-  {
-    "value": "Value 2",
-    "desc": "Desc 2",
-    "img": "ph.avif"
-  },
-  {
-    "value": "Value 3",
-    "desc": "Desc 3",
-    "img": "ph.avif"
-  }
-]
+{
+  "en": [
+    {
+      "value": "Value 1",
+      "desc": "Desc 1",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Value 2",
+      "desc": "Desc 2",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Value 3",
+      "desc": "Desc 3",
+      "img": "ph.avif"
+    }
+  ],
+  "vn": [
+    {
+      "value": "Value 1",
+      "desc": "Desc 1",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Value 2",
+      "desc": "Desc 2",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Value 3",
+      "desc": "Desc 3",
+      "img": "ph.avif"
+    }
+  ]
+}

@@ -72,7 +72,9 @@ function Values() {
     target: panelsRef,
     offset: ["start start", "end end"]
   });
-  const step = 1 / values.length;
+
+  const _values = values[locale];
+  const step = 1 / _values.length;
 
   return (
     <section className="bg-bg">
@@ -81,16 +83,16 @@ function Values() {
         <ArrowDown />
       </div>
 
-      <div ref={panelsRef} className="relative" style={{ height: `${values.length * 100}vh` }}>
+      <div ref={panelsRef} className="relative" style={{ height: `${_values.length * 100}vh` }}>
         <div className="top-0 sticky w-full h-dvh overflow-hidden">
-          {values.map((process, i) => (
+          {_values.map((process, i) => (
             <Panel
               key={i}
               idx={i}
               value={process}
               step={step}
               scrollY={scrollYProgress}
-              isLast={i === values.length - 1} />
+              isLast={i === _values.length - 1} />
           ))}
         </div>
       </div>
