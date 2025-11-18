@@ -7,6 +7,7 @@ import "lenis/dist/lenis.css";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
+import Robot from "./pages/Robot";
 
 function App () {
   const router = createBrowserRouter([
@@ -15,7 +16,8 @@ function App () {
       Component: Layout,
       children: [
         { index: true, element: <Home /> },
-        { path: "about", element: <About /> }
+        { path: "about", element: <About /> },
+        { path: "robot", element: <Robot />}
       ]
     }
   ]);

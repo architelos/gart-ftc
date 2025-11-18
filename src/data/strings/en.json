@@ -59,6 +59,40 @@
     },
     "values": {
       "title": "Our values"
+    },
+    "vision": {
+      "heading": "Our vision",
+      "action": "click"
+    }
+  },
+  "robot": {
+    "name": "VDK",
+    "landing": {
+      "header_text_1": "25-26 Decode"
+    },
+    "overview": {
+      "heading": "Our robot",
+      "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
+    },
+    "subsystems": {
+      "heading": "Subsystems",
+      "subsystems": [
+        {
+          "name": "subsystem 1",
+          "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+          "image": "ph.avif"
+        },
+        {
+          "name": "subsystem 2",
+          "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+          "image": "ph.avif"
+        },
+        {
+          "name": "subsystem 3",
+          "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+          "image": "ph.avif"
+        }
+      ]
     }
   }
 }
