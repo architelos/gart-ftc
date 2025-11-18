@@ -1,0 +1,36 @@
+{
+  "en": [
+    {
+      "value": "Vision 1",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Vision 2",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Vision 3",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "img": "ph.avif"
+    }
+  ],
+  "vn": [
+    {
+      "value": "Vision 1",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Vision 2",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "img": "ph.avif"
+    },
+    {
+      "value": "Vision 3",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "img": "ph.avif"
+    }
+  ]
+}

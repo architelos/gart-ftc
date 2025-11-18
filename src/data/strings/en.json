@@ -56,6 +56,10 @@
     },
     "values": {
       "title": "Our values"
+    },
+    "vision": {
+      "heading": "Our vision",
+      "action": "click"
     }
   },
   "robot": {
