@@ -28,6 +28,9 @@
       "title": "We couldn't do it alone!",
       "desc": "We're deeply grateful to our sponsors for believing in our mission and helping us build, learn, and share our passion for robotics.",
       "cta": "Sponsor us"
+    },
+    "updates": {
+      "updates": "Team updates"
     }
   },
   "about": {

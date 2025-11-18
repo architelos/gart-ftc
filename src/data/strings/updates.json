@@ -1,0 +1,48 @@
+{
+  "en": [
+    {
+      "id": 1,
+      "title": "Pushing Boundaries, One Robot at a Time",
+      "date": "1/15/70",
+      "description": "From regional champs to world contenders — our team is redefining innovation, teamwork, and passion for STEM.",
+      "image": "ph.avif"
+    },
+    {
+      "id": 2,
+      "title": "Grateful to Our Sponsors for Powering the Journey",
+      "date": "1/15/70",
+      "description": "A huge thank-you to the organizations and individuals who make our mission possible — your support drives every line of code and every match we play.",
+      "image": "pv.avif"
+    },
+    {
+      "id": 3,
+      "title": "Competition Season Kickoff",
+      "date": "1/22/70",
+      "description": "Our team is gearing up for an exciting competition season. With new designs and improved strategies, we're ready to take on the challenge.",
+      "image": "ph.avif"
+    }
+  ],
+  "vn": [
+    {
+      "id": 1,
+      "title": "Pushing Boundaries, One Robot at a Time",
+      "date": "1/15/70",
+      "description": "From regional champs to world contenders — our team is redefining innovation, teamwork, and passion for STEM.",
+      "image": "ph.avif"
+    },
+    {
+      "id": 2,
+      "title": "Grateful to Our Sponsors for Powering the Journey",
+      "date": "1/15/70",
+      "description": "A huge thank-you to the organizations and individuals who make our mission possible — your support drives every line of code and every match we play.",
+      "image": "pv.avif"
+    },
+    {
+      "id": 3,
+      "title": "Competition Season Kickoff",
+      "date": "1/22/70",
+      "description": "Our team is gearing up for an exciting competition season. With new designs and improved strategies, we're ready to take on the challenge.",
+      "image": "ph.avif"
+    }
+  ]
+}
