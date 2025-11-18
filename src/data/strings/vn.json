@@ -93,6 +93,12 @@
           "image": "ph.avif"
         }
       ]
+    },
+    "video": {
+      "heading": "In action"
+    },
+    "gallery": {
+      "heading": "Gallery"
     }
   }
 }
