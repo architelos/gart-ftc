@@ -60,7 +60,7 @@ function Updates() {
             return (
               <div key={i} className="flex flex-row gap-x-s-two w-full">
                 {updateRow.map((update) => (
-                  <div key={update.id} style={{ width: `${_dims[update.image]["w"] / totalW * 100}%` }}>
+                  <div key={update.id} style={{ width: updateRow.length === 1 ? "65%" : `${_dims[update.image]["w"] / totalW * 100}%` }}>
                     <Content update={update} />
                   </div>
                 ))}
