@@ -31,6 +31,12 @@
     },
     "updates": {
       "updates": "Team updates"
+    },
+    "awards": {
+      "header": "While accolades aren't our first priority, they serve as meaningful reminders of our efforts and teamwork.",
+      "year": "Year",
+      "award": "Award",
+      "add": "Additional"
     }
   },
   "about": {
@@ -61,7 +67,7 @@
       "title": "Our values"
     },
     "vision": {
-      "heading": "Tầm nhìn",
+      "heading": "Our vision",
       "action": "click"
     }
   },
@@ -71,7 +77,7 @@
       "header_text_1": "25-26 Decode"
     },
     "overview": {
-      "heading": "Robot or smth",
+      "heading": "Our robot",
       "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
     },
     "subsystems": {
