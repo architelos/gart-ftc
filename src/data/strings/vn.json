@@ -37,6 +37,11 @@
       "year": "Year",
       "award": "Award",
       "add": "Additional"
+    },
+    "faq": {
+      "heading": "FAQ",
+      "q": "Q:",
+      "a": "A:"
     }
   },
   "about": {

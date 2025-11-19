@@ -24,11 +24,11 @@ function Content({ update }: ContentProps) {
   return (
     <div ref={imgRef} className="flex flex-col gap-y-s-three">
       <img className={`max-w-full object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap[update.image]} />
-      <div ref={titleRef} className="flex flex-col gap-y-s-four max-w-[80vw]">
+      <div ref={titleRef} className="flex flex-col gap-y-s-four max-w-[80%]">
         <Text type="pg" animate={titleInView} className="font-bold!">{update.title}</Text>
         <Text type="sub" animate={titleInView}>{update.date}</Text>
       </div>
-      <div ref={descRef}><Text type="pg" animate={descInView} className="max-w-[80vw]">{update.description}</Text></div>
+      <div ref={descRef}><Text type="pg" animate={descInView} className="max-w-[80%]">{update.description}</Text></div>
     </div>
   );
 }
