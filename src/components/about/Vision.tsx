@@ -35,11 +35,11 @@ function Vision() {
               </Text>
 
               <div className={`grid overflow-hidden transition-all duration-300 ease-in-out ${idx == currentVision ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                <div className="min-h-0"> 
+                <div className="flex flex-col min-h-0 gap-y-s-four"> 
                   <Text type="pg" >
                   {vis.desc}
                   </Text>
-                  <img src={assetMap[vis.img]} className="md:hidden object-cover" />
+                  <img src={assetMap[vis.img]} className="md:hidden object-cover h-[40dvh]" />
                 </div>
               </div>
             </div>
