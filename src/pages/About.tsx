@@ -8,10 +8,10 @@ function About() {
   return (
     <>
       <Landing />
-      <Break />
       <Team />
       <Break />
       <Values />
+      <Break />
       <Vision />
     </>
   );

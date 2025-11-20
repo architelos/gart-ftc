@@ -7,7 +7,7 @@ import faqs from "@/data/strings/faqs.json";
 import translations from "@/data/translations";
 
 function Faq() {
-  const [idx, setIdx] = useState(null);
+  const [idx, setIdx] = useState<number | null>(null);
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
 

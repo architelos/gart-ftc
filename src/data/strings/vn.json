@@ -51,6 +51,8 @@
     },
     "team": {
       "title": "Our team",
+      "tap": "(tap)",
+      "hover": "(hover)",
       "divisions": {
         "programming": "Programming",
         "mechanical": "Mechanical",
