@@ -18,7 +18,7 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
   const panelEnd = (idx + 1) * step;
 
   // to ease out the animation
-  const buffer = step * 0.15;
+  const buffer = step * 0.05;
   // stay inside the animation range
   const from = Math.max(0, panelStart - buffer);
   const to = Math.min(1, panelEnd + buffer);
