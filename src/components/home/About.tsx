@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import { ArrowRight } from "lucide-react";
 
 import useLocale from "@/hooks/useLocale";
@@ -9,7 +8,6 @@ import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 
 function About() {
-  const navigate = useNavigate();
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
 
@@ -27,7 +25,7 @@ function About() {
           <div ref={p1Ref}><Text animate={p1InView} type="pg">{t.home.about.p1}</Text></div>
           <div ref={p2Ref}><Text animate={p2InView} type="pg">{t.home.about.p2}</Text></div>
           <div ref={buttonRef}>
-            <Button icon={<ArrowRight />} type="accent" className={`opacity-0 ${buttonInView ? "a-fade-in" : ""}`} onClick={() => navigate("/about")}>{t.home.about.cta}</Button>
+            <Button icon={<ArrowRight />} type="accent" className={`opacity-0 ${buttonInView ? "a-fade-in" : ""}`} link="/about">{t.home.about.cta}</Button>
           </div>
         </div>
       </div>

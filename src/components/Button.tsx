@@ -6,11 +6,11 @@ interface ButtonProps {
   icon: ReactNode;
   type: "accent" | "regular";
   children: ReactNode;
+  link: string;
   className?: string;
-  onClick?: () => void;
 }
 
-function Button({ icon, type, children, className = "", onClick = () => {} }: ButtonProps) {
+function Button({ icon, type, children, link, className = "" }: ButtonProps) {
   let add;
   switch (type) {
     case "accent":
@@ -23,10 +23,10 @@ function Button({ icon, type, children, className = "", onClick = () => {} }: Bu
   }
 
   return (
-    <button className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`} onClick={onClick}>
+    <a href={link} className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`}>
       <Text type="sub" className="text-text!">{children}</Text>
       {icon}
-    </button>
+    </a>
   );
 }
 
