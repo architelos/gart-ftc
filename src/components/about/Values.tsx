@@ -48,6 +48,13 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
           <Text type="pg">{value.desc}</Text>
         </div>
       </div>
+
+      {!isLast && (
+        <motion.div
+          className="absolute inset-0 bg-bg pointer-events-none"
+          style={{ opacity: overlayOpacity }}
+        />
+      )}
     </motion.div>
   );
 }
