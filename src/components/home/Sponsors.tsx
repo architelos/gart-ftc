@@ -8,15 +8,7 @@ import useLocale from "@/hooks/useLocale";
 import useCanHover from "@/hooks/useCanHover";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
-
-const sponsors = [
-  { name: "Sponsor 1", img: "ph.avif", link: "/sponsor/sponsor1" },
-  { name: "Sponsor 2", img: "pv.avif", link: "/sponsor/sponsor2" },
-  { name: "Sponsor 3", img: "ph.avif", link: "/sponsor/sponsor3" },
-  { name: "Sponsor 4", img: "pv.avif", link: "/sponsor/sponsor4" },
-  { name: "Sponsor 5", img: "ph.avif", link: "/sponsor/sponsor5" },
-  { name: "Sponsor 6", img: "pv.avif", link: "/sponsor/sponsor6" }
-]
+import data from "@/data/data";
 
 type SponsorType = {
   img: string,
@@ -53,6 +45,7 @@ function Sponsors() {
 
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { sponsors } = data(locale);
 
   return (
     <section className="flex flex-col gap-y-s-one w-full p-page bg-bg">

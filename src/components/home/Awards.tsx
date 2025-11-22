@@ -4,7 +4,7 @@ import useIsMd from "@/hooks/useIsMd";
 import useInView from "@/hooks/useInView";
 import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
-import awards from "@/data/strings/awards.json";
+import data from "@/data/data";
 
 interface Award {
   year: string;
@@ -33,6 +33,7 @@ function Awards() {
   const isMd = useIsMd();
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { awards } = data(locale);
 
   const { ref: imgRef, inView: imgInView } = useInView();
   const { ref: headerRef, inView: headerInView } = useInView();
@@ -48,7 +49,7 @@ function Awards() {
         <div ref={legendRef}><Text type="sub" animate={legendInView}>{t.home.awards.year}</Text></div>
         <Text type="sub" animate={legendInView}>{t.home.awards.award}</Text>
         {isMd && <Text type="sub" animate={legendInView}>{t.home.awards.add}</Text>}
-        {awards[locale].map((award, i) => (
+        {awards.map((award, i) => (
           <AwardRow key={i} award={award} isMd={isMd} />
         ))}
       </div>

@@ -3,15 +3,16 @@ import { useState } from "react";
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
-import benefits from "@/data/strings/benefits.json";
 import translations from "@/data/translations";
+import data from "@/data/data";
 import assetMap from "@/data/assetMap";
 
 function Benefits() {
   const [idx, setIdx] = useState(0);
+
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const _benefits = benefits[locale];
+  const { benefits } = data(locale);
 
   const { ref: headingRef, inView: headingInView } = useInView();
 
@@ -22,7 +23,7 @@ function Benefits() {
       </Text>
 
       <div className="hidden md:flex flex-col flex-wrap gap-s-one w-full">
-        {_benefits.map((benefit, i) => {
+        {benefits.map((benefit, i) => {
           const { ref, inView } = useInView();
 
           return (
@@ -40,7 +41,7 @@ function Benefits() {
               </div>
 
               <div className={`w-[35%] h-[50dvh] ${inView ? "a-fade-in" : "opacity-0"}`}>
-                <img src={assetMap[benefit.img]} className="object-cover h-full w-full" />
+                <img src={assetMap[benefit.img]} className="w-full h-full object-cover" />
               </div>
             </div>
           );

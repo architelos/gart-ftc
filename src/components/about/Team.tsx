@@ -5,7 +5,7 @@ import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
 import useIsMd from "@/hooks/useIsMd";
 import translations from "@/data/translations";
-import people from "@/data/strings/people.json";
+import data from "@/data/data";
 import assetMap from "@/data/assetMap";
 
 type Person = {
@@ -92,6 +92,8 @@ function DivisionText({ name, selected, isMd, onClick }: DivisionTextProps) {
 function Team() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { people } = data(locale);
+
   const isMd = useIsMd();
   const { ref: headingRef, inView: headingInView } = useInView();
 
@@ -114,7 +116,7 @@ function Team() {
           <div className={`grid overflow-hidden transition-all duration-300 ease-in-out ${div === i || isMd ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
             <div className="min-h-0">
               <div className="flex flex-col gap-y-s-two">
-                {(people[locale] as Record<string, Person[]>)[key].map((person) => (
+                {(people as Record<string, Person[]>)[key].map((person) => (
                   <div
                     key={person.idx}
                     className="w-full"

@@ -6,7 +6,7 @@ import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
-import values from "@/data/strings/values.json";
+import data from "@/data/data";
 
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 
@@ -62,6 +62,7 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
 function Values() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { values } = data(locale);
 
   const { ref: textRef, inView: textInView } = useInView();
 
@@ -71,8 +72,7 @@ function Values() {
     offset: ["start start", "end end"]
   });
 
-  const _values = values[locale];
-  const step = 1 / _values.length;
+  const step = 1 / values.length;
 
   return (
     <section className="bg-bg">
@@ -81,16 +81,16 @@ function Values() {
         <Text animate={textInView} type="title">{t.about.values.title}</Text>
       </div>
 
-      <div ref={panelsRef} className="relative" style={{ height: `${_values.length * 100}vh` }}>
+      <div ref={panelsRef} className="relative" style={{ height: `${values.length * 100}vh` }}>
         <div className="top-0 sticky w-full h-dvh overflow-hidden">
-          {_values.map((process, i) => (
+          {values.map((process, i) => (
             <Panel
               key={i}
               idx={i}
               value={process}
               step={step}
               scrollY={scrollYProgress}
-              isLast={i === _values.length - 1} />
+              isLast={i === values.length - 1} />
           ))}
         </div>
       </div>

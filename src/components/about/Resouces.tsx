@@ -1,7 +1,7 @@
 import Text from "@/components/Text";
 import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
-import resources from "@/data/strings/resources.json"
+import data from "@/data/data";
 import translations from "@/data/translations";
 
 interface Resource {
@@ -36,7 +36,9 @@ function Resources() {
 
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const entries = Object.entries(resources[locale] as Resources) as [
+  const { resources } = data(locale);
+
+  const entries = Object.entries(resources as Resources) as [
     keyof Resources,
     Resource[]
   ][];

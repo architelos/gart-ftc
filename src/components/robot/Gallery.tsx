@@ -3,7 +3,7 @@ import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
-import images from "@/data/strings/images.json"
+import data from "@/data/data";
 import dims from "@/data/dims.json";
 
 interface Image {
@@ -45,14 +45,13 @@ function GalleryItem({ img }: GalleryItemProps) {
 function Gallery() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-
-  const imgs = images[locale] as Image[];
+  const { images } = data(locale);
 
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
       <Text type="title" className="text-right!">{t.robot.gallery.heading}</Text>
       <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-2 min-h-screen">
-        {imgs.map((img, i) => {
+        {(images as Image[]).map((img, i) => {
           return (
             <GalleryItem key={i} img={img} />
           );

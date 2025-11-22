@@ -3,8 +3,8 @@ import useIsMd from "@/hooks/useIsMd";
 import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
 import dims from "@/data/dims.json";
-import updates from "@/data/strings/updates.json";
 import assetMap from "@/data/assetMap";
+import data from "@/data/data";
 import translations from "@/data/translations";
 
 interface Update {
@@ -36,13 +36,14 @@ function Content({ update }: ContentProps) {
 function Updates() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const isMd = useIsMd();
+  const { updates } = data(locale);
 
+  const isMd = useIsMd();
   const {ref: titleRef, inView: titleInView} = useInView();
   const {ref: _titleRef, inView: _titleInView} = useInView();
 
   if (isMd) {
-    const chunked: Update[][] = (updates[locale] as Update[]).reduce<Update[][]>((acc, curr, i) => {
+    const chunked: Update[][] = (updates as Update[]).reduce<Update[][]>((acc, curr, i) => {
       if (i % 2 === 0) acc.push([curr]);
       else acc[acc.length - 1].push(curr);
       return acc;
@@ -76,7 +77,7 @@ function Updates() {
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
       <div ref={_titleRef}><Text type="title" animate={_titleInView} className="text-right!">{t.home.updates.updates}</Text></div>
       <div className="flex flex-col gap-y-s-two">
-        {(updates[locale] as Update[]).map((update, i) => (
+        {(updates as Update[]).map((update, i) => (
           <Content key={i} update={update} />
         ))}
       </div>
