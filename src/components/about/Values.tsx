@@ -36,27 +36,18 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
   );
 
   return (
-    <motion.div className="absolute inset-0 w-full h-dvh bg-bg" style={{ y, zIndex: idx }}>
-      <div className="flex flex-col items-center h-full">
-        <div className="flex flex-col gap-y-page w-full md:max-w-[80%] h-dvh min-h-0 p-page">
-          <div className="flex">
-            <Text type="title">{value.value}</Text>
-          </div>
+    <motion.div className="absolute inset-0 flex flex-row justify-end w-full h-dvh bg-bg" style={{ y, zIndex: idx, paddingLeft: "calc(2 * var(--spacing-page)" }}>
+      <div className="flex flex-col h-full p-page">
+        <div className="flex flex-col gap-y-page w-full h-dvh">
+          <Text type="title">{value.value}</Text>
 
-          <div className="flex-1 min-h-0 max-h-[75%] md:max-h-[70%]">
-            <img src={assetMap[value.img]} className="self-start w-full h-full object-cover" />
+          <div className="w-full max-h-[70%]">
+            <img src={assetMap[value.img]} className="w-full h-full object-contain object-left" />
           </div>
 
           <Text type="pg">{value.desc}</Text>
         </div>
       </div>
-
-      {!isLast && (
-        <motion.div
-          className="absolute inset-0 bg-bg pointer-events-none"
-          style={{ opacity: overlayOpacity }}
-        />
-      )}
     </motion.div>
   );
 }

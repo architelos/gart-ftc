@@ -48,8 +48,8 @@ function Resources() {
         <Text type="pg" animate={headerInView}>{t.about.resources.desc}</Text>
       </div>
       <div className="flex flex-col gap-y-s-two">
-        {entries.map(([section, items]) => (
-          <ResSection section={section} res={items} />
+        {entries.map(([section, items], i) => (
+          <ResSection key={i} section={section} res={items} />
         ))}
       </div>
     </section>
