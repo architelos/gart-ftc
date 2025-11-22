@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
 import { Link, Heart } from "lucide-react";
 
 import Text from "@/components/Text";
@@ -28,14 +27,13 @@ type SponsorType = {
 function Card({ img, name, link }: SponsorType) {
   const [hover, setHover] = useState(false);
 
-  const navigate = useNavigate();
   const canHover = useCanHover();
   const { ref, inView } = useInView();
 
   return (
     <div
       ref={ref}
-      onClick={() => navigate(link)}
+      onClick={() => window.location.href = link}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
@@ -50,7 +48,6 @@ function Card({ img, name, link }: SponsorType) {
 }
 
 function Sponsors() {
-  const navigate = useNavigate();
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: btnRef, inView: btnInView } = useInView();
 
@@ -61,7 +58,7 @@ function Sponsors() {
     <section className="flex flex-col gap-y-s-one w-full p-page bg-bg">
       <div className="flex md:flex-row flex-col-reverse justify-between gap-y-s-one w-full">
         <div ref={btnRef} className="md:self-end">
-          <Button type="accent" icon={<Heart />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} onClick={() => navigate("/sponsor")}>{t.home.sponsors.cta}</Button>
+          <Button type="accent" icon={<Heart />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
         <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
           <Text type="pg" animate={textInView} className="font-bold!">{t.home.sponsors.title}</Text>

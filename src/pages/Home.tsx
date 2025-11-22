@@ -11,7 +11,6 @@ function Home() {
   return (
     <>
       <Hero />
-      <Break />
       <Images />
       <Break />
       <About />
