@@ -41,7 +41,7 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
         <div className="flex flex-col gap-y-page w-full h-dvh">
           <Text type="title">{value.value}</Text>
 
-          <div className="w-full max-h-[70%]">
+          <div className="w-full max-h-[60%]">
             <img src={assetMap[value.img]} className="w-full h-full object-contain object-left" />
           </div>
 
