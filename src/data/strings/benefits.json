@@ -1,34 +1,44 @@
 {
   "en": [
     {
-      "value": "Vision 1",
-      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-      "img": "pv.avif"
-    },
-    {
-      "value": "Vision 2",
+      "name": "af asf afg",
       "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
       "img": "ph.avif"
     },
     {
-      "value": "Vision 3",
+      "name": "af asf afg",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+      "img": "pv.avif"
+    },
+    {
+      "name": "af asf afg",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+      "img": "ph.avif"
+    },
+    {
+      "name": "af asf afg",
       "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
       "img": "pv.avif"
     }
   ],
   "vn": [
     {
-      "value": "Vision 1",
-      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-      "img": "pv.avif"
-    },
-    {
-      "value": "Vision 2",
+      "name": "af asf afg",
       "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
       "img": "ph.avif"
     },
     {
-      "value": "Vision 3",
+      "name": "af asf afg",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+      "img": "pv.avif"
+    },
+    {
+      "name": "af asf afg",
+      "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+      "img": "ph.avif"
+    },
+    {
+      "name": "af asf afg",
       "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
       "img": "pv.avif"
     }

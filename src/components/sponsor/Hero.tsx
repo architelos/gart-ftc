@@ -1,0 +1,30 @@
+import Text from "@/components/Text";
+import useLocale from "@/hooks/useLocale";
+import assetMap from "@/data/assetMap";
+import translations from "@/data/translations";
+
+function Hero() {
+  const locale = useLocale((state) => state.locale);
+  const t = translations(locale);
+
+  return (
+    <main
+      className="relative flex flex-col justify-center items-center w-full h-dvh p-page"
+    >
+      <img
+        src={assetMap["pv.avif"]}
+        alt="Landing Background"
+        className="absolute top-0 left-0 w-full h-dvh object-cover z-0 a-fade-in"
+      />
+      <div className="z-1 absolute w-full h-dvh bg-linear-to-t from-30% from-bg/80 to-100% to-bg" />
+      
+      <div className="z-2 flex flex-col justify-end items-end gap-y-s-four w-full h-dvh">
+        <Text type="title">{t.sponsor.hero.heading_1}</Text>
+        <Text type="title" className="text-accent!">{t.sponsor.hero.heading_2}</Text>
+      </div>
+
+    </main>
+  )
+}
+
+export default Hero;
