@@ -129,7 +129,10 @@
       "heading": "Our Mission"
     },
     "benefits": {
-        "heading": "What we bring"
+      "heading": "What we bring"
+    },
+    "figures": {
+      "heading": "Some figures"
     }
   }
 }
