@@ -1,0 +1,50 @@
+{
+  "en": {
+    "Templates": [
+      {
+        "name": "Engineering Notebook Template",
+        "link": "/resources/engineering-notebook-template.pdf"
+      },
+      {
+        "name": "Outreach Report Template",
+        "link": "/resources/outreach-report-template.pdf"
+      }
+    ],
+    "Slides": [
+      {
+        "name": "Team Presentation Slides",
+        "link": "/resources/team-presentation-slides.pptx"
+      }
+    ],
+    "Guides": [
+      {
+        "name": "Portfolio & Awards Submission Guide",
+        "link": "/resources/portfolio-awards-guide.pdf"
+      }
+    ]
+  },
+  "vn": {
+    "Templates": [
+      {
+        "name": "Engineering Notebook Template",
+        "link": "/resources/engineering-notebook-template.pdf"
+      },
+      {
+        "name": "Outreach Report Template",
+        "link": "/resources/outreach-report-template.pdf"
+      }
+    ],
+    "Slides": [
+      {
+        "name": "Team Presentation Slides",
+        "link": "/resources/team-presentation-slides.pptx"
+      }
+    ],
+    "Guides": [
+      {
+        "name": "Portfolio & Awards Submission Guide",
+        "link": "/resources/portfolio-awards-guide.pdf"
+      }
+    ]
+  }
+}

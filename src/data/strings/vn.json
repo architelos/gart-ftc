@@ -76,6 +76,10 @@
     "vision": {
       "heading": "Our vision",
       "action": "(click)"
+    },
+    "resources": {
+      "heading": "Resources",
+      "desc": "What we give back to the community"
     }
   },
   "robot": {

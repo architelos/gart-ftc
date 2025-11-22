@@ -37,7 +37,7 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
 
   return (
     <motion.div className="absolute inset-0 w-full h-dvh bg-bg" style={{ y, zIndex: idx }}>
-      <div className="flex flex-col items-center h-full mt-page">
+      <div className="flex flex-col items-center h-full">
         <div className="flex flex-col gap-y-page w-full md:max-w-[80%] h-dvh min-h-0 p-page">
           <div className="flex">
             <Text type="title">{value.value}</Text>

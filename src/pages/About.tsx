@@ -1,8 +1,9 @@
 import Landing from "@/components/about/Landing";
 import Team from "@/components/about/Team";
 import Values from "@/components/about/Values";
-import Break from "@/components/Break";
 import Vision from "@/components/about/Vision";
+import Resources from "@/components/about/Resouces";
+import Break from "@/components/Break";
 
 function About() {
   return (
@@ -13,6 +14,7 @@ function About() {
       <Values />
       <Break />
       <Vision />
+      <Resources />
     </>
   );
 }
