@@ -109,10 +109,11 @@
       "heading_2": "sponsor"
     },
     "mission": {
-      "heading": "Our Mission"
+      "heading": "Our missions",
+      "cta": "(click)"
     },
     "benefits": {
-        "heading": "What we bring"
+      "heading": "What we bring"
     },
     "figures": {
       "heading": "Some figures"

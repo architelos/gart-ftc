@@ -28,14 +28,14 @@ function Footer() {
 
   return (
     <footer ref={footerRef} className="flex flex-col gap-y-s-three p-page border-t border-t-text/20 bg-bg">
-      <div ref={navRef} className="flex flex-row flex-wrap flex-0 gap-x-s-one gap-y-s-four mb-s-three">
+      <div ref={navRef} className="flex flex-row flex-wrap flex-0 gap-x-s-one gap-y-s-three mb-s-three">
         <Text type="pg" link={true} animate={navInView} href="/">{t.menu.home}</Text>
         <Text type="pg" link={true} animate={navInView} href="/about">{t.menu.about}</Text>
         <Text type="pg" link={true} animate={navInView} href="/robot">{t.menu.robot}</Text>
         <Text type="pg" link={true} animate={navInView} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
 
-      <div className="flex flex-row flex-wrap flex-0 gap-y-s-four justify-between mb-l">
+      <div className="flex flex-row flex-wrap flex-0 justify-between gap-y-s-four mb-l">
         <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.email}>{t.email}</Text>
         <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.tel}>{t.tel}</Text>
         <div className="flex flex-row gap-x-s-two w-full md:w-auto max-sm:pt-s-two">

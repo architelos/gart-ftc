@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/getDims.js && vite --host",
-    "build": "node scripts/getDims.js && node scripts/updateTs.js && vite build",
+    "build": "node scripts/getDims.js && vite build",
     "lint": "eslint .",
-    "preview": "node scripts/getDims.js && node scripts/updateTs.js && vite preview"
+    "preview": "node scripts/getDims.js && vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",

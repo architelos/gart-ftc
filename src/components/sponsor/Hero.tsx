@@ -14,11 +14,11 @@ function Hero() {
       <img
         src={assetMap["pv.avif"]}
         alt="Landing Background"
-        className="absolute top-0 left-0 w-full h-dvh object-cover z-0 a-fade-in"
+        className="top-0 left-0 z-0 absolute w-full h-dvh object-cover a-fade-in"
       />
       <div className="z-1 absolute w-full h-dvh bg-linear-to-t from-30% from-bg/80 to-100% to-bg" />
-      
-      <div className="z-2 flex flex-col justify-end items-end gap-y-s-four w-full h-dvh">
+
+      <div className="z-2 flex flex-col justify-end items-end w-full h-dvh">
         <Text type="title">{t.sponsor.hero.heading_1}</Text>
         <Text type="title" className="text-accent!">{t.sponsor.hero.heading_2}</Text>
       </div>
