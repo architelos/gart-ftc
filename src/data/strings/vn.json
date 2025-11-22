@@ -113,6 +113,9 @@
     },
     "benefits": {
         "heading": "What we bring"
+    },
+    "figures": {
+      "heading": "Some figures"
     }
   }
 }

@@ -35,7 +35,7 @@ function Footer() {
         <Text type="pg" link={true} animate={navInView} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
 
-      <div className="flex flex-row flex-wrap flex-0 justify-between mb-l">
+      <div className="flex flex-row flex-wrap flex-0 gap-y-s-four justify-between mb-l">
         <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.email}>{t.email}</Text>
         <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.tel}>{t.tel}</Text>
         <div className="flex flex-row gap-x-s-two w-full md:w-auto max-sm:pt-s-two">
