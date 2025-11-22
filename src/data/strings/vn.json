@@ -85,11 +85,12 @@
   "robot": {
     "name": "VDK",
     "landing": {
-      "header_text_1": "25-26 Decode"
+      "header_text_1": "24-25: DECODE"
     },
     "overview": {
       "heading": "Our robot",
-      "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
+      "d1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "d2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
     },
     "subsystems": {
       "heading": "Subsystems",
@@ -112,7 +113,8 @@
       ]
     },
     "video": {
-      "heading": "In action"
+      "heading": "In action",
+      "video": "xrQ6BVzsXnU"
     },
     "gallery": {
       "heading": "Gallery"

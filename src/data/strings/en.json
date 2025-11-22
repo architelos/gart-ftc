@@ -85,34 +85,36 @@
   "robot": {
     "name": "VDK",
     "landing": {
-      "header_text_1": "25-26 Decode"
+      "header_text_1": "24-25: DECODE"
     },
     "overview": {
       "heading": "Our robot",
-      "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
+      "d1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "d2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
     },
     "subsystems": {
-      "heading": "Subsystems",
+      "heading": "What's a robot without subsystems?",
       "subsystems": [
         {
-          "name": "subsystem 1",
+          "name": "Subsystem 1",
           "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
           "image": "ph.avif"
         },
         {
-          "name": "subsystem 2",
+          "name": "Subsystem 2",
           "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
           "image": "ph.avif"
         },
         {
-          "name": "subsystem 3",
+          "name": "Subsystem 3",
           "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
           "image": "ph.avif"
         }
       ]
     },
     "video": {
-      "heading": "In action"
+      "heading": "In action",
+      "video": "xrQ6BVzsXnU"
     },
     "gallery": {
       "heading": "Gallery"

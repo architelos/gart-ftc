@@ -9,16 +9,19 @@ function Overview() {
   const t = translations(locale);
 
   const { ref: titleRef, inView: titleInView } = useInView();
-  const { ref: overviewRef, inView: overviewInView } = useInView();
+  const { ref: imgRef, inView: imgInView } = useInView();
+  const { ref: d1Ref, inView: d1InView } = useInView();
+  const { ref: d2Ref, inView: d2InView } = useInView();
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
       <div ref={titleRef}><Text animate={titleInView} type="title">{t.robot.overview.heading}</Text></div>
-      <div className="flex align-middle justify-center">
+      <div className="flex justify-center align-middle">
         <div className="flex flex-col items-center gap-x-page gap-y-s-two w-fit md:max-w-[60%]">
-        <img className={`object-contain opacity-0 ${overviewInView ? "a-fade-in" : ""}`} src={assetMap["ph.avif"]} />
-        <div className="flex flex-col gap-y-s-one">
-          <div ref={overviewRef}><Text animate={overviewInView} type="pg">{t.robot.overview.description}</Text></div>
+        <div ref={imgRef}><img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap["ph.avif"]} /></div>
+        <div className="flex flex-col self-start gap-y-s-two md:max-w-[80%]">
+          <div ref={d1Ref}><Text animate={d1InView} type="pg">{t.robot.overview.d1}</Text></div>
+          <div ref={d2Ref}><Text animate={d2InView} type="pg">{t.robot.overview.d2}</Text></div>
         </div>
       </div>
       </div>

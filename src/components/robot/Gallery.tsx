@@ -1,40 +1,62 @@
-import useLocale from "@/hooks/useLocale";
 import Text from "@/components/Text";
+import useLocale from "@/hooks/useLocale";
+import useInView from "@/hooks/useInView";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
-import Images from "@/data/strings/robotImages.json"
+import images from "@/data/strings/images.json"
+import dims from "@/data/dims.json";
+
+interface Image {
+  img: string;
+  desc: string;
+}
+interface Dimensions {
+  w: number;
+  h: number;
+}
+interface GalleryItemProps { img: Image; }
+
+function GalleryItem({ img }: GalleryItemProps) {
+  const { ref: imageRef, inView: imageInView } = useInView();
+  const { ref: textRef, inView: textInView } = useInView();
+
+  const _dims = dims as Record<string, Dimensions>;
+  const dim = _dims[img.img];
+  const ratio = dim ? dim.w / dim.h : 1;
+  const span = ratio >= 1.2 && dim["w"] >= 1440;
+
+  return (
+    <div className={`flex flex-col gap-y-s-four ${span ? "md:col-span-2" : ""}`}>
+      <div ref={imageRef}>
+        <img
+          className={`w-full h-auto object-contain opacity-0 ${imageInView ? "a-fade-in" : ""}`}
+          style={{ aspectRatio: ratio }}
+          src={assetMap[img.img]}
+          alt={img.desc}
+        />
+      </div>
+      {img.desc && (
+        <div ref={textRef}><Text type="sub" animate={textInView} className="font-bold! text-text">{img.desc}</Text></div>
+      )}
+    </div>
+  );
+}
 
 function Gallery() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const images = Images[locale];
 
-  const rowSpans = [2, 1, 2, 2, 1, 2, 1, 1, 2];
+  const imgs = images[locale] as Image[];
 
   return (
-    <section className="flex flex-col gap-y-page w-full h-fit p-page bg-bg">
-      <div className="flex flex-col gap-y-s-four h-fit">
-        <Text type="title">{t.robot.gallery.heading}</Text>
-        <div className="flex flex-row flex-wrap gap-s-four self-center justify-self-center">
-          <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 auto-rows-[200px] w-full">
-            {images.map((image, idx) => {
-              const rowSpan = rowSpans[idx % rowSpans.length];
-              return (
-                <div
-                  key={idx}
-                  className="flex flex-col gap-y-s-four"
-                  style={{ gridRow: `span ${rowSpan}` }}
-                >
-                  <img
-                    src={assetMap[image.img]}
-                    className="flex-1 h-full object-cover"
-                  />
-                  <Text type="sub" className="h-fit">{image.desc}</Text>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+    <section className="flex flex-col gap-y-page p-page bg-bg">
+      <Text type="title" className="text-right!">{t.robot.gallery.heading}</Text>
+      <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-2 min-h-screen">
+        {imgs.map((img, i) => {
+          return (
+            <GalleryItem key={i} img={img} />
+          );
+        })}
       </div>
     </section>
   );
