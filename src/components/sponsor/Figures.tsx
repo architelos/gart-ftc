@@ -15,7 +15,7 @@ function Figure({ figure }: { figure: FigureInterface }) {
   return (
     <div
       ref={ref}
-      className="flex md:flex-col flex-col-reverse w-40 h-fit items-center justify-center m-2"
+      className="flex md:flex-col flex-col-reverse w-40 h-fit w-fit items-center justify-center m-2"
     >
       <div className={`${inView ? "a-fade-in" : "opacity-0"}`}>
         <Text type="title" className="text-center text-accent!">
@@ -46,7 +46,7 @@ function Figures() {
         </Text>
       </div>
 
-      <div className="grid gap-s-one w-full place-items-center">
+      <div className="flex flex-row w-full flex-wrap justify-between">
         {_figures.map((figure: FigureInterface, i: number) => (
           <Figure key={i} figure={figure} />
         ))}

@@ -71,12 +71,12 @@ function Benefits() {
       </div>
       
       <div className="hidden md:flex flex-col flex-wrap gap-s-one w-full">
-        {_benefits.map((benefit: BenefitInterface, i: number) => (
+        {benefits.map((benefit: BenefitInterface, i: number) => (
           <BenefitDesktop key={i} benefit={benefit} />
         ))}
       </div>
       <div className="md:hidden flex flex-col flex-wrap gap-s-one w-full">
-        {_benefits.map((benefit: BenefitInterface, i: number) => (
+        {benefits.map((benefit: BenefitInterface, i: number) => (
           <BenefitMobile key={i} benefit={benefit} />
         ))}
       </div>
