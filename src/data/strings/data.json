@@ -1,0 +1,736 @@
+{
+  "en": {
+    "awards": [
+      {
+        "year": "2023",
+        "award": "Innovate Award",
+        "description": "Recognized for creative engineering solutions and original design approaches that improved both performance and reliability of the robot."
+      },
+      {
+        "year": "2024",
+        "award": "Inspire Award",
+        "description": "Honored as the team that best embodied the challenge's spirit through strong engineering, outreach, and consistent excellence in all aspects of competition."
+      }
+    ],
+    "benefits": [
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      },
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the purpose of a CPU in a computer?",
+        "a": "The CPU processes instructions and performs calculations, acting as the main controller of the system."
+      },
+      {
+        "q": "Why do objects fall to the ground?",
+        "a": "Because of gravity, a force that pulls objects with mass toward each other."
+      },
+      {
+        "q": "What is a budget in personal finance?",
+        "a": "A budget is a plan that tracks income and expenses to help manage money effectively."
+      },
+      {
+        "q": "What does HTTPS mean on a website?",
+        "a": "HTTPS indicates that the site uses encryption to secure data sent between the browser and server."
+      },
+      {
+        "q": "What is the function of mitochondria in a cell?",
+        "a": "Mitochondria generate energy in the form of ATP, powering cellular processes."
+      }
+    ],
+    "images": [
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "ph.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "pv.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "pv.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "ph.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "ph.avif"
+      }
+    ],
+    "missions": [
+      {
+        "name": "mission 1",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "mission 2",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      },
+      {
+        "name": "mission 3",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "mission 4",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      }
+    ],
+    "people": {
+      "programming": [
+        {
+          "idx": 0,
+          "name": "Khánh Anh",
+          "job": "job_1",
+          "quote": "Code is poetry written in logic",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 1,
+          "name": "Tuấn Khôi",
+          "job": "job_2",
+          "quote": "Teaching machines to think, one algorithm at a time",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 2,
+          "name": "Minh Quang",
+          "job": "job_2",
+          "quote": "AI is not about replacing humans, it's about augmenting them",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 3,
+          "name": "Đức Khánh",
+          "job": "job_3",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 4,
+          "name": "Đăng Minh",
+          "job": "job_3",
+          "quote": "Clean code always looks like it was written by someone who cares",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 5,
+          "name": "Minh Dũng",
+          "job": "job_3",
+          "quote": "First, solve the problem. Then, write the code",
+          "img": "pv.avif"
+        }
+      ],
+      "mechanical": [
+        {
+          "idx": 6,
+          "name": "Thế Khải",
+          "job": "job_4",
+          "quote": "Engineering is the art of making the impossible possible",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 7,
+          "name": "Hải Đăng",
+          "job": "job_4",
+          "quote": "Precision in design, excellence in execution",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 8,
+          "name": "Minh Khang",
+          "job": "job_5",
+          "quote": "Innovation distinguishes between a leader and a follower",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 9,
+          "name": "Khánh Vinh",
+          "job": "job_5",
+          "quote": "Building the future, one component at a time",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 10,
+          "name": "Trần Khoa",
+          "job": "job_6",
+          "quote": "Design is not just what it looks like, it's how it works",
+          "img": "pv.avif"
+        }
+      ],
+      "business": [
+        {
+          "idx": 11,
+          "name": "Dương Lâm",
+          "job": "job_7",
+          "quote": "Strategy without execution is just a dream",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 12,
+          "name": "Phương Thảo",
+          "job": "job_8",
+          "quote": "Success is where preparation meets opportunity",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 13,
+          "name": "Quang Huy",
+          "job": "job_8",
+          "quote": "The best way to predict the future is to create it",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 14,
+          "name": "Đức Hùng",
+          "job": "job_9",
+          "quote": "Great things in business are never done by one person",
+          "img": "pv.avif"
+        }
+      ]
+    },
+    "resources": {
+      "Templates": [
+        {
+          "name": "Engineering Notebook Template",
+          "link": "/resources/engineering-notebook-template.pdf"
+        },
+        {
+          "name": "Outreach Report Template",
+          "link": "/resources/outreach-report-template.pdf"
+        }
+      ],
+      "Slides": [
+        {
+          "name": "Team Presentation Slides",
+          "link": "/resources/team-presentation-slides.pptx"
+        }
+      ],
+      "Guides": [
+        {
+          "name": "Portfolio & Awards Submission Guide",
+          "link": "/resources/portfolio-awards-guide.pdf"
+        }
+      ]
+    },
+    "socials": {
+      "yt": "https://www.youtube.com/@GreenAmsRoboticsTeam",
+      "gh": "https://github.com/gart6520/",
+      "fb": "https://web.facebook.com/GART6520"
+    },
+    "perks": [
+      {
+        "title": "test",
+        "desc": "asfh yasgfy asgfyg agfyfqe",
+        "img": "ph.avif"
+      },
+      {
+        "title": "test",
+        "desc": "asfh yasgfy asgfyg agfyfqe",
+        "img": "ph.avif"
+      },
+      {
+        "title": "test",
+        "desc": "asfh yasgfy asgfyg agfyfqe",
+        "img": "ph.avif"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Sponsor 1",
+        "img": "ph.avif",
+        "link": "/sponsor/sponsor1"
+      },
+      {
+        "name": "Sponsor 2",
+        "img": "pv.avif",
+        "link": "/sponsor/sponsor2"
+      },
+      {
+        "name": "Sponsor 3",
+        "img": "ph.avif",
+        "link": "/sponsor/sponsor3"
+      },
+      {
+        "name": "Sponsor 4",
+        "img": "pv.avif",
+        "link": "/sponsor/sponsor4"
+      },
+      {
+        "name": "Sponsor 5",
+        "img": "ph.avif",
+        "link": "/sponsor/sponsor5"
+      },
+      {
+        "name": "Sponsor 6",
+        "img": "pv.avif",
+        "link": "/sponsor/sponsor6"
+      }
+    ],
+    "updates": [
+      {
+        "id": 1,
+        "title": "Pushing Boundaries, One Robot at a Time",
+        "date": "1/15/70",
+        "description": "From regional champs to world contenders — our team is redefining innovation, teamwork, and passion for STEM.",
+        "image": "ph.avif"
+      },
+      {
+        "id": 2,
+        "title": "Grateful to Our Sponsors for Powering the Journey",
+        "date": "1/15/70",
+        "description": "A huge thank-you to the organizations and individuals who make our mission possible — your support drives every line of code and every match we play.",
+        "image": "pv.avif"
+      },
+      {
+        "id": 3,
+        "title": "Competition Season Kickoff",
+        "date": "1/22/70",
+        "description": "Our team is gearing up for an exciting competition season. With new designs and improved strategies, we're ready to take on the challenge.",
+        "image": "ph.avif"
+      }
+    ],
+    "values": [
+      {
+        "value": "Value 1",
+        "desc": "Desc 1",
+        "img": "ph.avif"
+      },
+      {
+        "value": "Value 2",
+        "desc": "Desc 2",
+        "img": "ph.avif"
+      },
+      {
+        "value": "Value 3",
+        "desc": "Desc 3",
+        "img": "ph.avif"
+      }
+    ],
+    "visions": [
+      {
+        "value": "Vision 1",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      },
+      {
+        "value": "Vision 2",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "value": "Vision 3",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      }
+    ],
+    "subsystems": [
+      {
+        "name": "Subsystem 1",
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "image": "ph.avif"
+      },
+      {
+        "name": "Subsystem 2",
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "image": "ph.avif"
+      },
+      {
+        "name": "Subsystem 3",
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "image": "ph.avif"
+      }
+    ]
+  },
+  "vn": {
+    "awards": [
+      {
+        "year": "2023",
+        "award": "Innovate Award",
+        "description": "Recognized for creative engineering solutions and original design approaches that improved both performance and reliability of the robot."
+      },
+      {
+        "year": "2024",
+        "award": "Inspire Award",
+        "description": "Honored as the team that best embodied the challenge's spirit through strong engineering, outreach, and consistent excellence in all aspects of competition."
+      }
+    ],
+    "benefits": [
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      },
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "af asf afg",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the purpose of a CPU in a computer?",
+        "a": "The CPU processes instructions and performs calculations, acting as the main controller of the system."
+      },
+      {
+        "q": "Why do objects fall to the ground?",
+        "a": "Because of gravity, a force that pulls objects with mass toward each other."
+      },
+      {
+        "q": "What is a budget in personal finance?",
+        "a": "A budget is a plan that tracks income and expenses to help manage money effectively."
+      },
+      {
+        "q": "What does HTTPS mean on a website?",
+        "a": "HTTPS indicates that the site uses encryption to secure data sent between the browser and server."
+      },
+      {
+        "q": "What is the function of mitochondria in a cell?",
+        "a": "Mitochondria generate energy in the form of ATP, powering cellular processes."
+      }
+    ],
+    "images": [
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "ph.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "pv.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "pv.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "ph.avif"
+      },
+      {
+        "desc": "Cum sociis natoque penatibus et magnis ",
+        "img": "ph.avif"
+      }
+    ],
+    "missions": [
+      {
+        "name": "mission 1",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "mission 2",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      },
+      {
+        "name": "mission 3",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "name": "mission 4",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      }
+    ],
+    "people": {
+      "programming": [
+        {
+          "idx": 0,
+          "name": "Khánh Anh",
+          "job": "job_1",
+          "quote": "Code is poetry written in logic",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 1,
+          "name": "Tuấn Khôi",
+          "job": "job_2",
+          "quote": "Teaching machines to think, one algorithm at a time",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 2,
+          "name": "Minh Quang",
+          "job": "job_2",
+          "quote": "AI is not about replacing humans, it's about augmenting them",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 3,
+          "name": "Đức Khánh",
+          "job": "job_3",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 4,
+          "name": "Đăng Minh",
+          "job": "job_3",
+          "quote": "Clean code always looks like it was written by someone who cares",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 5,
+          "name": "Minh Dũng",
+          "job": "job_3",
+          "quote": "First, solve the problem. Then, write the code",
+          "img": "pv.avif"
+        }
+      ],
+      "mechanical": [
+        {
+          "idx": 6,
+          "name": "Thế Khải",
+          "job": "job_4",
+          "quote": "Engineering is the art of making the impossible possible",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 7,
+          "name": "Hải Đăng",
+          "job": "job_4",
+          "quote": "Precision in design, excellence in execution",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 8,
+          "name": "Minh Khang",
+          "job": "job_5",
+          "quote": "Innovation distinguishes between a leader and a follower",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 9,
+          "name": "Khánh Vinh",
+          "job": "job_5",
+          "quote": "Building the future, one component at a time",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 10,
+          "name": "Trần Khoa",
+          "job": "job_6",
+          "quote": "Design is not just what it looks like, it's how it works",
+          "img": "pv.avif"
+        }
+      ],
+      "business": [
+        {
+          "idx": 11,
+          "name": "Dương Lâm",
+          "job": "job_7",
+          "quote": "Strategy without execution is just a dream",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 12,
+          "name": "Phương Thảo",
+          "job": "job_8",
+          "quote": "Success is where preparation meets opportunity",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 13,
+          "name": "Quang Huy",
+          "job": "job_8",
+          "quote": "The best way to predict the future is to create it",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 14,
+          "name": "Đức Hùng",
+          "job": "job_9",
+          "quote": "Great things in business are never done by one person",
+          "img": "pv.avif"
+        }
+      ]
+    },
+    "resources": {
+      "Templates": [
+        {
+          "name": "Engineering Notebook Template",
+          "link": "/resources/engineering-notebook-template.pdf"
+        },
+        {
+          "name": "Outreach Report Template",
+          "link": "/resources/outreach-report-template.pdf"
+        }
+      ],
+      "Slides": [
+        {
+          "name": "Team Presentation Slides",
+          "link": "/resources/team-presentation-slides.pptx"
+        }
+      ],
+      "Guides": [
+        {
+          "name": "Portfolio & Awards Submission Guide",
+          "link": "/resources/portfolio-awards-guide.pdf"
+        }
+      ]
+    },
+    "socials": {
+      "yt": "https://www.youtube.com/@GreenAmsRoboticsTeam",
+      "gh": "https://github.com/gart6520/",
+      "fb": "https://web.facebook.com/GART6520"
+    },
+    "perks": [
+      {
+        "title": "test",
+        "desc": "asfh yasgfy asgfyg agfyfqe",
+        "img": "ph.avif"
+      },
+      {
+        "title": "test",
+        "desc": "asfh yasgfy asgfyg agfyfqe",
+        "img": "ph.avif"
+      },
+      {
+        "title": "test",
+        "desc": "asfh yasgfy asgfyg agfyfqe",
+        "img": "ph.avif"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Sponsor 1",
+        "img": "ph.avif",
+        "link": "/sponsor/sponsor1"
+      },
+      {
+        "name": "Sponsor 2",
+        "img": "pv.avif",
+        "link": "/sponsor/sponsor2"
+      },
+      {
+        "name": "Sponsor 3",
+        "img": "ph.avif",
+        "link": "/sponsor/sponsor3"
+      },
+      {
+        "name": "Sponsor 4",
+        "img": "pv.avif",
+        "link": "/sponsor/sponsor4"
+      },
+      {
+        "name": "Sponsor 5",
+        "img": "ph.avif",
+        "link": "/sponsor/sponsor5"
+      },
+      {
+        "name": "Sponsor 6",
+        "img": "pv.avif",
+        "link": "/sponsor/sponsor6"
+      }
+    ],
+    "updates": [
+      {
+        "id": 1,
+        "title": "Pushing Boundaries, One Robot at a Time",
+        "date": "1/15/70",
+        "description": "From regional champs to world contenders — our team is redefining innovation, teamwork, and passion for STEM.",
+        "image": "ph.avif"
+      },
+      {
+        "id": 2,
+        "title": "Grateful to Our Sponsors for Powering the Journey",
+        "date": "1/15/70",
+        "description": "A huge thank-you to the organizations and individuals who make our mission possible — your support drives every line of code and every match we play.",
+        "image": "pv.avif"
+      },
+      {
+        "id": 3,
+        "title": "Competition Season Kickoff",
+        "date": "1/22/70",
+        "description": "Our team is gearing up for an exciting competition season. With new designs and improved strategies, we're ready to take on the challenge.",
+        "image": "ph.avif"
+      }
+    ],
+    "values": [
+      {
+        "value": "Value 1",
+        "desc": "Desc 1",
+        "img": "ph.avif"
+      },
+      {
+        "value": "Value 2",
+        "desc": "Desc 2",
+        "img": "ph.avif"
+      },
+      {
+        "value": "Value 3",
+        "desc": "Desc 3",
+        "img": "ph.avif"
+      }
+    ],
+    "visions": [
+      {
+        "value": "Vision 1",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      },
+      {
+        "value": "Vision 2",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "ph.avif"
+      },
+      {
+        "value": "Vision 3",
+        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "img": "pv.avif"
+      }
+    ],
+    "subsystems": [
+      {
+        "name": "Subsystem 1",
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "image": "ph.avif"
+      },
+      {
+        "name": "Subsystem 2",
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "image": "ph.avif"
+      },
+      {
+        "name": "Subsystem 3",
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "image": "ph.avif"
+      }
+    ]
+  }
+}

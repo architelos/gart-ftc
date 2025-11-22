@@ -3,13 +3,14 @@ import { useState } from "react";
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
-import faqs from "@/data/strings/faqs.json";
+import data from "@/data/data";
 import translations from "@/data/translations";
 
 function Faq() {
   const [idx, setIdx] = useState<number | null>(null);
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { faqs } = data(locale);
 
   const { ref: headingRef, inView: headingInView } = useInView();
   const { ref: contentRef, inView: contentInView } = useInView();
@@ -20,7 +21,7 @@ function Faq() {
         <Text type="title" animate={headingInView}>{t.home.faq.heading}</Text>
       </div>
       <div ref={contentRef} className={`flex flex-col gap-y-s-two md:w-[60%] opacity-0 ${contentInView ? "a-fade-in" : ""}`}>
-        {faqs[locale].map((faq, i) => (
+        {faqs.map((faq, i) => (
           <div key={i} className="flex flex-col gap-y-s-three">
             <Text type="pg" onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/20!" : ""}`}>
               <span className="font-bold!">{t.home.faq.q}</span> {faq.q}

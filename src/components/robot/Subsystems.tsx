@@ -2,6 +2,7 @@ import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
 import Text from "@/components/Text";
 import assetMap from "@/data/assetMap";
+import data from "@/data/data";
 import translations from "@/data/translations";
 
 interface Subsystem {
@@ -31,6 +32,7 @@ function SubsystemRow({ i, subsystem }: SubsystemRowProps) {
 function Subsystems() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { subsystems } = data(locale);
 
   const { ref: titleRef, inView: titleInView } = useInView();
 
@@ -40,7 +42,7 @@ function Subsystems() {
         <Text animate={titleInView} type="pg" className="font-bold!">{t.robot.subsystems.heading}</Text>
       </div>
       <div className="flex flex-col gap-y-page">
-        {(t.robot.subsystems.subsystems as Subsystem[]).map((subsystem, i) => (
+        {(subsystems as Subsystem[]).map((subsystem, i) => (
           <SubsystemRow key={i} i={i} subsystem={subsystem}></SubsystemRow>
         ))}
       </div>

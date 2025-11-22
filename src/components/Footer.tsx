@@ -8,7 +8,7 @@ import useLocale from "@/hooks/useLocale";
 import useTheme from "@/hooks/useTheme";
 import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
-import socials from "@/data/strings/socials.json";
+import data from "@/data/data";
 
 function Footer() {
   const { ref: footerRef, inView: footerInView } = useInView({ once: false });
@@ -17,6 +17,7 @@ function Footer() {
 
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { socials } = data(locale);
 
   const theme = useTheme((state) => state.theme);
   const setFooterVisible = useMenuState((state) => state.setFooterVisible);

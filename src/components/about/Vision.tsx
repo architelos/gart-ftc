@@ -5,18 +5,17 @@ import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
-import vision from "@/data/strings/vision.json"
+import data from "@/data/data";
 
 function Vision() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { visions } = data(locale);
 
   const { ref: headingRef, inView: headingInView } = useInView();
   const { ref: contentRef, inView: contentInView } = useInView();
 
   const [currentVision, changeCurrentVision] = useState<number>(0);
-
-  const visions = vision[locale];
 
   return (
     <section className="flex flex-col gap-y-page w-full h-fit p-page bg-bg">

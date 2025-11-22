@@ -1,8 +1,8 @@
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
-import benefits from "@/data/strings/benefits.json";
 import translations from "@/data/translations";
+import data from "@/data/data";
 import assetMap from "@/data/assetMap";
 
 interface BenefitInterface {
@@ -58,7 +58,7 @@ function BenefitMobile ({ benefit }: { benefit: BenefitInterface }) {
 function Benefits() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const _benefits = benefits[locale];
+  const { benefits } = data(locale);
 
   const { ref: headingRef, inView: headingInView } = useInView();
 
