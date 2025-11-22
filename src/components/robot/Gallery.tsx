@@ -27,7 +27,7 @@ function Gallery() {
                 >
                   <img
                     src={assetMap[image.img]}
-                    className="h-full object-cover"
+                    className="flex-1 h-full object-cover"
                   />
                   <Text type="sub" className="h-fit">{image.desc}</Text>
                 </div>

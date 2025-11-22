@@ -113,5 +113,17 @@
     "gallery": {
       "heading": "Gallery"
     }
+  },
+  "sponsor": {
+    "hero": {
+      "heading_1": "Become a",
+      "heading_2": "sponsor"
+    },
+    "mission": {
+      "heading": "Our Mission"
+    },
+    "benefits": {
+        "heading": "What we bring"
+    }
   }
 }
