@@ -364,6 +364,24 @@
         "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
         "image": "ph.avif"
       }
+    ],
+    "figures": [
+      {
+        "name": "ROI",
+        "data": "9000%"
+      },
+      {
+        "name": "impressions",
+        "data": "10tril"
+      },
+      {
+        "name": "engagement",
+        "data": "120%"
+      },
+      {
+        "name": "some shit",
+        "data": "idk"
+      }
     ]
   },
   "vn": {
@@ -730,6 +748,24 @@
         "name": "Subsystem 3",
         "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
         "image": "ph.avif"
+      }
+    ],
+    "figures": [
+      {
+        "name": "ROI",
+        "data": "9000%"
+      },
+      {
+        "name": "impressions",
+        "data": "10tril"
+      },
+      {
+        "name": "engagement",
+        "data": "120%"
+      },
+      {
+        "name": "some shit",
+        "data": "idk"
       }
     ]
   }

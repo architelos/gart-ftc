@@ -1,7 +1,7 @@
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
-import figures from "@/data/strings/figures.json";
+import data from "@/data/data";
 import translations from "@/data/translations";
 
 interface Figure {
@@ -25,6 +25,7 @@ function FigureRow({ i, figure }: FigureRowProps) {
 function Figures() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const { figures } = data(locale);
 
   const { ref: headingRef, inView: headingInView } = useInView();
 
@@ -36,7 +37,7 @@ function Figures() {
       </div>
 
       <div className="flex flex-row justify-between max-sm:gap-y-s-two max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-1 w-full">
-        {figures["en"].map((figure, i) => (
+        {figures.map((figure, i) => (
           <FigureRow key={i} i={i} figure={figure} />
         ))}
       </div>
