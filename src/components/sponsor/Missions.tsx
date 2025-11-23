@@ -53,7 +53,6 @@ function Missions() {
             <div className="flex-none md:w-[40%] min-w-0 a-fade-in" key={`text-${idx}`}>
               <Text type="pg" className="text-right">{missions[idx].desc}</Text>
             </div>
-          )}
           </div>
       ) : (
         <div ref={smRef} className={`flex flex-col gap-y-s-two w-full opacity-0 ${smInView ? "a-fade-in" : ""}`}>
