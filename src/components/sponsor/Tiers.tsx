@@ -11,32 +11,40 @@ type Tier = {
   features: string[];
 };
 
-function TierComponent({ tier, i }: { tier: Tier; i: number }) {
+function TierComponent({ tier, i}: { tier: Tier; i: number }) {
   const { ref: contentRef, inView: contentInView } = useInView();
+  const isMd = useIsMd();
 
   return (
-    <div
-      ref={contentRef}
-      className={`
-        relative flex flex-col items-center gap-y-4 p-6 w-full
-        bg-bg rounded-xl shadow-sm
-        transition-all duration-500 ease-out
+    <div 
+    ref={contentRef} 
+    className={`flex flex-col gap-y-4 md:w-full w-fit
+      bg-bg transition-all duration-500 ease-out 
+      md:items-center
+      ${!isMd && (i % 2 == 0 
+        ? "self-start pl-[10dvw] items-center" 
+        : "self-end pr-[10dvw] items-center")
+      } 
+      ${isMd 
+        ? `pt-[${i * 100}px] w-full`
+        : `${i == 0 ? "" : "-mt-s-one"}`
+      } w-fit
       `}
-      style={{ animationDelay: `${i * 0.1}s` }}
+      style={ isMd ? { paddingTop: `${i * 100}px`, animationDelay: `${i * 0.1}s` } : {animationDelay: `${i * 0.1}s`} }
     >
-      <Text type="pg" className="font-bold! text-accent! whitespace-nowrap" animate={contentInView}>
+      <Text type="pg" className="font-bold! text-accent! whitespace-nowrap md:text-center w-fit" animate={contentInView}>
         {tier.name}
       </Text>
 
-      <Text type="title" className="font-bold! whitespace-nowrap" animate={contentInView}>
+      <Text type="title" className="font-bold! whitespace-nowrap md:text-center w-fit" animate={contentInView}>
         {tier.price}
       </Text>
 
-      <ol className="flex flex-col gap-y-2 w-full">
+      <ol className="flex flex-col gap-y-2 md:items-center w-fit">
         {tier.features.map((feature: string, j: number) => (
-          <li key={j} className="flex items-center gap-x-2 justify-center whitespace-nowrap">
-            <span className="w-1.5 h-1.5 rounded-full bg-text" />
-            <Text type="pg" animate={contentInView}>{feature}</Text>
+          <li key={j} className="flex items-center gap-x-2 whitespace-nowrap">
+            <span className="w-1.5 h-1.5 rounded-full bg-sub" />
+            <Text type="sub" animate={contentInView}>{feature}</Text>
           </li>
         ))}
       </ol>
@@ -47,11 +55,13 @@ function TierComponent({ tier, i }: { tier: Tier; i: number }) {
 const Tiers = () => {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const isMd = useIsMd();
   const { tiers } = data(locale);
   const { ref: headingRef, inView: headingInView } = useInView();
 
   return (
-    <section className="flex flex-col gap-y-12 w-full max-w-7xl mx-auto p-6 bg-bg h-fit">
+    <section className="flex flex-col gap-y-s-one w-full p-page bg-bg h-fit">
+
       <div ref={headingRef} className="text-center">
         <Text type="title" animate={headingInView}>
           {t.sponsor.tiers.heading}
@@ -59,25 +69,12 @@ const Tiers = () => {
         <p className="text-gray-500 mt-2">{t.sponsor.tiers.subheading}</p>
       </div>
 
-      <div className="flex flex-col md:flex-row md:items-start md:gap-s-four w-full">
+      <div className="flex md:flex-row flex-col justify-around w-full">
         {tiers.map((tier: Tier, i: number) => (
-          <div
-            key={i}
-            style={{ "--i": i } as React.CSSProperties}
-            className={`
-              flex w-full md:w-1/3 
-              ${i % 2 == 0 ? "justify-start" : "justify-end"}
-              ${i > 0 ? "-mt-16" : ""}
-              md:justify-center 
-              md:mt-[calc(var(--i)*4rem)]
-            `}
-          >
-            <div className="w-[50%] md:w-full">
-              <TierComponent tier={tier} i={i} />
-            </div>
-          </div>
+          <TierComponent tier={tier} i={i}/>
         ))}
       </div>
+
     </section>
   );
 };
