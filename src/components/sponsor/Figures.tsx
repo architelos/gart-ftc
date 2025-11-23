@@ -4,29 +4,20 @@ import useLocale from "@/hooks/useLocale";
 import figures from "@/data/strings/figures.json";
 import translations from "@/data/translations";
 
-interface FigureInterface {
+interface Figure {
   name: string,
   data: string
 }
+interface FigureRowProps { i: number; figure: Figure; }
 
-function Figure({ figure }: { figure: FigureInterface }) {
-  const { ref, inView } = useInView();
+function FigureRow({ i, figure }: FigureRowProps) {
+  const { ref: figureRef, inView: figureInView } = useInView();
+  const { ref: titleRef, inView: titleInView } = useInView();
 
   return (
-    <div
-      ref={ref}
-      className="flex md:flex-col flex-col-reverse w-40 h-fit w-fit items-center justify-center m-2"
-    >
-      <div className={`${inView ? "a-fade-in" : "opacity-0"}`}>
-        <Text type="title" className="text-center text-accent!">
-          {figure.data}
-        </Text>
-      </div>
-      <div className={`s${inView ? "a-fade-in" : "opacity-0"}`}>
-        <Text type="pg" className="font-bold! text-center">
-          {figure.name}
-        </Text>
-      </div>
+    <div className={`flex flex-col gap-y-s-three md:items-center ${i % 2 !== 0 ? "text-right" : ""}`}>
+      <div ref={figureRef}><Text type="title" animate={figureInView} className="text-accent!">{figure.data}</Text></div>
+      <div ref={titleRef}><Text type="pg" animate={titleInView}>{figure.name}</Text></div>
     </div>
   );
 }
@@ -34,21 +25,16 @@ function Figure({ figure }: { figure: FigureInterface }) {
 function Figures() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const _figures = figures[locale];
 
   const { ref: headingRef, inView: headingInView } = useInView();
 
   return (
-    <section className="flex flex-col md:justify-between gap-y-s-four max-sm:gap-y-page w-full p-page bg-bg">
-      <div ref={headingRef}>
-        <Text type="title" animate={headingInView}>
-          {t.sponsor.figures.heading}
-        </Text>
-      </div>
+    <section className="flex flex-col gap-y-page p-page bg-bg">
+      <div ref={headingRef}><Text type="title" animate={headingInView} className="text-right">{t.sponsor.figures.heading}</Text></div>
 
-      <div className="flex flex-row w-full flex-wrap justify-between">
-        {_figures.map((figure: FigureInterface, i: number) => (
-          <Figure key={i} figure={figure} />
+      <div className="flex flex-row justify-between max-sm:gap-y-s-two max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-1 w-full">
+        {figures["en"].map((figure, i) => (
+          <FigureRow i={i} figure={figure} />
         ))}
       </div>
     </section>
