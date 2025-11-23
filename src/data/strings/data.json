@@ -413,17 +413,22 @@
     "tiers": [
       {
         "name": "Silver",
-        "price": "$99/m",
+        "price": "$200",
         "features": ["not muchaf asf a", "featureasf asf ", "updatesasf asf asf"]
       },
       {
         "name": "Gold",
-        "price": "$299/m",
+        "price": "$500",
         "features": ["video featurefas fasf as", "even featuref asf asf a", "updatesfas fasf ", "shoutoutafs asf "]
       },
       {
         "name": "Radiant",
-        "price": "$1000/m",
+        "price": "$750",
+        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
+      },
+      {
+        "name": "Global Elite",
+        "price": "$1000",
         "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
       }
     ]
@@ -842,17 +847,22 @@
     "tiers": [
       {
         "name": "Silver",
-        "price": "$99/m",
+        "price": "$200",
         "features": ["not muchaf asf a", "featureasf asf ", "updatesasf asf asf"]
       },
       {
         "name": "Gold",
-        "price": "$299/m",
+        "price": "$500",
         "features": ["video featurefas fasf as", "even featuref asf asf a", "updatesfas fasf ", "shoutoutafs asf "]
       },
       {
         "name": "Radiant",
-        "price": "$1000/m",
+        "price": "$750",
+        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
+      },
+      {
+        "name": "Global Elite",
+        "price": "$1000",
         "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
       }
     ]
