@@ -9,7 +9,7 @@ import data from "@/data/data";
 import assetMap from "@/data/assetMap";
 
 function Missions() {
-  const [idx, setIdx] = useState<number | null>(null);
+  const [idx, setIdx] = useState(0);
   const isMd = useIsMd();
 
   const locale = useLocale((state) => state.locale);
@@ -28,36 +28,33 @@ function Missions() {
       </div>
 
       {isMd
-      ? (
-        <div className="hidden md:flex flex-row justify-between items-start gap-x-s-three w-full h-full min-h-0">
-          <div ref={contentRef} className="flex flex-col flex-none gap-y-s-two md:w-[20%]">
-            {missions.map((mission, i) => (
-              <Text
-                key={i}
-                type="pg"
-                onClick={() => setIdx(i)}
-                animate={contentInView}
-                className={`cursor-pointer font-semibold! transition-colors duration-300 ${idx !== i ? "text-text/20! font-bold!" : "text-text"}`}
-              >
-                {mission.name}
-              </Text>
-            ))}
-          </div>
-          {idx !== null && (
-            <>
-              <div className="flex-1 min-w-0 h-full basis-0 a-fade-in" key={`img-${idx}`}>
-                <img
-                  src={assetMap[missions[idx].img]}
-                  alt={missions[idx].name}
-                  className="block w-full h-full object-contain"
-                />
-              </div>
-              <div className="flex-none md:w-[40%] min-w-0 a-fade-in" key={`text-${idx}`}>
-                <Text type="pg" className="text-right">{missions[idx].desc}</Text>
-              </div>
-            </>
+        ? (
+          <div className="hidden md:flex flex-row justify-between items-start gap-x-s-three w-full h-full min-h-0">
+            <div ref={contentRef} className="flex flex-col flex-none gap-y-s-two md:w-[20%]">
+              {missions.map((mission, i) => (
+                <Text
+                  key={i}
+                  type="pg"
+                  onClick={() => setIdx(i)}
+                  animate={contentInView}
+                  className={`cursor-pointer font-semibold! transition-colors duration-300 ${idx !== i ? "text-text/20! font-bold!" : "text-text"}`}
+                >
+                  {mission.name}
+                </Text>
+              ))}
+            </div>
+            <div className="flex-1 min-w-0 h-full basis-0 a-fade-in" key={`img-${idx}`}>
+              <img
+                src={assetMap[missions[idx].img]}
+                alt={missions[idx].name}
+                className="block w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex-none md:w-[40%] min-w-0 a-fade-in" key={`text-${idx}`}>
+              <Text type="pg" className="text-right">{missions[idx].desc}</Text>
+            </div>
           )}
-        </div>
+          </div>
       ) : (
         <div ref={smRef} className={`flex flex-col gap-y-s-two w-full opacity-0 ${smInView ? "a-fade-in" : ""}`}>
           {missions.map((mission, i) => (
