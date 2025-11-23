@@ -12,9 +12,11 @@ type Tier = {
 };
 
 function TierComponent({ tier, i }: { tier: Tier; i: number }) {
-  const isMd = useIsMd();
+  const { ref: contentRef, inView: contentInView } = useInView();
+
   return (
     <div
+      ref={contentRef}
       className={`
         relative flex flex-col items-center gap-y-4 p-6 w-full
         bg-bg rounded-xl shadow-sm
@@ -22,11 +24,11 @@ function TierComponent({ tier, i }: { tier: Tier; i: number }) {
       `}
       style={{ animationDelay: `${i * 0.1}s` }}
     >
-      <Text type="pg" className="font-bold! text-accent! whitespace-nowrap">
+      <Text type="pg" className="font-bold! text-accent! whitespace-nowrap" animate={contentInView}>
         {tier.name}
       </Text>
-      
-      <Text type="title" className="font-bold! whitespace-nowrap">
+
+      <Text type="title" className="font-bold! whitespace-nowrap" animate={contentInView}>
         {tier.price}
       </Text>
 
@@ -34,7 +36,7 @@ function TierComponent({ tier, i }: { tier: Tier; i: number }) {
         {tier.features.map((feature: string, j: number) => (
           <li key={j} className="flex items-center gap-x-2 justify-center whitespace-nowrap">
             <span className="w-1.5 h-1.5 rounded-full bg-text" />
-            <Text type="pg">{feature}</Text>
+            <Text type="pg" animate={contentInView}>{feature}</Text>
           </li>
         ))}
       </ol>
