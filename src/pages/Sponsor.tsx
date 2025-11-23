@@ -4,6 +4,7 @@ import Figures from "@/components/sponsor/Figures";
 import Action from "@/components/sponsor/Action"
 import Uses from "@/components/sponsor/Uses";
 import Break from "@/components/Break";
+import Tiers from "@/components/sponsor/Tiers";
 
 function Sponsor() {
   return (
@@ -15,6 +16,7 @@ function Sponsor() {
       <Break />
       <Uses />
       <Break />
+      <Tiers />
       <Action />
     </>
   );

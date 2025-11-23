@@ -409,6 +409,23 @@
         "desc": "Funds are used to commission local artists to create murals and pop-up art pieces to beautify community spaces.",
         "img": "ph.avif"
       }
+    ],
+    "tiers": [
+      {
+        "name": "Silver",
+        "price": "$99/m",
+        "features": ["not muchaf asf a", "featureasf asf ", "updatesasf asf asf"]
+      },
+      {
+        "name": "Gold",
+        "price": "$299/m",
+        "features": ["video featurefas fasf as", "even featuref asf asf a", "updatesfas fasf ", "shoutoutafs asf "]
+      },
+      {
+        "name": "Radiant",
+        "price": "$1000/m",
+        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
+      }
     ]
   },
   "vn": {
@@ -820,6 +837,23 @@
         "use": "Public Art Installation",
         "desc": "Funds are used to commission local artists to create murals and pop-up art pieces to beautify community spaces.",
         "img": "ph.avif"
+      }
+    ],
+    "tiers": [
+      {
+        "name": "Silver",
+        "price": "$99/m",
+        "features": ["not muchaf asf a", "featureasf asf ", "updatesasf asf asf"]
+      },
+      {
+        "name": "Gold",
+        "price": "$299/m",
+        "features": ["video featurefas fasf as", "even featuref asf asf a", "updatesfas fasf ", "shoutoutafs asf "]
+      },
+      {
+        "name": "Radiant",
+        "price": "$1000/m",
+        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
       }
     ]
   }

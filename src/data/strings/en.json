@@ -122,6 +122,10 @@
     "uses": {
       "heading": "How your generosity benefits us"
     },
+    "tiers": {
+      "heading": "Tiers",
+      "subheading": "Choose the plan that fits your needs"
+    },
     "action": {
       "heading": "Let's work together"
     }
