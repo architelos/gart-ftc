@@ -3,6 +3,8 @@ import Missions from "@/components/sponsor/Missions";
 import Benefits from "@/components/sponsor/Benefits";
 import Figures from "@/components/sponsor/Figures";
 import Break from "@/components/Break";
+import Action from "@/components/sponsor/Action"
+
 
 function Sponsor() {
   return (
@@ -13,6 +15,7 @@ function Sponsor() {
       <Benefits />
       <Break />
       <Figures />
+      <Action />
     </>
   );
 }
