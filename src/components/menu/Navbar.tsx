@@ -32,11 +32,9 @@ function Navbar() {
   if (!show) return null;
   return (
     <header className="z-100 fixed flex justify-between w-full p-page">
-      <div className="max-w-page max-h-page overflow-hidden">
-        <img className={`max-w-page max-h-page object-contain overflow-hidden ${anim}`} src={assetMap["logo.png"]} />
-      </div>
+      <img className={`object-contain overflow-hidden ${anim}`} src={assetMap["logo.png"]} style={{ width: "calc(1.5 * var(--spacing-page))", height: "calc(1.5 * var(--spacing-page))" }} />
 
-      <button className="overflow-hidden scale-on-hover cursor-pointer" onClick={() => setOpen(!open)}>
+      <button className="self-start overflow-hidden scale-on-hover cursor-pointer" onClick={() => setOpen(!open)}>
         {
           !open ? <Menu className={anim} style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
           : <X style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />
