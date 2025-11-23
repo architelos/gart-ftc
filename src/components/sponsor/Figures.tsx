@@ -30,11 +30,14 @@ function Figures() {
 
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
-      <div ref={headingRef}><Text type="title" animate={headingInView} className="text-right">{t.sponsor.figures.heading}</Text></div>
+      <div ref={headingRef} className="flex flex-col self-end gap-y-s-two md:max-w-[30%]">
+        <Text type="title" animate={headingInView} className="text-right">{t.sponsor.figures.heading}</Text>
+        <Text type="sub" animate={headingInView} className="text-right">{t.sponsor.figures.desc}</Text>
+      </div>
 
       <div className="flex flex-row justify-between max-sm:gap-y-s-two max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-1 w-full">
         {figures["en"].map((figure, i) => (
-          <FigureRow i={i} figure={figure} />
+          <FigureRow key={i} i={i} figure={figure} />
         ))}
       </div>
     </section>
