@@ -17,6 +17,7 @@ function About() {
       <Values />
       <Break />
       <Vision />
+      <Break />
       <Resources />
     </>
   );

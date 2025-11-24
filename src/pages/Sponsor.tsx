@@ -17,6 +17,7 @@ function Sponsor() {
       <Uses />
       <Break />
       <Tiers />
+      <Break />
       <Action />
     </>
   );

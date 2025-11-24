@@ -60,7 +60,7 @@ function Uses() {
   }
 
   return (
-    <div className="flex flex-col gap-y-page w-full p-page bg-bg">
+    <section className="flex flex-col gap-y-page w-full p-page bg-bg">
       <div ref={navRef} className="flex flex-row justify-between w-full">
         <div className="flex flex-row items-baseline gap-x-page">
           <ChevronLeft onClick={back} className={`w-s-one h-s-one scale-on-hover cursor-pointer opacity-0 ${navInView ? "a-fade-in" : ""}`} />
@@ -73,7 +73,7 @@ function Uses() {
           <UseCol key={i} use={chunk} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
