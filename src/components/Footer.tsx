@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { FaYoutube, FaGithub, FaFacebook } from "react-icons/fa6";
+import { FaYoutube, FaGithub, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
@@ -13,6 +13,8 @@ import data from "@/data/data";
 function Footer() {
   const { ref: footerRef, inView: footerInView } = useInView({ once: false });
   const { ref: navRef, inView: navInView } = useInView();
+  const { ref: socialsRef, inView: socialsInView } = useInView();
+  const { ref: contactRef, inView: contactInView } = useInView();
   const { ref: imgRef, inView: imgInView } = useInView();
 
   const locale = useLocale((state) => state.locale);
@@ -35,30 +37,39 @@ function Footer() {
         <Text type="pg" link={true} animate={navInView} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
 
-      <div className="flex flex-row flex-wrap flex-0 justify-between gap-x-s-one gap-y-s-four mb-l">
-        <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.email}>{t.email}</Text>
-        <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.tel}>{t.tel}</Text>
-        <div className="flex flex-row gap-x-s-two w-full md:w-auto max-sm:pt-s-three">
-          <a href={socials.fb} className={`scale-on-hover opacity-0 ${navInView ? "a-fade-in" : ""}`}>
-            <FaFacebook style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-          </a>
-          <a href={socials.yt} className={`scale-on-hover opacity-0 ${navInView ? "a-fade-in" : ""}`}>
-            <FaYoutube style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-          </a>
-          <a href={socials.gh} className={`scale-on-hover opacity-0 ${navInView ? "a-fade-in" : ""}`}>
-            <FaGithub style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-          </a>
-        </div>
+      <div ref={socialsRef} className="gap-y-s-three grid grid-cols-1 md:grid-cols-3">
+        <a href={socials.fb.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+          <FaFacebook style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+          <Text type="pg">{socials.fb.handle}</Text>
+        </a>
+        <a href={socials.yt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+          <FaYoutube style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+          <Text type="pg">{socials.yt.handle}</Text>
+        </a>
+        <a href={socials.gh.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+          <FaGithub style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+          <Text type="pg">{socials.gh.handle}</Text>
+        </a>
+        <a href={socials.ig.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+          <FaInstagram style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+          <Text type="pg">{socials.ig.handle}</Text>
+        </a>
+        <a href={socials.tt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+          <FaTiktok style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+          <Text type="pg">{socials.tt.handle}</Text>
+        </a>
+      </div>
+
+      <div ref={contactRef} className="flex flex-row justify-between mt-s-three">
+        <Text type="pg" className="font-bold!" link={true} animate={contactInView} href={t.email}>{t.email}</Text>
+        <Text type="pg" className="font-bold!" link={true} animate={contactInView} href={t.tel}>{t.tel}</Text>
       </div>
 
       <div ref={imgRef} className="flex flex-col flex-1 justify-center">
         <img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap[theme === "dark" ? "footer.png" : "lfooter.png"]} />
       </div>
 
-      <div className="flex md:flex-row flex-col justify-between gap-y-s-four">
-        <Text type="sub" link={true} href="/privacy_policy">{t.menu.privacy_policy}</Text>
-        <Text type="sub">{t.footer.copyright}</Text>
-      </div>
+      <Text type="sub">{t.footer.copyright}</Text>
     </footer>
   );
 }

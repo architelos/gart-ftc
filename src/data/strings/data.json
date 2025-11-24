@@ -238,9 +238,26 @@
       ]
     },
     "socials": {
-      "yt": "https://www.youtube.com/@GreenAmsRoboticsTeam",
-      "gh": "https://github.com/gart6520/",
-      "fb": "https://web.facebook.com/GART6520"
+      "yt": {
+        "link": "https://www.youtube.com/@GreenAmsRoboticsTeam",
+        "handle": "@GreenAmsRoboticsTeam"
+      },
+      "gh": {
+        "link": "https://github.com/gart6520/",
+        "handle": "gart6520"
+      },
+      "fb": {
+        "link": "https://web.facebook.com/GART6520",
+        "handle": "GART6520"
+      },
+      "ig": {
+        "link": "https://www.instagram.com/ftc24751_gart/",
+        "handle": "@ftc24751_gart"
+      },
+      "tt": {
+        "link": "https://www.tiktok.com/@greenamsroboticsteam",
+        "handle": "@greenamsroboticsteam"
+      }
     },
     "perks": [
       {
@@ -672,9 +689,26 @@
       ]
     },
     "socials": {
-      "yt": "https://www.youtube.com/@GreenAmsRoboticsTeam",
-      "gh": "https://github.com/gart6520/",
-      "fb": "https://web.facebook.com/GART6520"
+      "yt": {
+        "link": "https://www.youtube.com/@GreenAmsRoboticsTeam",
+        "handle": "@GreenAmsRoboticsTeam"
+      },
+      "gh": {
+        "link": "https://github.com/gart6520/",
+        "handle": "gart6520"
+      },
+      "fb": {
+        "link": "https://web.facebook.com/GART6520",
+        "handle": "GART6520"
+      },
+      "ig": {
+        "link": "https://www.instagram.com/ftc24751_gart/",
+        "handle": "@ftc24751_gart"
+      },
+      "tt": {
+        "link": "https://www.tiktok.com/@greenamsroboticsteam",
+        "handle": "@greenamsroboticsteam"
+      }
     },
     "perks": [
       {
