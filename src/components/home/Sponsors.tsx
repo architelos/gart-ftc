@@ -1,6 +1,8 @@
 import { useState } from "react";
+import type { MouseEvent } from "react";
 import { Link, Heart } from "lucide-react";
 
+import { event } from "@/gtag";
 import Text from "@/components/Text";
 import Button from "@/components/Button";
 import useInView from "@/hooks/useInView";
@@ -11,9 +13,9 @@ import translations from "@/data/translations";
 import data from "@/data/data";
 
 type SponsorType = {
-  img: string,
-  name: string,
-  link: string
+  img: string;
+  name: string;
+  link: string;
 }
 
 function Card({ img, name, link }: SponsorType) {
@@ -22,10 +24,17 @@ function Card({ img, name, link }: SponsorType) {
   const canHover = useCanHover();
   const { ref, inView } = useInView();
 
+  const onClick = (e: MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+
+    event("click", "Sponsors", name);
+    window.location.href = link;
+  }
+
   return (
     <div
       ref={ref}
-      onClick={() => window.location.href = link}
+      onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}

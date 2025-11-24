@@ -263,32 +263,32 @@
       {
         "name": "Sponsor 1",
         "img": "ph.avif",
-        "link": "/sponsor/sponsor1"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 2",
         "img": "pv.avif",
-        "link": "/sponsor/sponsor2"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 3",
         "img": "ph.avif",
-        "link": "/sponsor/sponsor3"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 4",
         "img": "pv.avif",
-        "link": "/sponsor/sponsor4"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 5",
         "img": "ph.avif",
-        "link": "/sponsor/sponsor5"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 6",
         "img": "pv.avif",
-        "link": "/sponsor/sponsor6"
+        "link": "https://example.com/"
       }
     ],
     "updates": [
@@ -697,32 +697,32 @@
       {
         "name": "Sponsor 1",
         "img": "ph.avif",
-        "link": "/sponsor/sponsor1"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 2",
         "img": "pv.avif",
-        "link": "/sponsor/sponsor2"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 3",
         "img": "ph.avif",
-        "link": "/sponsor/sponsor3"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 4",
         "img": "pv.avif",
-        "link": "/sponsor/sponsor4"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 5",
         "img": "ph.avif",
-        "link": "/sponsor/sponsor5"
+        "link": "https://example.com/"
       },
       {
         "name": "Sponsor 6",
         "img": "pv.avif",
-        "link": "/sponsor/sponsor6"
+        "link": "https://example.com/"
       }
     ],
     "updates": [

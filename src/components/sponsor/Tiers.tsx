@@ -68,7 +68,7 @@ const Tiers = () => {
 
       <div className="flex md:flex-row flex-col justify-between gap-y-s-one w-full">
         {tiers.map((tier: Tier, i: number) => (
-          <TierComponent tier={tier} i={i}/>
+          <TierComponent key={i} tier={tier} i={i}/>
         ))}
       </div>
     </section>
