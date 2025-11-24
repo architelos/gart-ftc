@@ -6,7 +6,7 @@ import assetMap from "@/data/assetMap";
 
 function Navbar() {
   const [show, setShow] = useState(true);
-  const [anim, setAnim] = useState("a-slide-up");
+  const [anim, setAnim] = useState("a-fade-in");
 
   const open = useMenuState((state) => state.open);
   const setOpen = useMenuState((state) => state.setOpen);
@@ -16,11 +16,11 @@ function Navbar() {
     let timeout;
 
     if (footerVisible) {
-      setAnim("a-slide-down");
+      setAnim("a-fade-out");
       timeout = setTimeout(() => setShow(false), 650);
     } else {
       setShow(true);
-      setAnim("a-slide-up");
+      setAnim("a-fade-in");
       timeout = setTimeout(() => setAnim(""), 650); // technically not needed but it makes ts happy
     }
 
@@ -31,13 +31,13 @@ function Navbar() {
 
   if (!show) return null;
   return (
-    <header className="z-100 fixed flex justify-between w-full p-page">
+    <header className="z-100 fixed flex justify-between w-full overflow-hidden p-page">
       <img className={`object-contain overflow-hidden ${anim}`} src={assetMap["logo.png"]} style={{ width: "calc(1.5 * var(--spacing-page))", height: "calc(1.5 * var(--spacing-page))" }} />
 
-      <button className="self-start overflow-hidden scale-on-hover cursor-pointer" onClick={() => setOpen(!open)}>
+      <button className={`flex justify-center items-center self-start overflow-hidden p-button rounded-full bg-accent cursor-pointer ${anim}`} onClick={() => setOpen(!open)}>
         {
-          !open ? <Menu className={anim} style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
-          : <X style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />
+          !open ? <Menu className="scale-on-hover" style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
+          : <X className="scale-on-hover" style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />
         }
       </button>
     </header>

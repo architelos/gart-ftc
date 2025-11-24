@@ -27,26 +27,26 @@ function Footer() {
   }, [footerInView, setFooterVisible]);
 
   return (
-    <footer ref={footerRef} className="flex flex-col gap-y-s-three p-page border-t border-t-text/20 bg-bg">
-      <div ref={navRef} className="flex flex-row flex-wrap flex-0 gap-x-s-one gap-y-s-three mb-s-three">
+    <footer ref={footerRef} className="flex flex-col gap-y-s-two p-page border-t border-t-text/20 bg-bg">
+      <div ref={navRef} className="flex flex-row flex-wrap flex-0 justify-between gap-x-s-one gap-y-s-three mb-s-three">
         <Text type="pg" link={true} animate={navInView} href="/">{t.menu.home}</Text>
         <Text type="pg" link={true} animate={navInView} href="/about">{t.menu.about}</Text>
         <Text type="pg" link={true} animate={navInView} href="/robot">{t.menu.robot}</Text>
         <Text type="pg" link={true} animate={navInView} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
 
-      <div className="flex flex-row flex-wrap flex-0 justify-between gap-y-s-four mb-l">
+      <div className="flex flex-row flex-wrap flex-0 justify-between gap-x-s-one gap-y-s-four mb-l">
         <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.email}>{t.email}</Text>
         <Text type="pg" className="font-bold!" link={true} animate={navInView} href={t.tel}>{t.tel}</Text>
-        <div className="flex flex-row gap-x-s-two w-full md:w-auto max-sm:pt-s-two">
+        <div className="flex flex-row gap-x-s-two w-full md:w-auto max-sm:pt-s-three">
           <a href={socials.fb} className={`scale-on-hover opacity-0 ${navInView ? "a-fade-in" : ""}`}>
-            <FaFacebook style={{ width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+            <FaFacebook style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           </a>
           <a href={socials.yt} className={`scale-on-hover opacity-0 ${navInView ? "a-fade-in" : ""}`}>
-            <FaYoutube style={{ width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+            <FaYoutube style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           </a>
           <a href={socials.gh} className={`scale-on-hover opacity-0 ${navInView ? "a-fade-in" : ""}`}>
-            <FaGithub style={{ width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
+            <FaGithub style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           </a>
         </div>
       </div>
