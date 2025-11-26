@@ -15,13 +15,13 @@
     "hero": {
       "accented": "GreenAms",
       "unaccented": "Robotics Team",
-      "tagline": "We build robots and help other teams learn",
+      "tagline": "From Hanoi - Amsterdam High School — When I say Green, you say Ams!",
       "end": "(scroll to explore)"
     },
     "about": {
       "title": "About us",
-      "p1": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-      "p2": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer",
+      "p1": "We are GreenAms Robotics Team 24751 from Vietnam, a team with two years of competitive experience at both the national and international levels of the FIRST Tech Challenge.",
+      "p2": "Following an outstanding and highly successful 2024–2025 season, we return to the FTC 2025-2026 season with open minds and a desire to share the lessons we've learned along the way. Join us as we kick off the DECODE season!",
       "cta": "More"
     },
     "sponsors": {

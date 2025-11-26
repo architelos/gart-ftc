@@ -16,7 +16,7 @@ function Faq() {
   const { ref: contentRef, inView: contentInView } = useInView();
 
   return (
-    <section className="flex md:flex-row flex-col md:justify-between max-sm:gap-y-page w-full p-page bg-bg">
+    <section className="flex md::flex-row flex-col md:justify-between gap-y-page w-full p-page bg-bg">
       <div ref={headingRef} className="md:w-[40%]">
         <Text type="title" animate={headingInView}>{t.home.faq.heading}</Text>
       </div>

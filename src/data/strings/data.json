@@ -2,14 +2,24 @@
   "en": {
     "awards": [
       {
-        "year": "2023",
-        "award": "Innovate Award",
-        "description": "Recognized for creative engineering solutions and original design approaches that improved both performance and reliability of the robot."
+        "year": "2024-2025",
+        "award": "Finalist Award",
+        "description": "FIRST World Championship"
       },
       {
-        "year": "2024",
-        "award": "Inspire Award",
-        "description": "Honored as the team that best embodied the challenge's spirit through strong engineering, outreach, and consistent excellence in all aspects of competition."
+        "year": "2024-2025",
+        "award": "Champion",
+        "description": "FTC Edison Division"
+      },
+      {
+        "year": "2024-2025",
+        "award": "Winning Alliance Captain & Design Award",
+        "description": "One of the only two representatives from Vietnam to compete at the FIRST Tech Challenge World Championship in Houston, USA."
+      },
+      {
+        "year": "2023-2024",
+        "award": "Winning Alliance Captain, Innovate Award",
+        "description": "Ranked first in the competition across all robot performance metrics."
       }
     ],
     "benefits": [
@@ -36,24 +46,24 @@
     ],
     "faqs": [
       {
-        "q": "What is the purpose of a CPU in a computer?",
-        "a": "The CPU processes instructions and performs calculations, acting as the main controller of the system."
+        "q": "How can other teams or partners collaborate with you?",
+        "a": "Teams and organizations can collaborate with us through mentorship, joint workshops, STEM events, sponsorship, or knowledge-sharing sessions.\nWe welcome partnerships that help strengthen Vietnam’s robotics community and inspire future innovators."
       },
       {
-        "q": "Why do objects fall to the ground?",
-        "a": "Because of gravity, a force that pulls objects with mass toward each other."
+        "q": "What is your goal for the current season?",
+        "a": "We aim to continue improving our robot’s performance while expanding our impact on the FTC community in Vietnam. This includes mentoring new teams, hosting workshops, and promoting FIRST values among young STEM learners."
       },
       {
-        "q": "What is a budget in personal finance?",
-        "a": "A budget is a plan that tracks income and expenses to help manage money effectively."
+        "q": "What are we?",
+        "a": "We are the FTC team of Hanoi–Amsterdam High School for the Gifted in Vietnam, and are a student-led robotics team focused on engineering, programming, and competing in both national and international FTC events."
       },
       {
-        "q": "What does HTTPS mean on a website?",
-        "a": "HTTPS indicates that the site uses encryption to secure data sent between the browser and server."
+        "q": "How do you approach robot design to balance reliability, speed, and scoring efficiency?",
+        "a": "We follow an iterative engineering process that includes careful planning, testing, and continuous improvement. Our robot design focuses on reliability, consistency, and effective performance in real match conditions. By reviewing match data, identifying weaknesses, and refining our mechanisms over time, we ensure that our robot stays stable, adaptable, and ready for competition."
       },
       {
-        "q": "What is the function of mitochondria in a cell?",
-        "a": "Mitochondria generate energy in the form of ATP, powering cellular processes."
+        "q": "What benefits do sponsors receive when partnering with you?",
+        "a": "Sponsors gain visibility at events, on our robot uniforms, media platforms, and in international FTC competitions, along with opportunities to engage with STEM-focused students - visit our SPONSOR US page for more information."
       }
     ],
     "images": [
@@ -278,34 +288,34 @@
     ],
     "sponsors": [
       {
-        "name": "Sponsor 1",
-        "img": "ph.avif",
+        "name": "American Study",
+        "img": "home/s1.avif",
+        "link": "https://americanstudy.edu.vn/"
+      },
+      {
+        "name": "ETEK",
+        "img": "home/s2.avif",
         "link": "https://example.com/"
       },
       {
-        "name": "Sponsor 2",
-        "img": "pv.avif",
-        "link": "https://example.com/"
+        "name": "HEADWAY",
+        "img": "home/s3.avif",
+        "link": "https://headway.com.vn/"
       },
       {
-        "name": "Sponsor 3",
-        "img": "ph.avif",
-        "link": "https://example.com/"
+        "name": "KLB",
+        "img": "home/s4.avif",
+        "link": "https://klbgroup.com.vn/"
       },
       {
-        "name": "Sponsor 4",
-        "img": "pv.avif",
-        "link": "https://example.com/"
+        "name": "VIPHAP",
+        "img": "home/s5.avif",
+        "link": "https://viphap.com/"
       },
       {
-        "name": "Sponsor 5",
-        "img": "ph.avif",
-        "link": "https://example.com/"
-      },
-      {
-        "name": "Sponsor 6",
-        "img": "pv.avif",
-        "link": "https://example.com/"
+        "name": "CMC Telecom",
+        "img": "home/s6.avif",
+        "link": "https://cmctelecom.vn/"
       }
     ],
     "updates": [

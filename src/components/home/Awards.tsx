@@ -42,7 +42,7 @@ function Awards() {
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
       <div ref={imgRef} className="flex flex-col gap-y-s-two">
-        <img src={assetMap["ph.avif"]} className={`opacity-0 ${imgInView ? "a-fade-in" : ""}`} />
+        <img src={assetMap["home/10.avif"]} className={`opacity-0 ${imgInView ? "a-fade-in" : ""}`} />
         <div ref={headerRef}><Text type="pg" animate={headerInView} className="md:max-w-[60%] font-bold!">{t.home.awards.header}</Text></div>
       </div>
       <div className="gap-x-s-two gap-y-s-two grid grid-cols-[3fr_7fr] md:grid-cols-[1fr_1fr_2fr]">
