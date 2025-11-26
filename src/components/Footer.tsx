@@ -33,7 +33,7 @@ function Footer() {
       <div ref={navRef} className="flex flex-row flex-wrap flex-0 justify-between gap-x-s-one gap-y-s-three mb-s-three">
         <Text type="pg" link={true} animate={navInView} href="/">{t.menu.home}</Text>
         <Text type="pg" link={true} animate={navInView} href="/about">{t.menu.about}</Text>
-        <Text type="pg" link={true} animate={navInView} href="/robot">{t.menu.robot}</Text>
+        {/* <Text type="pg" link={true} animate={navInView} href="/robot">{t.menu.robot}</Text> */}
         <Text type="pg" link={true} animate={navInView} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
 

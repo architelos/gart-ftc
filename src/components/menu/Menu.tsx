@@ -43,7 +43,7 @@ function Menu() {
           <div className="flex flex-col gap-y-s-two">
             <Text type="title" link={true} href="/">{t.menu.home}</Text>
             <Text type="title" link={true} href="/about">{t.menu.about}</Text>
-            <Text type="title" link={true} href="/robot">{t.menu.robot}</Text>
+            {/* <Text type="title" link={true} href="/robot">{t.menu.robot}</Text> */}
             <Text type="title" link={true} href="/sponsor">{t.menu.sponsor}</Text>
           </div>
 
