@@ -34,7 +34,7 @@ function Navbar() {
     <header className="z-100 fixed flex justify-between w-full overflow-hidden p-page">
       <img className={`object-contain overflow-hidden ${anim}`} src={assetMap["logo.png"]} style={{ width: "calc(1.5 * var(--spacing-page))", height: "calc(1.5 * var(--spacing-page))" }} />
 
-      <button className={`flex justify-center items-center self-start overflow-hidden p-button rounded-full bg-accent cursor-pointer ${anim}`} onClick={() => setOpen(!open)}>
+      <button className={`flex justify-center items-center self-start overflow-hidden p-button rounded-md bg-accent cursor-pointer ${anim}`} onClick={() => setOpen(!open)}>
         {
           !open ? <Menu className="scale-on-hover" style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
           : <X className="scale-on-hover" style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />

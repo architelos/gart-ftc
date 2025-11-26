@@ -111,6 +111,31 @@
       }
     ],
     "people": {
+      "manager": [
+        {
+          "idk": "17",
+          "name": "Thanh Tùng",
+          "job": "job_1",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        }
+      ],
+      "coach": [
+        {
+          "idx": 15,
+          "name": "Hải Đăng",
+          "job": "job_1",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 16,
+          "name": "Tiến Khải",
+          "job": "job_1",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        }
+      ],
       "programming": [
         {
           "idx": 0,
@@ -255,10 +280,6 @@
       "gh": {
         "link": "https://github.com/gart6520/",
         "handle": "gart6520"
-      },
-      "fb": {
-        "link": "https://web.facebook.com/GART6520",
-        "handle": "GART6520"
       },
       "ig": {
         "link": "https://www.instagram.com/ftc24751_gart/",

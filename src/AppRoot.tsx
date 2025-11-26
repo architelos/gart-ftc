@@ -1,19 +1,48 @@
 import { useEffect, useState, useRef } from "react";
-// import avif from "avif.js";
+import avif from "avif.js";
 
 import App from "@/App.tsx";
 import Preloader from "@/components/Preloader.tsx";
 
 async function assets() {
-  // TODO
   await document.fonts.ready;
 
-  await new Promise((resolve) => { setTimeout(resolve, 500); });
+  // TODO
+  await new Promise((resolve) => { setTimeout(resolve, 1000); });
 }
 
 async function polyfills() {
-  // TODO
-  await new Promise((resolve) => { setTimeout(resolve, 500); });
+  await new Promise((resolve) => {
+    if (
+      "fetch" in window &&
+      "IntersectionObserver" in window &&
+      "IntersectionObserverEntry" in window
+    ) {
+      resolve(null); // no need!
+      return;
+    }
+
+    console.log("IntersectionObserver not found, loading polyfill...");
+
+    const script = document.createElement("script");
+    script.src = "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=IntersectionObserver%2CIntersectionObserverEntry%2Cfetch";
+    script.crossOrigin = "anonymous";
+    script.onload = resolve;
+    script.onerror = resolve;
+    document.head.appendChild(script);
+  });
+
+  const avifSupported = await new Promise((resolve) => {
+    const avif = new Image();
+    avif.src = "data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAOptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAEOAAEAAAAAAAAAIgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAamlwcnAAAABLaXBjbwAAABNjb2xybmNseAABAA0AAIAAAAAMYXYxQ4EgAgAAAAAUaXNwZQAAAAAAAAAQAAAAEAAAABBwaXhpAAAAAAMICAgAAAAXaXBtYQAAAAAAAAABAAEEgYIDhAAAACptZGF0EgAKCDgM/9lAQ0AIMhQQAAAAFLm4wN/TRReKCcSo648oag==";
+    avif.onerror = () => { resolve(false); };
+    avif.onload = () => { resolve(avif.naturalWidth > 0 || avif.naturalHeight > 0); };
+  });
+  if (!avifSupported) {
+    console.log("no AVIF support, loading polyfill...");
+
+    avif.register("/avif-sw.js");
+  }
 }
 
 // -----

@@ -54,6 +54,8 @@
       "tap": "(tap)",
       "hover": "(hover)",
       "divisions": {
+        "manager": "Manager",
+        "coach": "Coach",
         "programming": "Programming",
         "mechanical": "Mechanical",
         "business": "Business"

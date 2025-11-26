@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import { FaYoutube, FaGithub, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
+import { FaYoutube, FaGithub, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useMenuState from "@/hooks/useMenuState";
 import useLocale from "@/hooks/useLocale";
 import useTheme from "@/hooks/useTheme";
+import useIsMd from "@/hooks/useIsMd";
 import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
 import data from "@/data/data";
@@ -19,6 +20,7 @@ function Footer() {
 
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
+  const isMd = useIsMd();
   const { socials } = data(locale);
 
   const theme = useTheme((state) => state.theme);
@@ -38,23 +40,19 @@ function Footer() {
       </div>
 
       <div ref={socialsRef} className="gap-y-s-three grid grid-cols-1 md:grid-cols-3">
-        <a href={socials.fb.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
-          <FaFacebook style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-          <Text type="pg">{socials.fb.handle}</Text>
-        </a>
-        <a href={socials.yt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.yt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-start" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaYoutube style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.yt.handle}</Text>
         </a>
-        <a href={socials.gh.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.gh.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-center" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaGithub style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.gh.handle}</Text>
         </a>
-        <a href={socials.ig.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.ig.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-end" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaInstagram style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.ig.handle}</Text>
         </a>
-        <a href={socials.tt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.tt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-start" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaTiktok style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.tt.handle}</Text>
         </a>
