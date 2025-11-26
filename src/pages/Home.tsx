@@ -1,7 +1,7 @@
 import Hero from "@/components/home/Hero";
 import Images from "@/components/home/Images";
 import About from "@/components/home/About";
-import Sponsors from "@/components/home/Sponsors";
+// import Sponsors from "@/components/home/Sponsors";
 import Updates from "@/components/home/Updates";
 import Awards from "@/components/home/Awards";
 import Faq from "@/components/home/Faq";
@@ -15,8 +15,8 @@ function Home() {
       <Break />
       <About />
       <Break />
-      <Sponsors />
-      <Break />
+      {/* <Sponsors />
+      <Break /> */}
       <Updates />
       <Break />
       <Awards />
