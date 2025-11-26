@@ -48,7 +48,7 @@ function Menu() {
           </div>
 
           <div className="flex flex-row md:self-end gap-x-s-one max-sm:pb-page">
-            {locale === "vn"
+            {/* {locale === "vn"
             ? <GB
                 onClick={() => toggleLocale()}
                 className="scale-on-hover cursor-pointer"
@@ -57,7 +57,7 @@ function Menu() {
                 onClick={() => toggleLocale()}
                 className="scale-on-hover cursor-pointer"
                 style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-            }
+            } */}
 
             {theme === "light"
             ? <Moon

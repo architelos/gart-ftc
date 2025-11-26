@@ -19,31 +19,43 @@
       {
         "year": "2023-2024",
         "award": "Winning Alliance Captain, Innovate Award",
-        "description": "Ranked first in the competition across all robot performance metrics."
+        "description": "FTC Vietnam - Ranked first in the competition across all robot performance metrics."
       }
     ],
-    "benefits": [
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
-      },
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
-      },
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
-      },
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
-      }
-    ],
+    "benefits": {
+      "Business": [
+        {
+          "name": "Bronze ($200 - $999)",
+          "desc": "- Use team’s and the web page’s content for media\n- Certificate of appreciation\n- 1:4 logo on teamwear and robot\n- Name + logo on website and social media\n- 1 media support post\n- Other benefits enjoyed by both parties"
+        },
+        {
+          "name": "Silver ($1,000 - $1,999)",
+          "desc": "All of the above, and:\n- 1:3 logo on teamwear and robot\n- Unique social media recognition\n- 2 media support posts"
+        },
+        {
+          "name": "Gold ($2,000 - $2,9999)",
+          "desc": "All of the above, and:\n- 1:2 logo on teamwear and robot\n- 1:4 logo on event banners\n- Name + logo on giveaway gifts\n- 3 media support posts"
+        },
+        {
+          "name": "Diamond ($3,000 - $4,999)",
+          "desc": "All of the above, and:\n - 3:4 to 1:1 logo on teamwear and robot\n- Recognition on ALL social media posts\n- 2:3 logo on event banners\n- Company merch handouts\n- 3+ media support posts"
+        },
+        {
+          "name": "Partner ($5,000+)",
+          "desc": "For higher amount of sponsorship, we would want to be long-term strategic partners with the company and to satisfy more agreed-upon benefits over longer periods of time."
+        }
+      ],
+      "Individual": [
+        {
+          "name": "Supporter ($50 - $199)",
+          "desc": "- Team merchandise\n- Appreciation letter"
+        },
+        {
+          "name": "Backer ($200+)",
+          "desc": "All of the above, and:\n- Recognition on website\n- Social media recognition"
+        }
+      ]
+    },
     "faqs": [
       {
         "q": "How can other teams or partners collaborate with you?",
@@ -219,17 +231,17 @@
       ],
       "business": [
         {
+          "idx": 12,
+          "name": "Phương Thảo",
+          "job": "job_9",
+          "quote": "Success is where preparation meets opportunity",
+          "img": "pv.avif"
+        },
+        {
           "idx": 11,
           "name": "Dương Lâm",
           "job": "job_10",
           "quote": "Strategy without execution is just a dream",
-          "img": "pv.avif"
-        },
-        {
-          "idx": 12,
-          "name": "Phương Thảo",
-          "job": "job_11",
-          "quote": "Success is where preparation meets opportunity",
           "img": "pv.avif"
         },
         {
@@ -249,26 +261,10 @@
       ]
     },
     "resources": {
-      "Templates": [
-        {
-          "name": "Engineering Notebook Template",
-          "link": "/resources/engineering-notebook-template.pdf"
-        },
-        {
-          "name": "Outreach Report Template",
-          "link": "/resources/outreach-report-template.pdf"
-        }
-      ],
-      "Slides": [
-        {
-          "name": "Team Presentation Slides",
-          "link": "/resources/team-presentation-slides.pptx"
-        }
-      ],
       "Guides": [
         {
-          "name": "Portfolio & Awards Submission Guide",
-          "link": "/resources/portfolio-awards-guide.pdf"
+          "name": "FTC 101",
+          "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z"
         }
       ]
     },
@@ -415,20 +411,20 @@
     ],
     "figures": [
       {
-        "name": "ROI",
-        "data": "9000%"
+        "name": "Total views",
+        "data": "142K"
       },
       {
-        "name": "impressions",
-        "data": "10tril"
+        "name": "Instagram followers",
+        "data": "1.2K"
       },
       {
-        "name": "engagement",
-        "data": "120%"
+        "name": "Connected teams globally",
+        "data": "60"
       },
       {
-        "name": "some shit",
-        "data": "idk"
+        "name": "Reach through events",
+        "data": "5K"
       }
     ],
     "uses": [
@@ -456,28 +452,6 @@
         "use": "Public Art Installation",
         "desc": "Funds are used to commission local artists to create murals and pop-up art pieces to beautify community spaces.",
         "img": "ph.avif"
-      }
-    ],
-    "tiers": [
-      {
-        "name": "Silver",
-        "price": "$200",
-        "features": ["not muchaf asf a", "featureasf asf ", "updatesasf asf asf"]
-      },
-      {
-        "name": "Gold",
-        "price": "$500",
-        "features": ["video featurefas fasf as", "even featuref asf asf a", "updatesfas fasf ", "shoutoutafs asf "]
-      },
-      {
-        "name": "Radiant",
-        "price": "$750",
-        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
-      },
-      {
-        "name": "Global Elite",
-        "price": "$1000",
-        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
       }
     ]
   },

@@ -11,11 +11,28 @@ import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
 import data from "@/data/data";
 
+interface ContactRowProps { row: string[] }
+
+function ContactRow({ row }: ContactRowProps) {
+  const { ref: rowRef, inView: rowInView } = useInView();
+
+  const email = row[0];
+  const role = row[1];
+  const tel = row[2];
+
+  return (
+    <div ref={rowRef} className="gap-x-s-three gap-y-s-three grid grid-cols-3 max-sm:grid-cols-2">
+      <Text type="pg" className="place-self-start md:place-self-start font-bold!" link={true} animate={rowInView}>{role}</Text>
+      <Text type="pg" className="place-self-end md:place-self-center font-bold!" link={true} animate={rowInView} href={`mailto:${email}`}>{email}</Text>
+      <Text type="pg" className="md:place-self-end font-bold!" link={true} animate={rowInView} href={`tel:${tel}`}>{tel}</Text>
+    </div>
+  );
+}
+
 function Footer() {
   const { ref: footerRef, inView: footerInView } = useInView({ once: false });
   const { ref: navRef, inView: navInView } = useInView();
   const { ref: socialsRef, inView: socialsInView } = useInView();
-  const { ref: contactRef, inView: contactInView } = useInView();
   const { ref: imgRef, inView: imgInView } = useInView();
 
   const locale = useLocale((state) => state.locale);
@@ -58,9 +75,10 @@ function Footer() {
         </a>
       </div>
 
-      <div ref={contactRef} className="flex flex-row justify-between mt-s-three">
-        <Text type="pg" className="font-bold!" link={true} animate={contactInView} href={t.email}>{t.email}</Text>
-        <Text type="pg" className="font-bold!" link={true} animate={contactInView} href={t.tel}>{t.tel}</Text>
+      <div className="flex flex-col gap-y-s-three mt-s-three">
+        {t.contact.map((row, i) => (
+          <ContactRow key={i} row={row} />
+        ))}
       </div>
 
       <div ref={imgRef} className="flex flex-col flex-1 justify-center">

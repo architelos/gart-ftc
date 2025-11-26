@@ -1,7 +1,6 @@
 import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
-import useIsMd from "@/hooks/useIsMd";
 import translations from "@/data/translations";
 import data from "@/data/data";
 import assetMap from "@/data/assetMap";
@@ -9,43 +8,54 @@ import assetMap from "@/data/assetMap";
 interface Benefit {
   name: string;
   desc: string;
-  img: string;
+}
+interface Benefits {
+  Business: Benefit[];
+  Individual: Benefit[];
 }
 
-function BenefitDesktop ({ benefit }: { benefit: Benefit }) {
-  const { ref, inView } = useInView();
+interface BenefitsRowProps { pI: number; isLast: boolean, section: keyof Benefits; benefits: Benefit[]; }
+interface ContentRowProps { benefit: Benefit; }
+
+function ContentRow({ benefit }: ContentRowProps) {
+  const { ref: rowRef, inView: rowInView } = useInView();
 
   return (
-    <div ref={ref} className="flex flex-row gap-x-s-two w-full h-fit">
-      <div className={`w-[30%] ${inView ? "a-fade-in" : "opacity-0"}`}>
-        <Text type="pg" className="font-bold!">
-          {benefit.name}
-        </Text>
+    <div ref={rowRef} className={`flex flex-col max-sm:gap-y-s-two md:flex-row items-baseline w-full opacity-0 ${rowInView ? "a-fade-in" : ""}`}>
+      <div className={`md:w-[40%]`}>
+        <Text type="pg" className="font-bold!">{benefit.name}</Text>
       </div>
-      <div className={`w-[35%] ${inView ? "a-fade-in" : "opacity-0"}`}>
-        <Text type="pg" className="text-right">
-          {benefit.desc}
+      <div className="md:w-[60%]">
+        <Text type="pg">
+          {benefit.desc.split("\n").map((line, idx) => (
+            <span key={idx}>
+              {line}
+              <br />
+            </span>
+          ))}
         </Text>
-      </div>
-      <div className={`w-[35%] ${inView ? "a-fade-in" : "opacity-0"}`}>
-        <img src={assetMap[benefit.img]} className="w-full h-full object-contain" />
       </div>
     </div>
   );
 }
 
-function BenefitMobile ({ benefit }: { benefit: Benefit }) {
-  const { ref: headerRef, inView: headerInView } = useInView();
+function BenefitsRow({ pI, isLast, section, benefits }: BenefitsRowProps) {
+  const { ref: sectionRef, inView: sectionInView } = useInView();
   const { ref: imgRef, inView: imgInView } = useInView();
-  const { ref: descRef, inView: descInView } = useInView();
 
   return (
-    <div className="flex flex-col gap-y-s-three w-full">
-      <div ref={headerRef}><Text type="pg" className="font-bold!" animate={headerInView}>{benefit.name}</Text></div>
-      <div ref={imgRef} className={`w-full h-[40dvh] ${headerInView ? "a-fade-in" : "opacity-0"}`}>
-        <img src={assetMap[benefit.img]} className={`w-full h-full object-cover opacity-0 ${imgInView ? "a-fade-in" : ""}`} />
+    <div className="flex flex-col gap-y-s-one w-full">
+      <div ref={sectionRef}><Text type="pg" animate={sectionInView} className="font-bold! text-accent!">{section}</Text></div>
+      <div className="flex flex-col gap-y-s-two">
+        {benefits.map((benefit, i) => (
+          <ContentRow key={i} benefit={benefit} />
+        ))}
       </div>
-      <div ref={descRef}><Text type="pg" animate={descInView}>{benefit.desc}</Text></div>
+      {!isLast && (
+        <div ref={imgRef} className={`opacity-0 ${imgInView ? "a-fade-in" : ""}`}>
+          <img className="object-contain" src={assetMap[`sponsor/${pI + 1}.avif`]} />
+        </div>
+      )}
     </div>
   );
 }
@@ -55,9 +65,12 @@ function Benefits() {
   const t = translations(locale);
   const { benefits } = data(locale);
 
-  const isMd = useIsMd();
-
   const { ref: headingRef, inView: headingInView } = useInView();
+
+  const entries = Object.entries(benefits as Benefits) as [
+    keyof Benefits,
+    Benefit[]
+  ][];
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
@@ -67,11 +80,10 @@ function Benefits() {
         </Text>
       </div>
 
-      <div className="flex flex-col gap-y-s-one w-full">
-        {benefits.map((benefit: Benefit, i: number) => {
-          if (isMd) return <BenefitDesktop key={i} benefit={benefit} />;
-          return <BenefitMobile key={i} benefit={benefit} />
-        })}
+      <div className="flex flex-col gap-y-page w-full">
+        {entries.map(([section, items], i) => (
+          <BenefitsRow key={i} pI={i} isLast={i === entries.length - 1} section={section} benefits={items} />
+        ))}
       </div>
     </section>
   );

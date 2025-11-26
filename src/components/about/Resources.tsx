@@ -9,8 +9,6 @@ interface Resource {
   link: string;
 }
 interface Resources {
-  Templates: Resource[];
-  Slides: Resource[];
   Guides: Resource[];
 }
 interface ResSectionProps { section: keyof Resources, res: Resource[]; }

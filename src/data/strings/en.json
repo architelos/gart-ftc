@@ -1,6 +1,8 @@
 {
-  "email": "contact@greenams.com",
-  "tel": "+84 123456789",
+  "contact": [
+    ["ngnhaidangvn@gmail.com", "Coach Dang (primary)", "(+84) 968228118"],
+    ["tungnt@hnams.edu.vn", "Manager Tung", "(+84) 968666245"]
+  ],
   "menu": {
     "privacy_policy": "Privacy policy",
     "home": "Home",
@@ -70,8 +72,7 @@
         "job_7": "Lead Programmer",
         "job_8": "Programmer",
         "job_9": "Vice Captain",
-        "job_10": "Businessman",
-        "job_11": "Businesswoman"
+        "job_10": "Business"
       }
     },
     "values": {
@@ -117,17 +118,14 @@
       "cta": "(click)"
     },
     "benefits": {
-      "heading": "What we bring"
+      "heading": "Sponsor benefits"
     },
     "figures": {
       "heading": "Figures",
-      "desc": "(Over a time period of 2017-2025. Averaged based on multiple sponsors.)"
-    },
-    "uses": {
-      "heading": "How your generosity benefits us"
-    },
-    "tiers": {
-      "heading": "Sponsorship Tiers"
+      "desc": "(Data from the 2023–2025 season, based on information from sponsors and media sources.)",
+      "i1": "GART EXPO '25",
+      "i2": "GART CAMP '25",
+      "i3": "Wonderlab '25"
     },
     "action": {
       "heading": "Let's work together!"

@@ -1,6 +1,8 @@
 {
-  "email": "contact@greenams.com",
-  "tel": "+84 123456789",
+  "contact": [
+    ["ngnhaidangvn@gmail.com", "Coach (primary)", "(+84) 968228118"],
+    ["tungnt@hnams.edu.vn", "Manager", "(+84) 968666245"]
+  ],
   "menu": {
     "privacy_policy": "Privacy policy",
     "home": "Home",
@@ -15,13 +17,13 @@
     "hero": {
       "accented": "GreenAms",
       "unaccented": "Robotics Team",
-      "tagline": "We build robots and help other teams learn",
+      "tagline": "From Hanoi - Amsterdam High School — When I say Green, you say Ams!",
       "end": "(scroll to explore)"
     },
     "about": {
       "title": "About us",
-      "p1": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-      "p2": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer",
+      "p1": "We are GreenAms Robotics Team 24751 from Vietnam, a team with two years of competitive experience at both the national and international levels of the FIRST Tech Challenge.",
+      "p2": "Following an outstanding and highly successful 2024–2025 season, we return to the FTC 2025-2026 season with open minds and a desire to share the lessons we've learned along the way. Join us as we kick off the DECODE season!",
       "cta": "More"
     },
     "sponsors": {
@@ -54,20 +56,23 @@
       "tap": "(tap)",
       "hover": "(hover)",
       "divisions": {
+        "manager": "Manager",
+        "coach": "Coach",
         "programming": "Programming",
         "mechanical": "Mechanical",
         "business": "Business"
       },
       "jobs": {
-        "job_1": "Lead Dev",
-        "job_2": "AI Specialist",
-        "job_3": "Coder",
-        "job_4": "Mech Lead",
-        "job_5": "Fabricator",
-        "job_6": "CAD Engineer",
-        "job_7": "Manager",
-        "job_8": "Marketer",
-        "job_9": "Sponsor Rep"
+        "job_1": "Manager",
+        "job_2": "Coach",
+        "job_3": "Lead CAD",
+        "job_4": "Lead Mechanic",
+        "job_5": "Mechanic",
+        "job_6": "Team Captain",
+        "job_7": "Lead Programmer",
+        "job_8": "Programmer",
+        "job_9": "Vice Captain",
+        "job_10": "Business"
       }
     },
     "values": {
@@ -113,18 +118,14 @@
       "cta": "(click)"
     },
     "benefits": {
-      "heading": "What we bring"
+      "heading": "Sponsor benefits"
     },
     "figures": {
       "heading": "Figures",
-      "desc": "(Over a time period of 2017-2025. Averaged based on multiple sponsors.)"
-    },
-    "uses": {
-      "heading": "How your generosity benefits us"
-    },
-    "tiers": {
-      "heading": "Tiers",
-      "subheading": "Choose the plan that fits your needs"
+      "desc": "(Data from the 2023–2025 season, based on information from sponsors and media sources.)",
+      "i1": "GART EXPO '25",
+      "i2": "GART CAMP '25",
+      "i3": "Wonderlab '25"
     },
     "action": {
       "heading": "Let's work together!"
