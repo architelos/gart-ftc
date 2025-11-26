@@ -90,24 +90,24 @@
     ],
     "missions": [
       {
-        "name": "mission 1",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
+        "name": "STEM Access",
+        "desc": "We aim to serve as a bridge bringing science and technology closer to Vietnamese students through various activities. We are dedicated to fostering an innovative and accessible learning environment.",
+        "img": "about/m2.1.avif"
       },
       {
-        "name": "mission 2",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "name": "Innovation Focus",
+        "desc": "Our team pursues the \"innovation first\" spirit in every phase. We are committed to developing robots which compete effectively in arenas ranging from FTC Vietnam to the FTC World Championship.",
+        "img": "about/m3.1.avif"
       },
       {
-        "name": "mission 3",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
+        "name": "Community Growth",
+        "desc": "We aim to expand and strengthen the domestic FTC community by supporting new teams, creating open-source resources, organizing community events, and sharing competition experience.",
+        "img": "about/m2.avif"
       },
       {
-        "name": "mission 4",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "name": "Collaboration & Impact",
+        "desc": "We consistently strive to build collaborative relationships to spread the spirit of FTC and robotics, through joint projects, long-term cooperation programs, and competitive, practical robotics products.",
+        "img": "about/m5.avif"
       }
     ],
     "people": {
@@ -124,14 +124,14 @@
         {
           "idx": 15,
           "name": "Hải Đăng",
-          "job": "job_1",
+          "job": "job_2",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
         },
         {
           "idx": 16,
           "name": "Tiến Khải",
-          "job": "job_1",
+          "job": "job_2",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
         }
@@ -140,42 +140,42 @@
         {
           "idx": 0,
           "name": "Khánh Anh",
-          "job": "job_1",
+          "job": "job_6",
           "quote": "Code is poetry written in logic",
           "img": "pv.avif"
         },
         {
           "idx": 1,
           "name": "Tuấn Khôi",
-          "job": "job_2",
+          "job": "job_7",
           "quote": "Teaching machines to think, one algorithm at a time",
           "img": "pv.avif"
         },
         {
           "idx": 2,
           "name": "Minh Quang",
-          "job": "job_2",
+          "job": "job_8",
           "quote": "AI is not about replacing humans, it's about augmenting them",
           "img": "pv.avif"
         },
         {
           "idx": 3,
           "name": "Đức Khánh",
-          "job": "job_3",
+          "job": "job_8",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
         },
         {
           "idx": 4,
           "name": "Đăng Minh",
-          "job": "job_3",
+          "job": "job_8",
           "quote": "Clean code always looks like it was written by someone who cares",
           "img": "pv.avif"
         },
         {
           "idx": 5,
           "name": "Minh Dũng",
-          "job": "job_3",
+          "job": "job_8",
           "quote": "First, solve the problem. Then, write the code",
           "img": "pv.avif"
         }
@@ -184,7 +184,7 @@
         {
           "idx": 6,
           "name": "Thế Khải",
-          "job": "job_4",
+          "job": "job_3",
           "quote": "Engineering is the art of making the impossible possible",
           "img": "pv.avif"
         },
@@ -212,7 +212,7 @@
         {
           "idx": 10,
           "name": "Trần Khoa",
-          "job": "job_6",
+          "job": "job_5",
           "quote": "Design is not just what it looks like, it's how it works",
           "img": "pv.avif"
         }
@@ -221,28 +221,28 @@
         {
           "idx": 11,
           "name": "Dương Lâm",
-          "job": "job_7",
+          "job": "job_10",
           "quote": "Strategy without execution is just a dream",
           "img": "pv.avif"
         },
         {
           "idx": 12,
           "name": "Phương Thảo",
-          "job": "job_8",
+          "job": "job_11",
           "quote": "Success is where preparation meets opportunity",
           "img": "pv.avif"
         },
         {
           "idx": 13,
           "name": "Quang Huy",
-          "job": "job_8",
+          "job": "job_10",
           "quote": "The best way to predict the future is to create it",
           "img": "pv.avif"
         },
         {
           "idx": 14,
           "name": "Đức Hùng",
-          "job": "job_9",
+          "job": "job_10",
           "quote": "Great things in business are never done by one person",
           "img": "pv.avif"
         }
@@ -364,36 +364,36 @@
     ],
     "values": [
       {
-        "value": "Value 1",
-        "desc": "Desc 1",
-        "img": "ph.avif"
+        "value": "Pioneering Spirit",
+        "desc": "We are one of the pioneer teams that join FTC in Vietnam, and we are into the feeling and soul that comes with it. Our value is to constantly explore, test unique robot solutions, and embrace failure as a chance to learn.",
+        "img": "about/4.avif"
       },
       {
-        "value": "Value 2",
-        "desc": "Desc 2",
-        "img": "ph.avif"
+        "value": "Friendly Competition",
+        "desc": "We view every opponent as a friend, willing to help and share experience even while competing. For GART, the goal isn't just for our robot to succeed, but for the entire robotics community to progress together.",
+        "img": "about/5.avif"
       },
       {
-        "value": "Value 3",
-        "desc": "Desc 3",
-        "img": "ph.avif"
+        "value": "Mentorship & Outreach",
+        "desc": "We dedicate time to teaching and mentoring new teams, and sharing robotics stories with local youths. This is how GART proudly brings the image of Vietnamese passion and potential to the world stage.",
+        "img": "about/3.avif"
       }
     ],
     "visions": [
       {
-        "value": "Vision 1",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "value": "Community Leadership",
+        "desc": "We strive to be the embodiment of the FTC spirit - an inspiration to other teams - creating a journey filled with memorable and exciting experiences within the FIRST Tech Challenge.",
+        "img": "about/7.avif"
       },
       {
-        "value": "Vision 2",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
+        "value": "Impact & Passion",
+        "desc": "We want our name to be synonymous with impact. When others speak of us, we want them to recognize a team fueled by a fierce competitive spirit and a burning passion for robotics.",
+        "img": "about/6.avif"
       },
       {
-        "value": "Vision 3",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "value": "Redefining Success",
+        "desc": "To us, success is not defined merely by trophies or high rankings. True success lies in the breadth of our impact, the strength of our inspiration, and the positive influence we exert on the robotics community - contributing to its robust, sustainable, and long-term growth.",
+        "img": "about/10.1.avif"
       }
     ],
     "subsystems": [

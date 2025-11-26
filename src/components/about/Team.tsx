@@ -67,14 +67,14 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
         </div>
       </div>
 
-      {showCard && (
+      {/* {showCard && (
         <div className="z-25 fixed w-[20vw] max-h-[35vh] pointer-events-none" style={{ left:`${pos.x}px`, top:`${pos.y}px` }}>
           <div className="flex flex-col gap-y-s-four p-s-four rounded-md outline-2 outline-text/20 bg-bg">
             <img src={assetMap[person.img]} className={`object-contain opacity-0 a-fade-in max-h-[35vh] self-start rounded-md`} />
             <Text type="pg">"{person.quote}"</Text>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }

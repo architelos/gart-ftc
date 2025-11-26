@@ -39,13 +39,13 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
     <motion.div className="absolute inset-0 flex flex-row w-full h-dvh bg-bg" style={{ y, zIndex: idx }}>
       <div className="flex flex-col h-full p-page">
         <div className="flex flex-col justify-center items-center gap-y-page w-full h-full">
-          <Text type="title">{value.value}</Text>
+          <Text type="title" className="text-center">{value.value}</Text>
 
           <div className="w-full max-h-[60%]">
             <img src={assetMap[value.img]} className="w-full h-full object-contain" />
           </div>
 
-          <Text type="pg">{value.desc}</Text>
+          <Text type="pg" className="text-center">{value.desc}</Text>
         </div>
       </div>
 

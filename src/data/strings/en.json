@@ -61,15 +61,17 @@
         "business": "Business"
       },
       "jobs": {
-        "job_1": "Lead Dev",
-        "job_2": "AI Specialist",
-        "job_3": "Coder",
-        "job_4": "Mech Lead",
-        "job_5": "Fabricator",
-        "job_6": "CAD Engineer",
-        "job_7": "Manager",
-        "job_8": "Marketer",
-        "job_9": "Sponsor Rep"
+        "job_1": "Manager",
+        "job_2": "Coach",
+        "job_3": "Lead CAD",
+        "job_4": "Lead Mechanic",
+        "job_5": "Mechanic",
+        "job_6": "Team Captain",
+        "job_7": "Lead Programmer",
+        "job_8": "Programmer",
+        "job_9": "Vice Captain",
+        "job_10": "Businessman",
+        "job_11": "Businesswoman"
       }
     },
     "values": {

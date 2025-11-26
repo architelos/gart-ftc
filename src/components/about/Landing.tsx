@@ -12,7 +12,7 @@ function Landing() {
       className="relative flex flex-col justify-center items-center w-full h-dvh p-page"
     >
       <img
-        src={assetMap["pv.avif"]}
+        src={assetMap["about/2.avif"]}
         alt="Landing Background"
         className="top-0 left-0 z-0 absolute w-full h-dvh object-cover a-fade-in"
       />
