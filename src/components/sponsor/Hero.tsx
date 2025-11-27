@@ -22,7 +22,6 @@ function Hero() {
         <Text type="title">{t.sponsor.hero.heading_1}</Text>
         <Text type="title" className="text-accent!">{t.sponsor.hero.heading_2}</Text>
       </div>
-
     </main>
   )
 }

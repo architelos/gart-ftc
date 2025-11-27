@@ -25,7 +25,7 @@ function About() {
           <div ref={p1Ref}><Text animate={p1InView} type="pg">{t.home.about.p1}</Text></div>
           <div ref={p2Ref}><Text animate={p2InView} type="pg">{t.home.about.p2}</Text></div>
           <div ref={buttonRef}>
-            <Button icon={<ArrowRight />} type="accent" className={`opacity-0 ${buttonInView ? "a-fade-in" : ""}`} link="/about">{t.home.about.cta}</Button>
+            <Button icon={<ArrowRight style={{ color: `var(--color-text)` }} />} type="accent" className={`opacity-0 ${buttonInView ? "a-fade-in" : ""}`} link="/about">{t.home.about.cta}</Button>
           </div>
         </div>
       </div>

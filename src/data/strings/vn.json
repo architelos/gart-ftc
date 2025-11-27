@@ -1,7 +1,7 @@
 {
   "contact": [
-    ["ngnhaidangvn@gmail.com", "Coach (primary)", "(+84) 968228118"],
-    ["tungnt@hnams.edu.vn", "Manager", "(+84) 968666245"]
+    ["ngnhaidangvn@gmail.com", "Coach Dang (primary)", "(+84) 968228118"],
+    ["tungnt@hnams.edu.vn", "Manager Tung", "(+84) 968666245"]
   ],
   "menu": {
     "privacy_policy": "Privacy policy",
@@ -122,13 +122,10 @@
     },
     "figures": {
       "heading": "Figures",
-      "desc": "(Data from the 2023–2025 season, based on information from sponsors and media sources.)",
-      "i1": "GART EXPO '25",
-      "i2": "GART CAMP '25",
-      "i3": "Wonderlab '25"
+      "desc": "(Data from the 2023–2025 season, based on information from sponsors and media sources.)"
     },
-    "action": {
-      "heading": "Let's work together!"
+    "event": {
+      "heading": "Some events we've been involved in"
     }
   }
 }

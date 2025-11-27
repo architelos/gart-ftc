@@ -26,19 +26,19 @@
       "Business": [
         {
           "name": "Bronze ($200 - $999)",
-          "desc": "- Use team’s and the web page’s content for media\n- Certificate of appreciation\n- 1:4 logo on teamwear and robot\n- Name + logo on website and social media\n- 1 media support post\n- Other benefits enjoyed by both parties"
+          "desc": "● Use team’s and the web page’s content for media\n● Certificate of appreciation\n● 1:4 logo on teamwear and robot\n● Name + logo on website and social media\n● 1 media support post\n● Other benefits enjoyed by both parties"
         },
         {
           "name": "Silver ($1,000 - $1,999)",
-          "desc": "All of the above, and:\n- 1:3 logo on teamwear and robot\n- Unique social media recognition\n- 2 media support posts"
+          "desc": "All of the above, and:\n● 1:3 logo on teamwear and robot\n● Unique social media recognition\n● 2 media support posts"
         },
         {
           "name": "Gold ($2,000 - $2,9999)",
-          "desc": "All of the above, and:\n- 1:2 logo on teamwear and robot\n- 1:4 logo on event banners\n- Name + logo on giveaway gifts\n- 3 media support posts"
+          "desc": "All of the above, and:\n● 1:2 logo on teamwear and robot\n● 1:4 logo on event banners\n● Name + logo on giveaway gifts\n● 3 media support posts"
         },
         {
           "name": "Diamond ($3,000 - $4,999)",
-          "desc": "All of the above, and:\n - 3:4 to 1:1 logo on teamwear and robot\n- Recognition on ALL social media posts\n- 2:3 logo on event banners\n- Company merch handouts\n- 3+ media support posts"
+          "desc": "All of the above, and:\n● 3:4 to 1:1 logo on teamwear and robot\n● Recognition on ALL social media posts\n● 2:3 logo on event banners\n● Company merch handouts\n● 3+ media support posts"
         },
         {
           "name": "Partner ($5,000+)",
@@ -48,11 +48,11 @@
       "Individual": [
         {
           "name": "Supporter ($50 - $199)",
-          "desc": "- Team merchandise\n- Appreciation letter"
+          "desc": "● Team merchandise\n● Appreciation letter"
         },
         {
           "name": "Backer ($200+)",
-          "desc": "All of the above, and:\n- Recognition on website\n- Social media recognition"
+          "desc": "All of the above, and:\n● Recognition on website\n● Social media recognition"
         }
       ]
     },
@@ -125,7 +125,7 @@
     "people": {
       "manager": [
         {
-          "idk": "17",
+          "idx": 17,
           "name": "Thanh Tùng",
           "job": "job_1",
           "quote": "Debug today, deploy tomorrow",
@@ -427,89 +427,101 @@
         "data": "5K"
       }
     ],
-    "uses": [
+    "events": [
       {
-        "use": "Community Sports Program",
-        "desc": "Funds are used to run free weekend sports sessions for underprivileged kids, including coaching, equipment, and facility rental.",
-        "img": "pv.avif"
+        "img": "sponsor/f3.avif",
+        "name": "Wonderlab '25",
+        "full": true
       },
       {
-        "use": "Scholarship Fund",
-        "desc": "The sponsorship supports annual scholarships for promising students in design, architecture, and engineering.",
-        "img": "ph.avif"
+        "img": "sponsor/f1.avif",
+        "name": "GART Expo '25",
+        "full": false
       },
       {
-        "use": "Environmental Initiative",
-        "desc": "Money goes to tree-planting drives, waste-sorting campaigns, and maintaining green spaces around the city.",
-        "img": "pv.avif"
-      },
-      {
-        "use": "Innovation Lab",
-        "desc": "Sponsors help build and maintain a small innovation lab where students can experiment with new technology and prototypes.",
-        "img": "ph.avif"
-      },
-      {
-        "use": "Public Art Installation",
-        "desc": "Funds are used to commission local artists to create murals and pop-up art pieces to beautify community spaces.",
-        "img": "ph.avif"
+        "img": "sponsor/f2.avif",
+        "name": "GART Camp '25",
+        "full": false
       }
     ]
   },
   "vn": {
     "awards": [
       {
-        "year": "2023",
-        "award": "Innovate Award",
-        "description": "Recognized for creative engineering solutions and original design approaches that improved both performance and reliability of the robot."
+        "year": "2024-2025",
+        "award": "Finalist Award",
+        "description": "FIRST World Championship"
       },
       {
-        "year": "2024",
-        "award": "Inspire Award",
-        "description": "Honored as the team that best embodied the challenge's spirit through strong engineering, outreach, and consistent excellence in all aspects of competition."
+        "year": "2024-2025",
+        "award": "Champion",
+        "description": "FTC Edison Division"
+      },
+      {
+        "year": "2024-2025",
+        "award": "Winning Alliance Captain & Design Award",
+        "description": "One of the only two representatives from Vietnam to compete at the FIRST Tech Challenge World Championship in Houston, USA."
+      },
+      {
+        "year": "2023-2024",
+        "award": "Winning Alliance Captain, Innovate Award",
+        "description": "FTC Vietnam - Ranked first in the competition across all robot performance metrics."
       }
     ],
-    "benefits": [
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
-      },
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
-      },
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
-      },
-      {
-        "name": "af asf afg",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
-      }
-    ],
+    "benefits": {
+      "Business": [
+        {
+          "name": "Bronze ($200 - $999)",
+          "desc": "● Use team’s and the web page’s content for media\n● Certificate of appreciation\n● 1:4 logo on teamwear and robot\n● Name + logo on website and social media\n● 1 media support post\n● Other benefits enjoyed by both parties"
+        },
+        {
+          "name": "Silver ($1,000 - $1,999)",
+          "desc": "All of the above, and:\n● 1:3 logo on teamwear and robot\n● Unique social media recognition\n● 2 media support posts"
+        },
+        {
+          "name": "Gold ($2,000 - $2,9999)",
+          "desc": "All of the above, and:\n● 1:2 logo on teamwear and robot\n● 1:4 logo on event banners\n● Name + logo on giveaway gifts\n● 3 media support posts"
+        },
+        {
+          "name": "Diamond ($3,000 - $4,999)",
+          "desc": "All of the above, and:\n● 3:4 to 1:1 logo on teamwear and robot\n● Recognition on ALL social media posts\n● 2:3 logo on event banners\n● Company merch handouts\n● 3+ media support posts"
+        },
+        {
+          "name": "Partner ($5,000+)",
+          "desc": "For higher amount of sponsorship, we would want to be long-term strategic partners with the company and to satisfy more agreed-upon benefits over longer periods of time."
+        }
+      ],
+      "Individual": [
+        {
+          "name": "Supporter ($50 - $199)",
+          "desc": "● Team merchandise\n● Appreciation letter"
+        },
+        {
+          "name": "Backer ($200+)",
+          "desc": "All of the above, and:\n● Recognition on website\n● Social media recognition"
+        }
+      ]
+    },
     "faqs": [
       {
-        "q": "What is the purpose of a CPU in a computer?",
-        "a": "The CPU processes instructions and performs calculations, acting as the main controller of the system."
+        "q": "How can other teams or partners collaborate with you?",
+        "a": "Teams and organizations can collaborate with us through mentorship, joint workshops, STEM events, sponsorship, or knowledge-sharing sessions.\nWe welcome partnerships that help strengthen Vietnam’s robotics community and inspire future innovators."
       },
       {
-        "q": "Why do objects fall to the ground?",
-        "a": "Because of gravity, a force that pulls objects with mass toward each other."
+        "q": "What is your goal for the current season?",
+        "a": "We aim to continue improving our robot’s performance while expanding our impact on the FTC community in Vietnam. This includes mentoring new teams, hosting workshops, and promoting FIRST values among young STEM learners."
       },
       {
-        "q": "What is a budget in personal finance?",
-        "a": "A budget is a plan that tracks income and expenses to help manage money effectively."
+        "q": "What are we?",
+        "a": "We are the FTC team of Hanoi–Amsterdam High School for the Gifted in Vietnam, and are a student-led robotics team focused on engineering, programming, and competing in both national and international FTC events."
       },
       {
-        "q": "What does HTTPS mean on a website?",
-        "a": "HTTPS indicates that the site uses encryption to secure data sent between the browser and server."
+        "q": "How do you approach robot design to balance reliability, speed, and scoring efficiency?",
+        "a": "We follow an iterative engineering process that includes careful planning, testing, and continuous improvement. Our robot design focuses on reliability, consistency, and effective performance in real match conditions. By reviewing match data, identifying weaknesses, and refining our mechanisms over time, we ensure that our robot stays stable, adaptable, and ready for competition."
       },
       {
-        "q": "What is the function of mitochondria in a cell?",
-        "a": "Mitochondria generate energy in the form of ATP, powering cellular processes."
+        "q": "What benefits do sponsors receive when partnering with you?",
+        "a": "Sponsors gain visibility at events, on our robot uniforms, media platforms, and in international FTC competitions, along with opportunities to engage with STEM-focused students - visit our SPONSOR US page for more information."
       }
     ],
     "images": [
@@ -536,67 +548,92 @@
     ],
     "missions": [
       {
-        "name": "mission 1",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
+        "name": "STEM Access",
+        "desc": "We aim to serve as a bridge bringing science and technology closer to Vietnamese students through various activities. We are dedicated to fostering an innovative and accessible learning environment.",
+        "img": "about/m2.1.avif"
       },
       {
-        "name": "mission 2",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "name": "Innovation Focus",
+        "desc": "Our team pursues the \"innovation first\" spirit in every phase. We are committed to developing robots which compete effectively in arenas ranging from FTC Vietnam to the FTC World Championship.",
+        "img": "about/m3.1.avif"
       },
       {
-        "name": "mission 3",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
+        "name": "Community Growth",
+        "desc": "We aim to expand and strengthen the domestic FTC community by supporting new teams, creating open-source resources, organizing community events, and sharing competition experience.",
+        "img": "about/m2.avif"
       },
       {
-        "name": "mission 4",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "name": "Collaboration & Impact",
+        "desc": "We consistently strive to build collaborative relationships to spread the spirit of FTC and robotics, through joint projects, long-term cooperation programs, and competitive, practical robotics products.",
+        "img": "about/m5.avif"
       }
     ],
     "people": {
+      "manager": [
+        {
+          "idx": 17,
+          "name": "Thanh Tùng",
+          "job": "job_1",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        }
+      ],
+      "coach": [
+        {
+          "idx": 15,
+          "name": "Hải Đăng",
+          "job": "job_2",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 16,
+          "name": "Tiến Khải",
+          "job": "job_2",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        }
+      ],
       "programming": [
         {
           "idx": 0,
           "name": "Khánh Anh",
-          "job": "job_1",
+          "job": "job_6",
           "quote": "Code is poetry written in logic",
           "img": "pv.avif"
         },
         {
           "idx": 1,
           "name": "Tuấn Khôi",
-          "job": "job_2",
+          "job": "job_7",
           "quote": "Teaching machines to think, one algorithm at a time",
           "img": "pv.avif"
         },
         {
           "idx": 2,
           "name": "Minh Quang",
-          "job": "job_2",
+          "job": "job_8",
           "quote": "AI is not about replacing humans, it's about augmenting them",
           "img": "pv.avif"
         },
         {
           "idx": 3,
           "name": "Đức Khánh",
-          "job": "job_3",
+          "job": "job_8",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
         },
         {
           "idx": 4,
           "name": "Đăng Minh",
-          "job": "job_3",
+          "job": "job_8",
           "quote": "Clean code always looks like it was written by someone who cares",
           "img": "pv.avif"
         },
         {
           "idx": 5,
           "name": "Minh Dũng",
-          "job": "job_3",
+          "job": "job_8",
           "quote": "First, solve the problem. Then, write the code",
           "img": "pv.avif"
         }
@@ -605,7 +642,7 @@
         {
           "idx": 6,
           "name": "Thế Khải",
-          "job": "job_4",
+          "job": "job_3",
           "quote": "Engineering is the art of making the impossible possible",
           "img": "pv.avif"
         },
@@ -633,63 +670,47 @@
         {
           "idx": 10,
           "name": "Trần Khoa",
-          "job": "job_6",
+          "job": "job_5",
           "quote": "Design is not just what it looks like, it's how it works",
           "img": "pv.avif"
         }
       ],
       "business": [
         {
-          "idx": 11,
-          "name": "Dương Lâm",
-          "job": "job_7",
-          "quote": "Strategy without execution is just a dream",
+          "idx": 12,
+          "name": "Phương Thảo",
+          "job": "job_9",
+          "quote": "Success is where preparation meets opportunity",
           "img": "pv.avif"
         },
         {
-          "idx": 12,
-          "name": "Phương Thảo",
-          "job": "job_8",
-          "quote": "Success is where preparation meets opportunity",
+          "idx": 11,
+          "name": "Dương Lâm",
+          "job": "job_10",
+          "quote": "Strategy without execution is just a dream",
           "img": "pv.avif"
         },
         {
           "idx": 13,
           "name": "Quang Huy",
-          "job": "job_8",
+          "job": "job_10",
           "quote": "The best way to predict the future is to create it",
           "img": "pv.avif"
         },
         {
           "idx": 14,
           "name": "Đức Hùng",
-          "job": "job_9",
+          "job": "job_10",
           "quote": "Great things in business are never done by one person",
           "img": "pv.avif"
         }
       ]
     },
     "resources": {
-      "Templates": [
-        {
-          "name": "Engineering Notebook Template",
-          "link": "/resources/engineering-notebook-template.pdf"
-        },
-        {
-          "name": "Outreach Report Template",
-          "link": "/resources/outreach-report-template.pdf"
-        }
-      ],
-      "Slides": [
-        {
-          "name": "Team Presentation Slides",
-          "link": "/resources/team-presentation-slides.pptx"
-        }
-      ],
       "Guides": [
         {
-          "name": "Portfolio & Awards Submission Guide",
-          "link": "/resources/portfolio-awards-guide.pdf"
+          "name": "FTC 101",
+          "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z"
         }
       ]
     },
@@ -701,10 +722,6 @@
       "gh": {
         "link": "https://github.com/gart6520/",
         "handle": "gart6520"
-      },
-      "fb": {
-        "link": "https://web.facebook.com/GART6520",
-        "handle": "GART6520"
       },
       "ig": {
         "link": "https://www.instagram.com/ftc24751_gart/",
@@ -734,34 +751,34 @@
     ],
     "sponsors": [
       {
-        "name": "Sponsor 1",
-        "img": "ph.avif",
+        "name": "American Study",
+        "img": "home/s1.avif",
+        "link": "https://americanstudy.edu.vn/"
+      },
+      {
+        "name": "ETEK",
+        "img": "home/s2.avif",
         "link": "https://example.com/"
       },
       {
-        "name": "Sponsor 2",
-        "img": "pv.avif",
-        "link": "https://example.com/"
+        "name": "HEADWAY",
+        "img": "home/s3.avif",
+        "link": "https://headway.com.vn/"
       },
       {
-        "name": "Sponsor 3",
-        "img": "ph.avif",
-        "link": "https://example.com/"
+        "name": "KLB",
+        "img": "home/s4.avif",
+        "link": "https://klbgroup.com.vn/"
       },
       {
-        "name": "Sponsor 4",
-        "img": "pv.avif",
-        "link": "https://example.com/"
+        "name": "VIPHAP",
+        "img": "home/s5.avif",
+        "link": "https://viphap.com/"
       },
       {
-        "name": "Sponsor 5",
-        "img": "ph.avif",
-        "link": "https://example.com/"
-      },
-      {
-        "name": "Sponsor 6",
-        "img": "pv.avif",
-        "link": "https://example.com/"
+        "name": "CMC Telecom",
+        "img": "home/s6.avif",
+        "link": "https://cmctelecom.vn/"
       }
     ],
     "updates": [
@@ -789,36 +806,36 @@
     ],
     "values": [
       {
-        "value": "Value 1",
-        "desc": "Desc 1",
-        "img": "ph.avif"
+        "value": "Pioneering Spirit",
+        "desc": "We are one of the pioneer teams that join FTC in Vietnam, and we are into the feeling and soul that comes with it. Our value is to constantly explore, test unique robot solutions, and embrace failure as a chance to learn.",
+        "img": "about/4.avif"
       },
       {
-        "value": "Value 2",
-        "desc": "Desc 2",
-        "img": "ph.avif"
+        "value": "Friendly Competition",
+        "desc": "We view every opponent as a friend, willing to help and share experience even while competing. For GART, the goal isn't just for our robot to succeed, but for the entire robotics community to progress together.",
+        "img": "about/5.avif"
       },
       {
-        "value": "Value 3",
-        "desc": "Desc 3",
-        "img": "ph.avif"
+        "value": "Mentorship & Outreach",
+        "desc": "We dedicate time to teaching and mentoring new teams, and sharing robotics stories with local youths. This is how GART proudly brings the image of Vietnamese passion and potential to the world stage.",
+        "img": "about/3.avif"
       }
     ],
     "visions": [
       {
-        "value": "Vision 1",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "value": "Community Leadership",
+        "desc": "We strive to be the embodiment of the FTC spirit - an inspiration to other teams - creating a journey filled with memorable and exciting experiences within the FIRST Tech Challenge.",
+        "img": "about/7.avif"
       },
       {
-        "value": "Vision 2",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "ph.avif"
+        "value": "Impact & Passion",
+        "desc": "We want our name to be synonymous with impact. When others speak of us, we want them to recognize a team fueled by a fierce competitive spirit and a burning passion for robotics.",
+        "img": "about/6.avif"
       },
       {
-        "value": "Vision 3",
-        "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "img": "pv.avif"
+        "value": "Redefining Success",
+        "desc": "To us, success is not defined merely by trophies or high rankings. True success lies in the breadth of our impact, the strength of our inspiration, and the positive influence we exert on the robotics community - contributing to its robust, sustainable, and long-term growth.",
+        "img": "about/10.1.avif"
       }
     ],
     "subsystems": [
@@ -840,69 +857,37 @@
     ],
     "figures": [
       {
-        "name": "ROI",
-        "data": "9000%"
+        "name": "Total views",
+        "data": "142K"
       },
       {
-        "name": "impressions",
-        "data": "10tril"
+        "name": "Instagram followers",
+        "data": "1.2K"
       },
       {
-        "name": "engagement",
-        "data": "120%"
+        "name": "Connected teams globally",
+        "data": "60"
       },
       {
-        "name": "some shit",
-        "data": "idk"
+        "name": "Reach through events",
+        "data": "5K"
       }
     ],
-    "uses": [
+    "events": [
       {
-        "use": "Community Sports Program",
-        "desc": "Funds are used to run free weekend sports sessions for underprivileged kids, including coaching, equipment, and facility rental.",
-        "img": "pv.avif"
+        "img": "sponsor/f3.avif",
+        "name": "Wonderlab '25",
+        "full": true
       },
       {
-        "use": "Scholarship Fund",
-        "desc": "The sponsorship supports annual scholarships for promising students in design, architecture, and engineering.",
-        "img": "ph.avif"
+        "img": "sponsor/f1.avif",
+        "name": "GART Expo '25",
+        "full": false
       },
       {
-        "use": "Environmental Initiative",
-        "desc": "Money goes to tree-planting drives, waste-sorting campaigns, and maintaining green spaces around the city.",
-        "img": "pv.avif"
-      },
-      {
-        "use": "Innovation Lab",
-        "desc": "Sponsors help build and maintain a small innovation lab where students can experiment with new technology and prototypes.",
-        "img": "ph.avif"
-      },
-      {
-        "use": "Public Art Installation",
-        "desc": "Funds are used to commission local artists to create murals and pop-up art pieces to beautify community spaces.",
-        "img": "ph.avif"
-      }
-    ],
-    "tiers": [
-      {
-        "name": "Silver",
-        "price": "$200",
-        "features": ["not muchaf asf a", "featureasf asf ", "updatesasf asf asf"]
-      },
-      {
-        "name": "Gold",
-        "price": "$500",
-        "features": ["video featurefas fasf as", "even featuref asf asf a", "updatesfas fasf ", "shoutoutafs asf "]
-      },
-      {
-        "name": "Radiant",
-        "price": "$750",
-        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
-      },
-      {
-        "name": "Global Elite",
-        "price": "$1000",
-        "features": ["idkfass fa asf ", "more stuffasf asf", "interviewws fasf ", "visitsasf "]
+        "img": "sponsor/f2.avif",
+        "name": "GART Camp '25",
+        "full": false
       }
     ]
   }
