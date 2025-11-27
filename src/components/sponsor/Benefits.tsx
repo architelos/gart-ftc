@@ -62,7 +62,7 @@ function Benefits() {
       {entries.map(([section, items], i) => (
         <div key={i} className="flex flex-col gap-y-s-one">
           <Text type="pg" className="font-bold!">{section}</Text>
-          <div className="gap-x-s-two gap-y-s-two grid grid-cols-2 md:grid-cols-3">
+          <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-3">
             {items.map((item, i) => (
               <Benefit key={i} benefit={item} />
             ))}

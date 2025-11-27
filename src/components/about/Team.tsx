@@ -57,14 +57,14 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
             {jobs[person.job]}
           </Text>
         </div>
-        <div className="flex flex-row justify-between gap-x-s-two">
-          <div ref={imgRef} className="w-[40%]">
-            <img src={assetMap[person.img]} className={`w-full object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} />
-          </div>
-          <div ref={quoteRef} className="self-end w-[60%]">
-            <Text type="pg" animate={quoteInView}>"{person.quote}"</Text>
-          </div>
-        </div>
+        {/* <div className="flex flex-row justify-between gap-x-s-two"> */}
+          {/* <div ref={imgRef} className="w-[40%]"> */}
+            {/* <img src={assetMap[person.img]} className={`w-full object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} /> */}
+          {/* </div> */}
+          {/* <div ref={quoteRef} className="self-end w-[60%]"> */}
+            {/* <Text type="pg" animate={quoteInView}>"{person.quote}"</Text> */}
+          {/* </div> */}
+        {/* </div> */}
       </div>
 
       {/* {showCard && (
