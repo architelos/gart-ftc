@@ -5,6 +5,12 @@ import App from "@/App.tsx";
 import Preloader from "@/components/Preloader.tsx";
 
 async function assets() {
+  const loaded = await Promise.all([
+    new FontFace("Montserrat", 'url("/Montserrat-Medium.woff2")', { weight: "500", style: "normal" }),
+    new FontFace("Montserrat", 'url("/Montserrat-Semibold.woff2")', { weight: "600", style: "normal" }),
+    new FontFace("Montserrat", 'url("/Montserrat-Bold.woff2")', { weight: "700", style: "normal" })
+  ].map((f) => f.load()));
+  loaded.forEach((f) => document.fonts.add(f));
   await document.fonts.ready;
 
   // TODO
