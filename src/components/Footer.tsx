@@ -21,10 +21,10 @@ function ContactRow({ row }: ContactRowProps) {
   const tel = row[2];
 
   return (
-    <div ref={rowRef} className="gap-x-s-three gap-y-s-three grid grid-cols-3 max-sm:grid-cols-2">
-      <Text type="pg" className="place-self-start md:place-self-start font-bold!" link={true} animate={rowInView}>{role}</Text>
-      <Text type="pg" className="place-self-end md:place-self-center font-bold!" link={true} animate={rowInView} href={`mailto:${email}`}>{email}</Text>
-      <Text type="pg" className="md:place-self-end font-bold!" link={true} animate={rowInView} href={`tel:${tel}`}>{tel}</Text>
+    <div ref={rowRef} className="gap-x-s-three gap-y-s-three grid grid-cols-2 md:grid-cols-3">
+      <Text type="pg" className="md:place-self-start max-sm:col-span-2 font-bold!" link={true} animate={rowInView}>{role}</Text>
+      <Text type="pg" className="place-self-start md:place-self-center font-bold!" link={true} animate={rowInView} href={`mailto:${email}`}>{email}</Text>
+      <Text type="pg" className="place-self-end font-bold!" link={true} animate={rowInView} href={`tel:${tel}`}>{tel}</Text>
     </div>
   );
 }

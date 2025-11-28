@@ -43,11 +43,11 @@ function Missions() {
                 </Text>
               ))}
             </div>
-            <div className="flex-1 min-w-0 h-full basis-0 a-fade-in" key={`img-${idx}`}>
+            <div className="flex-1 min-w-0 h-[150%] basis-0 a-fade-in" key={`img-${idx}`}>
               <img
                 src={assetMap[missions[idx].img]}
                 alt={missions[idx].name}
-                className="block w-full h-full object-contain md:scale-[1.35]"
+                className="block w-full h-full object-contain"
               />
             </div>
             <div className="flex-none md:w-[35%] min-w-0 a-fade-in" key={`text-${idx}`}>

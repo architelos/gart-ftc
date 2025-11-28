@@ -47,8 +47,8 @@ function Vision() {
             </div>
           ))}
         </div>
-        <div className="hidden md:flex flex-col flex-1 gap-y-s-four max-w-[40dvw] h-[40dvh]">
-          <img src={assetMap[visions.at(currentVision)?.img || "ph.avif"]} className="h-full object-cover" />
+        <div className="hidden md:flex flex-col flex-1 gap-y-s-four max-w-[60dvw]">
+          <img src={assetMap[visions.at(currentVision)?.img || "ph.avif"]} className="h-full object-contain" />
         </div>
       </div>
     </section>
