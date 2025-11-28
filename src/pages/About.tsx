@@ -12,6 +12,8 @@ function About() {
       <Landing />
       <Missions />
       <Break />
+      <Break />
+      <Break />
       <Team />
       <Break />
       <Values />
