@@ -63,7 +63,7 @@ function Sponsors() {
           <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
         <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
-          <Text type="title" animate={textInView} className="font-bold!">{t.home.sponsors.title}</Text>
+          <Text type="pg" animate={textInView} className="font-bold!">{t.home.sponsors.title}</Text>
           <Text type="pg" animate={textInView}>{t.home.sponsors.desc}</Text>
         </div>
       </div>

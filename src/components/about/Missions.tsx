@@ -21,7 +21,7 @@ function Missions() {
   const { ref: smRef, inView: smInView } = useInView();
 
   return (
-    <section className="flex flex-col md:justify-between gap-y-page w-full md:h-[50vh] p-page bg-bg">
+    <section className="flex flex-col md:justify-between gap-y-page w-full md:h-[60vh] p-page bg-bg">
       <div ref={headingRef} className="flex flex-row items-baseline gap-x-page">
         <Text animate={headingInView} type="title">{t.sponsor.mission.heading}</Text>
         <Text animate={headingInView} type="sub">{t.sponsor.mission.cta}</Text>
@@ -43,14 +43,14 @@ function Missions() {
                 </Text>
               ))}
             </div>
-            <div className="flex-1 min-w-0 md:h-[200%] basis-0 a-fade-in" key={`img-${idx}`}>
+            <div className="flex-1 min-w-0 h-full basis-0 a-fade-in" key={`img-${idx}`}>
               <img
                 src={assetMap[missions[idx].img]}
                 alt={missions[idx].name}
-                className="block w-full h-full object-contain"
+                className="block w-full h-full object-contain object-top"
               />
             </div>
-            <div className="flex-none md:w-[35%] min-w-0 a-fade-in" key={`text-${idx}`}>
+            <div className="flex-none md:w-[30%] min-w-0 a-fade-in" key={`text-${idx}`}>
               <Text type="pg" className="text-right">{missions[idx].desc}</Text>
             </div>
           </div>
