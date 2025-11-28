@@ -1,0 +1,30 @@
+<IfModule LiteSpeed>
+    # hi a dang if you see this
+    # pls enable brotli
+    # <3
+    <IfModule mod_brotli.c>
+        AddOutputFilterByType BROTLI_COMPRESS text/html text/css
+        AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+        AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+        AddOutputFilterByType BROTLI_COMPRESS font/woff2
+    </IfModule>
+
+    <IfModule mod_deflate.c>
+        AddOutputFilterByType DEFLATE text/html text/css
+        AddOutputFilterByType DEFLATE application/javascript application/json
+        AddOutputFilterByType DEFLATE image/svg+xml
+        AddOutputFilterByType DEFLATE font/woff2
+    </IfModule>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # always needed for react router
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    RewriteRule ^ index.html [L]
+</IfModule>
