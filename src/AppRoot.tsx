@@ -3,6 +3,10 @@ import avif from "avif.js";
 
 import App from "@/App.tsx";
 import Preloader from "@/components/Preloader.tsx";
+import preload from "@/data/preload.json";
+import assetMap from "@/data/assetMap";
+
+type PreloadKey = "*" | "/" | "/about" | "/sponsor";
 
 async function assets() {
   const loaded = await Promise.all([
@@ -12,9 +16,18 @@ async function assets() {
   ].map((f) => f.load()));
   loaded.forEach((f) => document.fonts.add(f));
   await document.fonts.ready;
+  console.log("preloaded fonts");
 
-  // TODO
-  await new Promise((resolve) => { setTimeout(resolve, 1000); });
+  const srcs = [...preload["*"], ...preload[window.location.pathname as PreloadKey]];
+  await Promise.all(
+    srcs.map((src) => new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = resolve;
+      img.onerror = reject;
+      img.src = assetMap[src];
+    }))
+  );
+  console.log(`preloaded a total of ${srcs.length} images for ${window.location.pathname}`);
 }
 
 async function polyfills() {
