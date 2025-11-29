@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import avif from "avif.js";
+import { register } from "avif.js";
 
 import App from "@/App.tsx";
 import Preloader from "@/components/Preloader.tsx";
@@ -8,26 +8,41 @@ import assetMap from "@/data/assetMap";
 
 type PreloadKey = "*" | "/" | "/about" | "/sponsor";
 
+const FONT_TIMEOUT = 2000;
+const ASSET_TIMEOUT = 5000;
+
+function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<T>((resolve) => setTimeout(() => resolve(null as T), ms))
+  ]);
+}
+
 async function assets() {
-  const loaded = await Promise.all([
+  const loaded = await Promise.allSettled([
     new FontFace("Montserrat", 'url("/Montserrat-Medium.woff2")', { weight: "500", style: "normal" }),
     new FontFace("Montserrat", 'url("/Montserrat-Semibold.woff2")', { weight: "600", style: "normal" }),
     new FontFace("Montserrat", 'url("/Montserrat-Bold.woff2")', { weight: "700", style: "normal" })
-  ].map((f) => f.load()));
-  loaded.forEach((f) => document.fonts.add(f));
+  ].map((f) => withTimeout(f.load(), FONT_TIMEOUT)));
+  loaded.forEach((f) => {
+    if (f.status === "fulfilled") document.fonts.add(f.value);
+  });
   await document.fonts.ready;
-  console.log("preloaded fonts");
+  console.info("--- assets: preloaded fonts");
 
   const srcs = [...preload["*"], ...preload[window.location.pathname as PreloadKey]];
-  await Promise.all(
-    srcs.map((src) => new Promise((resolve, reject) => {
+  await Promise.allSettled(
+    srcs.map((src) => withTimeout(new Promise((resolve, reject) => {
       const img = new Image();
       img.onload = resolve;
-      img.onerror = reject;
+      img.onerror = () => {
+        console.warn(`--- assets: couldn't preload ${src}`);
+        reject();
+      };
       img.src = assetMap[src];
-    }))
+    }), ASSET_TIMEOUT))
   );
-  console.log(`preloaded a total of ${srcs.length} images for ${window.location.pathname}`);
+  console.info(`--- assets: preloaded a total of ${srcs.length} images for ${window.location.pathname}`);
 }
 
 async function polyfills() {
@@ -41,7 +56,7 @@ async function polyfills() {
       return;
     }
 
-    console.log("IntersectionObserver not found, loading polyfill...");
+    console.info("--- polyfill: IntersectionObserver not found");
 
     const script = document.createElement("script");
     script.src = "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=IntersectionObserver%2CIntersectionObserverEntry%2Cfetch";
@@ -58,9 +73,9 @@ async function polyfills() {
     avif.onload = () => { resolve(avif.naturalWidth > 0 || avif.naturalHeight > 0); };
   });
   if (!avifSupported) {
-    console.log("no AVIF support, loading polyfill...");
+    console.info("--- polyfill: no AVIF support");
 
-    avif.register("/avif-sw.js");
+    register("/avif-sw.js");
   }
 }
 
@@ -78,8 +93,8 @@ const AppRoot = () => {
 
       // ;)
       console.log("%cbuilt %cwith %c<3 %cby %cKhanh %cand %cDung %c:)", " ", " ", "color: #ff0000; ", " ", "font-weight: bold; ", " ", "font-weight: bold; ", "color: #d0021b; ");
-      await assets();
       await polyfills();
+      await assets();
 
       setFade(true);
       timeout.current = setTimeout(() => {

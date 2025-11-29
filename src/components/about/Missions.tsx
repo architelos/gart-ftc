@@ -43,7 +43,7 @@ function Missions() {
                 </Text>
               ))}
             </div>
-            <div className="flex-1 min-w-0 h-full basis-0 a-fade-in" key={`img-${idx}`}>
+            <div className="flex-1 min-w-0 h-[125%] basis-0 a-fade-in" key={`img-${idx}`}>
               <img
                 src={assetMap[missions[idx].img]}
                 alt={missions[idx].name}
