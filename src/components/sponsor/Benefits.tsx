@@ -14,7 +14,7 @@ interface Benefits {
   Individual: Benefit[];
 }
 
-interface BenefitProps { benefit: Benefit; }
+interface BenefitProps { pI: number; benefit: Benefit; }
 interface BenefitLineProps { data: string; }
 
 function BenefitLine({ data }: BenefitLineProps) {
@@ -28,11 +28,17 @@ function BenefitLine({ data }: BenefitLineProps) {
   );
 }
 
-function Benefit({ benefit }: BenefitProps) {
+function Benefit({ pI, benefit }: BenefitProps) {
   const { ref, inView } = useInView();
 
+  const places = {
+    0: "items-start text-left",
+    1: "items-center text-center",
+    2: "items-end text-right"
+  } as Record<number, string>
+
   return (
-    <div className="flex flex-col gap-y-s-three">
+    <div className={`flex flex-col gap-y-s-three ${places[pI]}`}>
       <div ref={ref}><Text type="pg" animate={inView} className="font-bold! text-accent!">{benefit.name}</Text></div>
       <Text type="pg">
         {benefit.desc.split("\n").map((line, i) => (
@@ -64,11 +70,11 @@ function Benefits() {
           <Text type="pg" className="font-bold!">{section}</Text>
           <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-3">
             {items.map((item, i) => (
-              <Benefit key={i} benefit={item} />
+              <Benefit key={i} pI={i % 3} benefit={item} />
             ))}
           </div>
           {i + 1 !== items.length && (
-            <div ref={imgRef}><img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ''}`} src={assetMap[`sponsor/${i + 2}.avif`]} /></div>
+            <div ref={imgRef}><img className={`w-full opacity-0 ${imgInView ? "a-fade-in" : ''}`} src={assetMap[`sponsor/${i + 2}.avif`]} /></div>
           )}
         </div>
       ))}
