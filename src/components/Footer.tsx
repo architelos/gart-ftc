@@ -18,7 +18,7 @@ function ContactRow({ row }: ContactRowProps) {
 
   const email = row[0];
   const role = row[1];
-  const tel = row[2];
+  const tel = row[2].replace(/[\s()]/g, ''); // remove spaces and parentheses
 
   return (
     <div ref={rowRef} className="gap-x-s-three gap-y-s-three grid grid-cols-2 md:grid-cols-3">
