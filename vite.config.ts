@@ -18,17 +18,24 @@ export default defineConfig({
     }
   },
 
-  // please be worth it
+  // please be worth it :(
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        "avif-sw": resolve(__dirname, "./src/avif.js")
+
+        // bundle the actual service worker
+        "avif-sw": resolve(
+          __dirname,
+          "node_modules/avif.js/avif-sw.js"
+        )
       },
+
       output: {
         entryFileNames: chunk => {
           if (chunk.name === "avif-sw") return "avif-sw.js";
-          return "[name].[hash].js"; // default for other entries
+          // default chunk naming for others
+          return "[name].[hash].js";
         }
       }
     }
