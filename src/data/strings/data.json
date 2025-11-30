@@ -266,6 +266,12 @@
           "name": "FTC 101",
           "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z"
         }
+      ],
+      "CAD": [
+        {
+          "name": "24-25",
+          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1"
+        }
       ]
     },
     "socials": {
@@ -454,18 +460,18 @@
       },
       {
         "year": "2024-2025",
-        "award": "Champion",
-        "description": "FTC Edison Division"
+        "award": "Edision Division Champion",
+        "description": "FIRST World Championship"
       },
       {
         "year": "2024-2025",
-        "award": "Winning Alliance Captain & Design Award",
-        "description": "One of the only two representatives from Vietnam to compete at the FIRST Tech Challenge World Championship in Houston, USA."
+        "award": "Winning Alliance Captain, Design Award",
+        "description": "(Vietnam Regionals - One of the only two representatives from Vietnam to compete at the FIRST Tech Challenge World Championship in Houston, USA."
       },
       {
         "year": "2023-2024",
         "award": "Winning Alliance Captain, Innovate Award",
-        "description": "FTC Vietnam - Ranked first in the competition across all robot performance metrics."
+        "description": "(Vietnam Regionals - Ranked first in the competition across all robot performance metrics."
       }
     ],
     "benefits": {
