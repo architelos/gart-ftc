@@ -31,7 +31,7 @@ function Vision() {
               <Text
                 type="pg"
                 clickable={true}
-                className={`w-fit cursor-pointer font-semibold! transition-colors duration-300 ${currentVision == idx ? "text-text font-bold!" : "text-text/20"}`}
+                className={`w-fit cursor-pointer font-semibold! transition-colors duration-300 ${currentVision == idx ? "text-text font-bold!" : "text-text/25"}`}
                 onClick={() => { changeCurrentVision(idx) }}
               >
                 {vis.value}

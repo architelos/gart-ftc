@@ -29,7 +29,7 @@ function Menu() {
   if (!render) return null;
 
   return (
-    <nav className={`z-99 fixed top-0 right-0 flex flex-col justify-between w-fit h-fit p-page bg-bg md:bg-bg/80 ${out ? "a-fade-out" : "a-horizontal"}`}>
+    <nav className={`z-99 fixed top-0 right-0 flex flex-col justify-between w-fit h-fit rounded-xl p-page bg-bg md:bg-bg/80 ${out ? "a-fade-out" : "a-horizontal"}`}>
       <div className="flex flex-col gap-y-s-two text-right" style={{ marginTop: "calc(2.4 * var(--spacing-page))" }}>
         <Text type="title" link={true} href="/">{t.menu.home}</Text>
         <Text type="title" link={true} href="/about">{t.menu.about}</Text>

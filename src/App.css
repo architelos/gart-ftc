@@ -40,7 +40,7 @@
   }
 
   .a-horizontal {
-    animation: horizontal 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: horizontal 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     transform-origin: right;
     transform: scaleX(0);
   }

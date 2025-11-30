@@ -38,11 +38,11 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
       {/* desktop */}
       <div ref={ref} className="max-sm:hidden md:flex flex-row items-baseline gap-x-page w-full">
         <div className="hidden md:flex w-[40%]">
-          <Text type="sub" animate={inView} className={`w-full text-right transition-colors duration-200 ${!showCard ? "text-text/20" : ""}`}>
+          <Text type="sub" animate={inView} className={`w-full text-right transition-colors duration-200 ${!showCard ? "text-text/25" : ""}`}>
             {jobs[person.job]}
           </Text>
         </div>
-        <Text type="title" animate={inView} className={`flex transition-colors duration-200 ${!showCard ? "md:text-text/20" : ""}`}>
+        <Text type="title" animate={inView} className={`flex transition-colors duration-200 ${!showCard ? "md:text-text/25" : ""}`}>
           {person.name}
         </Text>
       </div>
@@ -50,7 +50,7 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
       {/* mobile */}
       <div className="md:hidden flex flex-col gap-y-s-three w-full">
         <div ref={refSm} className="flex flex-row justify-between items-baseline w-full">
-          <Text type="title" animate={inViewSm} className={`flex transition-colors duration-200 ${!showCard ? "md:text-text/20" : ""}`}>
+          <Text type="title" animate={inViewSm} className={`flex transition-colors duration-200 ${!showCard ? "md:text-text/25" : ""}`}>
             {person.name}
           </Text>
           <Text type="sub" animate={inViewSm} className={`text-right transition-colors duration-200`}>
@@ -84,7 +84,7 @@ function DivisionText({ name, selected, isMd, onClick }: DivisionTextProps) {
 
   return (
     <div ref={ref} onClick={onClick} >
-      <Text type="pg" animate={inView} className={`pb-s-two font-bold! text-left transition-colors duration-300 ${!isMd && !selected ? "text-text/20!" : ""}`}>{name}</Text>
+      <Text type="pg" animate={inView} className={`pb-s-two font-bold! text-left transition-colors duration-300 ${!isMd && !selected ? "text-text/25!" : ""}`}>{name}</Text>
     </div>
   );
 }

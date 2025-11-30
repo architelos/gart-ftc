@@ -23,7 +23,7 @@ function Faq() {
       <div ref={contentRef} className={`flex flex-col gap-y-s-two md:w-[60%] opacity-0 ${contentInView ? "a-fade-in" : ""}`}>
         {faqs.map((faq, i) => (
           <div key={i} className="flex flex-col gap-y-s-three">
-            <Text type="pg" clickable={true} onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/20!" : ""}`}>
+            <Text type="pg" clickable={true} onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/25!" : ""}`}>
               <span className="font-bold!">{t.home.faq.q}</span> {faq.q}
             </Text>
             <div className={`grid overflow-hidden transition-all duration-300 ease-in-out ${idx === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>

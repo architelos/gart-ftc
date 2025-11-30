@@ -38,7 +38,7 @@ function Missions() {
                   onClick={() => setIdx(i)}
                   clickable={true}
                   animate={contentInView}
-                  className={`cursor-pointer font-semibold! transition-color duration-300 ${idx !== i ? "text-text/20! font-bold!" : "text-text"}`}
+                  className={`cursor-pointer font-semibold! transition-color duration-300 ${idx !== i ? "text-text/25 font-bold!" : "text-text"}`}
                 >
                   {mission.name}
                 </Text>
@@ -59,7 +59,7 @@ function Missions() {
         <div ref={smRef} className={`flex flex-col gap-y-s-two w-full opacity-0 ${smInView ? "a-fade-in" : ""}`}>
           {missions.map((mission, i) => (
             <div key={i} className="flex flex-col gap-y-s-three w-full">
-              <Text type="pg" onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/20!" : ""}`}>
+              <Text type="pg" onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/25!" : ""}`}>
                 {mission.name}
               </Text>
               <div
