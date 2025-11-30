@@ -5,6 +5,7 @@ interface TextProps extends Omit<HTMLAttributes<HTMLElement>, "className"> {
   children: ReactNode;
   type: "title" | "pg" | "sub";
   link?: boolean;
+  clickable?: boolean
   animate?: boolean;
   className?: string;
 }
@@ -12,6 +13,7 @@ interface TextProps extends Omit<HTMLAttributes<HTMLElement>, "className"> {
 interface LinkProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className"> {
     link: true;
     type: "title" | "pg" | "sub";
+    clickable?: boolean;
     animate?: boolean;
     className?: string;
     children: ReactNode;
@@ -21,6 +23,7 @@ function Text({
   children,
   type,
   link = false,
+  clickable = false,
   animate = true,
   className = "",
   ...props
@@ -68,6 +71,7 @@ function Text({
 
   if (link) Component = "a";
   if (link || type === "sub") animation += " inline-block";
+  if (clickable) finalCn += " underline! decoration-text/20! lift-on-hover";
 
   return (
     <div className={`overflow-hidden ${finalCn.trim()}`}>

@@ -10,7 +10,6 @@ import assetMap from "@/data/assetMap";
 
 function Missions() {
   const [idx, setIdx] = useState(0);
-  const [hovered, setHovered] = useState<number | null>(null);
   const isMd = useIsMd();
 
   const locale = useLocale((state) => state.locale);
@@ -37,10 +36,9 @@ function Missions() {
                   key={i}
                   type="pg"
                   onClick={() => setIdx(i)}
-                  onMouseOver={() => setHovered(i)}
-                  onMouseLeave={() => setHovered(null)}
+                  clickable={true}
                   animate={contentInView}
-                  className={`cursor-pointer font-semibold! transition-colors duration-300 ${idx !== i ? (hovered !== i ? "text-text/20! font-bold!" : "text-text/50!") : "text-text"}`}
+                  className={`cursor-pointer font-semibold! transition-color duration-300 ${idx !== i ? "text-text/20! font-bold!" : "text-text"}`}
                 >
                   {mission.name}
                 </Text>

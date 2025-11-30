@@ -22,7 +22,7 @@ function ContactRow({ row }: ContactRowProps) {
 
   return (
     <div ref={rowRef} className="gap-x-s-three gap-y-s-three grid grid-cols-2 md:grid-cols-3">
-      <Text type="pg" className="md:place-self-start max-sm:col-span-2 font-bold!" link={true} animate={rowInView}>{role}</Text>
+      <Text type="pg" className="md:place-self-start max-sm:col-span-2 font-bold!" animate={rowInView}>{role}</Text>
       <Text type="pg" className="place-self-start md:place-self-center font-bold!" link={true} animate={rowInView} href={`mailto:${email}`}>{email}</Text>
       <Text type="pg" className="place-self-end font-bold!" link={true} animate={rowInView} href={`tel:${tel}`}>{tel}</Text>
     </div>

@@ -35,19 +35,19 @@ function Navbar() {
 
   if (!show) return null;
   return (
-    <header className="z-100 fixed flex justify-between w-full overflow-hidden p-page">
+    <header className="z-100 fixed flex justify-between items-start w-full overflow-hidden p-page">
       <img className={`object-contain overflow-hidden ${anim}`} src={assetMap["logo.png"]} style={{ width: "calc(1.5 * var(--spacing-page))", height: "calc(1.5 * var(--spacing-page))" }} />
-      <div className="flex flex-row justify-center items-center gap-x-page">
-        {theme === "light"
+      <div className="flex flex-row justify-center items-center gap-x-s-one">
+        {theme === "dark"
           ? <Moon
               onClick={() => toggleTheme()}
               className="scale-on-hover cursor-pointer"
-              style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }}
+              style={{ color: "var(--color-accent)", width: "var(--spacing-page)", height: "var(--spacing-page)" }}
             />
           : <Sun
               onClick={() => toggleTheme()}
               className="scale-on-hover cursor-pointer"
-              style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }}
+              style={{ color: "var(--color-accent)", width: "var(--spacing-page)", height: "var(--spacing-page)" }}
             />
         }
         <button className={`flex justify-center items-center self-start overflow-hidden p-button rounded-md bg-accent cursor-pointer ${anim}`} onClick={() => setOpen(!open)}>

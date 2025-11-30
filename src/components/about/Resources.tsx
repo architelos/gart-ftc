@@ -22,7 +22,7 @@ function ResSection({ section, res }: ResSectionProps) {
       <div ref={headerRef}><Text type="pg" className="font-bold!" animate={headerInView}>{section}</Text></div>
       <div ref={resRef} className="flex flex-row flex-wrap gap-x-page gap-y-s-three">
         {res.map((item, i) => (
-          <Text key={i} link={true} href={item.link} type="pg" animate={resInView}>{item.name}</Text>
+          <Text key={i} link={true} clickable={true} href={item.link} type="pg" animate={resInView}>{item.name}</Text>
         ))}
       </div>
     </div>

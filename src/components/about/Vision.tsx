@@ -30,6 +30,7 @@ function Vision() {
             <div key={idx} className="flex flex-col gap-y-s-three">
               <Text
                 type="pg"
+                clickable={true}
                 className={`w-fit cursor-pointer font-semibold! transition-colors duration-300 ${currentVision == idx ? "text-text font-bold!" : "text-text/20"}`}
                 onClick={() => { changeCurrentVision(idx) }}
               >

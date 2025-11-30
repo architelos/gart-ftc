@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
-import { GB } from "country-flag-icons/react/3x2";
-import { VN } from "country-flag-icons/react/3x2";
-import { Moon, Sun } from "lucide-react";
 
 import Text from "@/components/Text";
 import useMenuState from "@/hooks/useMenuState";
 import useLocale from "@/hooks/useLocale";
-import useTheme from "@/hooks/useTheme";
 import translations from "@/data/translations";
 
 function Menu() {
@@ -16,10 +12,6 @@ function Menu() {
 
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const toggleLocale = useLocale((state) => state.toggleLocale);
-
-  const theme = useTheme((state) => state.theme);
-  const toggleTheme = useTheme((state) => state.toggleTheme);
 
   useEffect(() => {
     if (open) {
@@ -37,17 +29,12 @@ function Menu() {
   if (!render) return null;
 
   return (
-    <nav className={`z-99 fixed md:top-0 md:right-0 flex flex-col justify-between w-full md:w-fit h-dvh p-page bg-bg md:bg-bg/80 ${out ? "a-fade-out" : "a-vert"}`}>
-      <div 
-      className="mt-16"
-      style={{ marginTop: "calc(1.5 * var(--spacing-page))" }}
-      >
-          <div className="flex flex-col text-left gap-y-s-two w-full">
-            <Text type="title" link={true} href="/">{t.menu.home}</Text>
-            <Text type="title" link={true} href="/about">{t.menu.about}</Text>
-            {/* <Text type="title" link={true} href="/robot">{t.menu.robot}</Text> */}
-            <Text type="title" link={true} href="/sponsor">{t.menu.sponsor}</Text>
-          </div>
+    <nav className={`z-99 fixed top-0 right-0 flex flex-col justify-between w-fit h-fit p-page bg-bg md:bg-bg/80 ${out ? "a-fade-out" : "a-horizontal"}`}>
+      <div className="flex flex-col gap-y-s-two text-right" style={{ marginTop: "calc(2.4 * var(--spacing-page))" }}>
+        <Text type="title" link={true} href="/">{t.menu.home}</Text>
+        <Text type="title" link={true} href="/about">{t.menu.about}</Text>
+        {/* <Text type="title" link={true} href="/robot">{t.menu.robot}</Text> */}
+        <Text type="title" link={true} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
     </nav>
   );
