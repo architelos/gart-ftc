@@ -16,7 +16,7 @@ function useInView(options: UseInViewOptions = {}) {
   useEffect(() => {
     if (!ref.current) return;
 
-    const observer = new IntersectionObserver(
+    const observer = new window.IntersectionObserver(
       ([entry]) => {
         if (once && wasInView.current) return;
 

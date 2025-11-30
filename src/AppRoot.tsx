@@ -46,25 +46,9 @@ async function assets() {
 }
 
 async function polyfills() {
-  await new Promise((resolve) => {
-    if (
-      "fetch" in window &&
-      "IntersectionObserver" in window &&
-      "IntersectionObserverEntry" in window
-    ) {
-      resolve(null); // no need!
-      return;
-    }
-
+  if (!("IntersectionObserver" in window) || !("IntersectionObserverEntry" in window)) {
     console.info("--- polyfill: IntersectionObserver not found");
-
-    const script = document.createElement("script");
-    script.src = "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=IntersectionObserver%2CIntersectionObserverEntry%2Cfetch";
-    script.crossOrigin = "anonymous";
-    script.onload = resolve;
-    script.onerror = resolve;
-    document.head.appendChild(script);
-  });
+  }
 
   const avifSupported = await new Promise((resolve) => {
     const avif = new Image();
