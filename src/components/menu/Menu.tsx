@@ -37,42 +37,17 @@ function Menu() {
   if (!render) return null;
 
   return (
-    <nav className={`z-99 fixed flex flex-col justify-between w-full h-dvh p-page bg-bg ${out ? "a-fade-out" : "a-vert"}`}>
-      <div className="mt-auto">
-        <div className="flex md:flex-row flex-col-reverse justify-between gap-y-page w-full">
-          <div className="flex flex-col gap-y-s-two">
+    <nav className={`z-99 fixed md:top-0 md:right-0 flex flex-col justify-between w-full md:w-fit h-dvh p-page bg-bg md:bg-bg/80 ${out ? "a-fade-out" : "a-vert"}`}>
+      <div 
+      className="mt-16"
+      style={{ marginTop: "calc(1.5 * var(--spacing-page))" }}
+      >
+          <div className="flex flex-col text-left gap-y-s-two w-full">
             <Text type="title" link={true} href="/">{t.menu.home}</Text>
             <Text type="title" link={true} href="/about">{t.menu.about}</Text>
             {/* <Text type="title" link={true} href="/robot">{t.menu.robot}</Text> */}
             <Text type="title" link={true} href="/sponsor">{t.menu.sponsor}</Text>
           </div>
-
-          <div className="flex flex-row md:self-end gap-x-s-one max-sm:pb-page">
-            {/* {locale === "vn"
-            ? <GB
-                onClick={() => toggleLocale()}
-                className="scale-on-hover cursor-pointer"
-                style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-            : <VN
-                onClick={() => toggleLocale()}
-                className="scale-on-hover cursor-pointer"
-                style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
-            } */}
-
-            {theme === "light"
-            ? <Moon
-                onClick={() => toggleTheme()}
-                className="scale-on-hover cursor-pointer"
-                style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }}
-              />
-            : <Sun
-                onClick={() => toggleTheme()}
-                className="scale-on-hover cursor-pointer"
-                style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }}
-              />
-            }
-          </div>
-        </div>
       </div>
     </nav>
   );
