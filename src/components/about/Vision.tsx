@@ -3,6 +3,7 @@ import { useState } from "react";
 import Text from "@/components/Text";
 import useLocale from "@/hooks/useLocale";
 import useInView from "@/hooks/useInView";
+import useIsMd from "@/hooks/useIsMd";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 import data from "@/data/data";
@@ -11,6 +12,8 @@ function Vision() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
   const { visions } = data(locale);
+
+  const isMd = useIsMd();
 
   const { ref: headingRef, inView: headingInView } = useInView();
   const { ref: contentRef, inView: contentInView } = useInView();
@@ -21,7 +24,7 @@ function Vision() {
     <section className="flex flex-col gap-y-page w-full h-fit p-page bg-bg">
       <div ref={headingRef} className="flex flex-row items-baseline gap-x-page h-fit">
         <Text animate={headingInView} type="title">{t.about.vision.heading}</Text>
-        <Text animate={headingInView} type="sub">{t.about.vision.action}</Text>
+        <Text animate={headingInView} type="sub">{isMd ? t.about.vision.action : t.about.vision.action_mobile}</Text>
       </div>
 
       <div ref={contentRef} className={`flex flex-row justify-between gap-x-page w-full opacity-0 ${contentInView ? "a-fade-in" : ""}`}>
@@ -31,7 +34,7 @@ function Vision() {
               <Text
                 type="pg"
                 clickable={true}
-                className={`w-fit cursor-pointer font-bold! transition-colors duration-300 ${currentVision == idx ? "text-text font-bold!" : "text-text/25"}`}
+                className={`w-fit cursor-pointer font-bold! transition-colors duration-300 ${currentVision == idx ? "text-text" : "text-text/25"}`}
                 onClick={() => { changeCurrentVision(idx) }}
               >
                 {vis.value}

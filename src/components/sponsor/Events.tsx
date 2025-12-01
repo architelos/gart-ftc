@@ -18,9 +18,9 @@ function Event({ event }: EventProps) {
   const { ref: textRef, inView: textInView } = useInView();
 
   return (
-    <div className={`flex flex-col gap-y-s-four ${event.full ? "col-span-2" : ""}`}>
+    <div className={`flex flex-col gap-y-s-four ${event.full ? "md:col-span-2" : ""}`}>
       <div ref={imgRef}><img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap[event.img]} /></div>
-      <div ref={textRef}><Text type="sub" animate={textInView} className="font-bold! text-text">{event.name}</Text></div>
+      <div ref={textRef}><Text type="sub" animate={textInView} className="text-text">{event.name}</Text></div>
     </div>
   );
 }
@@ -35,7 +35,7 @@ function Events() {
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
       <div ref={headingRef}><Text type="pg" animate={headingInView} className="font-bold!">{t.sponsor.event.heading}</Text></div>
-      <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-2">
+      <div className="gap-y-s-two md:gap-x-s-two grid grid-cols-1 md:grid-cols-2">
         {events.map((item, i) => (
           <Event key={i} event={item} />
         ))}

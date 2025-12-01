@@ -84,7 +84,7 @@ function DivisionText({ name, selected, isMd, onClick }: DivisionTextProps) {
 
   return (
     <div ref={ref} onClick={onClick} >
-      <Text type="pg" animate={inView} className={`pb-s-two font-bold! text-left transition-colors duration-300 ${!isMd && !selected ? "text-text/25!" : ""}`}>{name}</Text>
+      <Text type="pg" animate={inView} clickable={true} className={`pb-s-two font-bold! text-left transition-colors duration-300 ${!isMd && !selected ? "text-text/25!" : ""}`}>{name}</Text>
     </div>
   );
 }

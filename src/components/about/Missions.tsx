@@ -24,7 +24,7 @@ function Missions() {
     <section className="flex flex-col md:justify-between gap-y-page w-full md:h-[60vh] p-page bg-bg">
       <div ref={headingRef} className="flex flex-row items-baseline gap-x-page">
         <Text animate={headingInView} type="title">{t.sponsor.mission.heading}</Text>
-        <Text animate={headingInView} type="sub">{t.sponsor.mission.cta}</Text>
+        <Text animate={headingInView} type="sub">{isMd ? t.sponsor.mission.cta : t.sponsor.mission.cta_mobile}</Text>
       </div>
 
       {isMd
@@ -38,7 +38,7 @@ function Missions() {
                   onClick={() => setIdx(i)}
                   clickable={true}
                   animate={contentInView}
-                  className={`cursor-pointer font-bold! transition-color duration-300 ${idx !== i ? "text-text/25 font-bold!" : "text-text"}`}
+                  className={`cursor-pointer font-bold! transition-color duration-300 ${idx !== i ? "text-text/25" : "text-text"}`}
                 >
                   {mission.name}
                 </Text>
@@ -59,7 +59,7 @@ function Missions() {
         <div ref={smRef} className={`flex flex-col gap-y-s-two w-full opacity-0 ${smInView ? "a-fade-in" : ""}`}>
           {missions.map((mission, i) => (
             <div key={i} className="flex flex-col gap-y-s-three w-full">
-              <Text type="pg" onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/25!" : ""}`}>
+              <Text type="pg" clickable={true} onClick={() => setIdx(i)} className={`cursor-pointer font-bold! transition-colors duration-300 ${idx !== i ? "text-text/25!" : ""}`}>
                 {mission.name}
               </Text>
               <div

@@ -32,9 +32,9 @@ function Benefit({ pI, benefit }: BenefitProps) {
   const { ref, inView } = useInView();
 
   const places = {
-    0: "items-start text-left",
-    1: "items-center text-center",
-    2: "items-end text-right"
+    0: "md:items-start md:text-left",
+    1: "md:items-center md:text-center",
+    2: "md:items-end md:text-right"
   } as Record<number, string>
 
   return (

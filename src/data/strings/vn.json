@@ -1,7 +1,7 @@
 {
   "contact": [
-    ["ngnhaidangvn@gmail.com", "Coach Dang (primary)", "(+84) 968228118"],
-    ["tungnt@hnams.edu.vn", "Manager Tung", "(+84) 968666245"]
+    ["ngnhaidangvn@gmail.com", "Coach, Mr. Dang (primary)", "(+84) 968228118"],
+    ["tungnt@hnams.edu.vn", "Manager, Mr. Tung", "(+84) 968666245"]
   ],
   "menu": {
     "privacy_policy": "Privacy policy",
@@ -80,7 +80,8 @@
     },
     "vision": {
       "heading": "Our vision",
-      "action": "(click)"
+      "action": "(click)",
+      "action_mobile": "(tap)"
     },
     "resources": {
       "heading": "Resources",
@@ -115,7 +116,8 @@
     },
     "mission": {
       "heading": "Our missions",
-      "cta": "(click)"
+      "cta": "(click)",
+      "cta_mobile": "(tap)"
     },
     "benefits": {
       "heading": "Sponsor benefits"

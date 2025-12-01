@@ -71,7 +71,7 @@ function Text({
 
   if (link) Component = "a";
   if (link || type === "sub") animation += " inline-block";
-  if (clickable) finalCn += " underline! decoration-text/20! lift-on-hover";
+  if (clickable) animation += " underline! decoration-text/25! lift-on-hover";
 
   return (
     <div className={`overflow-hidden ${finalCn.trim()}`}>

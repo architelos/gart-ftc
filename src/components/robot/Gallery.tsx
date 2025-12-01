@@ -36,7 +36,7 @@ function GalleryItem({ img }: GalleryItemProps) {
         />
       </div>
       {img.desc && (
-        <div ref={textRef}><Text type="sub" animate={textInView} className="font-bold! text-text">{img.desc}</Text></div>
+        <div ref={textRef}><Text type="sub" animate={textInView} className="text-text">{img.desc}</Text></div>
       )}
     </div>
   );
