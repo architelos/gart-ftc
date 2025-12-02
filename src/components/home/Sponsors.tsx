@@ -64,12 +64,12 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
   return (
     <div className="flex flex-col gap-y-s-one">
       <div ref={textRef}><Text type="pg" animate={textInView} className="font-bold!">{title}</Text></div>
-      <div ref={carouselRef} className={`flex flex-row overflow-x-auto scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
-        {[0, 1].map((i) => (
+      <div ref={carouselRef} className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
+        {(type === "silver" ? [0, 1] : [0, 1, 2, 3]).map((i) => (
           <div
             key={i}
             aria-hidden={i === 1}
-            className={`flex justify-start items-center ${type === "silver" ? "a-scroll-silver" : "a-scroll-bronze"}`}
+            className={`flex justify-start w-max items-center ${type === "silver" ? "a-scroll-silver" : "a-scroll-bronze"}`}
             style={type === "silver"
               ? { columnGap: "calc(3 * var(--spacing-page))", paddingRight: "calc(3 * var(--spacing-page))" }
               : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
