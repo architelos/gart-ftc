@@ -78,7 +78,7 @@ function Footer() {
               href={v.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""} ${align}`}
+              className={`flex flex-row items-center gap-x-s-four w-fit lift-on-hover opacity-0 ${socialsInView ? "a-fade-in" : ""} ${align}`}
             >
               <Icon style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
               <Text type="pg">{v.handle}</Text>
