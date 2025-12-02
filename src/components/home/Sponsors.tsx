@@ -35,7 +35,7 @@ function Gold({ img, name, link }: SponsorType) {
     e.preventDefault();
 
     event("click", "Sponsors", name);
-    window.open(link, "_blank");
+    window.open(link, "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -75,7 +75,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
               : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
           >
             {sponsors.map((sponsor, j) => (
-              <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank")}>
+              <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
                 <img
                   className={`w-full h-full object-contain brightness-0 ${theme === "dark" ? "invert" : ""}`}
                   src={assetMap[sponsor.img]}

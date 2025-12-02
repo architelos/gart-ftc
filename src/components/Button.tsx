@@ -23,7 +23,7 @@ function Button({ icon, type, children, link, className = "" }: ButtonProps) {
   }
 
   return (
-    <a href={link} target="_blank" className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`}>
+    <a href={link} target="_blank" rel="noopener noreferrer" className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`}>
       <Text type="pg" className="text-text!">{children}</Text>
       {icon}
     </a>
