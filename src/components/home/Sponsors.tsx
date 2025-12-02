@@ -8,6 +8,7 @@ import Button from "@/components/Button";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
 import useCanHover from "@/hooks/useCanHover";
+import useTheme from "@/hooks/useTheme";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 import data from "@/data/data";
@@ -55,6 +56,8 @@ function Gold({ img, name, link }: SponsorType) {
 }
 
 function Carousel({ type, title, sponsors }: CarouselProps) {
+  const theme = useTheme((state) => state.theme);
+
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: carouselRef, inView: carouselInView } = useInView();
 
@@ -72,7 +75,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
             {sponsors.map((sponsor, j) => (
               <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank")}>
                 <img
-                  className="w-full h-full object-contain brightness-0 invert saturate-100"
+                  className={`w-full h-full object-contain brightness-0 ${theme === "dark" ? "invert" : ""}`}
                   src={assetMap[sponsor.img]}
                   alt={sponsor.name}
                 />
@@ -97,7 +100,7 @@ function Sponsors() {
     <section className="flex flex-col gap-y-page w-full p-page bg-bg page">
       <div className="flex md:flex-row flex-col-reverse justify-between gap-y-s-one w-full">
         <div ref={btnRef} className="md:self-end">
-          <Button type="accent" icon={<Heart style={{ color: `var(--color-white)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
+          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
         <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
           <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
