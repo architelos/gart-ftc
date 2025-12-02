@@ -10,7 +10,7 @@ import About from "@/pages/About";
 // import Robot from "@/pages/Robot";
 import Sponsor from "@/pages/Sponsor"
 
-function App () {
+function App() {
   const router = createBrowserRouter([
     {
       path: "/",

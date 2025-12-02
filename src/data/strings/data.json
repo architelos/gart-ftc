@@ -150,7 +150,7 @@
           "img": "pv.avif"
         }
       ],
-      "vice_captain": [        
+      "vice_captain": [
         {
           "idx": 12,
           "name": "Phương Thảo",
@@ -163,6 +163,13 @@
         {
           "idx": 16,
           "name": "Tiến Khải",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 18,
+          "name": "Quang Tùng",
           "job": "job_11",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
@@ -674,7 +681,7 @@
           "img": "pv.avif"
         }
       ],
-      "vice_captain": [        
+      "vice_captain": [
         {
           "idx": 12,
           "name": "Phương Thảo",
@@ -687,6 +694,13 @@
         {
           "idx": 16,
           "name": "Tiến Khải",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 18,
+          "name": "Quang Tùng",
           "job": "job_11",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"

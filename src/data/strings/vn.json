@@ -40,7 +40,8 @@
       "updates": "Team updates"
     },
     "awards": {
-      "header": "While accolades aren't our first priority, they serve as meaningful reminders of our efforts and teamwork.",
+      "header": "Awards",
+      "header2": "While accolades aren't our first priority, they serve as meaningful reminders of our efforts and teamwork.",
       "year": "Year",
       "award": "Award",
       "add": "Additional"

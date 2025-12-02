@@ -21,8 +21,10 @@ function Layout() {
       <Navbar />
       <Menu />
 
-      <Outlet />
-      <Footer />
+      <div className="md:max-w-[80vw] mx-auto">
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 }

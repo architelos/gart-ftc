@@ -24,7 +24,7 @@ function Button({ icon, type, children, link, className = "" }: ButtonProps) {
 
   return (
     <a href={link} className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`}>
-      <Text type="sub" className="text-text!">{children}</Text>
+      <Text type="pg" className="text-text!">{children}</Text>
       {icon}
     </a>
   );

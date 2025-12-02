@@ -94,11 +94,8 @@ function Sponsors() {
           <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
         <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
-          <Text type="pg" animate={textInView} className="font-bold!">{t.home.sponsors.title}</Text>
+          <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
           <Text type="pg" animate={textInView}>{t.home.sponsors.desc}</Text>
-        </div>
-        <div ref={btnRef} className="md:self-end">
-          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""} p-s-four`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
       <div className="flex flex-col gap-y-s-two">
@@ -109,8 +106,8 @@ function Sponsors() {
           ))}
         </div>
       </div>
-      <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
-      <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} />
+      {/* <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
+      <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} /> */}
     </section>
   );
 }
