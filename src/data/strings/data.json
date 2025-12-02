@@ -139,23 +139,36 @@
           "job": "job_2",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
-        },
-        {
-          "idx": 16,
-          "name": "Tiến Khải",
-          "job": "job_2",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
         }
       ],
-      "programming": [
+      "captain": [
         {
           "idx": 0,
           "name": "Khánh Anh",
           "job": "job_6",
           "quote": "Code is poetry written in logic",
           "img": "pv.avif"
-        },
+        }
+      ],
+      "vice_captain": [        
+        {
+          "idx": 12,
+          "name": "Phương Thảo",
+          "job": "job_9",
+          "quote": "Success is where preparation meets opportunity",
+          "img": "pv.avif"
+        }
+      ],
+      "mentor": [
+        {
+          "idx": 16,
+          "name": "Tiến Khải",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        }
+      ],
+      "programming": [
         {
           "idx": 1,
           "name": "Tuấn Khôi",
@@ -230,13 +243,6 @@
         }
       ],
       "business": [
-        {
-          "idx": 12,
-          "name": "Phương Thảo",
-          "job": "job_9",
-          "quote": "Success is where preparation meets opportunity",
-          "img": "pv.avif"
-        },
         {
           "idx": 11,
           "name": "Dương Lâm",
@@ -591,23 +597,36 @@
           "job": "job_2",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
-        },
-        {
-          "idx": 16,
-          "name": "Tiến Khải",
-          "job": "job_2",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
         }
       ],
-      "programming": [
+      "captain": [
         {
           "idx": 0,
           "name": "Khánh Anh",
           "job": "job_6",
           "quote": "Code is poetry written in logic",
           "img": "pv.avif"
-        },
+        }
+      ],
+      "vice_captain": [        
+        {
+          "idx": 12,
+          "name": "Phương Thảo",
+          "job": "job_9",
+          "quote": "Success is where preparation meets opportunity",
+          "img": "pv.avif"
+        }
+      ],
+      "mentor": [
+        {
+          "idx": 16,
+          "name": "Tiến Khải",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        }
+      ],
+      "programming": [
         {
           "idx": 1,
           "name": "Tuấn Khôi",
@@ -682,13 +701,6 @@
         }
       ],
       "business": [
-        {
-          "idx": 12,
-          "name": "Phương Thảo",
-          "job": "job_9",
-          "quote": "Success is where preparation meets opportunity",
-          "img": "pv.avif"
-        },
         {
           "idx": 11,
           "name": "Dương Lâm",

@@ -27,7 +27,7 @@
       "cta": "More"
     },
     "sponsors": {
-      "title": "We couldn't do it alone!",
+      "title": "Sponsors",
       "desc": "We're deeply grateful to our sponsors for believing in our mission and helping us build, learn, and share our passion for robotics.",
       "cta": "Sponsor us"
     },
@@ -58,6 +58,9 @@
       "divisions": {
         "manager": "Manager",
         "coach": "Coach",
+        "mentor": "Mentor",
+        "captain": "Captain",
+        "vice_captain": "Vice Captain",
         "programming": "Programming",
         "mechanical": "Mechanical",
         "business": "Business"
@@ -72,7 +75,8 @@
         "job_7": "Lead Programmer",
         "job_8": "Programmer",
         "job_9": "Vice Captain",
-        "job_10": "Business"
+        "job_10": "Business",
+        "job_11": "Mentor"
       }
     },
     "values": {
@@ -127,7 +131,8 @@
       "desc": "(Data from the 2023–2025 season, based on information from sponsors and media sources.)"
     },
     "event": {
-      "heading": "Some events we've been involved in"
+      "heading": "Events",
+      "subheading": "Some events we've been involved in"
     }
   }
 }

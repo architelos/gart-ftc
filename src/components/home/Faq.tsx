@@ -16,11 +16,11 @@ function Faq() {
   const { ref: contentRef, inView: contentInView } = useInView();
 
   return (
-    <section className="flex md:flex-row flex-col md:justify-between gap-y-page w-full p-page bg-bg">
-      <div ref={headingRef} className="md:w-[40%]">
+    <section className="flex flex-col gap-y-page w-full p-page bg-bg">
+      <div ref={headingRef} className="md:w-[40%] md:text-center md:self-center">
         <Text type="title" animate={headingInView}>{t.home.faq.heading}</Text>
       </div>
-      <div ref={contentRef} className={`flex flex-col gap-y-s-two md:w-[60%] opacity-0 ${contentInView ? "a-fade-in" : ""}`}>
+      <div ref={contentRef} className={`flex flex-col gap-y-s-two md:w-[60%] md:self-center opacity-0 ${contentInView ? "a-fade-in" : ""}`}>
         {faqs.map((faq, i) => (
           <div key={i} className="flex flex-col gap-y-s-three">
             <Text type="pg" clickable={true} onClick={() => setIdx(i)} className={`cursor-pointer transition-colors duration-300 ${idx !== i ? "text-text/25!" : ""}`}>

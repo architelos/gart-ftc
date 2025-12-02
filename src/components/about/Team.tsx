@@ -36,7 +36,7 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
   return (
     <>
       {/* desktop */}
-      <div ref={ref} className="max-sm:hidden md:flex flex-row items-baseline gap-x-page w-full">
+      <div ref={ref} className="hidden md:flex flex-row items-baseline gap-x-page w-full">
         <div className="hidden md:flex w-[40%]">
           <Text type="sub" animate={inView} className={`w-full text-right transition-colors duration-200 ${!showCard ? "text-text/25" : ""}`}>
             {jobs[person.job]}

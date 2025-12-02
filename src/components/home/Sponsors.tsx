@@ -58,13 +58,13 @@ function Sponsors() {
 
   return (
     <section className="flex flex-col gap-y-s-one w-full p-page bg-bg">
-      <div className="flex md:flex-row flex-col-reverse justify-between gap-y-s-one w-full">
-        <div ref={btnRef} className="md:self-end">
-          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
-        </div>
-        <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
-          <Text type="pg" animate={textInView} className="font-bold!">{t.home.sponsors.title}</Text>
+      <div className="flex flex-col gap-y-s-one w-full">
+        <div ref={textRef} className="self-end flex-col gap-y-s-one md:max-w-[40%] md:text-right">
+          <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
           <Text type="pg" animate={textInView}>{t.home.sponsors.desc}</Text>
+        </div>
+        <div ref={btnRef} className="md:self-end">
+          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""} p-s-four`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
       <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">

@@ -33,8 +33,11 @@ function Events() {
   const { ref: headingRef, inView: headingInView } = useInView();
 
   return (
-    <section className="flex flex-col gap-y-page p-page bg-bg">
-      <div ref={headingRef}><Text type="pg" animate={headingInView} className="font-bold!">{t.sponsor.event.heading}</Text></div>
+    <section className="flex flex-col gap-y-s-one p-page bg-bg">
+      <div ref={headingRef} className="flex flex-col gap-y-s-four">
+        <Text type="title" animate={headingInView}>{t.sponsor.event.heading}</Text>
+        <Text type="sub" animate={headingInView}>{t.sponsor.event.subheading}</Text>
+      </div>
       <div className="gap-y-s-two md:gap-x-s-two grid grid-cols-1 md:grid-cols-2">
         {events.map((item, i) => (
           <Event key={i} event={item} />

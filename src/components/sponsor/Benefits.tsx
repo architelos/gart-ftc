@@ -64,10 +64,10 @@ function Benefits() {
 
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
-      <div ref={titleRef}><Text type="title" animate={titleInView}>{t.sponsor.benefits.heading}</Text></div>
+      <div ref={titleRef}><Text type="title" animate={titleInView} className="font-bold!">{t.sponsor.benefits.heading}</Text></div>
       {entries.map(([section, items], i) => (
         <div key={i} className="flex flex-col gap-y-s-one">
-          <Text type="pg" className="font-bold!">{section}</Text>
+          <Text type="title" className="text-accent!">{section}</Text>
           <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-3">
             {items.map((item, i) => (
               <Benefit key={i} pI={i % 3} benefit={item} />

@@ -18,7 +18,7 @@ function Hero() {
       />
       <div className="z-1 absolute w-full h-dvh bg-linear-to-t from-30% from-bg/80 to-100% to-bg" />
 
-      <div className="z-2 flex flex-col justify-end items-end w-full h-dvh">
+      <div className="z-2 flex flex-col justify-center items-center w-full h-dvh">
         <Text type="title">{t.sponsor.hero.heading_1}</Text>
         <Text type="title" className="text-accent!">{t.sponsor.hero.heading_2}</Text>
       </div>
