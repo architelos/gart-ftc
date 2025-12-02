@@ -69,8 +69,10 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
           <div
             key={i}
             aria-hidden={i === 1}
-            className="flex justify-start items-center a-scroll"
-            style={{ columnGap: "calc(4 * var(--spacing-page))", paddingRight: "calc(4 * var(--spacing-page))" }}
+            className={`flex justify-start items-center ${type === "silver" ? "a-scroll-silver" : "a-scroll-bronze"}`}
+            style={type === "silver"
+              ? { columnGap: "calc(3 * var(--spacing-page))", paddingRight: "calc(3 * var(--spacing-page))" }
+              : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
           >
             {sponsors.map((sponsor, j) => (
               <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank")}>
