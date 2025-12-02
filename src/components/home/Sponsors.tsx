@@ -47,7 +47,7 @@ function Gold({ img, name, link }: SponsorType) {
       className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
     >
       <img src={assetMap[img]} className="w-full h-full object-contain scale-[0.85]" />
-      <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-black/50 ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
+      <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
         <Text type="sub" className="text-text">{name}</Text>
         {canHover && <Link />}
       </div>
