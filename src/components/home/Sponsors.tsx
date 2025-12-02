@@ -91,7 +91,7 @@ function Sponsors() {
     <section className="flex flex-col gap-y-page w-full p-page bg-bg page">
       <div className="flex md:flex-row flex-col-reverse justify-between gap-y-s-one w-full">
         <div ref={btnRef} className="md:self-end">
-          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
+          <Button type="accent" icon={<Heart style={{ color: `var(--color-white)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
         <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
           <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
