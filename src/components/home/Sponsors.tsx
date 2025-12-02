@@ -24,7 +24,7 @@ type CarouselProps = {
   sponsors: SponsorType[];
 }
 
-function Diamond({ img, name, link }: SponsorType) {
+function Gold({ img, name, link }: SponsorType) {
   const [hover, setHover] = useState(false);
 
   const canHover = useCanHover();
@@ -34,7 +34,7 @@ function Diamond({ img, name, link }: SponsorType) {
     e.preventDefault();
 
     event("click", "Sponsors", name);
-    window.location.href = link;
+    window.open(link, "_blank");
   }
 
   return (
@@ -45,7 +45,7 @@ function Diamond({ img, name, link }: SponsorType) {
       onMouseLeave={() => setHover(false)}
       className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[img]} className="w-full h-full object-cover object-top" />
+      <img src={assetMap[img]} className="w-full h-full object-contain scale-[0.85]" />
       <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-black/50 ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
         <Text type="sub" className="text-text">{name}</Text>
         {canHover && <Link />}
@@ -59,16 +59,22 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
   const { ref: carouselRef, inView: carouselInView } = useInView();
 
   return (
-    <div className="flex flex-col gap-y-s-two">
+    <div className="flex flex-col gap-y-s-one">
       <div ref={textRef}><Text type="pg" animate={textInView} className="font-bold!">{title}</Text></div>
       <div ref={carouselRef} className={`flex flex-row overflow-x-auto scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
         {[0, 1].map((i) => (
-          <div key={i} aria-hidden={i === 1} className="flex justify-start items-center gap-x-page pr-page a-scroll">
+          <div
+            key={i}
+            aria-hidden={i === 1}
+            className="flex justify-start items-center a-scroll"
+            style={{ columnGap: "calc(4 * var(--spacing-page))", paddingRight: "calc(4 * var(--spacing-page))" }}
+          >
             {sponsors.map((sponsor, j) => (
-              <div key={j} className={`flex shrink-0 grow-0 ${type === "silver" ? "basis-[40vh]" : "basis-[25vh]"}`}>
+              <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank")}>
                 <img
                   className="w-full h-full object-contain brightness-0 invert saturate-100"
                   src={assetMap[sponsor.img]}
+                  alt={sponsor.name}
                 />
               </div>
             ))}
@@ -99,15 +105,15 @@ function Sponsors() {
         </div>
       </div>
       <div className="flex flex-col gap-y-s-two">
-        <Text type="pg" className="font-bold!">{t.home.sponsors.tiers["diamond"]}</Text>
+        <Text type="pg" className="font-bold!">{t.home.sponsors.tiers.gold}</Text>
         <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
-          {sponsors.diamond.map((sponsor, i) => (
-            <Diamond key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
+          {sponsors.gold.map((sponsor, i) => (
+            <Gold key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
           ))}
         </div>
       </div>
-      {/* <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
-      <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} /> */}
+      <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
+      <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} />
     </section>
   );
 }

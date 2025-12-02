@@ -57,19 +57,19 @@ function Footer() {
       </div>
 
       <div ref={socialsRef} className="gap-y-s-three grid grid-cols-1 md:grid-cols-3">
-        <a href={socials.yt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-start" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.yt.link} target="_blank" className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-start" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaYoutube style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.yt.handle}</Text>
         </a>
-        <a href={socials.gh.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-center" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.gh.link} target="_blank" className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-center" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaGithub style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.gh.handle}</Text>
         </a>
-        <a href={socials.ig.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-end" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.ig.link} target="_blank" className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-end" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaInstagram style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.ig.handle}</Text>
         </a>
-        <a href={socials.tt.link} className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-start" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
+        <a href={socials.tt.link} target="_blank" className={`flex flex-row items-center gap-x-s-four w-fit scale-on-hover opacity-0 ${isMd ? "place-self-start" : ""} ${socialsInView ? "a-fade-in" : ""}`}>
           <FaTiktok style={{ color: "var(--color-text)", width: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)", height: "clamp(1.5rem, 1.324rem + 0.751vw, 2rem)" }} />
           <Text type="pg">{socials.tt.handle}</Text>
         </a>

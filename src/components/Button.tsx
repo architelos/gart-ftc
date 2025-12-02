@@ -23,8 +23,13 @@ function Button({ icon, type, children, link, className = "" }: ButtonProps) {
   }
 
   return (
+<<<<<<< Updated upstream
     <a href={link} className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`}>
       <Text type="pg" className="text-white!">{children}</Text>
+=======
+    <a href={link} target="_blank" className={`flex w-fit cursor-pointer justify-center items-center gap-button p-button scale-on-hover rounded-md ${add} ${className}`}>
+      <Text type="pg" className="text-text!">{children}</Text>
+>>>>>>> Stashed changes
       {icon}
     </a>
   );

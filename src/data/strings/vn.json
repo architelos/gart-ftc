@@ -32,6 +32,7 @@
       "cta": "Sponsor us",
       "tiers": {
         "diamond": "Diamond",
+        "gold": "Gold",
         "silver": "Silver",
         "bronze": "Bronze"
       }

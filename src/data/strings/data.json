@@ -323,100 +323,95 @@
       }
     ],
     "sponsors": {
-      "diamond": [
-        {
-          "name": "American Study",
-          "img": "home/s1.avif",
-          "link": "https://americanstudy.edu.vn/"
-        },
+      "gold": [
         {
           "name": "ETEK",
-          "img": "home/s2.avif",
-          "link": "https://etek.com.vn/en/"
+          "img": "home/logos/gETEK.png",
+          "link": "https://etek.com.vn/"
+        },
+        {
+          "name": "Hai Duong Ford",
+          "img": "home/logos/gFord.png",
+          "link": "https://ford-haiduong.vn/"
         },
         {
           "name": "HEADWAY",
-          "img": "home/s3.avif",
+          "img": "home/logos/gHeadway.png",
           "link": "https://headway.com.vn/"
         },
         {
           "name": "KLB",
-          "img": "home/s4.avif",
+          "img": "home/logos/gKLB.png",
           "link": "https://klbgroup.com.vn/"
         },
         {
-          "name": "VIPHAP",
-          "img": "home/s5.avif",
-          "link": "https://viphap.com/"
-        },
-        {
-          "name": "CMC Telecom",
-          "img": "home/s6.avif",
-          "link": "https://cmctelecom.vn/"
+          "name": "Toyota Hai Duong",
+          "img": "home/logos/gToyota.png",
+          "link": "https://toyotahaiduong.vn/"
         }
       ],
       "silver": [
         {
-          "name": "ETEK",
-          "img": "home/logos/s1.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "CMC Telecom",
+          "img": "home/logos/sCmc.png",
+          "link": "https://cmctelecom.vn/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/s2.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "Geleximco",
+          "img": "home/logos/sGeleximco.png",
+          "link": "https://geleximco.vn/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/s3.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "Princeton English",
+          "img": "home/logos/sPrinceton.png",
+          "link": "https://princetonenglish.vn/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/s4.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "SolidWorks",
+          "img": "home/logos/sSolidWorks.png",
+          "link": "https://www.solidworks.com/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/s5.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "VinUniversity",
+          "img": "home/logos/sVinUni.png",
+          "link": "https://vinuni.edu.vn/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/s6.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "VIPHAP",
+          "img": "home/logos/sViPhap.png",
+          "link": "https://viphap.com/"
         }
       ],
       "bronze": [
         {
-          "name": "ETEK",
-          "img": "home/logos/b1.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "Aligro",
+          "img": "home/logos/bAligro.png",
+          "link": "https://aligro.vn/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/b2.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "BIC",
+          "img": "home/logos/bBIC.png",
+          "link": "https://bic.vn/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/b3.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "Ha An",
+          "img": "home/logos/bHA.png",
+          "link": "https://web.facebook.com/haanatelier"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/b4.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "Hoa Nam",
+          "img": "home/logos/bHoaNam.png",
+          "link": "https://hoanamtools.com/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/b5.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "Polymaker",
+          "img": "home/logos/bPolymaker.png",
+          "link": "https://polymaker.com/"
         },
         {
-          "name": "ETEK",
-          "img": "home/logos/b6.png",
-          "link": "https://etek.com.vn/en/"
+          "name": "SUMO ENERGY'S",
+          "img": "home/logos/bSE.png",
+          "link": ""
         }
       ]
     },
@@ -848,7 +843,7 @@
       }
     ],
     "sponsors": {
-      "diamond": [
+      "gold": [
         {
           "name": "American Study",
           "img": "home/s1.avif",
