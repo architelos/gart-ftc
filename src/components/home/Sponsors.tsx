@@ -18,7 +18,13 @@ type SponsorType = {
   link: string;
 }
 
-function Card({ img, name, link }: SponsorType) {
+type CarouselProps = {
+  type: "silver" | "bronze";
+  title: string;
+  sponsors: SponsorType[];
+}
+
+function Diamond({ img, name, link }: SponsorType) {
   const [hover, setHover] = useState(false);
 
   const canHover = useCanHover();
@@ -48,6 +54,31 @@ function Card({ img, name, link }: SponsorType) {
   );
 }
 
+function Carousel({ type, title, sponsors }: CarouselProps) {
+  const { ref: textRef, inView: textInView } = useInView();
+  const { ref: carouselRef, inView: carouselInView } = useInView();
+
+  return (
+    <div className="flex flex-col gap-y-s-two">
+      <div ref={textRef}><Text type="pg" animate={textInView} className="font-bold!">{title}</Text></div>
+      <div ref={carouselRef} className={`flex flex-row overflow-x-auto scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
+        {[0, 1].map((i) => (
+          <div key={i} aria-hidden={i === 1} className="flex justify-start items-center gap-x-page pr-page a-scroll">
+            {sponsors.map((sponsor, j) => (
+              <div key={j} className={`flex shrink-0 grow-0 ${type === "silver" ? "basis-[40vh]" : "basis-[25vh]"}`}>
+                <img
+                  className="w-full h-full object-contain brightness-0 invert saturate-100"
+                  src={assetMap[sponsor.img]}
+                />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Sponsors() {
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: btnRef, inView: btnInView } = useInView();
@@ -57,21 +88,29 @@ function Sponsors() {
   const { sponsors } = data(locale);
 
   return (
-    <section className="flex flex-col gap-y-s-one w-full p-page bg-bg">
-      <div className="flex flex-col gap-y-s-one w-full">
-        <div ref={textRef} className="self-end flex-col gap-y-s-one md:max-w-[40%] md:text-right">
-          <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
+    <section className="flex flex-col gap-y-page w-full p-page bg-bg page">
+      <div className="flex md:flex-row flex-col-reverse justify-between gap-y-s-one w-full">
+        <div ref={btnRef} className="md:self-end">
+          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
+        </div>
+        <div ref={textRef} className="flex flex-col gap-y-s-three md:max-w-[40%] md:text-right">
+          <Text type="pg" animate={textInView} className="font-bold!">{t.home.sponsors.title}</Text>
           <Text type="pg" animate={textInView}>{t.home.sponsors.desc}</Text>
         </div>
         <div ref={btnRef} className="md:self-end">
           <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""} p-s-four`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
-      <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
-        {sponsors.map((sponsor, i) => (
-          <Card key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
-        ))}
+      <div className="flex flex-col gap-y-s-two">
+        <Text type="pg" className="font-bold!">{t.home.sponsors.tiers["diamond"]}</Text>
+        <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
+          {sponsors.diamond.map((sponsor, i) => (
+            <Diamond key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
+          ))}
+        </div>
       </div>
+      <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
+      <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} />
     </section>
   );
 }

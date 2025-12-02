@@ -315,38 +315,104 @@
         "img": "ph.avif"
       }
     ],
-    "sponsors": [
-      {
-        "name": "American Study",
-        "img": "home/s1.avif",
-        "link": "https://americanstudy.edu.vn/"
-      },
-      {
-        "name": "ETEK",
-        "img": "home/s2.avif",
-        "link": "https://etek.com.vn/en/"
-      },
-      {
-        "name": "HEADWAY",
-        "img": "home/s3.avif",
-        "link": "https://headway.com.vn/"
-      },
-      {
-        "name": "KLB",
-        "img": "home/s4.avif",
-        "link": "https://klbgroup.com.vn/"
-      },
-      {
-        "name": "VIPHAP",
-        "img": "home/s5.avif",
-        "link": "https://viphap.com/"
-      },
-      {
-        "name": "CMC Telecom",
-        "img": "home/s6.avif",
-        "link": "https://cmctelecom.vn/"
-      }
-    ],
+    "sponsors": {
+      "diamond": [
+        {
+          "name": "American Study",
+          "img": "home/s1.avif",
+          "link": "https://americanstudy.edu.vn/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/s2.avif",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "HEADWAY",
+          "img": "home/s3.avif",
+          "link": "https://headway.com.vn/"
+        },
+        {
+          "name": "KLB",
+          "img": "home/s4.avif",
+          "link": "https://klbgroup.com.vn/"
+        },
+        {
+          "name": "VIPHAP",
+          "img": "home/s5.avif",
+          "link": "https://viphap.com/"
+        },
+        {
+          "name": "CMC Telecom",
+          "img": "home/s6.avif",
+          "link": "https://cmctelecom.vn/"
+        }
+      ],
+      "silver": [
+        {
+          "name": "ETEK",
+          "img": "home/logos/s1.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s2.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s3.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s4.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s5.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s6.png",
+          "link": "https://etek.com.vn/en/"
+        }
+      ],
+      "bronze": [
+        {
+          "name": "ETEK",
+          "img": "home/logos/b1.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b2.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b3.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b4.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b5.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b6.png",
+          "link": "https://etek.com.vn/en/"
+        }
+      ]
+    },
     "updates": [
       {
         "id": 1,
@@ -767,61 +833,104 @@
         "img": "ph.avif"
       }
     ],
-    "sponsors": [
-      {
-        "name": "American Study",
-        "img": "home/s1.avif",
-        "link": "https://americanstudy.edu.vn/"
-      },
-      {
-        "name": "ETEK",
-        "img": "home/s2.avif",
-        "link": "https://example.com/"
-      },
-      {
-        "name": "HEADWAY",
-        "img": "home/s3.avif",
-        "link": "https://headway.com.vn/"
-      },
-      {
-        "name": "KLB",
-        "img": "home/s4.avif",
-        "link": "https://klbgroup.com.vn/"
-      },
-      {
-        "name": "VIPHAP",
-        "img": "home/s5.avif",
-        "link": "https://viphap.com/"
-      },
-      {
-        "name": "CMC Telecom",
-        "img": "home/s6.avif",
-        "link": "https://cmctelecom.vn/"
-      }
-    ],
-    "updates": [
-      {
-        "id": 1,
-        "title": "Pushing Boundaries, One Robot at a Time",
-        "date": "1/15/70",
-        "description": "From regional champs to world contenders — our team is redefining innovation, teamwork, and passion for STEM.",
-        "image": "ph.avif"
-      },
-      {
-        "id": 2,
-        "title": "Grateful to Our Sponsors for Powering the Journey",
-        "date": "1/15/70",
-        "description": "A huge thank-you to the organizations and individuals who make our mission possible — your support drives every line of code and every match we play.",
-        "image": "pv.avif"
-      },
-      {
-        "id": 3,
-        "title": "Competition Season Kickoff",
-        "date": "1/22/70",
-        "description": "Our team is gearing up for an exciting competition season. With new designs and improved strategies, we're ready to take on the challenge.",
-        "image": "ph.avif"
-      }
-    ],
+    "sponsors": {
+      "diamond": [
+        {
+          "name": "American Study",
+          "img": "home/s1.avif",
+          "link": "https://americanstudy.edu.vn/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/s2.avif",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "HEADWAY",
+          "img": "home/s3.avif",
+          "link": "https://headway.com.vn/"
+        },
+        {
+          "name": "KLB",
+          "img": "home/s4.avif",
+          "link": "https://klbgroup.com.vn/"
+        },
+        {
+          "name": "VIPHAP",
+          "img": "home/s5.avif",
+          "link": "https://viphap.com/"
+        },
+        {
+          "name": "CMC Telecom",
+          "img": "home/s6.avif",
+          "link": "https://cmctelecom.vn/"
+        }
+      ],
+      "silver": [
+        {
+          "name": "ETEK",
+          "img": "home/logos/s1.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s2.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s3.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s4.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s5.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/s6.png",
+          "link": "https://etek.com.vn/en/"
+        }
+      ],
+      "bronze": [
+        {
+          "name": "ETEK",
+          "img": "home/logos/b1.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b2.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b3.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b4.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b5.png",
+          "link": "https://etek.com.vn/en/"
+        },
+        {
+          "name": "ETEK",
+          "img": "home/logos/b6.png",
+          "link": "https://etek.com.vn/en/"
+        }
+      ]
+    },
     "values": [
       {
         "value": "Pioneering Spirit",
