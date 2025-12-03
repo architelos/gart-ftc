@@ -9,6 +9,7 @@ import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
 import useCanHover from "@/hooks/useCanHover";
 import useTheme from "@/hooks/useTheme";
+import useFFOrSafari from "@/hooks/useFFOrSafari";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 import data from "@/data/data";
@@ -57,6 +58,7 @@ function Gold({ img, name, link }: SponsorType) {
 
 function Carousel({ type, title, sponsors }: CarouselProps) {
   const theme = useTheme((state) => state.theme);
+  const ffOrSafari = useFFOrSafari();
 
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: carouselRef, inView: carouselInView } = useInView();
@@ -64,18 +66,33 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
   return (
     <div className="flex flex-col gap-y-s-one">
       <div ref={textRef}><Text type="pg" animate={textInView} className="font-bold!">{title}</Text></div>
-      <div ref={carouselRef} className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
-        {(type === "silver" ? [0, 1] : [0, 1, 2, 3]).map((i) => (
-          <div
-            key={i}
-            aria-hidden={i === 1}
-            className={`flex justify-start w-max items-center ${type === "silver" ? "a-scroll-silver" : "a-scroll-bronze"}`}
-            style={type === "silver"
-              ? { columnGap: "calc(3 * var(--spacing-page))", paddingRight: "calc(3 * var(--spacing-page))" }
-              : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
-          >
-            {sponsors.map((sponsor, j) => (
-              <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
+      <div ref={carouselRef}>
+        {!ffOrSafari
+          ? <div className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
+            {(type === "silver" ? [0, 1] : [0, 1, 2, 3]).map((i) => (
+              <div
+                key={i}
+                aria-hidden={i === 1}
+                className={`flex justify-start w-max items-center ${type === "silver" ? "a-scroll-silver" : "a-scroll-bronze"}`}
+                style={type === "silver"
+                  ? { columnGap: "calc(3 * var(--spacing-page))", paddingRight: "calc(3 * var(--spacing-page))" }
+                  : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
+              >
+                {sponsors.map((sponsor, j) => (
+                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
+                    <img
+                      className={`w-full h-full object-contain brightness-0 ${theme === "dark" ? "invert" : ""}`}
+                      src={assetMap[sponsor.img]}
+                      alt={sponsor.name}
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+          : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${type === "silver" ? "grid-cols-3" : "grid-cols-4"} opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
+            {sponsors.map((sponsor, i) => (
+              <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[18vh] md:h-[28vh]" : "h-[10vh] md:h-[15vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
                 <img
                   className={`w-full h-full object-contain brightness-0 ${theme === "dark" ? "invert" : ""}`}
                   src={assetMap[sponsor.img]}
@@ -83,8 +100,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
                 />
               </div>
             ))}
-          </div>
-        ))}
+          </div>}
       </div>
     </div>
   );
@@ -109,7 +125,7 @@ function Sponsors() {
       </div>
       <div className="flex flex-col gap-y-s-two">
         <Text type="pg" className="font-bold!">{t.home.sponsors.tiers.gold}</Text>
-        <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
+        <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
           {sponsors.gold.map((sponsor, i) => (
             <Gold key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
           ))}
