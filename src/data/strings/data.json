@@ -14,45 +14,59 @@
       {
         "year": "2024-2025",
         "award": "Winning Alliance Captain & Design Award",
-        "description": "(FTC Vietnam) One of the only two representatives from Vietnam to compete at the FIRST Tech Challenge World Championship in Houston, USA."
+        "description": "Vietnam Championship\nOne of the only two representatives from Vietnam to compete at the FIRST Tech Challenge World Championship in Houston, USA."
       },
       {
         "year": "2023-2024",
         "award": "Winning Alliance Captain & Innovate Award",
-        "description": "(FTC Vietnam) Ranked first in the competition across all robot performance metrics."
+        "description": "Vietnam Championship\nRanked first in the competition across all robot performance metrics."
       }
     ],
     "benefits": {
       "Business": [
         {
           "name": "Bronze ($200 - $999)",
-          "desc": "• Use team’s and the web page’s content for media\n• Certificate of appreciation\n• 1:4 logo on teamwear and robot\n• Name + logo on website and social media\n• 1 media support post\n• Other benefits enjoyed by both parties"
+          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 1:4 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 1 media support post\n\n• Other benefits enjoyed by both parties",
+          "span": false,
+          "color": "#c3785c"
         },
         {
           "name": "Silver ($1,000 - $1,999)",
-          "desc": "All stated benefits, and:\n• 1:3 logo on teamwear and robot\n• Unique social media recognition\n• 2 media support posts"
+          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 1:3 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 2 media support posts\n\n• Unique social media recognition\n\n• Other benefits enjoyed by both parties",
+          "span": false,
+          "color": "#9aa3a5"
         },
         {
           "name": "Gold ($2,000 - $2,999)",
-          "desc": "All stated benefits, and:\n• 1:2 logo on teamwear and robot\n• 1:4 logo on event banners\n• Name + logo on giveaway gifts\n• 3 media support posts"
+          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 1:2 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 3 media support posts\n\n• Unique social media recognition\n\n• 1:4 logo on event banners\n\n• Name + logo on giveaway gifts\n\n• Other benefits enjoyed by both parties",
+          "span": false,
+          "color": "#d5a019"
         },
         {
           "name": "Diamond ($3,000 - $4,999)",
-          "desc": "All stated benefits, and:\n• 3:4 to 1:1 logo on teamwear and robot\n• Recognition on ALL social media posts\n• 2:3 logo on event banners\n• Company merch handouts\n• 3+ media support posts"
+          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 3:4 to 1:1 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 3+ media support posts\n\n• Unique social media recognition\n\n• 1:4 logo on event banners\n\n• Name + logo on giveaway gifts\n\n• Recognition on ALL social media posts\n\n• 2:3 logo on event banners\n\n• Company merch handouts\n\n• Other benefits enjoyed by both parties",
+          "span": false,
+          "color": "#0cc0df"
         },
         {
           "name": "Partner ($5,000+)",
-          "desc": "For higher amount of sponsorship, we would want to be long-term strategic partners with the company and to satisfy more agreed-upon benefits over longer periods of time."
+          "desc": "• For higher sponsorship amounts, we aim to become long-term strategic partners and will provide expanded, mutually agreed-upon benefits over a longer period of time",
+          "span": true,
+          "color": "#3e3d75"
         }
       ],
       "Individual": [
         {
           "name": "Supporter ($50 - $199)",
-          "desc": "• Team merchandise\n• Appreciation letter"
+          "desc": "• Team merchandise\n\n• Appreciation letter",
+          "span": false,
+          "color": "#158554"
         },
         {
           "name": "Backer ($200+)",
-          "desc": "All stated benefits, and:\n• Recognition on website\n• Social media recognition"
+          "desc": "• Team merchandise\n\n• Appreciation letter\n\n• Recognition on website\n\n• Social media recognition",
+          "span": false,
+          "color": "#158554"
         }
       ]
     },
@@ -277,13 +291,15 @@
       "Guides": [
         {
           "name": "FTC 101",
-          "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z"
+          "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/r101.avif"
         }
       ],
       "CAD": [
         {
           "name": "24-25",
-          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1"
+          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1",
+          "img": "home/rCad.avif"
         }
       ]
     },

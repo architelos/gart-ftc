@@ -94,7 +94,7 @@ function Footer() {
       </div>
 
       <div ref={imgRef} className="flex flex-col flex-1 justify-center">
-        <img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap[theme === "dark" ? "footer.png" : "lfooter.png"]} />
+        <img className={`object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} src={assetMap["footer.png"]} />
       </div>
 
       <Text type="sub">{t.footer.copyright}</Text>

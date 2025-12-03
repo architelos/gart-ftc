@@ -45,7 +45,7 @@ function Gold({ img, name, link }: SponsorType) {
       onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
+      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 max-h-[40vh] ${inView ? "a-fade-in" : ""}`}
     >
       <img src={assetMap[img]} className="w-full h-full object-contain scale-[0.85]" />
       <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
@@ -116,10 +116,10 @@ function Sponsors() {
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg page">
-      <div ref={textRef} className="flex flex-col self-end gap-y-s-two md:max-w-[60%] md:text-right">
+      <div ref={textRef} className="flex flex-col gap-y-s-two md:max-w-[60%]">
         <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
         <Text type="pg" animate={textInView}>{t.home.sponsors.desc}</Text>
-        <div ref={btnRef} className="md:self-end mt-s-four">
+        <div ref={btnRef} className="mt-s-four">
           <Button type="accent" icon={<Heart style={{ color: `var(--color-button)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>

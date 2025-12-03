@@ -24,7 +24,7 @@ function AwardRow({ award, isMd }: AwardRowProps) {
         <Text type="pg" animate={textInView} className={!isMd ? "font-bold!" : ""}>{award.award}</Text>
         {!isMd && <div ref={descSmRef}><Text type="pg" animate={descSmInView}>{award.description}</Text></div>}
       </div>
-      {isMd && <Text type="pg" animate={textInView}>{award.description}</Text>}
+      {isMd && <Text type="pg" animate={textInView} className="whitespace-pre-line">{award.description}</Text>}
     </>
   )
 }

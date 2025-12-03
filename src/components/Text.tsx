@@ -7,6 +7,7 @@ interface TextProps extends Omit<HTMLAttributes<HTMLElement>, "className"> {
   link?: boolean;
   clickable?: boolean
   animate?: boolean;
+  sep?: boolean;
   className?: string;
 }
 
@@ -16,6 +17,7 @@ interface LinkProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "class
     clickable?: boolean;
     animate?: boolean;
     className?: string;
+    sep?: boolean;
     children: ReactNode;
 }
 
@@ -25,6 +27,7 @@ function Text({
   link = false,
   clickable = false,
   animate = true,
+  sep = false,
   className = "",
   ...props
 }: TextProps | LinkProps) {
@@ -33,7 +36,7 @@ function Text({
     if (e.animationName.includes("slide-up")) setAnimated(true);
   }, []);
 
-  // if (!children) throw new Error("No children");
+  if (!children) throw new Error("No children");
 
   let Component: ElementType = "p"; // default to satisfy ts
   let finalCn = className.trim();
@@ -76,7 +79,13 @@ function Text({
   return (
     <div className={`overflow-hidden ${finalCn.trim()}`}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-      <Component onAnimationEnd={handleAnimated} className={animation.trim()} {...props as any}>
+      <Component
+        onAnimationEnd={handleAnimated}
+        className={animation.trim()}
+        target={sep ? "_blank" : "_self"}
+        rel={sep ? "noopener noreferrer" : ""}
+        {...props as any}
+      >
         {children}
       </Component>
     </div>

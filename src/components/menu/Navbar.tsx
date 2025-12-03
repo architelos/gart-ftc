@@ -41,12 +41,12 @@ function Navbar() {
         {open ? theme === "dark"
           ? <Moon
               onClick={() => toggleTheme()}
-              className="scale-on-hover cursor-pointer"
+              className={`scale-on-hover cursor-pointer a-fade-in`}
               style={{ color: "var(--color-accent)", width: "var(--spacing-page)", height: "var(--spacing-page)" }}
             />
           : <Sun
               onClick={() => toggleTheme()}
-              className="scale-on-hover cursor-pointer"
+              className={`scale-on-hover cursor-pointer a-fade-in`}
               style={{ color: "var(--color-accent)", width: "var(--spacing-page)", height: "var(--spacing-page)" }}
             />
           : <></>

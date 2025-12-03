@@ -8,13 +8,15 @@ import assetMap from "@/data/assetMap";
 interface Benefit {
   name: string;
   desc: string;
+  span: boolean;
+  color: string;
 }
 interface Benefits {
   Business: Benefit[];
   Individual: Benefit[];
 }
 
-interface BenefitProps { pI: number; benefit: Benefit; }
+interface BenefitProps { benefit: Benefit; }
 interface BenefitLineProps { data: string; }
 
 function BenefitLine({ data }: BenefitLineProps) {
@@ -28,18 +30,12 @@ function BenefitLine({ data }: BenefitLineProps) {
   );
 }
 
-function Benefit({ pI, benefit }: BenefitProps) {
+function Benefit({ benefit }: BenefitProps) {
   const { ref, inView } = useInView();
 
-  const places = {
-    0: "md:items-start md:text-left",
-    1: "md:items-center md:text-center",
-    2: "md:items-end md:text-right"
-  } as Record<number, string>
-
   return (
-    <div className={`flex flex-col gap-y-s-three ${places[pI]}`}>
-      <div ref={ref}><Text type="pg" animate={inView} className="font-bold! text-accent!">{benefit.name}</Text></div>
+    <div className={`flex flex-col gap-y-s-three ${benefit.span ? "col-span-4" : ""}`}>
+      <div ref={ref}><Text type="pg" animate={inView} className="font-bold!" style={{ color: benefit.color }}>{benefit.name}</Text></div>
       <Text type="pg">
         {benefit.desc.split("\n").map((line, i) => (
           <BenefitLine key={i} data={line} />
@@ -64,20 +60,18 @@ function Benefits() {
 
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
-      <div ref={titleRef}><Text type="title" animate={titleInView} className="font-bold!">{t.sponsor.benefits.heading}</Text></div>
+      <div ref={titleRef}><Text type="title" animate={titleInView}>{t.sponsor.benefits.heading}</Text></div>
       {entries.map(([section, items], i) => (
-        <div key={i} className="flex flex-col gap-y-s-one">
-          <Text type="title" className="text-accent!">{section}</Text>
-          <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-3">
+        <div key={i} className="flex flex-col items-start gap-y-s-one">
+          <Text type="title" className="font-normal! text-accent!">{section}</Text>
+          <div className={`gap-x-page gap-y-page grid grid-cols-1 ${section === "Business" ? "md:grid-cols-4" : "md:grid-cols-2"}`}>
             {items.map((item, i) => (
-              <Benefit key={i} pI={i % 3} benefit={item} />
+              <Benefit key={i} benefit={item} />
             ))}
           </div>
-          {i + 1 !== items.length && (
-            <div ref={imgRef}><img className={`w-full opacity-0 ${imgInView ? "a-fade-in" : ''}`} src={assetMap[`sponsor/${i + 2}.avif`]} /></div>
-          )}
         </div>
       ))}
+      <div ref={imgRef}><img className={`w-full opacity-0 ${imgInView ? "a-fade-in" : ''}`} src={assetMap[`sponsor/${2}.avif`]} /></div>
     </section>
   );
 }

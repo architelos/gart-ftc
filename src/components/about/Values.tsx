@@ -41,7 +41,7 @@ function Panel({ value, idx, step, scrollY, isLast }: PanelProps) {
         <div className="flex flex-col justify-center items-center gap-y-page w-full h-full">
           <Text type="title" className="text-center">{value.value}</Text>
 
-          <div className="w-full max-h-[60%]">
+          <div className="w-full max-h-[60%] md:max-h-[50%]">
             <img src={assetMap[value.img]} className="w-full h-full object-contain" />
           </div>
 
@@ -77,8 +77,8 @@ function Values() {
   return (
     <section className="bg-bg">
       <div ref={textRef} className="flex flex-row justify-between items-baseline p-page pb-0">
-        <ArrowDown className={`opacity-0 ${textInView ? "a-fade-in" : ""}`} />
         <Text animate={textInView} type="title">{t.about.values.title}</Text>
+        <ArrowDown style={{ color: "var(--color-text)" }} className={`opacity-0 ${textInView ? "a-fade-in" : ""}`} />
       </div>
 
       <div ref={panelsRef} className="relative" style={{ height: `${values.length * 100}vh` }}>

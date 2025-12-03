@@ -30,9 +30,9 @@ function Figures() {
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
-      <div ref={headingRef} className="flex flex-col self-end gap-y-s-two md:max-w-[30%]">
-        <Text type="title" animate={headingInView} className="text-right">{t.sponsor.figures.heading}</Text>
-        <Text type="sub" animate={headingInView} className="text-right">{t.sponsor.figures.desc}</Text>
+      <div ref={headingRef} className="flex flex-col gap-y-s-two">
+        <Text type="title" animate={headingInView}>{t.sponsor.figures.heading}</Text>
+        <Text type="sub" animate={headingInView}>{t.sponsor.figures.desc}</Text>
       </div>
 
       <div className="flex flex-row justify-between max-sm:gap-y-s-two max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-1 w-full">

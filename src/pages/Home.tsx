@@ -5,6 +5,7 @@ import Sponsors from "@/components/home/Sponsors";
 // import Updates from "@/components/home/Updates";
 import Awards from "@/components/home/Awards";
 import Faq from "@/components/home/Faq";
+import Resources from "@/components/home/Resources";
 import Break from "@/components/Break";
 
 function Home() {
@@ -22,6 +23,8 @@ function Home() {
       <Awards />
       <Break />
       <Faq />
+      <Break />
+      <Resources />
     </>
   )
 }

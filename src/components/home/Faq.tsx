@@ -17,7 +17,7 @@ function Faq() {
 
   return (
     <section className="flex flex-col gap-y-page w-full p-page bg-bg">
-      <div ref={headingRef} className="md:self-center md:w-[40%] md:text-center">
+      <div ref={headingRef}>
         <Text type="title" animate={headingInView}>{t.home.faq.heading}</Text>
       </div>
       <div ref={contentRef} className={`flex flex-col gap-y-s-two opacity-0 ${contentInView ? "a-fade-in" : ""}`}>
