@@ -74,8 +74,8 @@
   }
 
   @keyframes scroll {
-    from { translate: 0; }
-    to { translate: -100%; }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }
 
   .a-scroll-silver {
@@ -95,6 +95,7 @@
   --color-bg: rgb(8, 8, 8);
   --color-sub: rgba(255, 255, 255, 0.5);
   --color-text: rgb(248, 248, 248);
+  --color-button: rgb(248, 248, 248);
   --color-accent: rgb(21, 131, 84);
 
   --spacing-button: clamp(0.5rem, 0.412rem + 0.376vw, 0.75rem); /* 12px - 8px */

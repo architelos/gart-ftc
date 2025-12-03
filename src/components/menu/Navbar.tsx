@@ -53,8 +53,8 @@ function Navbar() {
         }
         <button className={`flex justify-center items-center self-start overflow-hidden p-button rounded-md bg-accent cursor-pointer ${anim}`} onClick={() => setOpen(!open)}>
         {
-          !open ? <Menu className="scale-on-hover" style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
-          : <X className="scale-on-hover" style={{ color: "var(--color-text)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />
+          !open ? <Menu className="scale-on-hover" style={{ color: "var(--color-button)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)" }} />
+          : <X className="scale-on-hover" style={{ color: "var(--color-button)", width: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)", height: "clamp(1.5rem, 0.972rem + 2.254vw, 3rem)"  }} />
         }
       </button>
 

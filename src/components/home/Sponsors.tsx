@@ -104,7 +104,7 @@ function Sponsors() {
         <Text type="title" animate={textInView}>{t.home.sponsors.title}</Text>
         <Text type="pg" animate={textInView}>{t.home.sponsors.desc}</Text>
         <div ref={btnRef} className="md:self-end mt-s-four">
-          <Button type="accent" icon={<Heart style={{ color: `var(--color-text)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
+          <Button type="accent" icon={<Heart style={{ color: `var(--color-button)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
       <div className="flex flex-col gap-y-s-two">
