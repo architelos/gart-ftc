@@ -3,13 +3,13 @@
     "awards": [
       {
         "year": "2024-2025",
-        "award": "Finalist Alliance Pick",
+        "award": "Finalist Award",
         "description": "FIRST World Championship"
       },
       {
         "year": "2024-2025",
-        "award": "Champion",
-        "description": "FTC Edison Division - FIRST World Championship"
+        "award": "Winner Award",
+        "description": "Edison Division, FIRST World Championship"
       },
       {
         "year": "2024-2025",
@@ -18,7 +18,7 @@
       },
       {
         "year": "2023-2024",
-        "award": "Winning Alliance Captain, Innovate Award",
+        "award": "Winning Alliance Captain & Innovate Award",
         "description": "FTC Vietnam - Ranked first in the competition across all robot performance metrics."
       }
     ],
