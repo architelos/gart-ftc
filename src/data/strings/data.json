@@ -60,13 +60,13 @@
           "name": "Supporter ($50 - $199)",
           "desc": "• Team merchandise\n\n• Appreciation letter",
           "span": false,
-          "color": "#158554"
+          "color": "#9aa3a5"
         },
         {
           "name": "Backer ($200+)",
           "desc": "• Team merchandise\n\n• Appreciation letter\n\n• Recognition on website\n\n• Social media recognition",
           "span": false,
-          "color": "#158554"
+          "color": "#d5a019"
         }
       ]
     },

@@ -71,7 +71,7 @@ function Benefits() {
           </div>
         </div>
       ))}
-      <div ref={imgRef}><img className={`w-full opacity-0 ${imgInView ? "a-fade-in" : ''}`} src={assetMap[`sponsor/${2}.avif`]} /></div>
+      <div ref={imgRef}><img className={`w-full opacity-0 ${imgInView ? "a-fade-in" : ''}`} src={assetMap[`sponsor/2.avif`]} /></div>
     </section>
   );
 }

@@ -6,8 +6,6 @@ import Text from "@/components/Text";
 import useInView from "@/hooks/useInView";
 import useMenuState from "@/hooks/useMenuState";
 import useLocale from "@/hooks/useLocale";
-import useTheme from "@/hooks/useTheme";
-import useIsMd from "@/hooks/useIsMd";
 import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
 import data from "@/data/data";
@@ -38,10 +36,8 @@ function Footer() {
 
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const isMd = useIsMd();
   const { socials } = data(locale);
 
-  const theme = useTheme((state) => state.theme);
   const setFooterVisible = useMenuState((state) => state.setFooterVisible);
 
   const map: Record<string, {
