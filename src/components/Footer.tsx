@@ -45,9 +45,9 @@ function Footer() {
     align: "md:place-self-start" | "md:place-self-center" | "md:place-self-end"; }
   > = {
     yt: { icon: FaYoutube, align: "md:place-self-start" },
-    gh: { icon: FaGithub, align: "md:place-self-center" },
-    ig: { icon: FaInstagram, align: "md:place-self-end" },
-    tt: { icon: FaTiktok, align: "md:place-self-start" },
+    gh: { icon: FaGithub, align: "md:place-self-start" },
+    ig: { icon: FaInstagram, align: "md:place-self-center" },
+    tt: { icon: FaTiktok, align: "md:place-self-end" },
   };
 
   useEffect(() => {

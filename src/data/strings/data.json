@@ -63,8 +63,8 @@
           "color": "#9aa3a5"
         },
         {
-          "name": "Backer ($200+)",
-          "desc": "• Team merchandise\n\n• Appreciation letter\n\n• Recognition on website\n\n• Social media recognition",
+          "name": "Benefactor ($200+)",
+          "desc": "• Team merchandise\n\n• Appreciation letter\n\n• Social media recognition",
           "span": false,
           "color": "#d5a019"
         }
@@ -313,10 +313,6 @@
         "link": "https://www.youtube.com/@GreenAmsRoboticsTeam",
         "handle": "@GreenAmsRoboticsTeam"
       },
-      "gh": {
-        "link": "https://github.com/greenamsroboticsteam/",
-        "handle": "greenamsroboticsteam"
-      },
       "ig": {
         "link": "https://www.instagram.com/ftc24751_gart/",
         "handle": "@ftc24751_gart"
@@ -324,6 +320,10 @@
       "tt": {
         "link": "https://www.tiktok.com/@ftc24751_gart",
         "handle": "@ftc24751_gart"
+      },
+      "gh": {
+        "link": "https://github.com/greenamsroboticsteam/",
+        "handle": "greenamsroboticsteam"
       }
     },
     "perks": [
@@ -531,17 +531,17 @@
     "events": [
       {
         "img": "sponsor/f3.avif",
-        "name": "Wonderlab '25",
+        "name": "Wonderlab 2025",
         "full": true
       },
       {
         "img": "sponsor/f1.avif",
-        "name": "GART Expo '25",
+        "name": "GART Expo 2025",
         "full": false
       },
       {
         "img": "sponsor/f2.avif",
-        "name": "GART Camp '25",
+        "name": "GART Robotics Camp 2025",
         "full": false
       }
     ]
@@ -598,8 +598,8 @@
           "desc": "• Team merchandise\n• Appreciation letter"
         },
         {
-          "name": "Backer ($200+)",
-          "desc": "All of the above, and:\n• Recognition on website\n• Social media recognition"
+          "name": "Benefactor ($200+)",
+          "desc": "All of the above, and:\n• Social media recognition"
         }
       ]
     },
