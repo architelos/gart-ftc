@@ -8,7 +8,6 @@ import Button from "@/components/Button";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
 import useCanHover from "@/hooks/useCanHover";
-import useTheme from "@/hooks/useTheme";
 import useFFOrSafari from "@/hooks/useFFOrSafari";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
@@ -57,15 +56,19 @@ function Gold({ img, name, link }: SponsorType) {
 }
 
 function Carousel({ type, title, sponsors }: CarouselProps) {
-  const theme = useTheme((state) => state.theme);
   const ffOrSafari = useFFOrSafari();
 
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: carouselRef, inView: carouselInView } = useInView();
 
+  const colors = {
+    bronze: "#c3785c",
+    silver: "#9aa3a5"
+  }
+
   return (
     <div className="flex flex-col gap-y-s-one">
-      <div ref={textRef}><Text type="pg" animate={textInView} className="font-bold!">{title}</Text></div>
+      <Text type="title" className="font-normal! text-accent! text-center" style={{ color: colors[type] }}>{title}</Text>
       <div ref={carouselRef}>
         {!ffOrSafari
           ? <div className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
@@ -81,7 +84,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
                 {sponsors.map((sponsor, j) => (
                   <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
                     <img
-                      className={`w-full h-full object-contain brightness-0 ${theme === "dark" ? "invert" : ""}`}
+                      className={`w-full h-full object-contain`}
                       src={assetMap[sponsor.img]}
                       alt={sponsor.name}
                     />
@@ -94,7 +97,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
             {sponsors.map((sponsor, i) => (
               <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[18vh] md:h-[28vh]" : "h-[10vh] md:h-[15vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
                 <img
-                  className={`w-full h-full object-contain brightness-0 ${theme === "dark" ? "invert" : ""}`}
+                  className={`w-full h-full object-contain`}
                   src={assetMap[sponsor.img]}
                   alt={sponsor.name}
                 />
@@ -124,7 +127,7 @@ function Sponsors() {
         </div>
       </div>
       <div className="flex flex-col gap-y-s-two">
-        <Text type="pg" className="font-bold!">{t.home.sponsors.tiers.gold}</Text>
+        <Text type="title" className="font-normal! text-center" style={{ color: "#d5a019" }}>{t.home.sponsors.tiers.gold}</Text>
         <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
           {sponsors.gold.map((sponsor, i) => (
             <Gold key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />

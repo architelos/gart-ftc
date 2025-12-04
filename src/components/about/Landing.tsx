@@ -18,7 +18,7 @@ function Landing() {
       />
       <div className="z-1 absolute w-full h-dvh bg-linear-to-t from-30% from-bg/80 to-100% to-bg" />
 
-      <div className="z-2 flex flex-col justify-end items-start gap-y-s-three w-full h-dvh">
+      <div className="z-2 flex flex-col justify-center items-center gap-y-s-three w-full h-dvh">
         <Text type="title">{t.about.landing.main_heading}</Text>
         <Text type="pg" className= "text-accent!" style={{ animationDelay: "0.2s" }}>{t.about.landing.tagline}</Text>
       </div>

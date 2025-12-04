@@ -3,12 +3,12 @@
     "awards": [
       {
         "year": "2024-2025",
-        "award": "Finalist Award",
+        "award": "Finalist Alliance",
         "description": "FIRST World Championship"
       },
       {
         "year": "2024-2025",
-        "award": "Winner Award",
+        "award": "Winning Alliance",
         "description": "Edison Division, FIRST World Championship"
       },
       {
@@ -80,8 +80,8 @@
         "a": "We aim to continue improving our robot’s performance while expanding our impact on the FTC community in Vietnam. This includes mentoring new teams, hosting workshops, and promoting FIRST values among young STEM learners."
       },
       {
-        "q": "What are we?",
-        "a": "We are the FTC team of Hanoi–Amsterdam High School for the Gifted in Vietnam, and are a student-led robotics team focused on engineering, programming, and competing in both national and international FTC events."
+        "q": "Who are we?",
+        "a": "We are a student-led FIRST Tech Challenge robotics team from Hanoi-Amsterdam High School for the Gifted in Vietnam. We focus on engineering, programming, and competing in both national and international FTC events."
       },
       {
         "q": "How do you approach robot design to balance reliability, speed, and scoring efficiency?",
@@ -288,11 +288,16 @@
       ]
     },
     "resources": {
-      "Guides": [
+      "Content": [
         {
           "name": "FTC 101",
           "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
           "img": "home/r101.avif"
+        },
+        {
+          "name": "GARchives",
+          "link": "https://www.youtube.com/@gartarchives",
+          "img": "home/rGarchives.avif"
         }
       ],
       "CAD": [
@@ -309,8 +314,8 @@
         "handle": "@GreenAmsRoboticsTeam"
       },
       "gh": {
-        "link": "https://github.com/gart6520/",
-        "handle": "gart6520"
+        "link": "https://github.com/greenamsroboticsteam/",
+        "handle": "greenamsroboticsteam"
       },
       "ig": {
         "link": "https://www.instagram.com/ftc24751_gart/",
@@ -545,7 +550,7 @@
     "awards": [
       {
         "year": "2024-2025",
-        "award": "Finalist Award",
+        "award": "Finalist Alliance",
         "description": "FIRST World Championship"
       },
       {

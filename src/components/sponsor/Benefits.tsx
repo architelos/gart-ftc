@@ -34,7 +34,7 @@ function Benefit({ benefit }: BenefitProps) {
   const { ref, inView } = useInView();
 
   return (
-    <div className={`flex flex-col gap-y-s-three ${benefit.span ? "col-span-4" : ""}`}>
+    <div className={`flex flex-col gap-y-s-three ${benefit.span ? "col-span-2 md:col-span-4" : ""}`}>
       <div ref={ref}><Text type="pg" animate={inView} className="font-bold!" style={{ color: benefit.color }}>{benefit.name}</Text></div>
       <Text type="pg">
         {benefit.desc.split("\n").map((line, i) => (
@@ -64,7 +64,7 @@ function Benefits() {
       {entries.map(([section, items], i) => (
         <div key={i} className="flex flex-col items-start gap-y-s-one">
           <Text type="title" className="font-normal! text-accent!">{section}</Text>
-          <div className={`gap-x-page gap-y-page grid grid-cols-1 ${section === "Business" ? "md:grid-cols-4" : "md:grid-cols-2"}`}>
+          <div className={`gap-x-page gap-y-page grid grid-cols-2 ${section === "Business" ? "md:grid-cols-4" : "md:grid-cols-2"}`}>
             {items.map((item, i) => (
               <Benefit key={i} benefit={item} />
             ))}
