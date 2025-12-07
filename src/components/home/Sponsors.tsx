@@ -61,6 +61,13 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: carouselRef, inView: carouselInView } = useInView();
 
+  const onClick = (e: MouseEvent<HTMLDivElement>, sponsor: SponsorType) => {
+    e.preventDefault();
+
+    event("click", "Sponsors", sponsor.name);
+    window.open(sponsor.link, "_blank", "noopener,noreferrer");
+  }
+
   const colors = {
     bronze: "#c3785c",
     silver: "#9aa3a5"
@@ -68,7 +75,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
 
   return (
     <div className="flex flex-col gap-y-s-one">
-      <Text type="title" className="font-normal! text-accent! text-center" style={{ color: colors[type] }}>{title}</Text>
+      <div ref={textRef}><Text type="title" animate={textInView} className="font-normal! text-accent! text-center" style={{ color: colors[type] }}>{title}</Text></div>
       <div ref={carouselRef}>
         {!ffOrSafari
           ? <div className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
@@ -82,7 +89,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
                   : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
               >
                 {sponsors.map((sponsor, j) => (
-                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
+                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
                     <img
                       className={`w-full h-full object-contain`}
                       src={assetMap[sponsor.img]}
@@ -95,7 +102,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
           </div>
           : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${type === "silver" ? "grid-cols-3" : "grid-cols-4"} opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
             {sponsors.map((sponsor, i) => (
-              <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[18vh] md:h-[28vh]" : "h-[10vh] md:h-[15vh]"}`} onClick={() => window.open(sponsor.link, "_blank", "noopener,noreferrer")}>
+              <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[18vh] md:h-[28vh]" : "h-[10vh] md:h-[15vh]"}`} onClick={(e) => onClick(e, sponsor)}>
                 <img
                   className={`w-full h-full object-contain`}
                   src={assetMap[sponsor.img]}
@@ -111,6 +118,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
 
 function Sponsors() {
   const { ref: textRef, inView: textInView } = useInView();
+  const { ref: goldTextRef, inView: goldTextInView } = useInView();
   const { ref: btnRef, inView: btnInView } = useInView();
 
   const locale = useLocale((state) => state.locale);
@@ -127,7 +135,7 @@ function Sponsors() {
         </div>
       </div>
       <div className="flex flex-col gap-y-s-two">
-        <Text type="title" className="font-normal! text-center" style={{ color: "#d5a019" }}>{t.home.sponsors.tiers.gold}</Text>
+        <div ref={goldTextRef}><Text type="title" animate={goldTextInView} className="font-normal! text-center" style={{ color: "#d5a019" }}>{t.home.sponsors.tiers.gold}</Text></div>
         <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
           {sponsors.gold.map((sponsor, i) => (
             <Gold key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />

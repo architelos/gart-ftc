@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { MouseEvent } from "react";
 import { Link } from "lucide-react";
 
 import Text from "@/components/Text";
@@ -8,6 +9,7 @@ import useCanHover from "@/hooks/useCanHover";
 import data from "@/data/data";
 import translations from "@/data/translations";
 import assetMap from "@/data/assetMap";
+import { event } from "@/gtag";
 
 interface Resource {
   name: string;
@@ -26,10 +28,17 @@ function ResItem({ item }: ResItemProps) {
   const canHover = useCanHover();
   const { ref, inView } = useInView();
 
+  const onClick = (e: MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+
+    event("click", "Resources", item.name);
+    window.open(item.link, "_blank", "noopener,noreferrer");
+  }
+
   return (
     <div
       ref={ref}
-      onClick={() => window.open(item.link, "_blank", "noopener,noreferrer")}
+      onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer max-h-[20vh] md:max-h-[40vh] opacity-0 ${inView ? "a-fade-in" : ""}`}
