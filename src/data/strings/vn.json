@@ -1,145 +1,145 @@
 {
   "contact": [
-    ["ngnhaidangvn@gmail.com", "Coach, Mr. Dang (primary)", "(+84) 968228118"],
-    ["tungnt@hnams.edu.vn", "Manager, Mr. Tung", "(+84) 968666245"]
+    ["ngnhaidangvn@gmail.com", "Huấn luyện viên – thầy Đăng (chính)", "(+84) 968228118"],
+    ["tungnt@hnams.edu.vn", "Quản lý – thầy Tùng", "(+84) 968666245"]
   ],
   "menu": {
-    "privacy_policy": "Privacy policy",
-    "home": "Home",
-    "about": "About",
-    "robot": "Our Robot",
-    "sponsor": "Sponsor Us"
+    "privacy_policy": "Chính sách bảo mật",
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "robot": "Robot của chúng tôi",
+    "sponsor": "Tài trợ"
   },
   "footer": {
-    "copyright": "Copyright © GreenAms Robotics Team, all rights reserved"
+    "copyright": "Bản quyền © GreenAms Robotics Team, mọi quyền được bảo lưu"
   },
   "home": {
     "hero": {
       "accented": "GreenAms",
       "unaccented": "Robotics Team",
-      "tagline": "From Hanoi - Amsterdam High School — When I say Green, you say Ams!",
-      "end": "(scroll to explore)"
+      "tagline": "Từ THPT Hà Nội – Amsterdam — Khi tôi hô Green, bạn đáp Ams!",
+      "end": "(cuộn xuống để khám phá)"
     },
     "about": {
-      "title": "About us",
-      "p1": "We are GreenAms Robotics Team 24751 from Vietnam, a team with two years of competitive experience at both the national and international levels of the FIRST Tech Challenge.",
-      "p2": "Following an outstanding and highly successful 2024–2025 season, we return to the FTC 2025-2026 season with open minds and a desire to share the lessons we've learned along the way. Join us as we kick off the DECODE season!",
-      "cta": "More"
+      "title": "Về chúng tôi",
+      "p1": "Chúng tôi là Đội Robotics GreenAms 24751 đến từ Việt Nam, một đội với hai mùa giải thi đấu ở cả cấp quốc gia và quốc tế trong FIRST Tech Challenge.",
+      "p2": "Sau một mùa giải 2024–2025 đầy xuất sắc và đáng nhớ, chúng tôi quay trở lại mùa FTC 2025–2026 với tinh thần cởi mở và mong muốn chia sẻ những bài học đã tích lũy. Hãy đồng hành cùng chúng tôi trong mùa giải DECODE!",
+      "cta": "Tìm hiểu thêm"
     },
     "sponsors": {
-      "title": "Sponsors",
-      "desc": "We're deeply grateful to our sponsors for believing in our mission and helping us build, learn, and share our passion for robotics.",
-      "cta": "Sponsor us",
+      "title": "Nhà tài trợ",
+      "desc": "Chúng tôi vô cùng trân trọng các nhà tài trợ vì đã tin tưởng vào sứ mệnh của đội và đồng hành giúp chúng tôi xây dựng, học hỏi và lan tỏa niềm đam mê robot.",
+      "cta": "Tài trợ cho chúng tôi",
       "tiers": {
-        "diamond": "Diamond",
-        "gold": "Gold",
-        "silver": "Silver",
-        "bronze": "Bronze"
+        "diamond": "Kim cương",
+        "gold": "Vàng",
+        "silver": "Bạc",
+        "bronze": "Đồng"
       }
     },
     "updates": {
-      "updates": "Team updates"
+      "updates": "Cập nhật đội"
     },
     "awards": {
-      "header": "Awards",
-      "header2": "While accolades aren't our first priority, they serve as meaningful reminders of our efforts and teamwork.",
-      "year": "Year",
-      "award": "Award",
-      "add": "Additional"
+      "header": "Giải thưởng",
+      "header2": "Dù không phải mục tiêu hàng đầu, các giải thưởng là động lực và minh chứng cho sự nỗ lực và tinh thần đồng đội của chúng tôi.",
+      "year": "Năm",
+      "award": "Giải thưởng",
+      "add": "Bổ sung"
     },
     "faq": {
-      "heading": "FAQ",
-      "q": "Q:",
-      "a": "A:"
+      "heading": "Câu hỏi thường gặp",
+      "q": "H:",
+      "a": "Đ:"
     }
   },
   "about": {
     "landing": {
-      "main_heading": "About us",
-      "tagline": "FTC #27451"
+      "main_heading": "Về chúng tôi",
+      "tagline": "#24751"
     },
     "team": {
-      "title": "Our team",
-      "tap": "(tap)",
-      "hover": "(hover)",
+      "title": "Đội ngũ",
+      "tap": "(nhấn)",
+      "hover": "(di chuột)",
       "divisions": {
-        "manager": "Manager",
-        "coach": "Coach",
-        "mentor": "Mentor",
-        "captain": "Captain",
-        "vice_captain": "Vice Captain",
-        "programming": "Programming",
-        "mechanical": "Mechanical",
-        "business": "Business"
+        "manager": "Quản lý",
+        "coach": "Huấn luyện viên",
+        "mentor": "Cố vấn",
+        "captain": "Đội trưởng",
+        "vice_captain": "Đội phó",
+        "programming": "Lập trình",
+        "mechanical": "Cơ khí",
+        "business": "Kinh doanh"
       },
       "jobs": {
-        "job_1": "Manager",
-        "job_2": "Coach",
-        "job_3": "Lead CAD",
-        "job_4": "Lead Mechanic",
-        "job_5": "Mechanic",
-        "job_6": "Team Captain",
-        "job_7": "Lead Programmer",
-        "job_8": "Programmer",
-        "job_9": "Vice Captain",
-        "job_10": "Business",
-        "job_11": "Mentor"
+        "job_1": "Quản lý",
+        "job_2": "Huấn luyện viên",
+        "job_3": "Trưởng CAD",
+        "job_4": "Trưởng cơ khí",
+        "job_5": "Kỹ thuật cơ khí",
+        "job_6": "Đội trưởng",
+        "job_7": "Trưởng lập trình",
+        "job_8": "Lập trình viên",
+        "job_9": "Đội phó",
+        "job_10": "Kinh doanh",
+        "job_11": "Cố vấn"
       }
     },
     "values": {
-      "title": "Our values"
+      "title": "Giá trị của chúng tôi"
     },
     "vision": {
-      "heading": "Our vision",
-      "action": "(click)",
-      "action_mobile": "(tap)"
+      "heading": "Tầm nhìn",
+      "action": "(nhấn vào)",
+      "action_mobile": "(chạm)"
     },
     "resources": {
-      "heading": "Resources",
-      "desc": "What we give back to the community"
+      "heading": "Tài nguyên",
+      "desc": "Những gì chúng tôi đóng góp cho cộng đồng"
     }
   },
   "robot": {
     "name": "VDK",
     "landing": {
-      "header_text_1": "24-25: DECODE"
+      "header_text_1": "24–25: DECODE"
     },
     "overview": {
-      "heading": "Our robot",
+      "heading": "Robot của chúng tôi",
       "d1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "d2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
     },
     "subsystems": {
-      "heading": "What's a robot without subsystems?"
+      "heading": "Robot sẽ ra sao nếu thiếu các hệ thống con?"
     },
     "video": {
-      "heading": "In action",
+      "heading": "Robot hoạt động",
       "video": "xrQ6BVzsXnU"
     },
     "gallery": {
-      "heading": "Gallery"
+      "heading": "Thư viện ảnh"
     }
   },
   "sponsor": {
     "hero": {
-      "heading_1": "Become a",
-      "heading_2": "sponsor"
+      "heading_1": "Trở thành",
+      "heading_2": "nhà tài trợ"
     },
     "mission": {
-      "heading": "Our missions",
-      "cta": "(click)",
-      "cta_mobile": "(tap)"
+      "heading": "Sứ mệnh",
+      "cta": "(nhấn)",
+      "cta_mobile": "(chạm)"
     },
     "benefits": {
-      "heading": "Sponsor benefits"
+      "heading": "Quyền lợi tài trợ"
     },
     "figures": {
-      "heading": "Figures",
-      "desc": "(Data from the 2023–2025 season, based on information from sponsors and media sources.)"
+      "heading": "Các con số",
+      "desc": "(Dữ liệu từ mùa giải 2023–2025, dựa trên thông tin từ nhà tài trợ và các nguồn truyền thông.)"
     },
     "event": {
-      "heading": "Events",
-      "subheading": "Some events we've been involved in"
+      "heading": "Sự kiện",
+      "subheading": "Một số sự kiện chúng tôi tham gia"
     }
   }
 }
