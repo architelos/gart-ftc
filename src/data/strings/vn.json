@@ -1,13 +1,13 @@
 {
   "contact": [
-    ["ngnhaidangvn@gmail.com", "Huấn luyện viên – thầy Đăng (chính)", "(+84) 968228118"],
-    ["tungnt@hnams.edu.vn", "Quản lý – thầy Tùng", "(+84) 968666245"]
+    ["ngnhaidangvn@gmail.com", "Huấn luyện viên - thầy Đăng (chính)", "(+84) 968228118"],
+    ["tungnt@hnams.edu.vn", "Quản lý - thầy Tùng", "(+84) 968666245"]
   ],
   "menu": {
     "privacy_policy": "Chính sách bảo mật",
     "home": "Trang chủ",
     "about": "Giới thiệu",
-    "robot": "Robot của chúng tôi",
+    "robot": "Robot của chúng mình",
     "sponsor": "Tài trợ"
   },
   "footer": {
@@ -17,13 +17,13 @@
     "hero": {
       "accented": "GreenAms",
       "unaccented": "Robotics Team",
-      "tagline": "Từ THPT Hà Nội – Amsterdam — Khi tôi hô Green, bạn đáp Ams!",
+      "tagline": "Dén từ THPT Hà Nội – Amsterdam — When I say Green, you say Ams!",
       "end": "(cuộn xuống để khám phá)"
     },
     "about": {
       "title": "Về chúng tôi",
-      "p1": "Chúng tôi là Đội Robotics GreenAms 24751 đến từ Việt Nam, một đội với hai mùa giải thi đấu ở cả cấp quốc gia và quốc tế trong FIRST Tech Challenge.",
-      "p2": "Sau một mùa giải 2024–2025 đầy xuất sắc và đáng nhớ, chúng tôi quay trở lại mùa FTC 2025–2026 với tinh thần cởi mở và mong muốn chia sẻ những bài học đã tích lũy. Hãy đồng hành cùng chúng tôi trong mùa giải DECODE!",
+      "p1": "Chúng tôi là GreenAms Robotics Team 24751 đến từ Việt Nam, một đội tuyển FIRST Tech Challenge với hai mùa giải thi đấu ở cả cấp quốc gia và quốc tế.",
+      "p2": "Sau một mùa giải 2024–2025 vô cùng đáng nhớ, chúng tôi quay trở lại năm nay với tinh thần ham học hỏi và mong muốn chia sẻ những kinh nghiệm hữu ích. Hãy đồng hành cùng chúng tôi trong FIRST Tech Challenge 2025-2026: DECODE!",
       "cta": "Tìm hiểu thêm"
     },
     "sponsors": {
@@ -70,24 +70,24 @@
         "vice_captain": "Đội phó",
         "programming": "Lập trình",
         "mechanical": "Cơ khí",
-        "business": "Kinh doanh"
+        "business": "Business"
       },
       "jobs": {
         "job_1": "Quản lý",
         "job_2": "Huấn luyện viên",
-        "job_3": "Trưởng CAD",
-        "job_4": "Trưởng cơ khí",
-        "job_5": "Kỹ thuật cơ khí",
+        "job_3": "Trưởng ban Thiết kế",
+        "job_4": "Trưởng ban Cơ khí",
+        "job_5": "Thành viên ban Cơ khí",
         "job_6": "Đội trưởng",
-        "job_7": "Trưởng lập trình",
-        "job_8": "Lập trình viên",
+        "job_7": "Trưởng ban Lập trình",
+        "job_8": "Thành viên ban Lập trình",
         "job_9": "Đội phó",
-        "job_10": "Kinh doanh",
+        "job_10": "Business",
         "job_11": "Cố vấn"
       }
     },
     "values": {
-      "title": "Giá trị của chúng tôi"
+      "title": "Phẩm chất của chúng tôi"
     },
     "vision": {
       "heading": "Tầm nhìn",
@@ -102,7 +102,7 @@
   "robot": {
     "name": "VDK",
     "landing": {
-      "header_text_1": "24–25: DECODE"
+      "header_text_1": "25-26: DECODE"
     },
     "overview": {
       "heading": "Robot của chúng tôi",
