@@ -6,7 +6,7 @@ import Preloader from "@/components/Preloader.tsx";
 import preload from "@/data/preload.json";
 import assetMap from "@/data/assetMap";
 
-type PreloadKey = "*" | "/" | "/about" | "/sponsor";
+type PreloadKey = "*" | "/" | "/about" | "/sponsor" | "/robot";
 
 const FONT_TIMEOUT = 2000;
 const ASSET_TIMEOUT = 5000;
