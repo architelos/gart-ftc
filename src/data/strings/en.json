@@ -7,7 +7,7 @@
     "privacy_policy": "Privacy policy",
     "home": "Home",
     "about": "About",
-    "robot": "Our Robot",
+    "bamboo": "Bamboo Bot",
     "sponsor": "Sponsor Us"
   },
   "footer": {
@@ -106,18 +106,21 @@
     },
     "overview": {
       "heading": "Bamboo Bot",
-      "d1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-      "d2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+      "d1": "Bamboo Bot is the first open-source robot design specifically for new FTC teams in Vietnam, developed by GART Team 24751 for the FTC DECODE 2025-2026 season. With a minimalist design and high flexibility, Bamboo Bot uses standard FTC components easily found locally, combined with cost-saving solutions such as a drivetrain using ball bearings instead of omni wheels, an intake-transfer mechanism using rubber bands, and a high-performance single flywheel shooter.",
+      "d2": "Accompanied by detailed CAD files and clearly written, easily customizable code, Bamboo Bot provides a solid foundation for new teams—especially those lacking mentors—to focus on learning and skill development rather than struggling with complex designs from scratch."
     },
     "subsystems": {
-      "heading": "What's a robot without subsystems?"
+      "heading": "Subsystems"
     },
     "video": {
       "heading": "In action",
-      "video": "xrQ6BVzsXnU"
+      "video": "5AFlyya8bTc"
     },
     "gallery": {
       "heading": "Gallery"
+    },
+    "rss": {
+      "heading":"Resources"
     }
   },
   "sponsor": {

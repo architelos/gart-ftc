@@ -19,13 +19,24 @@ type SponsorType = {
   link: string;
 }
 
+type CardProps = {
+  sponsor: SponsorType;
+  type: "gold" | "diamond";
+}
+
+type CardListProps = {
+  sponsors: SponsorType[];
+  title: string;
+  type: "gold" | "diamond";
+}
+
 type CarouselProps = {
   type: "silver" | "bronze";
   title: string;
   sponsors: SponsorType[];
 }
 
-function Gold({ img, name, link }: SponsorType) {
+function Card({ type, sponsor }: CardProps) {
   const [hover, setHover] = useState(false);
 
   const canHover = useCanHover();
@@ -34,8 +45,8 @@ function Gold({ img, name, link }: SponsorType) {
   const onClick = (e: MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
 
-    event("click", "Sponsors", name);
-    window.open(link, "_blank", "noopener,noreferrer");
+    event("click", "Sponsors", sponsor.name);
+    window.open(sponsor.link, "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -44,12 +55,32 @@ function Gold({ img, name, link }: SponsorType) {
       onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 max-h-[40vh] ${inView ? "a-fade-in" : ""}`}
+      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${type === "diamond" ? "max-h-[35vh]" : "max-h-[28vh]"} ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[img]} className="w-full h-full object-contain scale-[0.85]" />
+      <img src={assetMap[sponsor.img]} className="w-full h-full object-contain scale-[0.85]" />
       <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
-        <Text type="sub" className="text-text">{name}</Text>
+        <Text type="sub" className="text-text">{sponsor.name}</Text>
         {canHover && <Link />}
+      </div>
+    </div>
+  );
+}
+
+function CardList({ type, title, sponsors }: CardListProps) {
+  const { ref, inView } = useInView();
+
+  const colors = {
+    gold: "#d5a019",
+    diamond: "#90d5ff"
+  }
+
+  return (
+    <div className="flex flex-col gap-y-page">
+      <div ref={ref}><Text type="title" animate={inView} className="font-normal! text-center" style={{ color: colors[type] }}>{title}</Text></div>
+      <div className="place-items-center gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
+        {sponsors.map((sponsor, i) => (
+          <Card key={i} type={type} sponsor={sponsor} />
+        ))}
       </div>
     </div>
   );
@@ -74,7 +105,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
   }
 
   return (
-    <div className="flex flex-col gap-y-s-one">
+    <div className="flex flex-col gap-y-page">
       <div ref={textRef}><Text type="title" animate={textInView} className="font-normal! text-accent! text-center" style={{ color: colors[type] }}>{title}</Text></div>
       <div ref={carouselRef}>
         {!ffOrSafari
@@ -89,7 +120,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
                   : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
               >
                 {sponsors.map((sponsor, j) => (
-                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[25vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
+                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[22vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
                     <img
                       className={`w-full h-full object-contain`}
                       src={assetMap[sponsor.img]}
@@ -118,7 +149,6 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
 
 function Sponsors() {
   const { ref: textRef, inView: textInView } = useInView();
-  const { ref: goldTextRef, inView: goldTextInView } = useInView();
   const { ref: btnRef, inView: btnInView } = useInView();
 
   const locale = useLocale((state) => state.locale);
@@ -134,6 +164,14 @@ function Sponsors() {
           <Button type="accent" icon={<Heart style={{ color: `var(--color-button)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
+      {/* <div className="flex flex-col gap-y-s-two">
+        <div ref={diamondTextRef}><Text type="title" animate={diamondTextInView} className="font-normal! text-center" style={{ color: "#90d5ff" }}>{t.home.sponsors.tiers.diamond}</Text></div>
+        <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
+          {sponsors.diamond.map((sponsor, i) => (
+            <Diamond key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
+          ))}
+        </div>
+      </div>
       <div className="flex flex-col gap-y-s-two">
         <div ref={goldTextRef}><Text type="title" animate={goldTextInView} className="font-normal! text-center" style={{ color: "#d5a019" }}>{t.home.sponsors.tiers.gold}</Text></div>
         <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
@@ -141,7 +179,10 @@ function Sponsors() {
             <Gold key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
           ))}
         </div>
-      </div>
+      </div> */}
+      {(["diamond", "gold"] as const).map((tier, i) => (
+        <CardList key={i} type={tier} title={t.home.sponsors.tiers[tier]} sponsors={sponsors[tier]} />
+      ))}
       <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
       <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} />
     </section>

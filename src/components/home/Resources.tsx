@@ -17,7 +17,8 @@ interface Resource {
   img: string;
 }
 interface Resources {
-  Guides: Resource[];
+  Content: Resource[];
+  CAD: Resource[];
 }
 interface ResSectionProps { section: keyof Resources, res: Resource[]; }
 interface ResItemProps { item: Resource; }

@@ -17,8 +17,8 @@ function SubsystemRow({ i, subsystem }: SubsystemRowProps) {
   const { ref: imgRef, inView: imgInView } = useInView();
 
   return (
-    <div key={i} className={`flex md:flex-row flex-col gap-y-s-two md:gap-x-s-two md:h-fit ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
-      <div ref={textRef} className={`flex flex-col md:w-[70%] gap-y-s-three ${i % 2 == 0 ? "md:text-right" : ""}`}>
+    <div key={i} className={`flex md:flex-row flex-col gap-y-s-two md:gap-x-s-two md:h-fit ${i % 2 == 0 ? "md:flex-row-reverse" : ""}`}>
+      <div ref={textRef} className={`flex flex-col md:w-[70%] gap-y-s-three ${i % 2 !== 0 ? "md:text-right" : ""}`}>
         <Text type="pg" animate={textInView} className="font-bold!">{subsystem.name}</Text>
         <Text type="pg" animate={textInView}>{subsystem.description}</Text>
       </div>
@@ -38,8 +38,8 @@ function Subsystems() {
 
   return (
       <section className="flex flex-col gap-y-page w-full p-page bg-bg">
-      <div ref={titleRef} className="self-end w-full max-w-[50%] md:max-w-[20%] text-right">
-        <Text animate={titleInView} type="pg" className="font-bold!">{t.bamboo.subsystems.heading}</Text>
+      <div ref={titleRef}>
+        <Text animate={titleInView} type="title">{t.bamboo.subsystems.heading}</Text>
       </div>
       <div className="flex flex-col gap-y-page">
         {(bamboo_subsystems as Subsystem[]).map((subsystem, i) => (

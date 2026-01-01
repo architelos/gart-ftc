@@ -98,28 +98,38 @@
         "img": "bamboo/edgeview.avif"
       },
       {
-        "desc": "Bamboo Bot from the side",
+        "desc": "Sideview",
         "img": "bamboo/sideview.avif"
       },
       {
-        "desc": "Bamboo Bot's drivetrain",
+        "desc": "Drivetrain",
         "img": "bamboo/drivetrain.avif"
       },
       {
-        "desc": "Bamboo Bot's intake mechanism",
+        "desc": "Intake",
         "img": "bamboo/intake.avif"
       },
       {
-        "desc": "Bamboo Bot's transfer mechanism",
+        "desc": "Transfer",
         "img": "bamboo/transfer.avif"
       },
       {
-        "desc": "Bamboo Bot's feed mechanism",
+        "desc": "Feed",
         "img": "bamboo/feed.avif"
       },
       {
-        "desc": "Bamboo Bot's shooter",
+        "desc": "Shooter",
         "img": "bamboo/shooter.avif"
+      }
+    ],
+    "bamboo_resources": [
+      {
+        "title": "CAD",
+        "link": "https://cad.onshape.com/documents/7ea464b788e1949fa1522bb3/w/0b39c0ebdd30ce0adba32528/e/dc81c2f1cafc4ea80a2b11a1"
+      },
+      {
+        "title": "Code",
+        "link": "https://github.com/greenamsroboticsteam/Bamboo-bot-24751"
       }
     ],
     "missions": [
@@ -352,6 +362,13 @@
       }
     ],
     "sponsors": {
+      "diamond": [
+        {
+          "name": "MCC",
+          "img": "home/logos/dMcc.png",
+          "link": "https://www.mccsemi.com/"
+        }
+      ],
       "gold": [
         {
           "name": "ETEK",
@@ -503,19 +520,29 @@
     ],
     "bamboo_subsystems": [
       {
-        "name": "Subsystem 1",
-        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "image": "ph.avif"
+        "name": "Movement",
+        "description": "The robot uses a Modified Tank Drive system with 2 traction wheels (100mm) providing the main drive force, combined with 4 ball bearings replacing omni wheels to reduce cost while still ensuring smooth and flexible rotation.",
+        "image": "bamboo/drivetrain.avif"
       },
       {
-        "name": "Subsystem 2",
-        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "image": "ph.avif"
+        "name": "Ball Intake",
+        "description": "A rotating shaft with rubber bands creates high friction, gently and efficiently pulling balls from the floor into the robot. The rubber bands are easy to find, inexpensive, and can be adjusted for tension depending on the type of ball.",
+        "image": "bamboo/intake.avif"
       },
       {
-        "name": "Subsystem 3",
-        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
-        "image": "ph.avif"
+        "name": "Ball Transfer",
+        "description": "Balls are pushed up a sloped trough by the intake roller, then roll down automatically into the shooting position using gravity. The system can hold 2 balls: 1 ready to shoot and 1 waiting in the trough.",
+        "image": "bamboo/transfer.avif"
+      },
+      {
+        "name": "Ball Feeding",
+        "description": "A servo motor with a rubber-band-coated shaft lifts the ball into contact with the front gate of the flywheel. Once the gate opens, the servo pushes the ball to make contact with the flywheel.",
+        "image": "bamboo/feed.avif"
+      },
+      {
+        "name": "Ball Shooting",
+        "description": "The single flywheel spins at high speed to transfer kinetic energy to the ball upon contact. The simple design with only 1 motor saves resources, is easy to maintain, and allows flexible adjustment of shooting angle and ball speed.",
+        "image": "bamboo/shooter.avif"
       }
     ],
     "figures": [
@@ -649,32 +676,42 @@
     ],
     "bamboo_images": [
       {
-        "desc": "Bamboo Bot từ góc chéo",
+        "desc": "Từ góc chéo",
         "img": "bamboo/edgeview.avif"
       },
       {
-        "desc": "Bamboo Bot từ bên cạnh",
+        "desc": "Từ bên cạnh",
         "img": "bamboo/sideview.avif"
       },
       {
-        "desc": "Cơ chế di chuyển của Bamboo Bot",
+        "desc": "Cơ chế di chuyển",
         "img": "bamboo/drivetrain.avif"
       },
       {
-        "desc": "Cơ chế thu bóng của Bamboo Bot",
+        "desc": "Cơ chế thu bóng",
         "img": "bamboo/intake.avif"
       },
       {
-        "desc": "Cơ chế vận chuyển bóng của Bamboo Bot",
+        "desc": "Cơ chế vận chuyển bóng",
         "img": "bamboo/transfer.avif"
       },
       {
-        "desc": "Cơ chế đẩy bóng của Bamboo Bot",
+        "desc": "Cơ chế đẩy bóng",
         "img": "bamboo/feed.avif"
       },
       {
-        "desc": "Cơ chế bắn bóng của Bamboo Bot",
+        "desc": "Cơ chế bắn bóng",
         "img": "bamboo/shooter.avif"
+      }
+    ],
+    "bamboo_resources": [
+      {
+        "title": "CAD",
+        "link": "https://cad.onshape.com/documents/7ea464b788e1949fa1522bb3/w/0b39c0ebdd30ce0adba32528/e/dc81c2f1cafc4ea80a2b11a1"
+      },
+      {
+        "title": "Code",
+        "link": "https://github.com/greenamsroboticsteam/Bamboo-bot-24751"
       }
     ],
     "missions": [
@@ -907,6 +944,13 @@
       }
     ],
     "sponsors": {
+      "diamond": [
+        {
+          "name": "MCC",
+          "img": "home/logos/dMcc.png",
+          "link": "https://www.mccsemi.com/"
+        }
+      ],
       "gold": [
         {
           "name": "ETEK",

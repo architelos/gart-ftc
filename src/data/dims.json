@@ -35,38 +35,6 @@
     "w": 1440,
     "h": 961
   },
-  "robot/bamboo_bot_logo.avif": {
-    "w": 1400,
-    "h": 1400
-  },
-  "robot/drivetrain.avif": {
-    "w": 1336,
-    "h": 1172
-  },
-  "robot/edgeview.avif": {
-    "w": 1536,
-    "h": 1795
-  },
-  "robot/feed.avif": {
-    "w": 802,
-    "h": 748
-  },
-  "robot/intake.avif": {
-    "w": 1034,
-    "h": 1196
-  },
-  "robot/shooter.avif": {
-    "w": 1316,
-    "h": 1008
-  },
-  "robot/sideview.avif": {
-    "w": 1427,
-    "h": 1427
-  },
-  "robot/transfer.avif": {
-    "w": 574,
-    "h": 554
-  },
   "home/1.2.avif": {
     "w": 1440,
     "h": 960
@@ -194,6 +162,38 @@
   "home/logos/sViPhap.png": {
     "w": 1138,
     "h": 480
+  },
+  "bamboo/bamboo_bot_logo.avif": {
+    "w": 1400,
+    "h": 1400
+  },
+  "bamboo/drivetrain.avif": {
+    "w": 1336,
+    "h": 1172
+  },
+  "bamboo/edgeview.avif": {
+    "w": 1536,
+    "h": 1795
+  },
+  "bamboo/feed.avif": {
+    "w": 802,
+    "h": 748
+  },
+  "bamboo/intake.avif": {
+    "w": 1034,
+    "h": 1196
+  },
+  "bamboo/shooter.avif": {
+    "w": 1316,
+    "h": 1008
+  },
+  "bamboo/sideview.avif": {
+    "w": 1427,
+    "h": 1427
+  },
+  "bamboo/transfer.avif": {
+    "w": 574,
+    "h": 554
   },
   "about/10.1.avif": {
     "w": 1440,

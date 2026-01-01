@@ -49,7 +49,7 @@ function Gallery() {
 
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
-      <Text type="title" className="text-right!">{t.bamboo.gallery.heading}</Text>
+      <Text type="title">{t.bamboo.gallery.heading}</Text>
       <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {(bamboo_images as Image[]).map((img, i) => {
           return (

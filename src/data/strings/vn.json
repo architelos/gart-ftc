@@ -7,7 +7,7 @@
     "privacy_policy": "Chính sách bảo mật",
     "home": "Trang chủ",
     "about": "Giới thiệu",
-    "robot": "Bamboo Bot",
+    "bamboo": "Bamboo Bot",
     "sponsor": "Tài trợ"
   },
   "footer": {
@@ -106,18 +106,21 @@
     },
     "overview": {
       "heading": "Bamboo Bot",
-      "d1": "Bamboo Bot là thiết kế robot mã nguồn mở đầu tiên dành riêng cho các đội FTC mới tại Việt Nam, được phát triển bởi GART Team 24751 cho mùa giải FTC DECODE 2025-2026. Với thiết kế tối giản và tính linh hoạt cao, Bamboo Bot sử dụng linh kiện chuẩn FTC dễ tìm trong nước kết hợp các giải pháp tiết kiệm chi phí như hệ thống drivetrain với bi mắt trâu thay bánh omni, cơ chế intake-transfer sử dụng dây chun, và single flywheel shooter hiệu suất cao. Đi kèm với bản CAD chi tiết và code được viết rõ ràng, dễ tùy chỉnh, Bamboo Bot là nền tảng vững chắc giúp các đội mới đặc biệt là những đội thiếu mentor có thể tập trung vào học hỏi và phát triển kỹ năng thay vì loay hoay với thiết kế phức tạp từ đầu.",
-      "d2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+      "d1": "Bamboo Bot là thiết kế robot mã nguồn mở đầu tiên dành riêng cho các đội FTC mới tại Việt Nam, được phát triển bởi GART Team 24751 cho mùa giải FTC DECODE 2025-2026. Với thiết kế tối giản và tính linh hoạt cao, Bamboo Bot sử dụng linh kiện chuẩn FTC dễ tìm trong nước kết hợp các giải pháp tiết kiệm chi phí như hệ thống drivetrain với bi mắt trâu thay bánh omni, cơ chế intake-transfer sử dụng dây chun, và single flywheel shooter hiệu suất cao.",
+      "d2": "Đi kèm với bản CAD chi tiết và code được viết rõ ràng, dễ tùy chỉnh, Bamboo Bot là nền tảng vững chắc giúp các đội mới đặc biệt là những đội thiếu mentor có thể tập trung vào học hỏi và phát triển kỹ năng thay vì loay hoay với thiết kế phức tạp từ đầu."
     },
     "subsystems": {
-      "heading": "Robot sẽ ra sao nếu thiếu các hệ thống con?"
+      "heading": "Hệ thống con"
     },
     "video": {
       "heading": "Robot hoạt động",
-      "video": "xrQ6BVzsXnU"
+      "video": "5AFlyya8bTc"
     },
     "gallery": {
       "heading": "Thư viện ảnh"
+    },
+    "rss": {
+      "heading":"Tài liệu"
     }
   },
   "sponsor": {
