@@ -45,13 +45,13 @@ function GalleryItem({ img }: GalleryItemProps) {
 function Gallery() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const { images } = data(locale);
+  const { bamboo_images } = data(locale);
 
   return (
     <section className="flex flex-col gap-y-page p-page bg-bg">
-      <Text type="title" className="text-right!">{t.robot.gallery.heading}</Text>
+      <Text type="title" className="text-right!">{t.bamboo.gallery.heading}</Text>
       <div className="gap-x-s-two gap-y-s-two grid grid-cols-1 md:grid-cols-2 min-h-screen">
-        {(images as Image[]).map((img, i) => {
+        {(bamboo_images as Image[]).map((img, i) => {
           return (
             <GalleryItem key={i} img={img} />
           );

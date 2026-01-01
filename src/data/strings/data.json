@@ -92,26 +92,34 @@
         "a": "Sponsors gain visibility at events, on our robot uniforms, media platforms, and in international FTC competitions, along with opportunities to engage with STEM-focused students - visit our SPONSOR US page for more information."
       }
     ],
-    "images": [
+    "bamboo_images": [
       {
-        "desc": "Cum sociis natoque penatibus et magnis ",
-        "img": "ph.avif"
+        "desc": "Bamboo Bot",
+        "img": "bamboo/edgeview.avif"
       },
       {
-        "desc": "Cum sociis natoque penatibus et magnis ",
-        "img": "pv.avif"
+        "desc": "Bamboo Bot from the side",
+        "img": "bamboo/sideview.avif"
       },
       {
-        "desc": "Cum sociis natoque penatibus et magnis ",
-        "img": "pv.avif"
+        "desc": "Bamboo Bot's drivetrain",
+        "img": "bamboo/drivetrain.avif"
       },
       {
-        "desc": "Cum sociis natoque penatibus et magnis ",
-        "img": "ph.avif"
+        "desc": "Bamboo Bot's intake mechanism",
+        "img": "bamboo/intake.avif"
       },
       {
-        "desc": "Cum sociis natoque penatibus et magnis ",
-        "img": "ph.avif"
+        "desc": "Bamboo Bot's transfer mechanism",
+        "img": "bamboo/transfer.avif"
+      },
+      {
+        "desc": "Bamboo Bot's feed mechanism",
+        "img": "bamboo/feed.avif"
+      },
+      {
+        "desc": "Bamboo Bot's shooter",
+        "img": "bamboo/shooter.avif"
       }
     ],
     "missions": [
@@ -493,7 +501,7 @@
         "img": "about/10.1.avif"
       }
     ],
-    "subsystems": [
+    "bamboo_subsystems": [
       {
         "name": "Subsystem 1",
         "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
@@ -639,34 +647,34 @@
         "a": "Các nhà tài trợ sẽ được tăng độ nhận diện tại các sự kiện, trên đồng phục thi đấu, các nền tảng truyền thông và tại các cuộc thi FTC quốc tế, cùng với cơ hội tiếp cận các học sinh định hướng STEM - hãy truy cập trang TÀI TRỢ của chúng tôi để biết thêm thông tin."
       }
     ],
-    "images": [
+    "bamboo_images": [
       {
         "desc": "Bamboo Bot từ góc chéo",
-        "img": "robot/edgeview.avif"
+        "img": "bamboo/edgeview.avif"
       },
       {
         "desc": "Bamboo Bot từ bên cạnh",
-        "img": "robot/sideview.avif"
+        "img": "bamboo/sideview.avif"
       },
       {
         "desc": "Cơ chế di chuyển của Bamboo Bot",
-        "img": "robot/drivetrain.avif"
+        "img": "bamboo/drivetrain.avif"
       },
       {
         "desc": "Cơ chế thu bóng của Bamboo Bot",
-        "img": "robot/intake.avif"
+        "img": "bamboo/intake.avif"
       },
       {
         "desc": "Cơ chế vận chuyển bóng của Bamboo Bot",
-        "img": "robot/transfer.avif"
+        "img": "bamboo/transfer.avif"
       },
       {
         "desc": "Cơ chế đẩy bóng của Bamboo Bot",
-        "img": "robot/feed.avif"
+        "img": "bamboo/feed.avif"
       },
       {
         "desc": "Cơ chế bắn bóng của Bamboo Bot",
-        "img": "robot/shooter.avif"
+        "img": "bamboo/shooter.avif"
       }
     ],
     "missions": [
@@ -1048,31 +1056,31 @@
         "img": "about/10.1.avif"
       }
     ],
-    "subsystems": [
+    "bamboo_subsystems": [
       {
         "name": "Di Chuyển",
         "description": "Robot sử dụng hệ thống Modified Tank Drive với 2 bánh traction wheel 100mm cung cấp lực kéo chính, kết hợp 4 bi mắt trâu thay thế bánh omni để giảm chi phí nhưng vẫn đảm bảo khả năng xoay tròn linh hoạt.",
-        "image": "robot/drivetrain.avif"
+        "image": "bamboo/drivetrain.avif"
       },
       {
         "name": "Thu Bóng",
         "description": "Trục quay có dây chun tạo ma sát cao, kéo bóng từ sàn vào bên trong robot một cách êm ái và hiệu quả. Dây chun dễ tìm, giá rẻ, và có thể điều chỉnh độ căng phù hợp với từng loại bóng.",
-        "image": "robot/intake.avif"
+        "image": "bamboo/intake.avif"
       },
       {
         "name": "Vận Chuyển Bóng",
         "description": "Bóng được đẩy lên máng dốc bởi intake roller, sau đó tự động lăn xuống vị trí bắn nhờ trọng lực. Hệ thống chứa được 2 bóng: 1 bóng sẵn sàng bắn và 1 bóng đang chờ trong máng.",
-        "image": "robot/transfer.avif"
+        "image": "bamboo/transfer.avif"
       },
       {
         "name": "Đẩy Bóng",
         "description": "Servo motor có trục quay bằng dây chun tạo ma sát sẽ nâng bóng lên tiếp xúc với cổng trước flywheel. Sau khi cổng mở, servo sẽ đẩy bóng lên để tiếp xúc với flywheel.",
-        "image": "robot/feed.avif"
+        "image": "bamboo/feed.avif"
       },
       {
         "name": "Bắn Bóng",
         "description": "Hệ thống single flywheel quay tốc độ cao truyền động năng cho bóng khi tiếp xúc. Thiết kế đơn giản với chỉ 1 motor giúp tiết kiệm tài nguyên, dễ bảo trì, và có thể điều chỉnh góc bắn cũng như tốc độ bóng linh hoạt.",
-        "image": "robot/shooter.avif"
+        "image": "bamboo/shooter.avif"
       }
     ],
     "figures": [

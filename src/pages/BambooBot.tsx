@@ -5,7 +5,7 @@ import Video from "@/components/robot/Video";
 import Gallery from "@/components/robot/Gallery";
 import Break from "@/components/Break";
 
-function Robot() {
+function BambooBot() {
   return (
     <>
       <Landing/>
@@ -20,4 +20,4 @@ function Robot() {
   );
 }
 
-export default Robot;
+export default BambooBot;

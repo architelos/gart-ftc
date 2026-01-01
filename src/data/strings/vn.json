@@ -99,8 +99,8 @@
       "desc": "Những gì chúng tôi đóng góp cho cộng đồng"
     }
   },
-  "robot": {
-    "name": "VDK",
+  "bamboo": {
+    "name": "Bamboo Bot",
     "landing": {
       "header_text_1": "25-26: DECODE"
     },

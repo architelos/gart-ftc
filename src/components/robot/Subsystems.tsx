@@ -17,13 +17,13 @@ function SubsystemRow({ i, subsystem }: SubsystemRowProps) {
   const { ref: imgRef, inView: imgInView } = useInView();
 
   return (
-    <div key={i} className={`flex md:flex-row flex-col gap-y-s-two md:gap-x-s-two md:h-[40dvh] ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
+    <div key={i} className={`flex md:flex-row flex-col gap-y-s-two md:gap-x-s-two md:h-fit ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
       <div ref={textRef} className={`flex flex-col md:w-[70%] gap-y-s-three ${i % 2 == 0 ? "md:text-right" : ""}`}>
         <Text type="pg" animate={textInView} className="font-bold!">{subsystem.name}</Text>
         <Text type="pg" animate={textInView}>{subsystem.description}</Text>
       </div>
-      <div ref={imgRef} className="md:w-[30%] md:h-full">
-        <img src={assetMap[subsystem.image]} className={`self-start w-full h-full object-cover opacity-0 ${imgInView ? "a-fade-in" : ""}`}></img>
+      <div ref={imgRef} className="md:w-[30%] md:min-h-[20%] md:max-h-[30%]">
+        <img src={assetMap[subsystem.image]} className={`self-start w-full h-full object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`}></img>
       </div>
     </div>
   )
@@ -32,17 +32,17 @@ function SubsystemRow({ i, subsystem }: SubsystemRowProps) {
 function Subsystems() {
   const locale = useLocale((state) => state.locale);
   const t = translations(locale);
-  const { subsystems } = data(locale);
+  const { bamboo_subsystems } = data(locale);
 
   const { ref: titleRef, inView: titleInView } = useInView();
 
   return (
       <section className="flex flex-col gap-y-page w-full p-page bg-bg">
       <div ref={titleRef} className="self-end w-full max-w-[50%] md:max-w-[20%] text-right">
-        <Text animate={titleInView} type="pg" className="font-bold!">{t.robot.subsystems.heading}</Text>
+        <Text animate={titleInView} type="pg" className="font-bold!">{t.bamboo.subsystems.heading}</Text>
       </div>
       <div className="flex flex-col gap-y-page">
-        {(subsystems as Subsystem[]).map((subsystem, i) => (
+        {(bamboo_subsystems as Subsystem[]).map((subsystem, i) => (
           <SubsystemRow key={i} i={i} subsystem={subsystem}></SubsystemRow>
         ))}
       </div>

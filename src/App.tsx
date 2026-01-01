@@ -7,7 +7,7 @@ import "lenis/dist/lenis.css";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
-import Robot from "@/pages/Robot";
+import BambooBot from "@/pages/BambooBot";
 import Sponsor from "@/pages/Sponsor"
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
-        { path: "robot", element: <Robot />},
+        { path: "bamboo", element: <BambooBot />},
         { path: "sponsor", element: <Sponsor />}
       ]
     }

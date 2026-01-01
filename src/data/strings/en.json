@@ -99,13 +99,13 @@
       "desc": "What we give back to the community"
     }
   },
-  "robot": {
-    "name": "VDK",
+  "bamboo": {
+    "name": "Bamboo Bot",
     "landing": {
       "header_text_1": "25-26: DECODE"
     },
     "overview": {
-      "heading": "Our robot",
+      "heading": "Bamboo Bot",
       "d1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "d2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
     },
