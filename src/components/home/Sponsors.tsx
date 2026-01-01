@@ -55,9 +55,9 @@ function Card({ type, sponsor }: CardProps) {
       onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${type === "diamond" ? "max-h-[35vh]" : "max-h-[28vh]"} ${inView ? "a-fade-in" : ""}`}
+      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${type === "diamond" ? "max-h-[45vh]" : "max-h-[30vh]"} ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[sponsor.img]} className="w-full h-full object-contain scale-[0.85]" />
+      <img src={assetMap[sponsor.img]} className="w-full h-full object-contain scale-[0.9]" />
       <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
         <Text type="sub" className="text-text">{sponsor.name}</Text>
         {canHover && <Link />}
@@ -79,7 +79,16 @@ function CardList({ type, title, sponsors }: CardListProps) {
       <div ref={ref}><Text type="title" animate={inView} className="font-normal! text-center" style={{ color: colors[type] }}>{title}</Text></div>
       <div className="place-items-center gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
         {sponsors.map((sponsor, i) => (
-          <Card key={i} type={type} sponsor={sponsor} />
+          <div
+            key={i}
+            className={
+              sponsors.length === 1
+                ? "md:col-start-2"
+                : ""
+            }
+          >
+            <Card type={type} sponsor={sponsor} />
+          </div>
         ))}
       </div>
     </div>
@@ -120,7 +129,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
                   : { columnGap: "calc(2 * var(--spacing-page))", paddingRight: "calc(2 * var(--spacing-page))" }}
               >
                 {sponsors.map((sponsor, j) => (
-                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[22vh]" : "basis-[6vh] md:basis-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
+                  <div key={j} className={`flex shrink-0 grow-0 cursor-pointer ${type === "silver" ? "basis-[15vh] md:basis-[20vh]" : "basis-[7.5vh] md:basis-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
                     <img
                       className={`w-full h-full object-contain`}
                       src={assetMap[sponsor.img]}
