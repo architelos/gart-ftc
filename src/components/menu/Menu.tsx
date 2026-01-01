@@ -33,7 +33,7 @@ function Menu() {
       <div className="flex flex-col gap-y-s-two text-right" style={{ marginTop: "calc(2.4 * var(--spacing-page))" }}>
         <Text type="title" link={true} href="/">{t.menu.home}</Text>
         <Text type="title" link={true} href="/about">{t.menu.about}</Text>
-        <Text type="title" link={true} href="/robot">{t.menu.robot}</Text>
+        {locale == "vn" ? <Text type="title" link={true} href="/robot">{t.menu.robot}</Text> : <></>}
         <Text type="title" link={true} href="/sponsor">{t.menu.sponsor}</Text>
       </div>
     </nav>

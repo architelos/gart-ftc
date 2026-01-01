@@ -17,13 +17,13 @@ function SubsystemRow({ i, subsystem }: SubsystemRowProps) {
   const { ref: imgRef, inView: imgInView } = useInView();
 
   return (
-    <div key={i} className={`flex md:flex-row flex-col gap-y-s-two md:gap-x-s-two ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
-      <div ref={textRef} className={`flex flex-col md:w-[60%] gap-y-s-three ${i % 2 == 0 ? "md:text-right" : ""}`}>
+    <div key={i} className={`flex md:flex-row flex-col gap-y-s-two md:gap-x-s-two md:h-[40dvh] ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
+      <div ref={textRef} className={`flex flex-col md:w-[70%] gap-y-s-three ${i % 2 == 0 ? "md:text-right" : ""}`}>
         <Text type="pg" animate={textInView} className="font-bold!">{subsystem.name}</Text>
         <Text type="pg" animate={textInView}>{subsystem.description}</Text>
       </div>
-      <div ref={imgRef} className="md:w-[40%] md:max-h-[40%]">
-        <img src={assetMap[subsystem.image]} className={`self-start w-full h-full object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`}></img>
+      <div ref={imgRef} className="md:w-[30%] md:h-full">
+        <img src={assetMap[subsystem.image]} className={`self-start w-full h-full object-cover opacity-0 ${imgInView ? "a-fade-in" : ""}`}></img>
       </div>
     </div>
   )

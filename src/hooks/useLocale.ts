@@ -9,7 +9,7 @@ interface LocaleState {
 const useLocale = create<LocaleState>()(
   persist(
     (set) => ({
-      locale: "en",
+      locale: "vn",
       toggleLocale: () =>
         set((state) => ({
           locale: state.locale === "en" ? "vn" : "en",
