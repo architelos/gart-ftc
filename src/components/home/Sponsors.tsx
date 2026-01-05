@@ -173,22 +173,6 @@ function Sponsors() {
           <Button type="accent" icon={<Heart style={{ color: `var(--color-button)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
-      {/* <div className="flex flex-col gap-y-s-two">
-        <div ref={diamondTextRef}><Text type="title" animate={diamondTextInView} className="font-normal! text-center" style={{ color: "#90d5ff" }}>{t.home.sponsors.tiers.diamond}</Text></div>
-        <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
-          {sponsors.diamond.map((sponsor, i) => (
-            <Diamond key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col gap-y-s-two">
-        <div ref={goldTextRef}><Text type="title" animate={goldTextInView} className="font-normal! text-center" style={{ color: "#d5a019" }}>{t.home.sponsors.tiers.gold}</Text></div>
-        <div className="gap-s-three grid grid-cols-2 md:grid-cols-3 w-full">
-          {sponsors.gold.map((sponsor, i) => (
-            <Gold key={i} img={sponsor.img} name={sponsor.name} link={sponsor.link} />
-          ))}
-        </div>
-      </div> */}
       {(["diamond", "gold"] as const).map((tier, i) => (
         <CardList key={i} type={tier} title={t.home.sponsors.tiers[tier]} sponsors={sponsors[tier]} />
       ))}
