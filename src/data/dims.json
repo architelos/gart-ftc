@@ -63,11 +63,55 @@
     "w": 640,
     "h": 480
   },
-  "home/rCad.avif": {
+  "home/resources/101e1.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e10.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e11.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e2.avif": {
+    "w": 640,
+    "h": 355
+  },
+  "home/resources/101e3.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e4.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e5.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e6.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e7.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e8.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/101e9.avif": {
+    "w": 1280,
+    "h": 720
+  },
+  "home/resources/rCad.avif": {
     "w": 496,
     "h": 503
   },
-  "home/rGarchives.avif": {
+  "home/resources/rGarchives.avif": {
     "w": 1280,
     "h": 542
   },

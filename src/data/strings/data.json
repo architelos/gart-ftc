@@ -306,23 +306,75 @@
       ]
     },
     "resources": {
-      "Content": [
+      "FTC101": [
         {
-          "name": "FTC 101",
-          "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
-          "img": "home/r101.avif"
+          "name": "EP 1: About FIRST and FTC",
+          "link": "https://www.youtube.com/watch?v=2v_FFYStxdE&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e1.avif"
         },
+        {
+          "name": "EP 2: How to start a team",
+          "link": "https://www.youtube.com/watch?v=0HCMtcy8BUA&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e2.avif"
+        },
+        {
+          "name": "EP 3: (Programming) Getting started",
+          "link": "https://www.youtube.com/watch?v=6FCLAOtEtZg&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e3.avif"
+        },
+        {
+          "name": "EP 4: (Mechanical) The engineering design process",
+          "link": "https://www.youtube.com/watch?v=z4wkDJ5Hg-g&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e4.avif"
+        },
+        {
+          "name": "EP 5: (Mechanical) Common materials",
+          "link": "https://www.youtube.com/watch?v=RvFJINJHTuw&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e5.avif"
+        },
+        {
+          "name": "EP 6: Working with each other",
+          "link": "https://www.youtube.com/watch?v=sjNCfNZp3-U&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e6.avif"
+        },
+        {
+          "name": "EP 7: (Programming) Getting started with electronics",
+          "link": "https://www.youtube.com/watch?v=xJbzSTunL_k&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e7.avif"
+        },
+        {
+          "name": "EP 8: (Mechanical) Manufacturing & 3D printing",
+          "link": "https://www.youtube.com/watch?v=LxholEHGfQo&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e8.avif"
+        },
+        {
+          "name": "EP 9: How to write an outstanding engineering portfolio",
+          "link": "https://www.youtube.com/watch?v=JdFP0lxH3rE&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e9.avif"
+        },
+        {
+          "name": "EP 10: Engineering portfolio - Mechanics section",
+          "link": "https://www.youtube.com/watch?v=GzkpxCzskw0&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e10.avif"
+        },
+        {
+          "name": "EP 11: Engineering portfolio - programming section",
+          "link": "https://www.youtube.com/watch?v=jwyqH7YJcQU&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e11.avif"
+        }
+      ],
+      "Previously": [
+        {
+          "name": "CAD 24-25",
+          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1",
+          "img": "home/resources/rCad.avif"
+        }
+      ],
+      "Other": [
         {
           "name": "GARchives",
           "link": "https://www.youtube.com/@gartarchives",
-          "img": "home/rGarchives.avif"
-        }
-      ],
-      "CAD": [
-        {
-          "name": "24-25",
-          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1",
-          "img": "home/rCad.avif"
+          "img": "home/resources/rGarchives.avif"
         }
       ]
     },

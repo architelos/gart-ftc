@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { MouseEvent } from "react";
 import { Link } from "lucide-react";
 
@@ -17,15 +16,14 @@ interface Resource {
   img: string;
 }
 interface Resources {
-  Content: Resource[];
-  CAD: Resource[];
+  FTC101: Resource[];
+  Previously: Resource[];
+  Other: Resource[];
 }
 interface ResSectionProps { section: keyof Resources, res: Resource[]; }
 interface ResItemProps { item: Resource; }
 
 function ResItem({ item }: ResItemProps) {
-  const [hover, setHover] = useState(false);
-
   const canHover = useCanHover();
   const { ref, inView } = useInView();
 
@@ -40,12 +38,10 @@ function ResItem({ item }: ResItemProps) {
     <div
       ref={ref}
       onClick={onClick}
-      onMouseOver={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer max-h-[20vh] md:max-h-[40vh] opacity-0 ${inView ? "a-fade-in" : ""}`}
+      className={`flex flex-col aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[item.img]} className="w-full h-full object-contain scale-[0.85]" />
-      <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
+      <img src={assetMap[item.img]} className="w-full h-full object-contain" />
+      <div className={`flex justify-between items-center w-full p-button bg-bg`}>
         <Text type="sub" className="text-text">{item.name}</Text>
         {canHover && <Link />}
       </div>
@@ -57,9 +53,9 @@ function ResSection({ section, res }: ResSectionProps) {
   const { ref: headerRef, inView: headerInView } = useInView();
 
   return (
-    <div className="flex flex-col gap-y-s-three">
+    <div className="flex flex-col gap-y-s-one">
       <div ref={headerRef}><Text type="pg" className="font-bold!" animate={headerInView}>{section}</Text></div>
-      <div className="flex flex-row flex-wrap gap-x-page gap-y-s-three">
+      <div className="gap-x-s-two gap-y-s-two grid grid-cols-2 md:grid-cols-3">
         {res.map((item, i) => (
           <ResItem key={i} item={item} />
         ))}

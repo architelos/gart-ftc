@@ -142,7 +142,7 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
           </div>
           : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${type === "silver" ? "grid-cols-3" : "grid-cols-4"} opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
             {sponsors.map((sponsor, i) => (
-              <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[18vh] md:h-[28vh]" : "h-[10vh] md:h-[15vh]"}`} onClick={(e) => onClick(e, sponsor)}>
+              <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[15vh] md:h-[20vh]" : "h-[7.5vh] md:h-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
                 <img
                   className={`w-full h-full object-contain`}
                   src={assetMap[sponsor.img]}
