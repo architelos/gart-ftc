@@ -422,37 +422,11 @@
       "diamond": [
         {
           "name": "MCC",
-          "img": "home/logos/dMcc.png",
+          "img": "home/logos/dMCC.png",
           "link": "https://www.mccsemi.com/"
         }
       ],
-      "gold": [
-        {
-          "name": "ETEK",
-          "img": "home/logos/gETEK.png",
-          "link": "https://etek.com.vn/"
-        },
-        {
-          "name": "Hai Duong Ford",
-          "img": "home/logos/gFord.png",
-          "link": "https://ford-haiduong.vn/"
-        },
-        {
-          "name": "HEADWAY",
-          "img": "home/logos/gHeadway.png",
-          "link": "https://headway.com.vn/"
-        },
-        {
-          "name": "KLB",
-          "img": "home/logos/gKLB.png",
-          "link": "https://klbgroup.com.vn/"
-        },
-        {
-          "name": "Toyota Hai Duong",
-          "img": "home/logos/gToyota.png",
-          "link": "https://toyotahaiduong.vn/"
-        }
-      ],
+      "gold": [],
       "silver": [
         {
           "name": "CMC Telecom",
@@ -460,61 +434,31 @@
           "link": "https://cmctelecom.vn/"
         },
         {
-          "name": "Geleximco",
-          "img": "home/logos/sGeleximco.png",
-          "link": "https://geleximco.vn/"
-        },
-        {
-          "name": "Princeton English",
-          "img": "home/logos/sPrinceton.png",
-          "link": "https://princetonenglish.vn/"
-        },
-        {
-          "name": "SolidWorks",
-          "img": "home/logos/sSolidWorks.png",
-          "link": "https://www.solidworks.com/"
-        },
-        {
-          "name": "VinUniversity",
-          "img": "home/logos/sVinUni.png",
-          "link": "https://vinuni.edu.vn/"
-        },
-        {
-          "name": "VIPHAP",
-          "img": "home/logos/sViPhap.png",
-          "link": "https://viphap.com/"
+          "name": "APAC",
+          "img": "home/logos/sAPAC.png",
+          "link": "https://apaccorp.com.vn/"
         }
       ],
       "bronze": [
         {
-          "name": "Aligro",
-          "img": "home/logos/bAligro.png",
-          "link": "https://aligro.vn/"
+          "name": "American Center",
+          "img": "home/logos/bAC.png",
+          "link": "https://vn.usembassy.gov/american-center-hanoi/"
         },
         {
-          "name": "BIC",
-          "img": "home/logos/bBIC.png",
-          "link": "https://bic.vn/"
+          "name": "AUSPAN",
+          "img": "home/logos/bAuspan.png",
+          "link": "https://auspan.com.au/"
         },
         {
-          "name": "Ha An",
-          "img": "home/logos/bHA.png",
-          "link": "https://web.facebook.com/haanatelier"
-        },
-        {
-          "name": "Hoa Nam",
-          "img": "home/logos/bHoaNam.png",
-          "link": "https://hoanamtools.com/"
-        },
-        {
-          "name": "Polymaker",
-          "img": "home/logos/bPolymaker.png",
-          "link": "https://polymaker.com/"
-        },
-        {
-          "name": "SUMO ENERGY'S",
-          "img": "home/logos/bSE.png",
+          "name": "GEN D",
+          "img": "home/logos/bGenD.png",
           "link": ""
+        },
+        {
+          "name": "HTH",
+          "img": "home/logos/bHTH.png",
+          "link": "mailto:info@htharchitects.vn"
         }
       ]
     },
@@ -1061,37 +1005,11 @@
       "diamond": [
         {
           "name": "MCC",
-          "img": "home/logos/dMcc.png",
+          "img": "home/logos/dMCC.png",
           "link": "https://www.mccsemi.com/"
         }
       ],
-      "gold": [
-        {
-          "name": "ETEK",
-          "img": "home/logos/gETEK.png",
-          "link": "https://etek.com.vn/"
-        },
-        {
-          "name": "Hải Dương Ford",
-          "img": "home/logos/gFord.png",
-          "link": "https://ford-haiduong.vn/"
-        },
-        {
-          "name": "HEADWAY",
-          "img": "home/logos/gHeadway.png",
-          "link": "https://headway.com.vn/"
-        },
-        {
-          "name": "KLB",
-          "img": "home/logos/gKLB.png",
-          "link": "https://klbgroup.com.vn/"
-        },
-        {
-          "name": "Toyota Hải Dương",
-          "img": "home/logos/gToyota.png",
-          "link": "https://toyotahaiduong.vn/"
-        }
-      ],
+      "gold": [],
       "silver": [
         {
           "name": "CMC Telecom",
@@ -1099,61 +1017,31 @@
           "link": "https://cmctelecom.vn/"
         },
         {
-          "name": "Geleximco",
-          "img": "home/logos/sGeleximco.png",
-          "link": "https://geleximco.vn/"
-        },
-        {
-          "name": "Princeton English",
-          "img": "home/logos/sPrinceton.png",
-          "link": "https://princetonenglish.vn/"
-        },
-        {
-          "name": "SolidWorks",
-          "img": "home/logos/sSolidWorks.png",
-          "link": "https://www.solidworks.com/"
-        },
-        {
-          "name": "VinUniversity",
-          "img": "home/logos/sVinUni.png",
-          "link": "https://vinuni.edu.vn/"
-        },
-        {
-          "name": "VIPHAP",
-          "img": "home/logos/sViPhap.png",
-          "link": "https://viphap.com/"
+          "name": "APAC",
+          "img": "home/logos/sAPAC.png",
+          "link": "https://apaccorp.com.vn/"
         }
       ],
       "bronze": [
         {
-          "name": "Aligro",
-          "img": "home/logos/bAligro.png",
-          "link": "https://aligro.vn/"
+          "name": "American Center",
+          "img": "home/logos/bAC.png",
+          "link": "https://vn.usembassy.gov/american-center-hanoi/"
         },
         {
-          "name": "BIC",
-          "img": "home/logos/bBIC.png",
-          "link": "https://bic.vn/"
+          "name": "AUSPAN",
+          "img": "home/logos/bAuspan.png",
+          "link": "https://auspan.com.au/"
         },
         {
-          "name": "Ha An",
-          "img": "home/logos/bHA.png",
-          "link": "https://web.facebook.com/haanatelier"
-        },
-        {
-          "name": "Hoa Nam",
-          "img": "home/logos/bHoaNam.png",
-          "link": "https://hoanamtools.com/"
-        },
-        {
-          "name": "Polymaker",
-          "img": "home/logos/bPolymaker.png",
-          "link": "https://polymaker.com/"
-        },
-        {
-          "name": "SUMO ENERGY'S",
-          "img": "home/logos/bSE.png",
+          "name": "GEN D",
+          "img": "home/logos/bGenD.png",
           "link": ""
+        },
+        {
+          "name": "HTH",
+          "img": "home/logos/bHTH.png",
+          "link": "mailto:info@htharchitects.vn"
         }
       ]
     },

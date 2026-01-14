@@ -119,76 +119,32 @@
     "w": 1280,
     "h": 542
   },
-  "home/logos/bAligro.png": {
-    "w": 1264,
+  "home/logos/bAC.png": {
+    "w": 472,
     "h": 480
   },
-  "home/logos/bBIC.png": {
-    "w": 1154,
+  "home/logos/bAuspan.png": {
+    "w": 1936,
     "h": 480
   },
-  "home/logos/bHA.png": {
-    "w": 769,
+  "home/logos/bGenD.png": {
+    "w": 1368,
     "h": 480
   },
-  "home/logos/bHoaNam.png": {
-    "w": 664,
+  "home/logos/bHTH.png": {
+    "w": 480,
     "h": 480
   },
-  "home/logos/bPolymaker.png": {
-    "w": 845,
+  "home/logos/dMCC.png": {
+    "w": 1064,
     "h": 480
   },
-  "home/logos/bSE.png": {
-    "w": 674,
-    "h": 480
-  },
-  "home/logos/dMcc.png": {
-    "w": 739,
-    "h": 319
-  },
-  "home/logos/gETEK.png": {
-    "w": 1488,
-    "h": 480
-  },
-  "home/logos/gFord.png": {
-    "w": 994,
-    "h": 480
-  },
-  "home/logos/gHeadway.png": {
-    "w": 850,
-    "h": 222
-  },
-  "home/logos/gKLB.png": {
-    "w": 1611,
-    "h": 480
-  },
-  "home/logos/gToyota.png": {
-    "w": 960,
+  "home/logos/sAPAC.png": {
+    "w": 1506,
     "h": 480
   },
   "home/logos/sCmc.png": {
     "w": 1130,
-    "h": 480
-  },
-  "home/logos/sGeleximco.png": {
-    "w": 3338,
-    "h": 480
-  },
-  "home/logos/sPrinceton.png": {
-    "w": 1816,
-    "h": 581
-  },
-  "home/logos/sSolidWorks.png": {
-    "w": 2352,
-    "h": 480
-  },
-  "home/logos/sVinUni.png": {
-    "w": 784,
-    "h": 480
-  },
-  "home/logos/sViPhap.png": {
-    "w": 1138,
     "h": 480
   },
   "bamboo/bamboo_bot_logo.avif": {

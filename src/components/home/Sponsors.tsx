@@ -21,7 +21,7 @@ type SponsorType = {
 
 type CardProps = {
   sponsor: SponsorType;
-  type: "gold" | "diamond";
+  type: "bronze" | "silver" | "gold" | "diamond";
 }
 
 type CardListProps = {
@@ -49,18 +49,18 @@ function Card({ type, sponsor }: CardProps) {
     window.open(sponsor.link, "_blank", "noopener,noreferrer");
   }
 
+
   return (
     <div
       ref={ref}
       onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${type === "diamond" ? "max-h-[45vh]" : "max-h-[30vh]"} ${inView ? "a-fade-in" : ""}`}
+      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${type === "diamond" ? "max-h-[35vh]" : "max-h-[28vh]"} ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[sponsor.img]} className="w-full h-full object-contain scale-[0.9]" />
+      <img src={assetMap[sponsor.img]} className="w-full h-full object-contain" />
       <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
         <Text type="sub" className="text-text">{sponsor.name}</Text>
-        {canHover && <Link />}
       </div>
     </div>
   );
@@ -114,10 +114,11 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
   }
 
   return (
-    <div className="flex flex-col gap-y-page">
+    <div className="flex flex-col gap-y-page p-page">
       <div ref={textRef}><Text type="title" animate={textInView} className="font-normal! text-accent! text-center" style={{ color: colors[type] }}>{title}</Text></div>
       <div ref={carouselRef}>
-        {!ffOrSafari
+        {/* {!ffOrSafari */}
+        {false
           ? <div className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
             {(type === "silver" ? [0, 1] : [0, 1, 2, 3]).map((i) => (
               <div
@@ -140,14 +141,17 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
               </div>
             ))}
           </div>
-          : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${type === "silver" ? "grid-cols-3" : "grid-cols-4"} opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
+          : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${type === "silver" ? "grid-cols-2" : "grid-cols-3"} gap-y-page opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
             {sponsors.map((sponsor, i) => (
               <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[15vh] md:h-[20vh]" : "h-[7.5vh] md:h-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
                 <img
-                  className={`w-full h-full object-contain`}
+                  className="w-full h-full object-contain"
                   src={assetMap[sponsor.img]}
                   alt={sponsor.name}
                 />
+                <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
+                  <Text type="sub" className="text-text">{sponsor.name}</Text>
+                </div>
               </div>
             ))}
           </div>}
@@ -173,11 +177,10 @@ function Sponsors() {
           <Button type="accent" icon={<Heart style={{ color: `var(--color-button)` }} />} className={`opacity-0 ${btnInView ? "a-fade-in" : ""}`} link="/sponsor">{t.home.sponsors.cta}</Button>
         </div>
       </div>
-      {(["diamond", "gold"] as const).map((tier, i) => (
-        <CardList key={i} type={tier} title={t.home.sponsors.tiers[tier]} sponsors={sponsors[tier]} />
-      ))}
-      <Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />
-      <Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} />
+      {sponsors.diamond.length > 0 && (<CardList type="diamond" title={t.home.sponsors.tiers.diamond} sponsors={sponsors.diamond} />)}
+      {sponsors.gold.length > 0 && (<CardList type="gold" title={t.home.sponsors.tiers.gold} sponsors={sponsors.gold} />)}
+      {sponsors.silver.length > 0 && (<Carousel type="silver" title={t.home.sponsors.tiers["silver"]} sponsors={sponsors.silver} />)}
+      {sponsors.bronze.length > 0 && (<Carousel type="bronze" title={t.home.sponsors.tiers["bronze"]} sponsors={sponsors.bronze} />)}
     </section>
   );
 }
