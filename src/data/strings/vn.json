@@ -1,6 +1,6 @@
 {
   "contact": [
-    ["ngnhaidangvn@gmail.com", "Huấn luyện viên - thầy Đăng (chính)", "(+84) 968228118"],
+    ["ngnhaidangvn@gmail.com", "Huấn luyện viên - anh Đăng (chính)", "(+84) 968228118"],
     ["tungnt@hnams.edu.vn", "Quản lý - thầy Tùng", "(+84) 968666245"]
   ],
   "menu": {
@@ -17,7 +17,7 @@
     "hero": {
       "accented": "GreenAms",
       "unaccented": "Robotics Team",
-      "tagline": "Đến từ THPT Hà Nội – Amsterdam — When I say Green, you say Ams!",
+      "tagline": "Đến từ THPT chuyên Hà Nội – Amsterdam — When I say Green, you say Ams!",
       "end": "(cuộn xuống để khám phá)"
     },
     "about": {

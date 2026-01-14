@@ -365,9 +365,14 @@
       ],
       "Previously": [
         {
-          "name": "CAD 24-25",
+          "name": "CAD 24-25 (Into The Deep)",
           "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1",
           "img": "home/resources/rCad.avif"
+        },
+        {
+          "name": "CAD 23-24 (CenterStage)",
+          "link": "https://drive.google.com/file/d/1VOLqoqlFmWBMG5YbcMqhwogmGNXWVnj6/view?usp=sharing",
+          "img": "home/resources/rCad2.png"
         }
       ],
       "Other": [

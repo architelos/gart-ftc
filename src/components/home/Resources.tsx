@@ -38,10 +38,10 @@ function ResItem({ item }: ResItemProps) {
     <div
       ref={ref}
       onClick={onClick}
-      className={`flex flex-col aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
+      className={`relative aspect-square flex items-center justify-center overflow-hidden scale-on-hover cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[item.img]} className="w-full h-full object-contain" />
-      <div className={`flex justify-between items-center w-full p-button bg-bg`}>
+      <img src={assetMap[item.img]} className="object-center object-contain scale-[0.9]" />
+      <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg`}>
         <Text type="sub" className="text-text">{item.name}</Text>
         {canHover && <Link />}
       </div>

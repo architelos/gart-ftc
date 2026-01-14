@@ -17,13 +17,14 @@ function ContactRow({ row }: ContactRowProps) {
 
   const email = row[0];
   const role = row[1];
-  const tel = row[2].replace(/[\s()]/g, ''); // remove spaces and parentheses
+  const tel = row[2];
+  const fmt = tel.replace(/[\s()]/g, "");
 
   return (
     <div ref={rowRef} className="gap-x-s-three gap-y-s-three grid grid-cols-2 md:grid-cols-3">
       <Text type="pg" className="md:place-self-start max-sm:col-span-2 font-bold!" animate={rowInView}>{role}</Text>
       <Text type="pg" clickable={true} className="place-self-start md:place-self-center" link={true} animate={rowInView} href={`mailto:${email}`}>{email}</Text>
-      <Text type="pg" clickable={true} className="place-self-end" link={true} animate={rowInView} href={`tel:${tel}`}>{tel}</Text>
+      <Text type="pg" clickable={true} className="place-self-end" link={true} animate={rowInView} href={`tel:${fmt}`}>{tel}</Text>
     </div>
   );
 }
