@@ -945,23 +945,80 @@
       ]
     },
     "resources": {
-      "Content": [
+      "FTC101": [
         {
-          "name": "FTC 101",
-          "link": "https://www.youtube.com/playlist?list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
-          "img": "home/r101.avif"
+          "name": "EP 1: Giới thiệu về FIRST & FTC",
+          "link": "https://www.youtube.com/watch?v=2v_FFYStxdE&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e1.avif"
         },
+        {
+          "name": "EP 2: Cách thành lập đội",
+          "link": "https://www.youtube.com/watch?v=0HCMtcy8BUA&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e2.avif"
+        },
+        {
+          "name": "EP 3: (Lập trình) Bắt đầu cơ bản",
+          "link": "https://www.youtube.com/watch?v=6FCLAOtEtZg&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e3.avif"
+        },
+        {
+          "name": "EP 4: (Cơ khí) Quy trình thiết kế kỹ thuật",
+          "link": "https://www.youtube.com/watch?v=z4wkDJ5Hg-g&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e4.avif"
+        },
+        {
+          "name": "EP 5: (Cơ khí) Vật liệu thường dùng",
+          "link": "https://www.youtube.com/watch?v=RvFJINJHTuw&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e5.avif"
+        },
+        {
+          "name": "EP 6: Làm việc nhóm hiệu quả",
+          "link": "https://www.youtube.com/watch?v=sjNCfNZp3-U&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e6.avif"
+        },
+        {
+          "name": "EP 7: (Lập trình) Điện tử cơ bản",
+          "link": "https://www.youtube.com/watch?v=xJbzSTunL_k&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e7.avif"
+        },
+        {
+          "name": "EP 8: (Cơ khí) Gia công & in 3D",
+          "link": "https://www.youtube.com/watch?v=LxholEHGfQo&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e8.avif"
+        },
+        {
+          "name": "EP 9: Viết Engineering Portfolio ấn tượng",
+          "link": "https://www.youtube.com/watch?v=JdFP0lxH3rE&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e9.avif"
+        },
+        {
+          "name": "EP 10: Portfolio – phần cơ khí",
+          "link": "https://www.youtube.com/watch?v=GzkpxCzskw0&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e10.avif"
+        },
+        {
+          "name": "EP 11: Portfolio – phần lập trình",
+          "link": "https://www.youtube.com/watch?v=jwyqH7YJcQU&list=PLTPz7mtNIU2oEsxxwPM-12Hxt6IDVpv8Z",
+          "img": "home/resources/101e11.avif"
+        }
+      ],
+      "Trước đây": [
+        {
+          "name": "CAD 24-25 (Into The Deep)",
+          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1",
+          "img": "home/resources/rCad.avif"
+        },
+        {
+          "name": "CAD 23-24 (CenterStage)",
+          "link": "https://drive.google.com/file/d/1VOLqoqlFmWBMG5YbcMqhwogmGNXWVnj6/view?usp=sharing",
+          "img": "home/resources/rCad2.png"
+        }
+      ],
+      "Khác": [
         {
           "name": "GARchives",
           "link": "https://www.youtube.com/@gartarchives",
-          "img": "home/rGarchives.avif"
-        }
-      ],
-      "CAD": [
-        {
-          "name": "24-25",
-          "link": "https://cad.onshape.com/documents/34d158bc42bb938048184657/w/14ab2c2cc534b1c82cbeb4c8/e/e8d9a5af91dceeee0d7403a1",
-          "img": "home/rCad.avif"
+          "img": "home/resources/rGarchives.avif"
         }
       ]
     },
