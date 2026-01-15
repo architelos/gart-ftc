@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { MouseEvent } from "react";
-import { Link, Heart } from "lucide-react";
+import { /* Link, */ Heart } from "lucide-react";
 
 import { event } from "@/gtag";
 import Text from "@/components/Text";
@@ -8,7 +8,7 @@ import Button from "@/components/Button";
 import useInView from "@/hooks/useInView";
 import useLocale from "@/hooks/useLocale";
 import useCanHover from "@/hooks/useCanHover";
-import useFFOrSafari from "@/hooks/useFFOrSafari";
+// import useFFOrSafari from "@/hooks/useFFOrSafari";
 import assetMap from "@/data/assetMap";
 import translations from "@/data/translations";
 import data from "@/data/data";
@@ -49,6 +49,12 @@ function Card({ type, sponsor }: CardProps) {
     window.open(sponsor.link, "_blank", "noopener,noreferrer");
   }
 
+  const sizes = {
+    diamond: "max-h-[30vh] md:max-h-[35vh]",
+    gold: "max-h-[25vh] md:max-h-[30vh]",
+    silver: "h-[15vh] md:h-[25vh]",
+    bronze: "h-[10vh] md:h-[15vh]"
+  }
 
   return (
     <div
@@ -56,10 +62,10 @@ function Card({ type, sponsor }: CardProps) {
       onClick={onClick}
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`relative aspect-square overflow-hidden scale-on-hover cursor-pointer opacity-0 ${type === "diamond" ? "max-h-[35vh]" : "max-h-[28vh]"} ${inView ? "a-fade-in" : ""}`}
+      className={`flex flex-col scale-on-hover overflow-hidden cursor-pointer opacity-0 ${inView ? "a-fade-in" : ""}`}
     >
-      <img src={assetMap[sponsor.img]} className="w-full h-full object-contain" />
-      <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
+      <img src={assetMap[sponsor.img]} className={`${sizes[type]} object-contain aspect-square`} />
+      <div className={`flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
         <Text type="sub" className="text-text">{sponsor.name}</Text>
       </div>
     </div>
@@ -70,8 +76,8 @@ function CardList({ type, title, sponsors }: CardListProps) {
   const { ref, inView } = useInView();
 
   const colors = {
-    gold: "#d5a019",
-    diamond: "#90d5ff"
+    diamond: "#90d5ff",
+    gold: "#d5a019"
   }
 
   return (
@@ -96,7 +102,7 @@ function CardList({ type, title, sponsors }: CardListProps) {
 }
 
 function Carousel({ type, title, sponsors }: CarouselProps) {
-  const ffOrSafari = useFFOrSafari();
+  // const ffOrSafari = useFFOrSafari();
 
   const { ref: textRef, inView: textInView } = useInView();
   const { ref: carouselRef, inView: carouselInView } = useInView();
@@ -113,11 +119,17 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
     silver: "#9aa3a5"
   }
 
+  const sizes = {
+    bronze: "grid-cols-3 md:grid-cols-4",
+    silver: "grid-cols-2 md:grid-cols-3"
+  }
+
   return (
-    <div className="flex flex-col gap-y-page p-page">
+    <div className="flex flex-col gap-y-page">
       <div ref={textRef}><Text type="title" animate={textInView} className="font-normal! text-accent! text-center" style={{ color: colors[type] }}>{title}</Text></div>
       <div ref={carouselRef}>
         {/* {!ffOrSafari */}
+        {/* eslint-disable-next-line no-constant-condition */}
         {false
           ? <div className={`flex flex-row overflow-x-hidden scroll-hide opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
             {(type === "silver" ? [0, 1] : [0, 1, 2, 3]).map((i) => (
@@ -141,18 +153,9 @@ function Carousel({ type, title, sponsors }: CarouselProps) {
               </div>
             ))}
           </div>
-          : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${type === "silver" ? "grid-cols-2" : "grid-cols-3"} gap-y-page opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
+          : <div style={{ columnGap: "calc(2 * var(--spacing-page))" }} className={`grid ${sizes[type]} place-items-center gap-y-page opacity-0 ${carouselInView ? "a-fade-in" : ""}`}>
             {sponsors.map((sponsor, i) => (
-              <div key={i} className={`place-self-center cursor-pointer aspect-square ${type === "silver" ? "h-[15vh] md:h-[20vh]" : "h-[7.5vh] md:h-[10vh]"}`} onClick={(e) => onClick(e, sponsor)}>
-                <img
-                  className="w-full h-full object-contain"
-                  src={assetMap[sponsor.img]}
-                  alt={sponsor.name}
-                />
-                <div className={`bottom-0 absolute flex justify-between items-center w-full p-button bg-bg ${canHover ? (hover ? "a-slide-up" : "a-slide-down") : ""}`}>
-                  <Text type="sub" className="text-text">{sponsor.name}</Text>
-                </div>
-              </div>
+              <Card key={i} type={type} sponsor={sponsor} />
             ))}
           </div>}
       </div>
