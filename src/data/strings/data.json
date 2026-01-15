@@ -205,6 +205,41 @@
           "job": "job_11",
           "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
+        },
+        {
+          "idx": 19,
+          "name": "Hoàng Lan",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 20,
+          "name": "Nam Khánh",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 21,
+          "name": "Hữu Hưng",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 22,
+          "name": "Phú Thánh",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 23,
+          "name": "Hà Linh",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
         }
       ],
       "programming": [
@@ -401,23 +436,6 @@
         "handle": "greenamsroboticsteam"
       }
     },
-    "perks": [
-      {
-        "title": "test",
-        "desc": "asfh yasgfy asgfyg agfyfqe",
-        "img": "ph.avif"
-      },
-      {
-        "title": "test",
-        "desc": "asfh yasgfy asgfyg agfyfqe",
-        "img": "ph.avif"
-      },
-      {
-        "title": "test",
-        "desc": "asfh yasgfy asgfyg agfyfqe",
-        "img": "ph.avif"
-      }
-    ],
     "sponsors": {
       "diamond": [
         {
@@ -462,29 +480,6 @@
         }
       ]
     },
-    "updates": [
-      {
-        "id": 1,
-        "title": "Pushing Boundaries, One Robot at a Time",
-        "date": "1/15/70",
-        "description": "From regional champs to world contenders — our team is redefining innovation, teamwork, and passion for STEM.",
-        "image": "ph.avif"
-      },
-      {
-        "id": 2,
-        "title": "Grateful to Our Sponsors for Powering the Journey",
-        "date": "1/15/70",
-        "description": "A huge thank-you to the organizations and individuals who make our mission possible — your support drives every line of code and every match we play.",
-        "image": "pv.avif"
-      },
-      {
-        "id": 3,
-        "title": "Competition Season Kickoff",
-        "date": "1/22/70",
-        "description": "Our team is gearing up for an exciting competition season. With new designs and improved strategies, we're ready to take on the challenge.",
-        "image": "ph.avif"
-      }
-    ],
     "values": [
       {
         "value": "Pioneering Spirit",
@@ -779,14 +774,49 @@
           "idx": 16,
           "name": "Tiến Khải",
           "job": "job_11",
-          "quote": "Gỡ lỗi hôm nay, triển khai ngày mai",
+          "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
         },
         {
           "idx": 18,
           "name": "Quang Tùng",
           "job": "job_11",
-          "quote": "Gỡ lỗi hôm nay, triển khai ngày mai",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 19,
+          "name": "Hoàng Lan",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 20,
+          "name": "Nam Khánh",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 21,
+          "name": "Hữu Hưng",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 22,
+          "name": "Phú Thánh",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
+          "img": "pv.avif"
+        },
+        {
+          "idx": 23,
+          "name": "Hà Linh",
+          "job": "job_11",
+          "quote": "Debug today, deploy tomorrow",
           "img": "pv.avif"
         }
       ],
@@ -984,23 +1014,6 @@
         "handle": "greenamsroboticsteam"
       }
     },
-    "perks": [
-      {
-        "title": "thử nghiệm",
-        "desc": "asfh yasgfy asgfyg agfyfqe",
-        "img": "ph.avif"
-      },
-      {
-        "title": "thử nghiệm",
-        "desc": "asfh yasgfy asgfyg agfyfqe",
-        "img": "ph.avif"
-      },
-      {
-        "title": "thử nghiệm",
-        "desc": "asfh yasgfy asgfyg agfyfqe",
-        "img": "ph.avif"
-      }
-    ],
     "sponsors": {
       "diamond": [
         {
@@ -1024,9 +1037,9 @@
       ],
       "bronze": [
         {
-          "name": "American Center",
-          "img": "home/logos/bAC.png",
-          "link": "https://vn.usembassy.gov/american-center-hanoi/"
+          "name": "HTH",
+          "img": "home/logos/bHTH.png",
+          "link": "mailto:info@htharchitects.vn"
         },
         {
           "name": "AUSPAN",
@@ -1034,40 +1047,17 @@
           "link": "https://auspan.com.au/"
         },
         {
+          "name": "American Center",
+          "img": "home/logos/bAC.png",
+          "link": "https://vn.usembassy.gov/american-center-hanoi/"
+        },
+        {
           "name": "GEN D",
           "img": "home/logos/bGenD.png",
           "link": ""
-        },
-        {
-          "name": "HTH",
-          "img": "home/logos/bHTH.png",
-          "link": "mailto:info@htharchitects.vn"
         }
       ]
     },
-    "updates": [
-      {
-        "id": 1,
-        "title": "Vượt qua Giới hạn, trên từng Robot",
-        "date": "1/15/70",
-        "description": "Từ nhà vô địch khu vực đến ứng cử viên thế giới — đội của chúng tôi đang định nghĩa lại sự đổi mới, tinh thần đồng đội và niềm đam mê với STEM.",
-        "image": "ph.avif"
-      },
-      {
-        "id": 2,
-        "title": "Biết ơn các Nhà tài trợ đã Tiếp sức cho Hành trình",
-        "date": "1/15/70",
-        "description": "Lời cảm ơn to lớn gửi đến các tổ chức và cá nhân đã giúp sứ mệnh của chúng tôi thành hiện thực — sự hỗ trợ của các bạn thúc đẩy từng dòng code và từng trận đấu mà chúng tôi tham gia.",
-        "image": "pv.avif"
-      },
-      {
-        "id": 3,
-        "title": "Khởi động Mùa giải Thi đấu",
-        "date": "1/22/70",
-        "description": "Đội của chúng tôi đang chuẩn bị cho một mùa giải thi đấu đầy thú vị. Với các thiết kế mới và chiến lược được cải tiến, chúng tôi đã sẵn sàng đón nhận thử thách.",
-        "image": "ph.avif"
-      }
-    ],
     "values": [
       {
         "value": "Tinh thần Tiên phong",
