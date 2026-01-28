@@ -66,8 +66,7 @@
         "manager": "Manager",
         "coach": "Coach",
         "mentor": "Mentor",
-        "captain": "Captain",
-        "vice_captain": "Vice Captain",
+        "leadership": "Leadership",
         "programming": "Programming",
         "mechanical": "Mechanical",
         "business": "Business"

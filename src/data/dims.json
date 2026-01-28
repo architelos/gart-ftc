@@ -135,7 +135,7 @@
     "w": 480,
     "h": 480
   },
-  "home/logos/dMCC.png": {
+  "home/logos/dMcc.png": {
     "w": 1064,
     "h": 480
   },
@@ -226,5 +226,69 @@
   "about/m5.avif": {
     "w": 1440,
     "h": 811
+  },
+  "about/team/dangMinh.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/ducHung.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/ducKhanh.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/duongLam.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/haiDang.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/khanhAnh.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/khanhVinh.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/minhDung.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/minhKhang.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/minhQuang.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/ngnDang.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/quangHuy.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/theKhai.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/tranKhoa.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/tranThao.avif": {
+    "w": 512,
+    "h": 512
+  },
+  "about/team/tuanKhoi.avif": {
+    "w": 512,
+    "h": 512
   }
 }

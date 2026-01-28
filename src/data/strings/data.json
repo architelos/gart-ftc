@@ -160,8 +160,7 @@
           "idx": 17,
           "name": "Thanh Tùng",
           "job": "job_1",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": "about/team/thanhTung.avif"
         }
       ],
       "coach": [
@@ -169,26 +168,21 @@
           "idx": 15,
           "name": "Hải Đăng",
           "job": "job_2",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": "about/team/ngnDang.avif"
         }
       ],
-      "captain": [
+      "leadership": [
         {
           "idx": 0,
           "name": "Khánh Anh",
           "job": "job_6",
-          "quote": "Code is poetry written in logic",
-          "img": "pv.avif"
-        }
-      ],
-      "vice_captain": [
+          "img": "about/team/khanhAnh.avif"
+        },
         {
           "idx": 12,
           "name": "Phương Thảo",
           "job": "job_9",
-          "quote": "Success is where preparation meets opportunity",
-          "img": "pv.avif"
+          "img": "about/team/tranThao.avif"
         }
       ],
       "mentor": [
@@ -196,50 +190,43 @@
           "idx": 16,
           "name": "Tiến Khải",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 18,
           "name": "Quang Tùng",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 19,
           "name": "Hoàng Lan",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 20,
           "name": "Nam Khánh",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 21,
           "name": "Hữu Hưng",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 22,
-          "name": "Phú Thánh",
+          "name": "Phú Thành",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 23,
           "name": "Hà Linh",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         }
       ],
       "programming": [
@@ -247,36 +234,31 @@
           "idx": 1,
           "name": "Tuấn Khôi",
           "job": "job_7",
-          "quote": "Teaching machines to think, one algorithm at a time",
-          "img": "pv.avif"
+          "img": "about/team/tuanKhoi.avif"
         },
         {
           "idx": 2,
           "name": "Minh Quang",
           "job": "job_8",
-          "quote": "AI is not about replacing humans, it's about augmenting them",
-          "img": "pv.avif"
+          "img": "about/team/minhQuang.avif"
         },
         {
           "idx": 3,
           "name": "Đức Khánh",
           "job": "job_8",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": "about/team/ducKhanh.avif"
         },
         {
           "idx": 4,
           "name": "Đăng Minh",
           "job": "job_8",
-          "quote": "Clean code always looks like it was written by someone who cares",
-          "img": "pv.avif"
+          "img": "about/team/dangMinh.avif"
         },
         {
           "idx": 5,
           "name": "Minh Dũng",
           "job": "job_8",
-          "quote": "First, solve the problem. Then, write the code",
-          "img": "pv.avif"
+          "img": "about/team/minhDung.avif"
         }
       ],
       "mechanical": [
@@ -284,36 +266,31 @@
           "idx": 6,
           "name": "Thế Khải",
           "job": "job_3",
-          "quote": "Engineering is the art of making the impossible possible",
-          "img": "pv.avif"
+          "img": "about/team/theKhai.avif"
         },
         {
           "idx": 7,
           "name": "Hải Đăng",
           "job": "job_4",
-          "quote": "Precision in design, excellence in execution",
-          "img": "pv.avif"
+          "img": "about/team/haiDang.avif"
         },
         {
           "idx": 8,
           "name": "Minh Khang",
           "job": "job_5",
-          "quote": "Innovation distinguishes between a leader and a follower",
-          "img": "pv.avif"
+          "img": "about/team/minhKhang.avif"
         },
         {
           "idx": 9,
           "name": "Khánh Vinh",
           "job": "job_5",
-          "quote": "Building the future, one component at a time",
-          "img": "pv.avif"
+          "img": "about/team/khanhVinh.avif"
         },
         {
           "idx": 10,
           "name": "Trần Khoa",
           "job": "job_5",
-          "quote": "Design is not just what it looks like, it's how it works",
-          "img": "pv.avif"
+          "img": "about/team/tranKhoa.avif"
         }
       ],
       "business": [
@@ -321,22 +298,19 @@
           "idx": 11,
           "name": "Dương Lâm",
           "job": "job_10",
-          "quote": "Strategy without execution is just a dream",
-          "img": "pv.avif"
+          "img": "about/team/duongLam.avif"
         },
         {
           "idx": 13,
           "name": "Quang Huy",
           "job": "job_10",
-          "quote": "The best way to predict the future is to create it",
-          "img": "pv.avif"
+          "img": "about/team/quangHuy.avif"
         },
         {
           "idx": 14,
           "name": "Đức Hùng",
           "job": "job_10",
-          "quote": "Great things in business are never done by one person",
-          "img": "pv.avif"
+          "img": "about/team/ducHung.avif"
         }
       ]
     },
@@ -440,7 +414,7 @@
       "diamond": [
         {
           "name": "MCC",
-          "img": "home/logos/dMCC.png",
+          "img": "home/logos/dMcc.png",
           "link": "https://www.mccsemi.com/"
         }
       ],
@@ -738,8 +712,7 @@
           "idx": 17,
           "name": "Thanh Tùng",
           "job": "job_1",
-          "quote": "Gỡ lỗi hôm nay, triển khai ngày mai",
-          "img": "pv.avif"
+          "img": "about/team/thanhTung.avif"
         }
       ],
       "coach": [
@@ -747,26 +720,21 @@
           "idx": 15,
           "name": "Hải Đăng",
           "job": "job_2",
-          "quote": "Gỡ lỗi hôm nay, triển khai ngày mai",
-          "img": "pv.avif"
+          "img": "about/team/ngnDang.avif"
         }
       ],
-      "captain": [
+      "leadership": [
         {
           "idx": 0,
           "name": "Khánh Anh",
           "job": "job_6",
-          "quote": "Code là những vần thơ viết bằng logic",
-          "img": "pv.avif"
-        }
-      ],
-      "vice_captain": [
+          "img": "about/team/khanhAnh.avif"
+        },
         {
           "idx": 12,
           "name": "Phương Thảo",
           "job": "job_9",
-          "quote": "Thành công là nơi sự chuẩn bị gặp gỡ cơ hội",
-          "img": "pv.avif"
+          "img": "about/team/tranThao.avif"
         }
       ],
       "mentor": [
@@ -774,50 +742,43 @@
           "idx": 16,
           "name": "Tiến Khải",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 18,
           "name": "Quang Tùng",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 19,
           "name": "Hoàng Lan",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 20,
           "name": "Nam Khánh",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 21,
           "name": "Hữu Hưng",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 22,
-          "name": "Phú Thánh",
+          "name": "Phú Thành",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         },
         {
           "idx": 23,
           "name": "Hà Linh",
           "job": "job_11",
-          "quote": "Debug today, deploy tomorrow",
-          "img": "pv.avif"
+          "img": ""
         }
       ],
       "programming": [
@@ -825,36 +786,31 @@
           "idx": 1,
           "name": "Tuấn Khôi",
           "job": "job_7",
-          "quote": "Dạy máy móc tư duy, từng thuật toán một",
-          "img": "pv.avif"
+          "img": "about/team/tuanKhoi.avif"
         },
         {
           "idx": 2,
           "name": "Minh Quang",
           "job": "job_8",
-          "quote": "AI không phải để thay thế con người, mà là để hỗ trợ họ",
-          "img": "pv.avif"
+          "img": "about/team/minhQuang.avif"
         },
         {
           "idx": 3,
           "name": "Đức Khánh",
           "job": "job_8",
-          "quote": "Gỡ lỗi hôm nay, triển khai ngày mai",
-          "img": "pv.avif"
+          "img": "about/team/ducKhanh.avif"
         },
         {
           "idx": 4,
           "name": "Đăng Minh",
           "job": "job_8",
-          "quote": "Code sạch luôn trông như thể được viết bởi người có tâm",
-          "img": "pv.avif"
+          "img": "about/team/dangMinh.avif"
         },
         {
           "idx": 5,
           "name": "Minh Dũng",
           "job": "job_8",
-          "quote": "Trước tiên giải quyết vấn đề. Sau đó hãy viết code",
-          "img": "pv.avif"
+          "img": "about/team/minhDung.avif"
         }
       ],
       "mechanical": [
@@ -862,36 +818,31 @@
           "idx": 6,
           "name": "Thế Khải",
           "job": "job_3",
-          "quote": "Kỹ thuật là nghệ thuật biến điều không thể thành có thể",
-          "img": "pv.avif"
+          "img": "about/team/theKhai.avif"
         },
         {
           "idx": 7,
           "name": "Hải Đăng",
           "job": "job_4",
-          "quote": "Chính xác trong thiết kế, xuất sắc trong thực thi",
-          "img": "pv.avif"
+          "img": "about/team/haiDang.avif"
         },
         {
           "idx": 8,
           "name": "Minh Khang",
           "job": "job_5",
-          "quote": "Sự đổi mới phân biệt giữa người dẫn đầu và kẻ theo sau",
-          "img": "pv.avif"
+          "img": "about/team/minhKhang.avif"
         },
         {
           "idx": 9,
           "name": "Khánh Vinh",
           "job": "job_5",
-          "quote": "Xây dựng tương lai, từng linh kiện một",
-          "img": "pv.avif"
+          "img": "about/team/khanhVinh.avif"
         },
         {
           "idx": 10,
           "name": "Trần Khoa",
           "job": "job_5",
-          "quote": "Thiết kế không chỉ là trông nó thế nào, mà là nó hoạt động ra sao",
-          "img": "pv.avif"
+          "img": "about/team/tranKhoa.avif"
         }
       ],
       "business": [
@@ -899,22 +850,19 @@
           "idx": 11,
           "name": "Dương Lâm",
           "job": "job_10",
-          "quote": "Chiến lược không thực thi chỉ là giấc mơ",
-          "img": "pv.avif"
+          "img": "about/team/duongLam.avif"
         },
         {
           "idx": 13,
           "name": "Quang Huy",
           "job": "job_10",
-          "quote": "Cách tốt nhất để dự đoán tương lai là tạo ra nó",
-          "img": "pv.avif"
+          "img": "about/team/quangHuy.avif"
         },
         {
           "idx": 14,
           "name": "Đức Hùng",
           "job": "job_10",
-          "quote": "Những điều vĩ đại trong kinh doanh không bao giờ được làm bởi một người",
-          "img": "pv.avif"
+          "img": "about/team/ducHung.avif"
         }
       ]
     },
@@ -1018,7 +966,7 @@
       "diamond": [
         {
           "name": "MCC",
-          "img": "home/logos/dMCC.png",
+          "img": "home/logos/dMcc.png",
           "link": "https://www.mccsemi.com/"
         }
       ],

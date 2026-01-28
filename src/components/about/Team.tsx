@@ -13,7 +13,6 @@ type Person = {
   name: string;
   job: string;
   img: string;
-  quote: string;
 };
 type Divisions = "programming" | "mechanical" | "business";
 
@@ -31,7 +30,6 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
 
   const { ref: refSm, inView: inViewSm } = useInView();
   const { ref: imgRef, inView: imgInView } = useInView();
-  const { ref: quoteRef, inView: quoteInView } = useInView();
 
   return (
     <>
@@ -57,24 +55,20 @@ function Person({ person, jobs, showCard, pos }: PersonProps) {
             {jobs[person.job]}
           </Text>
         </div>
-        {/* <div className="flex flex-row justify-between gap-x-s-two"> */}
-          {/* <div ref={imgRef} className="w-[40%]"> */}
-            {/* <img src={assetMap[person.img]} className={`w-full object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} /> */}
-          {/* </div> */}
-          {/* <div ref={quoteRef} className="self-end w-[60%]"> */}
-            {/* <Text type="pg" animate={quoteInView}>"{person.quote}"</Text> */}
-          {/* </div> */}
-        {/* </div> */}
+        <div ref={imgRef} className="flex justify-center w-full">
+          {person.img && (
+            <img src={assetMap[person.img]} className={`w-[40%] max-h-32 aspect-square object-contain opacity-0 ${imgInView ? "a-fade-in" : ""}`} />
+          )}
+        </div>
       </div>
 
-      {/* {showCard && (
-        <div className="z-25 fixed w-[20vw] max-h-[35vh] pointer-events-none" style={{ left:`${pos.x}px`, top:`${pos.y}px` }}>
-          <div className="flex flex-col gap-y-s-four p-s-four rounded-md outline-2 outline-text/20 bg-bg">
-            <img src={assetMap[person.img]} className={`object-contain opacity-0 a-fade-in max-h-[35vh] self-start rounded-md`} />
-            <Text type="pg">"{person.quote}"</Text>
-          </div>
+       {showCard && (
+        <div className="z-25 fixed max-h-64 aspect-square pointer-events-none" style={{ left:`${pos.x}px`, top:`${pos.y}px` }}>
+          {person.img && (
+            <img src={assetMap[person.img]} className={`object-contain opacity-0 a-fade-in max-h-full rounded-md`} />
+          )}
         </div>
-      )} */}
+      )}
     </>
   );
 }
