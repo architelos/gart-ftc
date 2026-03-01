@@ -25,34 +25,28 @@
     "benefits": {
       "Business": [
         {
-          "name": "Bronze ($200 - $999)",
-          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 1:4 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 1 media support post\n\n• Other benefits enjoyed by both parties",
+          "name": "Bronze ($200 - $1.999)",
+          "desc": "• 1:4 Logo on teamwear and robot\n\n• Name/Logo on website\n\n• Recognition on social media post",
           "span": false,
           "color": "#c3785c"
         },
         {
-          "name": "Silver ($1,000 - $1,999)",
-          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 1:3 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 2 media support posts\n\n• Unique social media recognition\n\n• Other benefits enjoyed by both parties",
+          "name": "Silver ($2.000 - $3.499)",
+          "desc": "• 1:3 Logo on teamwear and robot\n\n• Name/Logo on website\n\n• Recognition on social media post\n\n• 1 media support post",
           "span": false,
           "color": "#9aa3a5"
         },
         {
-          "name": "Gold ($2,000 - $2,999)",
-          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 1:2 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 3 media support posts\n\n• Unique social media recognition\n\n• 1:4 logo on event banners\n\n• Name + logo on giveaway gifts\n\n• Other benefits enjoyed by both parties",
+          "name": "Gold ($3.500 - $4.999)",
+          "desc": "• 1:2 Logo on teamwear and robot\n\n• Name/Logo on social media posts\n\n• Name/Logo on team’s giveaway gifts\n\n• 1:4 Name/Logo on banners at events\n\n• 2 media support posts",
           "span": false,
           "color": "#d5a019"
         },
         {
-          "name": "Diamond ($3,000 - $4,999)",
-          "desc": "• Use team’s and the web page’s content for media\n\n• Certificate of appreciation\n\n• 3:4 to 1:1 logo on teamwear and robot\n\n• Name + logo on website and social media\n\n• 3+ media support posts\n\n• Unique social media recognition\n\n• 1:4 logo on event banners\n\n• Name + logo on giveaway gifts\n\n• Recognition on ALL social media posts\n\n• 2:3 logo on event banners\n\n• Company merch handouts\n\n• Other benefits enjoyed by both parties",
+          "name": "Diamond ($5.000+)",
+          "desc": "• 3:4 to 1:1 Logo on teamwear and robot\n\n• Name/Logo on frontpage of website\n\n• Unique recognition on social media posts\n\n• Name/Logo on team’s giveaway gifts\n\n• 2:3 Name/Logo on banners at events\n\n• 3+ media support posts\n\n• Company merch handed out at events\n\n• Personal team appearance with robot and presentation at selective company events",
           "span": false,
           "color": "#0cc0df"
-        },
-        {
-          "name": "Partner ($5,000+)",
-          "desc": "• For higher sponsorship amounts, we aim to become long-term strategic partners and will provide expanded, mutually agreed-upon benefits over a longer period of time",
-          "span": true,
-          "color": "#3e3d75"
         }
       ],
       "Individual": [
@@ -63,8 +57,8 @@
           "color": "#9aa3a5"
         },
         {
-          "name": "Benefactor ($200+)",
-          "desc": "• Team merchandise\n\n• Appreciation letter\n\n• Social media recognition",
+          "name": "Backer ($200+)",
+          "desc": "• Team merchandise\n\n• Appreciation letter\n\n• Recognition on website\n\n• Recognition on social media post",
           "span": false,
           "color": "#d5a019"
         }
@@ -577,46 +571,40 @@
     "benefits": {
       "Business": [
         {
-          "name": "Đồng ($200 - $999)",
-          "desc": "• Sử dụng nội dung của đội và trang web cho truyền thông\n\n• Giấy chứng nhận cảm ơn\n\n• Logo kích thước 1:4 trên đồng phục và robot\n\n• Tên + logo trên trang web và mạng xã hội\n\n• 1 bài đăng hỗ trợ truyền thông\n\n• Các quyền lợi khác được hưởng bởi cả hai bên",
+          "name": "Đồng ($200 - $1,999)",
+          "desc": "• Logo kích thước 1:4 trên đồng phục thi đấu và robot.\n\n• Tên/Logo trên website.\n\n• Được ghi nhận trên bài đăng mạng xã hội.",
           "span": false,
           "color": "#c3785c"
         },
         {
-          "name": "Bạc ($1,000 - $1,999)",
-          "desc": "• Sử dụng nội dung của đội và trang web cho truyền thông\n\n• Giấy chứng nhận cảm ơn\n\n• Logo kích thước 1:3 trên đồng phục và robot\n\n• Tên + logo trên trang web và mạng xã hội\n\n• 2 bài đăng hỗ trợ truyền thông\n\n• Nhận diện độc đáo trên mạng xã hội\n\n• Các quyền lợi khác được hưởng bởi cả hai bên",
+          "name": "Bạc ($2,000 - $3,499)",
+          "desc": "• Logo kích thước 1:3 trên đồng phục thi đấu và robot.\n\n• Tên/Logo trên website.\n\n• Được ghi nhận trên bài đăng mạng xã hội.\n\n• 1 bài đăng hỗ trợ truyền thông.",
           "span": false,
           "color": "#9aa3a5"
         },
         {
-          "name": "Vàng ($2,000 - $2,999)",
-          "desc": "• Sử dụng nội dung của đội và trang web cho truyền thông\n\n• Giấy chứng nhận cảm ơn\n\n• Logo kích thước 1:2 trên đồng phục và robot\n\n• Tên + logo trên trang web và mạng xã hội\n\n• 3 bài đăng hỗ trợ truyền thông\n\n• Nhận diện độc đáo trên mạng xã hội\n\n• Logo kích thước 1:4 trên banner sự kiện\n\n• Tên + logo trên quà tặng lưu niệm\n\n• Các quyền lợi khác được hưởng bởi cả hai bên",
+          "name": "Vàng ($3,500 - $4,999)",
+          "desc": "• Logo kích thước 1:2 trên đồng phục thi đấu và robot.\n\n• Tên/Logo trên các bài đăng mạng xã hội.\n\n• Tên/Logo trên các quà tặng lưu niệm (giveaway) của đội.\n\n• Tên/Logo kích thước 1:4 trên các banner tại sự kiện.\n\n• 2 bài đăng hỗ trợ truyền thông.",
           "span": false,
           "color": "#d5a019"
         },
         {
-          "name": "Kim Cương ($3,000 - $4,999)",
-          "desc": "• Sử dụng nội dung của đội và trang web cho truyền thông\n\n• Giấy chứng nhận cảm ơn\n\n• Logo kích thước 3:4 đến 1:1 trên đồng phục và robot\n\n• Tên + logo trên trang web và mạng xã hội\n\n• Trên 3 bài đăng hỗ trợ truyền thông\n\n• Nhận diện độc đáo trên mạng xã hội\n\n• Logo kích thước 1:4 trên banner sự kiện\n\n• Tên + logo trên quà tặng lưu niệm\n\n• Được công nhận trên TẤT CẢ các bài đăng mạng xã hội\n\n• Logo kích thước 2:3 trên banner sự kiện\n\n• Phát sản phẩm thương hiệu của công ty\n\n• Các quyền lợi khác được hưởng bởi cả hai bên",
+          "name": "Kim Cương ($5,000+)",
+          "desc": "• Logo kích thước từ 3:4 đến 1:1 trên đồng phục thi đấu và robot.\n\n• Tên/Logo xuất hiện trên trang chủ website.\n\n• Sự ghi nhận đặc biệt/độc quyền trên các bài đăng mạng xã hội.\n\n• Tên/Logo trên các quà tặng lưu niệm (giveaway) của đội.\n\n• Tên/Logo kích thước 2:3 trên các banner tại sự kiện.\n\n• 3+ bài đăng hỗ trợ truyền thông.\n\n• Phát các sản phẩm thương hiệu của công ty tại các sự kiện.\n\n• Đội tuyển xuất hiện trực tiếp cùng robot và thuyết trình tại sự kiện do công ty lựa chọn.",
           "span": false,
           "color": "#0cc0df"
-        },
-        {
-          "name": "Đối tác ($5,000+)",
-          "desc": "• Đối với các khoản tài trợ lớn hơn, chúng tôi hướng tới việc trở thành đối tác chiến lược lâu dài và sẽ cung cấp các quyền lợi mở rộng, được thống nhất bởi hai bên trong thời gian dài hơn",
-          "span": true,
-          "color": "#3e3d75"
         }
       ],
       "Individual": [
         {
           "name": "Người ủng hộ ($50 - $199)",
-          "desc": "• Quà lưu niệm của đội\n\n• Thư cảm ơn",
+          "desc": "• Nhận vật phẩm thương hiệu của đội (Merchandise)\n\n• Thư cảm ơn",
           "span": false,
           "color": "#9aa3a5"
         },
         {
-          "name": "Nhà hảo tâm ($200+)",
-          "desc": "• Quà lưu niệm của đội\n\n• Thư cảm ơn\n\n• Vinh danh trên mạng xã hội",
+          "name": "Nhà bảo trợ ($200+)",
+          "desc": "• Nhận vật phẩm thương hiệu của đội (Merchandise)\n\n• Thư cảm ơn\n\n• Được vinh danh trên website\n\n• Được ghi nhận trên bài đăng mạng xã hội",
           "span": false,
           "color": "#d5a019"
         }
